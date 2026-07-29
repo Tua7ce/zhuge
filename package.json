@@ -1,0 +1,17 @@
+{
+  "name": "macau-mark-six-predictor",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "fetch": "node scripts/fetch-data.mjs",
+    "predict": "node scripts/predict.mjs",
+    "update": "node scripts/fetch-data.mjs && node scripts/predict.mjs"
+  },
+  "dependencies": {
+    "astro": "^5.0.0",
+    "echarts": "^5.5.0"
+  }
+}

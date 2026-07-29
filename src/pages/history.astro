@@ -1,0 +1,74 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { readFileSync } from "fs";
+var histRaw;
+try { histRaw = JSON.parse(readFileSync("src/data/history.json","utf-8")); } catch(e) { histRaw = []; }
+var count = histRaw.length;
+var col = {red:"#e74c3c",blue:"#3498db",green:"#2ecc71"};
+function pad(n){return ("0"+n).slice(-2);}
+function color(n){var r=[1,2,7,8,12,13,18,19,23,24,29,30,34,35,40,45,46];var b=[3,4,9,10,14,15,20,25,26,31,36,37,41,42,47,48];if(r.indexOf(n)>=0)return "red";if(b.indexOf(n)>=0)return "blue";return "green";}
+function ball(n,sz){
+  var c=col[color(n)]||"#888";var s=sz||22;var f=s>25?12:9;
+  return "<span style=display:inline-flex;width:"+s+"px;height:"+s+"px;line-height:"+s+"px;border-radius:50%;background:"+c+";color:#fff;font-size:"+f+"px;font-weight:700;text-align:center;margin:0 1px>"+pad(n)+"</span>";
+}
+var zn = ["鼠","牛","虎","兔","龙","蛇","马","羊","猴","鸡","狗","猪"];
+var ZN = {};for(var i=0;i<zn.length;i++)ZN[zn[i]]=true;
+---
+<Layout title="开奖记录 - 梦想版本-澳门六合彩">
+  <div class=card>
+    <h2>全部开奖记录 <span class=ac>{count}期</span></h2>
+    <div style="display:flex;gap:8px;margin-bottom:8px;flex-wrap:wrap">
+      <input id=search placeholder="搜索期号" style="padding:6px 10px;border-radius:5px;border:1px solid var(--border);font-size:13px;outline:none;flex:1;min-width:100px">
+      <select id=filter style="padding:6px 10px;border-radius:5px;border:1px solid var(--border);font-size:13px;outline:none">
+        <option value="">全部生肖</option>
+        {zn.map(function(z){return "<option value="+z+">"+z+"</option>";}).join("")}
+      </select>
+    </div>
+    <table class=ht>
+      <thead><tr><th>期号</th><th>日期</th><th>号码</th><th>特码</th></tr></thead>
+      <tbody id=tbody></tbody>
+    </table>
+    <div class=pg id=pagination></div>
+  </div>
+</Layout>
+<script is:inline>
+var DATA = {JSON.stringify(histRaw.map(function(h,i){
+  return {issue:h.issue,date:h.date,numbers:h.numbers,zodiacs:h.zodiacs,idx:i};
+}))};
+var PS = 15, HP = 1, filtered = DATA;
+
+function render(){
+  var q = (document.getElementById("search").value||"").trim();
+  var zf = document.getElementById("filter").value;
+  filtered = DATA;
+  if(q) filtered = filtered.filter(function(d){return String(d.issue).indexOf(q)>=0;});
+  if(zf) filtered = filtered.filter(function(d){return d.zodiacs[6]===zf;});
+  var tt = filtered.length, pg = Math.ceil(tt/PS), st = (HP-1)*PS, en = Math.min(st+PS,tt);
+  var html = "";
+  for(var i=st;i<en;i++){
+    var d=filtered[i],ns=d.numbers,zs=d.zodiacs;
+    html += "<tr><td>"+d.issue+"</td><td>"+d.date+"</td><td>";
+    for(var j=0;j<6;j++) html += SPAN(ns[j],zs[j],22);
+    html += '</td><td><span style=display:inline-flex;flex-direction:column;align-items:center;gap:2px>';
+    html += BALL(ns[6],zs[6]);
+    html += "</span></td></tr>";
+  }
+  document.getElementById("tbody").innerHTML = html;
+  var ph = [];
+  ph.push('<button onclick=go('+(HP-1)+') '+(HP<=1?'disabled':'')+'>◀</button>');
+  for(var pp=Math.max(1,HP-2);pp<=Math.min(pg,HP+2);pp++) ph.push('<button onclick=go('+pp+') class='+(pp===HP?'active':'')+'>'+pp+'</button>');
+  ph.push('<button onclick=go('+(HP+1)+') '+(HP>=pg?'disabled':'')+'>▶</button>');
+  ph.push('<span style=font-size:11px;color:var(--text2);margin-left:4px>'+tt+'期</span>');
+  document.getElementById("pagination").innerHTML = ph.join("");
+}
+function SPAN(n,z,s){var c={1:"#e74c3c",2:"#e74c3c",7:"#e74c3c",8:"#e74c3c",12:"#e74c3c",13:"#e74c3c",18:"#e74c3c",19:"#e74c3c",23:"#e74c3c",24:"#e74c3c",29:"#e74c3c",30:"#e74c3c",34:"#e74c3c",35:"#e74c3c",40:"#e74c3c",45:"#e74c3c",46:"#e74c3c",3:"#3498db",4:"#3498db",9:"#3498db",10:"#3498db",14:"#3498db",15:"#3498db",20:"#3498db",25:"#3498db",26:"#3498db",31:"#3498db",36:"#3498db",37:"#3498db",41:"#3498db",42:"#3498db",47:"#3498db",48:"#3498db",5:"#2ecc71",6:"#2ecc71",11:"#2ecc71",16:"#2ecc71",17:"#2ecc71",21:"#2ecc71",22:"#2ecc71",27:"#2ecc71",28:"#2ecc71",32:"#2ecc71",33:"#2ecc71",38:"#2ecc71",39:"#2ecc71",43:"#2ecc71",44:"#2ecc71",49:"#2ecc71"}[n];return "<span style=display:inline-flex;flex-direction:column;align-items:center;margin:0 2px><span class=ball-sm style=background:"+c+">"+n+"</span><span style=font-size:11px;color:var(--text2)>"+z+"</span></span>";}
+function BALL(n,z){
+  var c={1:"#e74c3c",2:"#e74c3c",7:"#e74c3c",8:"#e74c3c",12:"#e74c3c",13:"#e74c3c",18:"#e74c3c",19:"#e74c3c",23:"#e74c3c",24:"#e74c3c",29:"#e74c3c",30:"#e74c3c",34:"#e74c3c",35:"#e74c3c",40:"#e74c3c",45:"#e74c3c",46:"#e74c3c",3:"#3498db",4:"#3498db",9:"#3498db",10:"#3498db",14:"#3498db",15:"#3498db",20:"#3498db",25:"#3498db",26:"#3498db",31:"#3498db",36:"#3498db",37:"#3498db",41:"#3498db",42:"#3498db",47:"#3498db",48:"#3498db",5:"#2ecc71",6:"#2ecc71",11:"#2ecc71",16:"#2ecc71",17:"#2ecc71",21:"#2ecc71",22:"#2ecc71",27:"#2ecc71",28:"#2ecc71",32:"#2ecc71",33:"#2ecc71",38:"#2ecc71",39:"#2ecc71",43:"#2ecc71",44:"#2ecc71",49:"#2ecc71"}[n];
+  return '<span class=ball-sm style=background:'+c+';border:2px solid var(--gold)>'+n+'</span><span style=font-size:13px;color:var(--gold);font-weight:600>'+z+'</span>';
+}
+var _zn = ["鼠","牛","虎","兔","龙","蛇","马","羊","猴","鸡","狗","猪"];
+function go(p){if(p<1)return;HP=p;render();}
+document.getElementById("search").addEventListener("input",function(){HP=1;render();});
+document.getElementById("filter").addEventListener("change",function(){HP=1;render();});
+render();
+</script>

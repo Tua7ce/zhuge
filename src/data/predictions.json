@@ -1,0 +1,341 @@
+{
+  "generated_at": "2026-07-29T13:57:23.523Z",
+  "nextIssue": 2026211,
+  "latestIssue": 2026210,
+  "totalPeriods": 210,
+  "latestSpecial": 49,
+  "latestZodiac": "马",
+  "topNumbers": [
+    {
+      "number": 1,
+      "score": 0.48277246063599877,
+      "zodiac": "马",
+      "color": "red"
+    },
+    {
+      "number": 6,
+      "score": 0.44693919196688753,
+      "zodiac": "牛",
+      "color": "green"
+    },
+    {
+      "number": 26,
+      "score": 0.4440897368799045,
+      "zodiac": "蛇",
+      "color": "blue"
+    },
+    {
+      "number": 41,
+      "score": 0.4343193911767183,
+      "zodiac": "虎",
+      "color": "blue"
+    },
+    {
+      "number": 16,
+      "score": 0.41069926513927024,
+      "zodiac": "兔",
+      "color": "green"
+    },
+    {
+      "number": 3,
+      "score": 0.408454456300469,
+      "zodiac": "龙",
+      "color": "blue"
+    },
+    {
+      "number": 34,
+      "score": 0.40391661287153724,
+      "zodiac": "鸡",
+      "color": "red"
+    }
+  ],
+  "topZodiacs": [
+    {
+      "zodiac": "牛",
+      "score": 0.3979173277551499
+    },
+    {
+      "zodiac": "鸡",
+      "score": 0.38620947823402285
+    },
+    {
+      "zodiac": "龙",
+      "score": 0.3737306358171548
+    },
+    {
+      "zodiac": "马",
+      "score": 0.36819248365095847
+    },
+    {
+      "zodiac": "羊",
+      "score": 0.35907096499381697
+    }
+  ],
+  "zodiacCombos": {
+    "3zod3num": [
+      {
+        "number": 6,
+        "score": 0.44693919196688753,
+        "zodiac": "牛",
+        "color": "green"
+      },
+      {
+        "number": 34,
+        "score": 0.40391661287153724,
+        "zodiac": "鸡",
+        "color": "red"
+      },
+      {
+        "number": 3,
+        "score": 0.408454456300469,
+        "zodiac": "龙",
+        "color": "blue"
+      }
+    ],
+    "4zod4num": [
+      {
+        "number": 6,
+        "score": 0.44693919196688753,
+        "zodiac": "牛",
+        "color": "green"
+      },
+      {
+        "number": 34,
+        "score": 0.40391661287153724,
+        "zodiac": "鸡",
+        "color": "red"
+      },
+      {
+        "number": 3,
+        "score": 0.408454456300469,
+        "zodiac": "龙",
+        "color": "blue"
+      },
+      {
+        "number": 1,
+        "score": 0.48277246063599877,
+        "zodiac": "马",
+        "color": "red"
+      }
+    ],
+    "5zod5num": [
+      {
+        "number": 6,
+        "score": 0.44693919196688753,
+        "zodiac": "牛",
+        "color": "green"
+      },
+      {
+        "number": 34,
+        "score": 0.40391661287153724,
+        "zodiac": "鸡",
+        "color": "red"
+      },
+      {
+        "number": 3,
+        "score": 0.408454456300469,
+        "zodiac": "龙",
+        "color": "blue"
+      },
+      {
+        "number": 1,
+        "score": 0.48277246063599877,
+        "zodiac": "马",
+        "color": "red"
+      },
+      {
+        "number": 24,
+        "score": 0.40374875555768347,
+        "zodiac": "羊",
+        "color": "red"
+      }
+    ]
+  },
+  "budgetStrategies": {
+    "100": [
+      {
+        "cost": 100,
+        "nums": 10,
+        "prob": "20.4",
+        "profit": 370,
+        "zodiacs": []
+      },
+      {
+        "cost": 100,
+        "nums": 10,
+        "prob": "20.4",
+        "profit": 370,
+        "zodiacs": [
+          "牛"
+        ]
+      },
+      {
+        "cost": 100,
+        "nums": 10,
+        "prob": "20.4",
+        "profit": 370,
+        "zodiacs": [
+          "牛",
+          "鸡"
+        ]
+      }
+    ],
+    "200": [
+      {
+        "cost": 210,
+        "nums": 21,
+        "prob": "42.9",
+        "profit": 260,
+        "zodiacs": [
+          "牛",
+          "鸡",
+          "龙",
+          "马"
+        ]
+      },
+      {
+        "cost": 200,
+        "nums": 20,
+        "prob": "40.8",
+        "profit": 270,
+        "zodiacs": []
+      },
+      {
+        "cost": 200,
+        "nums": 20,
+        "prob": "40.8",
+        "profit": 270,
+        "zodiacs": [
+          "牛"
+        ]
+      },
+      {
+        "cost": 200,
+        "nums": 20,
+        "prob": "40.8",
+        "profit": 270,
+        "zodiacs": [
+          "牛",
+          "鸡"
+        ]
+      },
+      {
+        "cost": 200,
+        "nums": 20,
+        "prob": "40.8",
+        "profit": 270,
+        "zodiacs": [
+          "牛",
+          "鸡",
+          "龙"
+        ]
+      }
+    ],
+    "300": [
+      {
+        "cost": 310,
+        "nums": 31,
+        "prob": "63.3",
+        "profit": 160,
+        "zodiacs": [
+          "牛",
+          "鸡",
+          "龙",
+          "马"
+        ]
+      },
+      {
+        "cost": 310,
+        "nums": 31,
+        "prob": "63.3",
+        "profit": 160,
+        "zodiacs": [
+          "牛",
+          "鸡",
+          "龙",
+          "马",
+          "羊"
+        ]
+      },
+      {
+        "cost": 300,
+        "nums": 30,
+        "prob": "61.2",
+        "profit": 170,
+        "zodiacs": []
+      },
+      {
+        "cost": 300,
+        "nums": 30,
+        "prob": "61.2",
+        "profit": 170,
+        "zodiacs": [
+          "牛"
+        ]
+      },
+      {
+        "cost": 300,
+        "nums": 30,
+        "prob": "61.2",
+        "profit": 170,
+        "zodiacs": [
+          "牛",
+          "鸡"
+        ]
+      }
+    ],
+    "400": [
+      {
+        "cost": 410,
+        "nums": 41,
+        "prob": "83.7",
+        "profit": 60,
+        "zodiacs": [
+          "牛",
+          "鸡",
+          "龙",
+          "马"
+        ]
+      },
+      {
+        "cost": 410,
+        "nums": 41,
+        "prob": "83.7",
+        "profit": 60,
+        "zodiacs": [
+          "牛",
+          "鸡",
+          "龙",
+          "马",
+          "羊"
+        ]
+      },
+      {
+        "cost": 400,
+        "nums": 40,
+        "prob": "81.6",
+        "profit": 70,
+        "zodiacs": []
+      },
+      {
+        "cost": 400,
+        "nums": 40,
+        "prob": "81.6",
+        "profit": 70,
+        "zodiacs": [
+          "牛"
+        ]
+      },
+      {
+        "cost": 400,
+        "nums": 40,
+        "prob": "81.6",
+        "profit": 70,
+        "zodiacs": [
+          "牛",
+          "鸡"
+        ]
+      }
+    ]
+  }
+}

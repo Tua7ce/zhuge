@@ -1,0 +1,63 @@
+---
+export interface Props {
+  title?: string;
+}
+const { title = "梦想版本-澳门六合彩" } = Astro.props;
+---
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{title}</title>
+<style>
+:root{--bg:#f8f6f0;--card:#fff;--border:#e8e4dc;--gold:#c9a959;--gold2:#b8943a;--red:#e74c3c;--blue:#3498db;--green:#2ecc71;--text:#2c2c2c;--text2:#888;--shadow:0 1px 8px rgba(0,0,0,.06)}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--text);font-size:16px;line-height:1.7}
+.container{max-width:800px;margin:0 auto;padding:12px}
+header{background:var(--card);padding:20px 16px 14px;border-radius:10px;margin-bottom:8px;box-shadow:var(--shadow);text-align:center;border-top:3px solid var(--gold)}
+header h1{font-size:22px;font-weight:700;letter-spacing:1px}
+header h1 span{color:var(--gold)}
+.card{background:var(--card);border-radius:8px;padding:14px;margin-bottom:8px;box-shadow:var(--shadow)}
+.card h2{font-size:16px;font-weight:600;margin-bottom:8px}.card h2 .ac{color:var(--gold)}
+.warn{text-align:center;padding:10px;margin:6px 0;background:#fff8f0;border-radius:6px;border:1px solid #f0e0c0;font-size:13px;color:#b8860b;line-height:1.6}
+.warn strong{color:var(--red)}
+.num-row{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin:8px 0}
+.num-item{display:flex;flex-direction:column;align-items:center;gap:2px;width:54px}
+.num-ball{width:46px;height:46px;line-height:46px;border-radius:50%;color:#fff;font-size:20px;font-weight:700;text-align:center;box-shadow:0 2px 6px rgba(0,0,0,.1)}
+.num-zod{font-size:15px;font-weight:600}
+.ev-row{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}
+.ev-item{flex:1;min-width:120px;padding:8px;background:#faf9f6;border-radius:6px;font-size:13px}
+.ev-item.hl{background:#fffdf5;border:1px solid var(--gold)}
+.ev-item .en{font-weight:600}
+.ev-item .ed{color:var(--text2);font-size:12px}
+.tab-bar{display:flex;gap:4px;margin-bottom:8px;background:var(--card);border-radius:8px;padding:3px;box-shadow:var(--shadow)}
+.tab-item{flex:1;padding:8px 4px;border-radius:6px;cursor:pointer;text-align:center;font-size:14px;font-weight:500;color:var(--text2);transition:all .2s}
+.tab-item:hover{background:#f5f3ee}
+.tab-item.active{background:var(--gold);color:#fff;font-weight:600}
+.panel{display:none}.panel.active{display:block}
+table.ht{width:100%;border-collapse:collapse;font-size:13px}
+.ht th{padding:6px 4px;text-align:center;font-weight:500;color:var(--text2);position:sticky;top:0;background:#faf9f6}
+.ht td{padding:5px 4px;text-align:center;border-bottom:1px solid #f0ede6}
+.ball-sm{display:inline-flex;width:22px;height:22px;line-height:22px;border-radius:50%;color:#fff;font-size:10px;font-weight:700;text-align:center;margin:0 1px}
+.zod-sm{font-size:12px;color:var(--text2);margin:0 2px}
+.hit{color:#27ae60;font-weight:600}.miss{color:var(--red);font-weight:600}
+.pg{display:flex;gap:3px;justify-content:center;margin-top:8px;flex-wrap:wrap;align-items:center}
+.pg button{padding:4px 8px;border-radius:4px;border:1px solid var(--border);cursor:pointer;font-size:12px;background:var(--card);color:var(--text2)}
+.pg button:hover{background:#f5f3ee}.pg button.active{background:var(--gold);color:#fff;border-color:var(--gold)}
+footer{text-align:center;padding:16px;color:var(--text2);font-size:12px}
+a{color:var(--gold);text-decoration:none}a:hover{text-decoration:underline}
+</style>
+</head>
+<body>
+<div class=container>
+<header>
+  <h1>梦想版本<span>-</span>澳门六合彩</h1>
+  <div style="font-size:13px;color:var(--text2);margin-top:4px">预测分析 · 命中追踪 · 预算策略</div>
+</header>
+<div class=warn><strong>⚠ 郑重提醒</strong>：赌博违法，切勿参与。本网站仅供兴趣爱好交流分享，所有预测不构成任何投注建议。请理性看待，远离赌博。</div>
+<slot />
+<footer>梦想版本-澳门六合彩 · 数据macaujc.com · 仅供娱乐 远离赌博</footer>
+</div>
+</body>
+</html>
