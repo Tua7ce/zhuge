@@ -1,341 +1,2671 @@
 {
-  "generated_at": "2026-07-29T13:57:23.523Z",
-  "nextIssue": 2026211,
-  "latestIssue": 2026210,
-  "totalPeriods": 210,
-  "latestSpecial": 49,
-  "latestZodiac": "马",
+  "generated_at": "2026-08-13T11:22:53.263Z",
+  "nextIssue": 2026224,
+  "latestIssue": 2026223,
+  "totalPeriods": 223,
+  "latestSpecial": 23,
+  "latestZodiac": "猴",
+  "branding": {
+    "siteName": "诸葛六合",
+    "mainStrategy": "诸葛策略",
+    "tianluoName": "天罗模式",
+    "huisuanName": "慧算模式",
+    "flowName": "三才定码"
+  },
+  "modelConfig": {
+    "zodiacWeights": {
+      "frequency": 0.35,
+      "omission": 0.3,
+      "recentTrend": 0.2,
+      "gap": 0.15
+    },
+    "numberWeights": {
+      "frequency": 0.36363636363636365,
+      "omission": 0.22727272727272727,
+      "conditional": 0.18181818181818182,
+      "recent": 0.09090909090909091,
+      "zodiac": 0.09090909090909091,
+      "tail": 0.045454545454545456
+    },
+    "zodiacFrequencyWindows": [
+      30,
+      50,
+      80,
+      100
+    ],
+    "numberFrequencyWindows": [
+      30,
+      50,
+      80,
+      100
+    ],
+    "calibrationMethod": "platt",
+    "calibrationSamples": 9457,
+    "activeConfigLabel": "default · number+frequency · w30/50/80/100",
+    "flowName": "三才定码"
+  },
+  "topZodiacs": [
+    {
+      "zodiac": "龙",
+      "score": 0.6074553224553223,
+      "frequencyScore": 0.5202020202020201,
+      "omissionScore": 0.6,
+      "recentTrendScore": 0.5,
+      "gapScore": 0.9692307692307691,
+      "omission": 18,
+      "probability": 0.1258
+    },
+    {
+      "zodiac": "马",
+      "score": 0.5923255813953487,
+      "frequencyScore": 0.9999999999999999,
+      "omissionScore": 0.06666666666666667,
+      "recentTrendScore": 1,
+      "gapScore": 0.14883720930232558,
+      "omission": 2,
+      "probability": 0.1226
+    },
+    {
+      "zodiac": "狗",
+      "score": 0.4782828282828283,
+      "frequencyScore": 0.0808080808080808,
+      "omissionScore": 1,
+      "recentTrendScore": 0,
+      "gapScore": 1,
+      "omission": 30,
+      "probability": 0.099
+    }
+  ],
   "topNumbers": [
     {
       "number": 1,
-      "score": 0.48277246063599877,
       "zodiac": "马",
-      "color": "red"
+      "color": "red",
+      "numberScore": 0.5527,
+      "calibratedProbability": 0.0267,
+      "components": {
+        "frequency": 0.8333,
+        "omission": 0.0667,
+        "conditional": 0.3684,
+        "recent": 0.75,
+        "zodiac": 0.5923,
+        "tail": 1
+      }
     },
     {
-      "number": 6,
-      "score": 0.44693919196688753,
-      "zodiac": "牛",
-      "color": "green"
-    },
-    {
-      "number": 26,
-      "score": 0.4440897368799045,
-      "zodiac": "蛇",
-      "color": "blue"
-    },
-    {
-      "number": 41,
-      "score": 0.4343193911767183,
-      "zodiac": "虎",
-      "color": "blue"
-    },
-    {
-      "number": 16,
-      "score": 0.41069926513927024,
-      "zodiac": "兔",
-      "color": "green"
+      "number": 39,
+      "zodiac": "龙",
+      "color": "green",
+      "numberScore": 0.4363,
+      "calibratedProbability": 0.0265,
+      "components": {
+        "frequency": 0.3083,
+        "omission": 0.7667,
+        "conditional": 0.3077,
+        "recent": 0,
+        "zodiac": 0.6075,
+        "tail": 0.8529
+      }
     },
     {
       "number": 3,
-      "score": 0.408454456300469,
       "zodiac": "龙",
-      "color": "blue"
+      "color": "blue",
+      "numberScore": 0.415,
+      "calibratedProbability": 0.0264,
+      "components": {
+        "frequency": 0.3542,
+        "omission": 0.6,
+        "conditional": 0.2692,
+        "recent": 0.15,
+        "zodiac": 0.6075,
+        "tail": 0.7059
+      }
     },
     {
-      "number": 34,
-      "score": 0.40391661287153724,
-      "zodiac": "鸡",
-      "color": "red"
-    }
-  ],
-  "topZodiacs": [
-    {
-      "zodiac": "牛",
-      "score": 0.3979173277551499
-    },
-    {
-      "zodiac": "鸡",
-      "score": 0.38620947823402285
-    },
-    {
-      "zodiac": "龙",
-      "score": 0.3737306358171548
-    },
-    {
+      "number": 25,
       "zodiac": "马",
-      "score": 0.36819248365095847
+      "color": "blue",
+      "numberScore": 0.3831,
+      "calibratedProbability": 0.0264,
+      "components": {
+        "frequency": 0.3458,
+        "omission": 0.6667,
+        "conditional": 0.1316,
+        "recent": 0,
+        "zodiac": 0.5923,
+        "tail": 0.6176
+      }
     },
     {
-      "zodiac": "羊",
-      "score": 0.35907096499381697
+      "number": 9,
+      "zodiac": "狗",
+      "color": "blue",
+      "numberScore": 0.3777,
+      "calibratedProbability": 0.0264,
+      "components": {
+        "frequency": 0.0375,
+        "omission": 1,
+        "conditional": 0.3,
+        "recent": 0,
+        "zodiac": 0.4783,
+        "tail": 0.8529
+      }
+    },
+    {
+      "number": 15,
+      "zodiac": "龙",
+      "color": "blue",
+      "numberScore": 0.3728,
+      "calibratedProbability": 0.0264,
+      "components": {
+        "frequency": 0.075,
+        "omission": 1,
+        "conditional": 0.1923,
+        "recent": 0,
+        "zodiac": 0.6075,
+        "tail": 0.6176
+      }
+    },
+    {
+      "number": 21,
+      "zodiac": "狗",
+      "color": "green",
+      "numberScore": 0.3662,
+      "calibratedProbability": 0.0263,
+      "components": {
+        "frequency": 0.0375,
+        "omission": 1,
+        "conditional": 0.2,
+        "recent": 0,
+        "zodiac": 0.4783,
+        "tail": 1
+      }
+    },
+    {
+      "number": 49,
+      "zodiac": "马",
+      "color": "green",
+      "numberScore": 0.3622,
+      "calibratedProbability": 0.0263,
+      "components": {
+        "frequency": 0.3542,
+        "omission": 0.4333,
+        "conditional": 0.1579,
+        "recent": 0.15,
+        "zodiac": 0.5923,
+        "tail": 0.8529
+      }
+    },
+    {
+      "number": 37,
+      "zodiac": "马",
+      "color": "blue",
+      "numberScore": 0.3579,
+      "calibratedProbability": 0.0263,
+      "components": {
+        "frequency": 0.4042,
+        "omission": 0.2333,
+        "conditional": 0.2105,
+        "recent": 0.4,
+        "zodiac": 0.5923,
+        "tail": 0.6471
+      }
+    },
+    {
+      "number": 27,
+      "zodiac": "龙",
+      "color": "green",
+      "numberScore": 0.3539,
+      "calibratedProbability": 0.0263,
+      "components": {
+        "frequency": 0,
+        "omission": 1,
+        "conditional": 0.2308,
+        "recent": 0,
+        "zodiac": 0.6075,
+        "tail": 0.6471
+      }
     }
   ],
-  "zodiacCombos": {
-    "3zod3num": [
-      {
-        "number": 6,
-        "score": 0.44693919196688753,
-        "zodiac": "牛",
-        "color": "green"
-      },
-      {
-        "number": 34,
-        "score": 0.40391661287153724,
-        "zodiac": "鸡",
-        "color": "red"
-      },
-      {
-        "number": 3,
-        "score": 0.408454456300469,
-        "zodiac": "龙",
-        "color": "blue"
-      }
-    ],
-    "4zod4num": [
-      {
-        "number": 6,
-        "score": 0.44693919196688753,
-        "zodiac": "牛",
-        "color": "green"
-      },
-      {
-        "number": 34,
-        "score": 0.40391661287153724,
-        "zodiac": "鸡",
-        "color": "red"
-      },
-      {
-        "number": 3,
-        "score": 0.408454456300469,
-        "zodiac": "龙",
-        "color": "blue"
-      },
-      {
-        "number": 1,
-        "score": 0.48277246063599877,
-        "zodiac": "马",
-        "color": "red"
-      }
-    ],
-    "5zod5num": [
-      {
-        "number": 6,
-        "score": 0.44693919196688753,
-        "zodiac": "牛",
-        "color": "green"
-      },
-      {
-        "number": 34,
-        "score": 0.40391661287153724,
-        "zodiac": "鸡",
-        "color": "red"
-      },
-      {
-        "number": 3,
-        "score": 0.408454456300469,
-        "zodiac": "龙",
-        "color": "blue"
-      },
-      {
-        "number": 1,
-        "score": 0.48277246063599877,
-        "zodiac": "马",
-        "color": "red"
-      },
-      {
-        "number": 24,
-        "score": 0.40374875555768347,
-        "zodiac": "羊",
-        "color": "red"
-      }
-    ]
+  "coreMetrics": {
+    "overall": {
+      "hitRate": 0.2435,
+      "sample": 193
+    },
+    "last10": {
+      "hitRate": 0.2,
+      "sample": 10
+    },
+    "last20": {
+      "hitRate": 0.3,
+      "sample": 20
+    },
+    "last30": {
+      "hitRate": 0.3667,
+      "sample": 30
+    },
+    "currentMissStreak": 2,
+    "maxMissStreak": 17,
+    "currentDrawdown": 230,
+    "maxDrawdown": 3630
   },
-  "budgetStrategies": {
-    "100": [
-      {
-        "cost": 100,
-        "nums": 10,
-        "prob": "20.4",
-        "profit": 370,
-        "zodiacs": []
+  "earnings": {
+    "suggestedStake": 100,
+    "numberCount": 10,
+    "perCode": 10,
+    "hitNet": 370,
+    "missLoss": -100,
+    "ev": 14.445,
+    "roi": 0.1864,
+    "pAny": 0.2435,
+    "pAnySource": "walk_forward"
+  },
+  "conclusion": {
+    "sentence": "当前生肖方向集中在龙、马、狗，结合候选池中的号码频次、遗漏与条件概率，模型最终筛选出10个核心号码。",
+    "hitRate": 0.2435,
+    "last30": 0.3667,
+    "last20": 0.3,
+    "last10": 0.2,
+    "currentMissStreak": 2,
+    "maxMissStreak": 17
+  },
+  "modelExplanation": {
+    "frequency": 0.1,
+    "omission": 0.1538,
+    "conditional": 0.0431,
+    "recent": 0.0132,
+    "zodiac": 0.0523,
+    "tail": 0.0354
+  },
+  "modes": {
+    "tianluo": {
+      "name": "天罗模式",
+      "picks": [
+        1,
+        39,
+        3,
+        25,
+        9,
+        15,
+        21,
+        49,
+        37,
+        27,
+        45,
+        33
+      ],
+      "numberCount": 12,
+      "perCode": 10,
+      "stake": 120,
+      "hitNet": 350,
+      "missLoss": -120,
+      "ev": 28.8141,
+      "pAny": 0.3166,
+      "note": "覆盖更多号码，历史命中率更高，但预算更高。"
+    },
+    "zhuge": {
+      "name": "诸葛策略",
+      "picks": [
+        1,
+        39,
+        3,
+        25,
+        9,
+        15,
+        21,
+        49,
+        37,
+        27
+      ],
+      "numberCount": 10,
+      "perCode": 10,
+      "stake": 100,
+      "hitNet": 370,
+      "missLoss": -100,
+      "ev": 14.445,
+      "pAny": 0.2435,
+      "note": "命中率、收益与预算之间较平衡，是当前默认主策略。"
+    },
+    "huisuan": {
+      "name": "慧算模式",
+      "picks": [
+        1,
+        39,
+        3,
+        25,
+        9,
+        15,
+        21,
+        49
+      ],
+      "numberCount": 8,
+      "perCode": 10,
+      "stake": 80,
+      "hitNet": 390,
+      "missLoss": -80,
+      "ev": 19.352,
+      "pAny": 0.2114,
+      "note": "先选8个核心号码，再根据历史表现动态决定是否补码。"
+    }
+  },
+  "budgets": {
+    "10": {
+      "fixed": {
+        "stake": 10,
+        "numberCount": 1,
+        "perCode": 10,
+        "numbers": [
+          1
+        ],
+        "pAny": 0.0267,
+        "hitNet": 460,
+        "missLoss": -10,
+        "ev": 2.5546,
+        "pAnySource": "calibrated_sum"
       },
-      {
-        "cost": 100,
-        "nums": 10,
-        "prob": "20.4",
-        "profit": 370,
-        "zodiacs": [
-          "牛"
-        ]
-      },
-      {
-        "cost": 100,
-        "nums": 10,
-        "prob": "20.4",
-        "profit": 370,
-        "zodiacs": [
-          "牛",
-          "鸡"
-        ]
+      "kelly": {
+        "stake": 50,
+        "numberCount": 5,
+        "perCode": 10,
+        "numbers": [
+          1,
+          39,
+          3,
+          25,
+          9
+        ],
+        "pAny": 0.1324,
+        "hitNet": 420,
+        "missLoss": -50,
+        "ev": 12.2106,
+        "pAnySource": "calibrated_sum"
       }
-    ],
-    "200": [
-      {
-        "cost": 210,
-        "nums": 21,
-        "prob": "42.9",
-        "profit": 260,
-        "zodiacs": [
-          "牛",
-          "鸡",
-          "龙",
-          "马"
-        ]
+    },
+    "20": {
+      "fixed": {
+        "stake": 20,
+        "numberCount": 2,
+        "perCode": 10,
+        "numbers": [
+          1,
+          39
+        ],
+        "pAny": 0.0532,
+        "hitNet": 450,
+        "missLoss": -20,
+        "ev": 4.9997,
+        "pAnySource": "calibrated_sum"
       },
-      {
-        "cost": 200,
-        "nums": 20,
-        "prob": "40.8",
-        "profit": 270,
-        "zodiacs": []
-      },
-      {
-        "cost": 200,
-        "nums": 20,
-        "prob": "40.8",
-        "profit": 270,
-        "zodiacs": [
-          "牛"
-        ]
-      },
-      {
-        "cost": 200,
-        "nums": 20,
-        "prob": "40.8",
-        "profit": 270,
-        "zodiacs": [
-          "牛",
-          "鸡"
-        ]
-      },
-      {
-        "cost": 200,
-        "nums": 20,
-        "prob": "40.8",
-        "profit": 270,
-        "zodiacs": [
-          "牛",
-          "鸡",
-          "龙"
-        ]
+      "kelly": {
+        "stake": 50,
+        "numberCount": 5,
+        "perCode": 10,
+        "numbers": [
+          1,
+          39,
+          3,
+          25,
+          9
+        ],
+        "pAny": 0.1324,
+        "hitNet": 420,
+        "missLoss": -50,
+        "ev": 12.2106,
+        "pAnySource": "calibrated_sum"
       }
-    ],
-    "300": [
-      {
-        "cost": 310,
-        "nums": 31,
-        "prob": "63.3",
-        "profit": 160,
-        "zodiacs": [
-          "牛",
-          "鸡",
-          "龙",
-          "马"
-        ]
+    },
+    "30": {
+      "fixed": {
+        "stake": 30,
+        "numberCount": 3,
+        "perCode": 10,
+        "numbers": [
+          1,
+          39,
+          3
+        ],
+        "pAny": 0.0796,
+        "hitNet": 440,
+        "missLoss": -30,
+        "ev": 7.4249,
+        "pAnySource": "calibrated_sum"
       },
-      {
-        "cost": 310,
-        "nums": 31,
-        "prob": "63.3",
-        "profit": 160,
-        "zodiacs": [
-          "牛",
-          "鸡",
-          "龙",
-          "马",
-          "羊"
-        ]
-      },
-      {
-        "cost": 300,
-        "nums": 30,
-        "prob": "61.2",
-        "profit": 170,
-        "zodiacs": []
-      },
-      {
-        "cost": 300,
-        "nums": 30,
-        "prob": "61.2",
-        "profit": 170,
-        "zodiacs": [
-          "牛"
-        ]
-      },
-      {
-        "cost": 300,
-        "nums": 30,
-        "prob": "61.2",
-        "profit": 170,
-        "zodiacs": [
-          "牛",
-          "鸡"
-        ]
+      "kelly": {
+        "stake": 50,
+        "numberCount": 5,
+        "perCode": 10,
+        "numbers": [
+          1,
+          39,
+          3,
+          25,
+          9
+        ],
+        "pAny": 0.1324,
+        "hitNet": 420,
+        "missLoss": -50,
+        "ev": 12.2106,
+        "pAnySource": "calibrated_sum"
       }
-    ],
-    "400": [
-      {
-        "cost": 410,
-        "nums": 41,
-        "prob": "83.7",
-        "profit": 60,
-        "zodiacs": [
-          "牛",
-          "鸡",
-          "龙",
-          "马"
-        ]
+    },
+    "40": {
+      "fixed": {
+        "stake": 40,
+        "numberCount": 4,
+        "perCode": 10,
+        "numbers": [
+          1,
+          39,
+          3,
+          25
+        ],
+        "pAny": 0.106,
+        "hitNet": 430,
+        "missLoss": -40,
+        "ev": 9.8203,
+        "pAnySource": "calibrated_sum"
       },
-      {
-        "cost": 410,
-        "nums": 41,
-        "prob": "83.7",
-        "profit": 60,
-        "zodiacs": [
-          "牛",
-          "鸡",
-          "龙",
-          "马",
-          "羊"
-        ]
-      },
-      {
-        "cost": 400,
-        "nums": 40,
-        "prob": "81.6",
-        "profit": 70,
-        "zodiacs": []
-      },
-      {
-        "cost": 400,
-        "nums": 40,
-        "prob": "81.6",
-        "profit": 70,
-        "zodiacs": [
-          "牛"
-        ]
-      },
-      {
-        "cost": 400,
-        "nums": 40,
-        "prob": "81.6",
-        "profit": 70,
-        "zodiacs": [
-          "牛",
-          "鸡"
-        ]
+      "kelly": {
+        "stake": 50,
+        "numberCount": 5,
+        "perCode": 10,
+        "numbers": [
+          1,
+          39,
+          3,
+          25,
+          9
+        ],
+        "pAny": 0.1324,
+        "hitNet": 420,
+        "missLoss": -50,
+        "ev": 12.2106,
+        "pAnySource": "calibrated_sum"
       }
-    ]
+    },
+    "50": {
+      "fixed": {
+        "stake": 50,
+        "numberCount": 5,
+        "perCode": 10,
+        "numbers": [
+          1,
+          39,
+          3,
+          25,
+          9
+        ],
+        "pAny": 0.1324,
+        "hitNet": 420,
+        "missLoss": -50,
+        "ev": 12.2106,
+        "pAnySource": "calibrated_sum"
+      },
+      "kelly": {
+        "stake": 50,
+        "numberCount": 5,
+        "perCode": 10,
+        "numbers": [
+          1,
+          39,
+          3,
+          25,
+          9
+        ],
+        "pAny": 0.1324,
+        "hitNet": 420,
+        "missLoss": -50,
+        "ev": 12.2106,
+        "pAnySource": "calibrated_sum"
+      }
+    },
+    "60": {
+      "fixed": {
+        "stake": 60,
+        "numberCount": 6,
+        "perCode": 10,
+        "numbers": [
+          1,
+          39,
+          3,
+          25,
+          9,
+          15
+        ],
+        "pAny": 0.1587,
+        "hitNet": 410,
+        "missLoss": -60,
+        "ev": 14.5964,
+        "pAnySource": "calibrated_sum"
+      },
+      "kelly": {
+        "stake": 50,
+        "numberCount": 5,
+        "perCode": 10,
+        "numbers": [
+          1,
+          39,
+          3,
+          25,
+          9
+        ],
+        "pAny": 0.1324,
+        "hitNet": 420,
+        "missLoss": -50,
+        "ev": 12.2106,
+        "pAnySource": "calibrated_sum"
+      }
+    },
+    "70": {
+      "fixed": {
+        "stake": 70,
+        "numberCount": 7,
+        "perCode": 10,
+        "numbers": [
+          1,
+          39,
+          3,
+          25,
+          9,
+          15,
+          21
+        ],
+        "pAny": 0.1851,
+        "hitNet": 400,
+        "missLoss": -70,
+        "ev": 16.976,
+        "pAnySource": "calibrated_sum"
+      },
+      "kelly": {
+        "stake": 50,
+        "numberCount": 5,
+        "perCode": 10,
+        "numbers": [
+          1,
+          39,
+          3,
+          25,
+          9
+        ],
+        "pAny": 0.1324,
+        "hitNet": 420,
+        "missLoss": -50,
+        "ev": 12.2106,
+        "pAnySource": "calibrated_sum"
+      }
+    },
+    "80": {
+      "fixed": {
+        "stake": 80,
+        "numberCount": 8,
+        "perCode": 10,
+        "numbers": [
+          1,
+          39,
+          3,
+          25,
+          9,
+          15,
+          21,
+          49
+        ],
+        "pAny": 0.2114,
+        "hitNet": 390,
+        "missLoss": -80,
+        "ev": 19.352,
+        "pAnySource": "calibrated_sum"
+      },
+      "kelly": {
+        "stake": 50,
+        "numberCount": 5,
+        "perCode": 10,
+        "numbers": [
+          1,
+          39,
+          3,
+          25,
+          9
+        ],
+        "pAny": 0.1324,
+        "hitNet": 420,
+        "missLoss": -50,
+        "ev": 12.2106,
+        "pAnySource": "calibrated_sum"
+      }
+    },
+    "90": {
+      "fixed": {
+        "stake": 90,
+        "numberCount": 9,
+        "perCode": 10,
+        "numbers": [
+          1,
+          39,
+          3,
+          25,
+          9,
+          15,
+          21,
+          49,
+          37
+        ],
+        "pAny": 0.2377,
+        "hitNet": 380,
+        "missLoss": -90,
+        "ev": 21.7238,
+        "pAnySource": "calibrated_sum"
+      },
+      "kelly": {
+        "stake": 100,
+        "numberCount": 10,
+        "perCode": 10,
+        "numbers": [
+          1,
+          39,
+          3,
+          25,
+          9,
+          15,
+          21,
+          49,
+          37,
+          27
+        ],
+        "pAny": 0.2435,
+        "hitNet": 370,
+        "missLoss": -100,
+        "ev": 14.445,
+        "pAnySource": "calibrated_sum"
+      }
+    },
+    "100": {
+      "fixed": {
+        "stake": 100,
+        "numberCount": 10,
+        "perCode": 10,
+        "numbers": [
+          1,
+          39,
+          3,
+          25,
+          9,
+          15,
+          21,
+          49,
+          37,
+          27
+        ],
+        "pAny": 0.2435,
+        "hitNet": 370,
+        "missLoss": -100,
+        "ev": 14.445,
+        "pAnySource": "walk_forward"
+      },
+      "kelly": {
+        "stake": 100,
+        "numberCount": 10,
+        "perCode": 10,
+        "numbers": [
+          1,
+          39,
+          3,
+          25,
+          9,
+          15,
+          21,
+          49,
+          37,
+          27
+        ],
+        "pAny": 0.2435,
+        "hitNet": 370,
+        "missLoss": -100,
+        "ev": 14.445,
+        "pAnySource": "calibrated_sum"
+      }
+    },
+    "110": {
+      "fixed": {
+        "stake": 110,
+        "numberCount": 11,
+        "perCode": 10,
+        "numbers": [
+          1,
+          39,
+          3,
+          25,
+          9,
+          15,
+          21,
+          49,
+          37,
+          27,
+          45
+        ],
+        "pAny": 0.2903,
+        "hitNet": 360,
+        "missLoss": -110,
+        "ev": 26.4597,
+        "pAnySource": "calibrated_sum"
+      },
+      "kelly": {
+        "stake": 100,
+        "numberCount": 10,
+        "perCode": 10,
+        "numbers": [
+          1,
+          39,
+          3,
+          25,
+          9,
+          15,
+          21,
+          49,
+          37,
+          27
+        ],
+        "pAny": 0.2435,
+        "hitNet": 370,
+        "missLoss": -100,
+        "ev": 14.445,
+        "pAnySource": "calibrated_sum"
+      }
+    },
+    "120": {
+      "fixed": {
+        "stake": 120,
+        "numberCount": 12,
+        "perCode": 10,
+        "numbers": [
+          1,
+          39,
+          3,
+          25,
+          9,
+          15,
+          21,
+          49,
+          37,
+          27,
+          45,
+          33
+        ],
+        "pAny": 0.3166,
+        "hitNet": 350,
+        "missLoss": -120,
+        "ev": 28.8141,
+        "pAnySource": "calibrated_sum"
+      },
+      "kelly": {
+        "stake": 110,
+        "numberCount": 11,
+        "perCode": 10,
+        "numbers": [
+          1,
+          39,
+          3,
+          25,
+          9,
+          15,
+          21,
+          49,
+          37,
+          27,
+          45
+        ],
+        "pAny": 0.2903,
+        "hitNet": 360,
+        "missLoss": -110,
+        "ev": 26.4597,
+        "pAnySource": "calibrated_sum"
+      }
+    },
+    "130": {
+      "fixed": {
+        "stake": 130,
+        "numberCount": 13,
+        "perCode": 10,
+        "numbers": [
+          1,
+          39,
+          3,
+          25,
+          9,
+          15,
+          21,
+          49,
+          37,
+          27,
+          45,
+          33,
+          13
+        ],
+        "pAny": 0.3429,
+        "hitNet": 340,
+        "missLoss": -130,
+        "ev": 31.1667,
+        "pAnySource": "calibrated_sum"
+      },
+      "kelly": {
+        "stake": 110,
+        "numberCount": 11,
+        "perCode": 10,
+        "numbers": [
+          1,
+          39,
+          3,
+          25,
+          9,
+          15,
+          21,
+          49,
+          37,
+          27,
+          45
+        ],
+        "pAny": 0.2903,
+        "hitNet": 360,
+        "missLoss": -110,
+        "ev": 26.4597,
+        "pAnySource": "calibrated_sum"
+      }
+    },
+    "140": {
+      "fixed": {
+        "stake": 140,
+        "numberCount": 14,
+        "perCode": 10,
+        "numbers": [
+          1,
+          39,
+          3,
+          25,
+          9,
+          15,
+          21,
+          49,
+          37,
+          27,
+          45,
+          33,
+          13,
+          26
+        ],
+        "pAny": 0.3698,
+        "hitNet": 330,
+        "missLoss": -140,
+        "ev": 33.795,
+        "pAnySource": "calibrated_sum"
+      },
+      "kelly": {
+        "stake": 110,
+        "numberCount": 11,
+        "perCode": 10,
+        "numbers": [
+          1,
+          39,
+          3,
+          25,
+          9,
+          15,
+          21,
+          49,
+          37,
+          27,
+          45
+        ],
+        "pAny": 0.2903,
+        "hitNet": 360,
+        "missLoss": -110,
+        "ev": 26.4597,
+        "pAnySource": "calibrated_sum"
+      }
+    },
+    "150": {
+      "fixed": {
+        "stake": 150,
+        "numberCount": 15,
+        "perCode": 10,
+        "numbers": [
+          1,
+          39,
+          3,
+          25,
+          9,
+          15,
+          21,
+          49,
+          37,
+          27,
+          45,
+          33,
+          13,
+          26,
+          8
+        ],
+        "pAny": 0.3962,
+        "hitNet": 320,
+        "missLoss": -150,
+        "ev": 36.2367,
+        "pAnySource": "calibrated_sum"
+      },
+      "kelly": {
+        "stake": 110,
+        "numberCount": 11,
+        "perCode": 10,
+        "numbers": [
+          1,
+          39,
+          3,
+          25,
+          9,
+          15,
+          21,
+          49,
+          37,
+          27,
+          45
+        ],
+        "pAny": 0.2903,
+        "hitNet": 360,
+        "missLoss": -110,
+        "ev": 26.4597,
+        "pAnySource": "calibrated_sum"
+      }
+    },
+    "160": {
+      "fixed": {
+        "stake": 160,
+        "numberCount": 16,
+        "perCode": 10,
+        "numbers": [
+          1,
+          39,
+          3,
+          25,
+          9,
+          15,
+          21,
+          49,
+          37,
+          27,
+          45,
+          33,
+          13,
+          26,
+          8,
+          19
+        ],
+        "pAny": 0.4227,
+        "hitNet": 310,
+        "missLoss": -160,
+        "ev": 38.6525,
+        "pAnySource": "calibrated_sum"
+      },
+      "kelly": {
+        "stake": 110,
+        "numberCount": 11,
+        "perCode": 10,
+        "numbers": [
+          1,
+          39,
+          3,
+          25,
+          9,
+          15,
+          21,
+          49,
+          37,
+          27,
+          45
+        ],
+        "pAny": 0.2903,
+        "hitNet": 360,
+        "missLoss": -110,
+        "ev": 26.4597,
+        "pAnySource": "calibrated_sum"
+      }
+    },
+    "170": {
+      "fixed": {
+        "stake": 170,
+        "numberCount": 17,
+        "perCode": 10,
+        "numbers": [
+          1,
+          39,
+          3,
+          25,
+          9,
+          15,
+          21,
+          49,
+          37,
+          27,
+          45,
+          33,
+          13,
+          26,
+          8,
+          19,
+          16
+        ],
+        "pAny": 0.4491,
+        "hitNet": 300,
+        "missLoss": -170,
+        "ev": 41.0636,
+        "pAnySource": "calibrated_sum"
+      },
+      "kelly": {
+        "stake": 120,
+        "numberCount": 12,
+        "perCode": 10,
+        "numbers": [
+          1,
+          39,
+          3,
+          25,
+          9,
+          15,
+          21,
+          49,
+          37,
+          27,
+          45,
+          33
+        ],
+        "pAny": 0.3166,
+        "hitNet": 350,
+        "missLoss": -120,
+        "ev": 28.8141,
+        "pAnySource": "calibrated_sum"
+      }
+    },
+    "180": {
+      "fixed": {
+        "stake": 180,
+        "numberCount": 18,
+        "perCode": 10,
+        "numbers": [
+          1,
+          39,
+          3,
+          25,
+          9,
+          15,
+          21,
+          49,
+          37,
+          27,
+          45,
+          33,
+          13,
+          26,
+          8,
+          19,
+          16,
+          31
+        ],
+        "pAny": 0.4755,
+        "hitNet": 290,
+        "missLoss": -180,
+        "ev": 43.4663,
+        "pAnySource": "calibrated_sum"
+      },
+      "kelly": {
+        "stake": 120,
+        "numberCount": 12,
+        "perCode": 10,
+        "numbers": [
+          1,
+          39,
+          3,
+          25,
+          9,
+          15,
+          21,
+          49,
+          37,
+          27,
+          45,
+          33
+        ],
+        "pAny": 0.3166,
+        "hitNet": 350,
+        "missLoss": -120,
+        "ev": 28.8141,
+        "pAnySource": "calibrated_sum"
+      }
+    },
+    "190": {
+      "fixed": {
+        "stake": 190,
+        "numberCount": 19,
+        "perCode": 10,
+        "numbers": [
+          1,
+          39,
+          3,
+          25,
+          9,
+          15,
+          21,
+          49,
+          37,
+          27,
+          45,
+          33,
+          13,
+          26,
+          8,
+          19,
+          16,
+          31,
+          41
+        ],
+        "pAny": 0.5018,
+        "hitNet": 280,
+        "missLoss": -190,
+        "ev": 45.8682,
+        "pAnySource": "calibrated_sum"
+      },
+      "kelly": {
+        "stake": 120,
+        "numberCount": 12,
+        "perCode": 10,
+        "numbers": [
+          1,
+          39,
+          3,
+          25,
+          9,
+          15,
+          21,
+          49,
+          37,
+          27,
+          45,
+          33
+        ],
+        "pAny": 0.3166,
+        "hitNet": 350,
+        "missLoss": -120,
+        "ev": 28.8141,
+        "pAnySource": "calibrated_sum"
+      }
+    },
+    "200": {
+      "fixed": {
+        "stake": 200,
+        "numberCount": 20,
+        "perCode": 10,
+        "numbers": [
+          1,
+          39,
+          3,
+          25,
+          9,
+          15,
+          21,
+          49,
+          37,
+          27,
+          45,
+          33,
+          13,
+          26,
+          8,
+          19,
+          16,
+          31,
+          41,
+          5
+        ],
+        "pAny": 0.5282,
+        "hitNet": 270,
+        "missLoss": -200,
+        "ev": 48.2639,
+        "pAnySource": "calibrated_sum"
+      },
+      "kelly": {
+        "stake": 120,
+        "numberCount": 12,
+        "perCode": 10,
+        "numbers": [
+          1,
+          39,
+          3,
+          25,
+          9,
+          15,
+          21,
+          49,
+          37,
+          27,
+          45,
+          33
+        ],
+        "pAny": 0.3166,
+        "hitNet": 350,
+        "missLoss": -120,
+        "ev": 28.8141,
+        "pAnySource": "calibrated_sum"
+      }
+    },
+    "210": {
+      "fixed": {
+        "stake": 210,
+        "numberCount": 21,
+        "perCode": 10,
+        "numbers": [
+          1,
+          39,
+          3,
+          25,
+          9,
+          15,
+          21,
+          49,
+          37,
+          27,
+          45,
+          33,
+          13,
+          26,
+          8,
+          19,
+          16,
+          31,
+          41,
+          5,
+          46
+        ],
+        "pAny": 0.5546,
+        "hitNet": 260,
+        "missLoss": -210,
+        "ev": 50.6497,
+        "pAnySource": "calibrated_sum"
+      },
+      "kelly": {
+        "stake": 120,
+        "numberCount": 12,
+        "perCode": 10,
+        "numbers": [
+          1,
+          39,
+          3,
+          25,
+          9,
+          15,
+          21,
+          49,
+          37,
+          27,
+          45,
+          33
+        ],
+        "pAny": 0.3166,
+        "hitNet": 350,
+        "missLoss": -120,
+        "ev": 28.8141,
+        "pAnySource": "calibrated_sum"
+      }
+    },
+    "220": {
+      "fixed": {
+        "stake": 220,
+        "numberCount": 22,
+        "perCode": 10,
+        "numbers": [
+          1,
+          39,
+          3,
+          25,
+          9,
+          15,
+          21,
+          49,
+          37,
+          27,
+          45,
+          33,
+          13,
+          26,
+          8,
+          19,
+          16,
+          31,
+          41,
+          5,
+          46,
+          6
+        ],
+        "pAny": 0.5809,
+        "hitNet": 250,
+        "missLoss": -220,
+        "ev": 53.0263,
+        "pAnySource": "calibrated_sum"
+      },
+      "kelly": {
+        "stake": 120,
+        "numberCount": 12,
+        "perCode": 10,
+        "numbers": [
+          1,
+          39,
+          3,
+          25,
+          9,
+          15,
+          21,
+          49,
+          37,
+          27,
+          45,
+          33
+        ],
+        "pAny": 0.3166,
+        "hitNet": 350,
+        "missLoss": -120,
+        "ev": 28.8141,
+        "pAnySource": "calibrated_sum"
+      }
+    },
+    "230": {
+      "fixed": {
+        "stake": 230,
+        "numberCount": 23,
+        "perCode": 10,
+        "numbers": [
+          1,
+          39,
+          3,
+          25,
+          9,
+          15,
+          21,
+          49,
+          37,
+          27,
+          45,
+          33,
+          13,
+          26,
+          8,
+          19,
+          16,
+          31,
+          41,
+          5,
+          46,
+          6,
+          36
+        ],
+        "pAny": 0.6072,
+        "hitNet": 240,
+        "missLoss": -230,
+        "ev": 55.3967,
+        "pAnySource": "calibrated_sum"
+      },
+      "kelly": {
+        "stake": 130,
+        "numberCount": 13,
+        "perCode": 10,
+        "numbers": [
+          1,
+          39,
+          3,
+          25,
+          9,
+          15,
+          21,
+          49,
+          37,
+          27,
+          45,
+          33,
+          13
+        ],
+        "pAny": 0.3429,
+        "hitNet": 340,
+        "missLoss": -130,
+        "ev": 31.1667,
+        "pAnySource": "calibrated_sum"
+      }
+    },
+    "240": {
+      "fixed": {
+        "stake": 240,
+        "numberCount": 24,
+        "perCode": 10,
+        "numbers": [
+          1,
+          39,
+          3,
+          25,
+          9,
+          15,
+          21,
+          49,
+          37,
+          27,
+          45,
+          33,
+          13,
+          26,
+          8,
+          19,
+          16,
+          31,
+          41,
+          5,
+          46,
+          6,
+          36,
+          47
+        ],
+        "pAny": 0.6335,
+        "hitNet": 230,
+        "missLoss": -240,
+        "ev": 57.7633,
+        "pAnySource": "calibrated_sum"
+      },
+      "kelly": {
+        "stake": 130,
+        "numberCount": 13,
+        "perCode": 10,
+        "numbers": [
+          1,
+          39,
+          3,
+          25,
+          9,
+          15,
+          21,
+          49,
+          37,
+          27,
+          45,
+          33,
+          13
+        ],
+        "pAny": 0.3429,
+        "hitNet": 340,
+        "missLoss": -130,
+        "ev": 31.1667,
+        "pAnySource": "calibrated_sum"
+      }
+    },
+    "250": {
+      "fixed": {
+        "stake": 250,
+        "numberCount": 25,
+        "perCode": 10,
+        "numbers": [
+          1,
+          39,
+          3,
+          25,
+          9,
+          15,
+          21,
+          49,
+          37,
+          27,
+          45,
+          33,
+          13,
+          26,
+          8,
+          19,
+          16,
+          31,
+          41,
+          5,
+          46,
+          6,
+          36,
+          47,
+          11
+        ],
+        "pAny": 0.6598,
+        "hitNet": 220,
+        "missLoss": -250,
+        "ev": 60.1294,
+        "pAnySource": "calibrated_sum"
+      },
+      "kelly": {
+        "stake": 130,
+        "numberCount": 13,
+        "perCode": 10,
+        "numbers": [
+          1,
+          39,
+          3,
+          25,
+          9,
+          15,
+          21,
+          49,
+          37,
+          27,
+          45,
+          33,
+          13
+        ],
+        "pAny": 0.3429,
+        "hitNet": 340,
+        "missLoss": -130,
+        "ev": 31.1667,
+        "pAnySource": "calibrated_sum"
+      }
+    },
+    "260": {
+      "fixed": {
+        "stake": 260,
+        "numberCount": 26,
+        "perCode": 10,
+        "numbers": [
+          1,
+          39,
+          3,
+          25,
+          9,
+          15,
+          21,
+          49,
+          37,
+          27,
+          45,
+          33,
+          13,
+          26,
+          8,
+          19,
+          16,
+          31,
+          41,
+          5,
+          46,
+          6,
+          36,
+          47,
+          11,
+          7
+        ],
+        "pAny": 0.6862,
+        "hitNet": 210,
+        "missLoss": -260,
+        "ev": 62.4934,
+        "pAnySource": "calibrated_sum"
+      },
+      "kelly": {
+        "stake": 130,
+        "numberCount": 13,
+        "perCode": 10,
+        "numbers": [
+          1,
+          39,
+          3,
+          25,
+          9,
+          15,
+          21,
+          49,
+          37,
+          27,
+          45,
+          33,
+          13
+        ],
+        "pAny": 0.3429,
+        "hitNet": 340,
+        "missLoss": -130,
+        "ev": 31.1667,
+        "pAnySource": "calibrated_sum"
+      }
+    },
+    "270": {
+      "fixed": {
+        "stake": 270,
+        "numberCount": 27,
+        "perCode": 10,
+        "numbers": [
+          1,
+          39,
+          3,
+          25,
+          9,
+          15,
+          21,
+          49,
+          37,
+          27,
+          45,
+          33,
+          13,
+          26,
+          8,
+          19,
+          16,
+          31,
+          41,
+          5,
+          46,
+          6,
+          36,
+          47,
+          11,
+          7,
+          14
+        ],
+        "pAny": 0.7125,
+        "hitNet": 200,
+        "missLoss": -270,
+        "ev": 64.8568,
+        "pAnySource": "calibrated_sum"
+      },
+      "kelly": {
+        "stake": 130,
+        "numberCount": 13,
+        "perCode": 10,
+        "numbers": [
+          1,
+          39,
+          3,
+          25,
+          9,
+          15,
+          21,
+          49,
+          37,
+          27,
+          45,
+          33,
+          13
+        ],
+        "pAny": 0.3429,
+        "hitNet": 340,
+        "missLoss": -130,
+        "ev": 31.1667,
+        "pAnySource": "calibrated_sum"
+      }
+    },
+    "280": {
+      "fixed": {
+        "stake": 280,
+        "numberCount": 28,
+        "perCode": 10,
+        "numbers": [
+          1,
+          39,
+          3,
+          25,
+          9,
+          15,
+          21,
+          49,
+          37,
+          27,
+          45,
+          33,
+          13,
+          26,
+          8,
+          19,
+          16,
+          31,
+          41,
+          5,
+          46,
+          6,
+          36,
+          47,
+          11,
+          7,
+          14,
+          29
+        ],
+        "pAny": 0.7388,
+        "hitNet": 190,
+        "missLoss": -280,
+        "ev": 67.2201,
+        "pAnySource": "calibrated_sum"
+      },
+      "kelly": {
+        "stake": 130,
+        "numberCount": 13,
+        "perCode": 10,
+        "numbers": [
+          1,
+          39,
+          3,
+          25,
+          9,
+          15,
+          21,
+          49,
+          37,
+          27,
+          45,
+          33,
+          13
+        ],
+        "pAny": 0.3429,
+        "hitNet": 340,
+        "missLoss": -130,
+        "ev": 31.1667,
+        "pAnySource": "calibrated_sum"
+      }
+    },
+    "290": {
+      "fixed": {
+        "stake": 290,
+        "numberCount": 29,
+        "perCode": 10,
+        "numbers": [
+          1,
+          39,
+          3,
+          25,
+          9,
+          15,
+          21,
+          49,
+          37,
+          27,
+          45,
+          33,
+          13,
+          26,
+          8,
+          19,
+          16,
+          31,
+          41,
+          5,
+          46,
+          6,
+          36,
+          47,
+          11,
+          7,
+          14,
+          29,
+          10
+        ],
+        "pAny": 0.7651,
+        "hitNet": 180,
+        "missLoss": -290,
+        "ev": 69.5812,
+        "pAnySource": "calibrated_sum"
+      },
+      "kelly": {
+        "stake": 130,
+        "numberCount": 13,
+        "perCode": 10,
+        "numbers": [
+          1,
+          39,
+          3,
+          25,
+          9,
+          15,
+          21,
+          49,
+          37,
+          27,
+          45,
+          33,
+          13
+        ],
+        "pAny": 0.3429,
+        "hitNet": 340,
+        "missLoss": -130,
+        "ev": 31.1667,
+        "pAnySource": "calibrated_sum"
+      }
+    },
+    "300": {
+      "fixed": {
+        "stake": 300,
+        "numberCount": 30,
+        "perCode": 10,
+        "numbers": [
+          1,
+          39,
+          3,
+          25,
+          9,
+          15,
+          21,
+          49,
+          37,
+          27,
+          45,
+          33,
+          13,
+          26,
+          8,
+          19,
+          16,
+          31,
+          41,
+          5,
+          46,
+          6,
+          36,
+          47,
+          11,
+          7,
+          14,
+          29,
+          10,
+          43
+        ],
+        "pAny": 0.7914,
+        "hitNet": 170,
+        "missLoss": -300,
+        "ev": 71.9418,
+        "pAnySource": "calibrated_sum"
+      },
+      "kelly": {
+        "stake": 130,
+        "numberCount": 13,
+        "perCode": 10,
+        "numbers": [
+          1,
+          39,
+          3,
+          25,
+          9,
+          15,
+          21,
+          49,
+          37,
+          27,
+          45,
+          33,
+          13
+        ],
+        "pAny": 0.3429,
+        "hitNet": 340,
+        "missLoss": -130,
+        "ev": 31.1667,
+        "pAnySource": "calibrated_sum"
+      }
+    },
+    "310": {
+      "fixed": {
+        "stake": 310,
+        "numberCount": 31,
+        "perCode": 10,
+        "numbers": [
+          1,
+          39,
+          3,
+          25,
+          9,
+          15,
+          21,
+          49,
+          37,
+          27,
+          45,
+          33,
+          13,
+          26,
+          8,
+          19,
+          16,
+          31,
+          41,
+          5,
+          46,
+          6,
+          36,
+          47,
+          11,
+          7,
+          14,
+          29,
+          10,
+          43,
+          28
+        ],
+        "pAny": 0.8177,
+        "hitNet": 160,
+        "missLoss": -310,
+        "ev": 74.2978,
+        "pAnySource": "calibrated_sum"
+      },
+      "kelly": {
+        "stake": 130,
+        "numberCount": 13,
+        "perCode": 10,
+        "numbers": [
+          1,
+          39,
+          3,
+          25,
+          9,
+          15,
+          21,
+          49,
+          37,
+          27,
+          45,
+          33,
+          13
+        ],
+        "pAny": 0.3429,
+        "hitNet": 340,
+        "missLoss": -130,
+        "ev": 31.1667,
+        "pAnySource": "calibrated_sum"
+      }
+    },
+    "320": {
+      "fixed": {
+        "stake": 320,
+        "numberCount": 32,
+        "perCode": 10,
+        "numbers": [
+          1,
+          39,
+          3,
+          25,
+          9,
+          15,
+          21,
+          49,
+          37,
+          27,
+          45,
+          33,
+          13,
+          26,
+          8,
+          19,
+          16,
+          31,
+          41,
+          5,
+          46,
+          6,
+          36,
+          47,
+          11,
+          7,
+          14,
+          29,
+          10,
+          43,
+          28,
+          24
+        ],
+        "pAny": 0.8439,
+        "hitNet": 150,
+        "missLoss": -320,
+        "ev": 76.652,
+        "pAnySource": "calibrated_sum"
+      },
+      "kelly": {
+        "stake": 130,
+        "numberCount": 13,
+        "perCode": 10,
+        "numbers": [
+          1,
+          39,
+          3,
+          25,
+          9,
+          15,
+          21,
+          49,
+          37,
+          27,
+          45,
+          33,
+          13
+        ],
+        "pAny": 0.3429,
+        "hitNet": 340,
+        "missLoss": -130,
+        "ev": 31.1667,
+        "pAnySource": "calibrated_sum"
+      }
+    },
+    "330": {
+      "fixed": {
+        "stake": 330,
+        "numberCount": 33,
+        "perCode": 10,
+        "numbers": [
+          1,
+          39,
+          3,
+          25,
+          9,
+          15,
+          21,
+          49,
+          37,
+          27,
+          45,
+          33,
+          13,
+          26,
+          8,
+          19,
+          16,
+          31,
+          41,
+          5,
+          46,
+          6,
+          36,
+          47,
+          11,
+          7,
+          14,
+          29,
+          10,
+          43,
+          28,
+          24,
+          22
+        ],
+        "pAny": 0.8702,
+        "hitNet": 140,
+        "missLoss": -330,
+        "ev": 79.0053,
+        "pAnySource": "calibrated_sum"
+      },
+      "kelly": {
+        "stake": 130,
+        "numberCount": 13,
+        "perCode": 10,
+        "numbers": [
+          1,
+          39,
+          3,
+          25,
+          9,
+          15,
+          21,
+          49,
+          37,
+          27,
+          45,
+          33,
+          13
+        ],
+        "pAny": 0.3429,
+        "hitNet": 340,
+        "missLoss": -130,
+        "ev": 31.1667,
+        "pAnySource": "calibrated_sum"
+      }
+    },
+    "340": {
+      "fixed": {
+        "stake": 340,
+        "numberCount": 34,
+        "perCode": 10,
+        "numbers": [
+          1,
+          39,
+          3,
+          25,
+          9,
+          15,
+          21,
+          49,
+          37,
+          27,
+          45,
+          33,
+          13,
+          26,
+          8,
+          19,
+          16,
+          31,
+          41,
+          5,
+          46,
+          6,
+          36,
+          47,
+          11,
+          7,
+          14,
+          29,
+          10,
+          43,
+          28,
+          24,
+          22,
+          44
+        ],
+        "pAny": 0.8965,
+        "hitNet": 130,
+        "missLoss": -340,
+        "ev": 81.3574,
+        "pAnySource": "calibrated_sum"
+      },
+      "kelly": {
+        "stake": 130,
+        "numberCount": 13,
+        "perCode": 10,
+        "numbers": [
+          1,
+          39,
+          3,
+          25,
+          9,
+          15,
+          21,
+          49,
+          37,
+          27,
+          45,
+          33,
+          13
+        ],
+        "pAny": 0.3429,
+        "hitNet": 340,
+        "missLoss": -130,
+        "ev": 31.1667,
+        "pAnySource": "calibrated_sum"
+      }
+    },
+    "350": {
+      "fixed": {
+        "stake": 350,
+        "numberCount": 35,
+        "perCode": 10,
+        "numbers": [
+          1,
+          39,
+          3,
+          25,
+          9,
+          15,
+          21,
+          49,
+          37,
+          27,
+          45,
+          33,
+          13,
+          26,
+          8,
+          19,
+          16,
+          31,
+          41,
+          5,
+          46,
+          6,
+          36,
+          47,
+          11,
+          7,
+          14,
+          29,
+          10,
+          43,
+          28,
+          24,
+          22,
+          44,
+          23
+        ],
+        "pAny": 0.9228,
+        "hitNet": 120,
+        "missLoss": -350,
+        "ev": 83.7082,
+        "pAnySource": "calibrated_sum"
+      },
+      "kelly": {
+        "stake": 130,
+        "numberCount": 13,
+        "perCode": 10,
+        "numbers": [
+          1,
+          39,
+          3,
+          25,
+          9,
+          15,
+          21,
+          49,
+          37,
+          27,
+          45,
+          33,
+          13
+        ],
+        "pAny": 0.3429,
+        "hitNet": 340,
+        "missLoss": -130,
+        "ev": 31.1667,
+        "pAnySource": "calibrated_sum"
+      }
+    },
+    "360": {
+      "fixed": {
+        "stake": 360,
+        "numberCount": 36,
+        "perCode": 10,
+        "numbers": [
+          1,
+          39,
+          3,
+          25,
+          9,
+          15,
+          21,
+          49,
+          37,
+          27,
+          45,
+          33,
+          13,
+          26,
+          8,
+          19,
+          16,
+          31,
+          41,
+          5,
+          46,
+          6,
+          36,
+          47,
+          11,
+          7,
+          14,
+          29,
+          10,
+          43,
+          28,
+          24,
+          22,
+          44,
+          23,
+          32
+        ],
+        "pAny": 0.9491,
+        "hitNet": 110,
+        "missLoss": -360,
+        "ev": 86.056,
+        "pAnySource": "calibrated_sum"
+      },
+      "kelly": {
+        "stake": 130,
+        "numberCount": 13,
+        "perCode": 10,
+        "numbers": [
+          1,
+          39,
+          3,
+          25,
+          9,
+          15,
+          21,
+          49,
+          37,
+          27,
+          45,
+          33,
+          13
+        ],
+        "pAny": 0.3429,
+        "hitNet": 340,
+        "missLoss": -130,
+        "ev": 31.1667,
+        "pAnySource": "calibrated_sum"
+      }
+    },
+    "370": {
+      "fixed": {
+        "stake": 370,
+        "numberCount": 37,
+        "perCode": 10,
+        "numbers": [
+          1,
+          39,
+          3,
+          25,
+          9,
+          15,
+          21,
+          49,
+          37,
+          27,
+          45,
+          33,
+          13,
+          26,
+          8,
+          19,
+          16,
+          31,
+          41,
+          5,
+          46,
+          6,
+          36,
+          47,
+          11,
+          7,
+          14,
+          29,
+          10,
+          43,
+          28,
+          24,
+          22,
+          44,
+          23,
+          32,
+          48
+        ],
+        "pAny": 0.9753,
+        "hitNet": 100,
+        "missLoss": -370,
+        "ev": 88.4008,
+        "pAnySource": "calibrated_sum"
+      },
+      "kelly": {
+        "stake": 130,
+        "numberCount": 13,
+        "perCode": 10,
+        "numbers": [
+          1,
+          39,
+          3,
+          25,
+          9,
+          15,
+          21,
+          49,
+          37,
+          27,
+          45,
+          33,
+          13
+        ],
+        "pAny": 0.3429,
+        "hitNet": 340,
+        "missLoss": -130,
+        "ev": 31.1667,
+        "pAnySource": "calibrated_sum"
+      }
+    },
+    "380": {
+      "fixed": {
+        "stake": 380,
+        "numberCount": 38,
+        "perCode": 10,
+        "numbers": [
+          1,
+          39,
+          3,
+          25,
+          9,
+          15,
+          21,
+          49,
+          37,
+          27,
+          45,
+          33,
+          13,
+          26,
+          8,
+          19,
+          16,
+          31,
+          41,
+          5,
+          46,
+          6,
+          36,
+          47,
+          11,
+          7,
+          14,
+          29,
+          10,
+          43,
+          28,
+          24,
+          22,
+          44,
+          23,
+          32,
+          48,
+          18
+        ],
+        "pAny": 1,
+        "hitNet": 90,
+        "missLoss": -380,
+        "ev": 90,
+        "pAnySource": "calibrated_sum"
+      },
+      "kelly": {
+        "stake": 130,
+        "numberCount": 13,
+        "perCode": 10,
+        "numbers": [
+          1,
+          39,
+          3,
+          25,
+          9,
+          15,
+          21,
+          49,
+          37,
+          27,
+          45,
+          33,
+          13
+        ],
+        "pAny": 0.3429,
+        "hitNet": 340,
+        "missLoss": -130,
+        "ev": 31.1667,
+        "pAnySource": "calibrated_sum"
+      }
+    },
+    "390": {
+      "fixed": {
+        "stake": 390,
+        "numberCount": 39,
+        "perCode": 10,
+        "numbers": [
+          1,
+          39,
+          3,
+          25,
+          9,
+          15,
+          21,
+          49,
+          37,
+          27,
+          45,
+          33,
+          13,
+          26,
+          8,
+          19,
+          16,
+          31,
+          41,
+          5,
+          46,
+          6,
+          36,
+          47,
+          11,
+          7,
+          14,
+          29,
+          10,
+          43,
+          28,
+          24,
+          22,
+          44,
+          23,
+          32,
+          48,
+          18,
+          4
+        ],
+        "pAny": 1,
+        "hitNet": 80,
+        "missLoss": -390,
+        "ev": 80,
+        "pAnySource": "calibrated_sum"
+      },
+      "kelly": {
+        "stake": 130,
+        "numberCount": 13,
+        "perCode": 10,
+        "numbers": [
+          1,
+          39,
+          3,
+          25,
+          9,
+          15,
+          21,
+          49,
+          37,
+          27,
+          45,
+          33,
+          13
+        ],
+        "pAny": 0.3429,
+        "hitNet": 340,
+        "missLoss": -130,
+        "ev": 31.1667,
+        "pAnySource": "calibrated_sum"
+      }
+    },
+    "400": {
+      "fixed": {
+        "stake": 400,
+        "numberCount": 40,
+        "perCode": 10,
+        "numbers": [
+          1,
+          39,
+          3,
+          25,
+          9,
+          15,
+          21,
+          49,
+          37,
+          27,
+          45,
+          33,
+          13,
+          26,
+          8,
+          19,
+          16,
+          31,
+          41,
+          5,
+          46,
+          6,
+          36,
+          47,
+          11,
+          7,
+          14,
+          29,
+          10,
+          43,
+          28,
+          24,
+          22,
+          44,
+          23,
+          32,
+          48,
+          18,
+          4,
+          2
+        ],
+        "pAny": 1,
+        "hitNet": 70,
+        "missLoss": -400,
+        "ev": 70,
+        "pAnySource": "calibrated_sum"
+      },
+      "kelly": {
+        "stake": 130,
+        "numberCount": 13,
+        "perCode": 10,
+        "numbers": [
+          1,
+          39,
+          3,
+          25,
+          9,
+          15,
+          21,
+          49,
+          37,
+          27,
+          45,
+          33,
+          13
+        ],
+        "pAny": 0.3429,
+        "hitNet": 340,
+        "missLoss": -130,
+        "ev": 31.1667,
+        "pAnySource": "calibrated_sum"
+      }
+    }
+  },
+  "kelly": {
+    "0.1": {
+      "fraction": 0.1,
+      "stake": 100,
+      "numberCount": 10,
+      "hitNet": 370,
+      "missLoss": -100,
+      "ev": 14.445
+    },
+    "0.25": {
+      "fraction": 0.25,
+      "stake": 100,
+      "numberCount": 10,
+      "hitNet": 370,
+      "missLoss": -100,
+      "ev": 14.445
+    },
+    "0.5": {
+      "fraction": 0.5,
+      "stake": 100,
+      "numberCount": 10,
+      "hitNet": 370,
+      "missLoss": -100,
+      "ev": 14.445
+    }
   }
 }

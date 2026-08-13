@@ -1,0 +1,74 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { readFileSync } from "fs";
+let records = [];
+try { records = JSON.parse(readFileSync("src/data/prediction-history.json", "utf-8")).records || []; } catch (e) { records = []; }
+let core = {};
+try { core = JSON.parse(readFileSync("src/data/predictions.json", "utf-8")).coreMetrics || {}; } catch (e) { core = {}; }
+records = records.slice().reverse();
+function pad(n) { return ("0" + n).slice(-2); }
+function color(n) {
+  const r = [1,2,7,8,12,13,18,19,23,24,29,30,34,35,40,45,46];
+  const b = [3,4,9,10,14,15,20,25,26,31,36,37,41,42,47,48];
+  if (r.indexOf(n) >= 0) return "red";
+  if (b.indexOf(n) >= 0) return "blue";
+  return "green";
+}
+const nc = { red: "#c0392b", blue: "#2e6c96", green: "#3a8a4e" };
+---
+<Layout title="命中验证 - 诸葛六合">
+  <div class=card>
+    <h2>命中验证 <span class=ac>{records.length}期 · 诸葛策略 · 三才定码</span></h2>
+    <div class=summary-grid>
+      <div class="summary-box hl"><div class=v>{core.currentMissStreak ?? "-"}期</div><div class=k>当前连续不中</div></div>
+      <div class=summary-box><div class=v>{core.maxMissStreak ?? "-"}期</div><div class=k>最大连续不中</div></div>
+      <div class=summary-box><div class=v>{core.overall ? ((core.overall.hitRate || 0) * 100).toFixed(2) + "%" : "-"}</div><div class=k>历史命中率 · 基于{core.overall ? core.overall.sample : 0}次历史模拟</div></div>
+      <div class=summary-box><div class=v>{core.last10 ? ((core.last10.hitRate || 0) * 100).toFixed(2) + "%" : "-"}</div><div class=k>最近10期</div></div>
+    </div>
+    <div class=footnote>以上均为历史回测结果，仅用于展示模型过去表现，不代表未来结果。</div>
+    <table class=ht>
+      <thead><tr><th>期号</th><th>生肖方向</th><th>本期10码</th><th>历史参考概率</th><th>实际特码</th><th>结果</th><th>投入</th><th>收益</th><th>累计资金</th></tr></thead>
+      <tbody id=tbody></tbody>
+    </table>
+    <div class=pg id=pagination></div>
+  </div>
+</Layout>
+<script is:inline define:vars={{ PRED_RECORDS: records }}>
+var DATA = PRED_RECORDS;
+var NC = { red: "#c0392b", blue: "#2e6c96", green: "#3a8a4e" };
+var PS = 15, HP = 1;
+function pad(n) { return ("0" + n).slice(-2); }
+function color(n) {
+  var r = [1,2,7,8,12,13,18,19,23,24,29,30,34,35,40,45,46];
+  var b = [3,4,9,10,14,15,20,25,26,31,36,37,41,42,47,48];
+  if (r.indexOf(n) >= 0) return "red";
+  if (b.indexOf(n) >= 0) return "blue";
+  return "green";
+}
+function ball(n) { return '<span class="ball-sm" style="background:' + NC[color(n)] + '">' + pad(n) + "</span>"; }
+function pct(v) { return ((v || 0) * 100).toFixed(2) + "%"; }
+function render() {
+  var tt = DATA.length, pg = Math.ceil(tt / PS), st = (HP - 1) * PS, en = Math.min(st + PS, tt);
+  var html = "";
+  for (var i = st; i < en; i++) {
+    var r = DATA[i];
+    html += "<tr><td>" + r.issue + "</td><td>" + (r.topZodiacs || []).join("、") + "</td><td>" +
+      (r.topNumbers || []).map(ball).join("") + "</td><td>" + pct(r.predictedProbability) + "</td><td>" +
+      pad(r.actualSpecial) + "</td><td class='" + (r.hit ? "hit" : "miss") + "'>" + (r.hit ? "命中" : "未中") + "</td><td>" +
+      r.stake + "元</td><td class='" + (r.profit > 0 ? "hit" : "miss") + "'>" + (r.profit > 0 ? "+" : "") + r.profit + "元</td><td>" +
+      r.cumulativeBankroll + "元</td></tr>";
+  }
+  document.getElementById("tbody").innerHTML = html;
+  var ph = [];
+  ph.push('<button onclick=go(' + (HP - 1) + ') ' + (HP <= 1 ? "disabled" : "") + ">◀</button>");
+  for (var pp = Math.max(1, HP - 2); pp <= Math.min(pg, HP + 2); pp++) {
+    ph.push('<button onclick=go(' + pp + ') class=' + (pp === HP ? "active" : "") + ">" + pp + "</button>");
+  }
+  ph.push('<button onclick=go(' + (HP + 1) + ') ' + (HP >= pg ? "disabled" : "") + ">▶</button>");
+  ph.push('<span style="font-size:11px;color:var(--ink-2);margin-left:4px">' + tt + "期</span>");
+  document.getElementById("pagination").innerHTML = ph.join("");
+}
+function go(p) { if (p < 1 || p > Math.ceil(DATA.length / PS)) return; HP = p; render(); }
+render();
+window.go = go;
+</script>

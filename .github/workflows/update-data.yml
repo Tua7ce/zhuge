@@ -13,6 +13,7 @@ jobs:
           node-version: 20
       - run: node scripts/fetch-data.mjs
       - run: node scripts/predict.mjs
+      - run: node scripts/backtest.mjs
       - run: |
           git config user.name "bot"
           git config user.email "bot@users.noreply.github.com"

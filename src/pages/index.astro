@@ -2,127 +2,452 @@
 import Layout from "../layouts/Layout.astro";
 import { readFileSync } from "fs";
 
-var predRaw;
-try { predRaw = JSON.parse(readFileSync("src/data/predictions.json","utf-8")); } catch(e) { predRaw = {error:"no_data"}; }
-var histRaw;
-try { histRaw = JSON.parse(readFileSync("src/data/history.json","utf-8")); } catch(e) { histRaw = []; }
-
-var hasData = !predRaw.error;
-var tn = hasData ? (predRaw.topNumbers||[]).slice(0,7) : [];
-var z3 = hasData ? (predRaw.zodiacCombos||{})["3zod3num"]||[] : [];
-var z4 = hasData ? (predRaw.zodiacCombos||{})["4zod4num"]||[] : [];
-var z5 = hasData ? (predRaw.zodiacCombos||{})["5zod5num"]||[] : [];
-var bd = hasData ? (predRaw.budgetStrategies||{}) : {};
-var latest10 = histRaw.slice(-10).reverse();
-var status = hasData ? "第"+predRaw.nextIssue+"期 · 共"+predRaw.totalPeriods+"期" : "暂无数据";
-var lastSpecial = predRaw.latestSpecial || 0;
-var lastZodiac = predRaw.latestZodiac || "-";
-var bud100 = bd["100"]||[]; var bud200 = bd["200"]||[]; var bud300 = bd["300"]||[]; var bud400 = bd["400"]||[];
-var topZods = hasData ? (predRaw.topZodiacs||[]).slice(0,5) : [];
-function pad(n){return ("0"+n).slice(-2);}
-function color(n){
-  var r=[1,2,7,8,12,13,18,19,23,24,29,30,34,35,40,45,46];
-  var b=[3,4,9,10,14,15,20,25,26,31,36,37,41,42,47,48];
-  if(r.indexOf(n)>=0)return "red";if(b.indexOf(n)>=0)return "blue";return "green";
+function load(path, fallback) {
+  try { return JSON.parse(readFileSync(path, "utf-8")); } catch (e) { return fallback; }
 }
-var nc={red:"#e74c3c",blue:"#3498db",green:"#2ecc71"};
-function ball(n,s){var c=nc[color(n)]||"#888";return "<div class=num-item><div class=num-ball style=background:"+c+">"+pad(n)+"</div><div class=num-zod style=color:"+c+">"+s+"</div></div>";}
-function renderNums(arr){return arr.map(function(x){return ball(x.number,x.zodiac);}).join("");}
----
+const predRaw = load("src/data/predictions.json", { error: "no_data" });
+const histRaw = load("src/data/history.json", []);
+const phRaw = load("src/data/prediction-history.json", { records: [] });
 
+const hasData = !predRaw.error;
+const base = (import.meta.env.BASE_URL || "/").replace(/\/$/, "");
+const topZodiacs = hasData ? predRaw.topZodiacs || [] : [];
+const topNumbers = hasData ? predRaw.topNumbers || [] : [];
+const core = hasData ? predRaw.coreMetrics || {} : {};
+const earnings = hasData ? predRaw.earnings || {} : {};
+const explanation = hasData ? predRaw.modelExplanation || {} : {};
+const modes = hasData ? predRaw.modes || {} : {};
+const budgets = hasData ? predRaw.budgets || {} : {};
+const kelly = hasData ? predRaw.kelly || {} : {};
+const conclusion = hasData ? predRaw.conclusion || {} : {};
+const branding = hasData ? predRaw.branding || {} : {};
+const modelConfig = hasData ? predRaw.modelConfig || {} : {};
+const latest10 = histRaw.slice(-10).reverse();
+const status = hasData ? "第" + predRaw.nextIssue + "期 · 共" + predRaw.totalPeriods + "期" : "暂无数据";
+const lastSpecial = predRaw.latestSpecial || 0;
+const lastZodiac = predRaw.latestZodiac || "-";
+const accRecords = (phRaw.records || []).slice(-12).reverse();
+
+function pad(n) { return ("0" + n).slice(-2); }
+function color(n) {
+  const r = [1,2,7,8,12,13,18,19,23,24,29,30,34,35,40,45,46];
+  const b = [3,4,9,10,14,15,20,25,26,31,36,37,41,42,47,48];
+  if (r.indexOf(n) >= 0) return "red";
+  if (b.indexOf(n) >= 0) return "blue";
+  return "green";
+}
+const nc = { red: "#c0392b", blue: "#2e6c96", green: "#3a8a4e" };
+function pct(v) { return ((v || 0) * 100).toFixed(2) + "%"; }
+function zScore(z) {
+  const row = topZodiacs.find((x) => x.zodiac === z);
+  return row ? row.score : 0;
+}
+const detailMap = Object.fromEntries(topNumbers.map((x) => [x.number, {
+  number: x.number,
+  zodiac: x.zodiac,
+  zodiacScore: zScore(x.zodiac),
+  numberScore: x.numberScore,
+  components: x.components || {},
+  probability: x.calibratedProbability
+}]));
+const explainBars = [
+  { key: "frequency", label: "频次贡献" },
+  { key: "omission", label: "遗漏贡献" },
+  { key: "conditional", label: "条件概率贡献" },
+  { key: "recent", label: "近期趋势贡献" },
+  { key: "zodiac", label: "生肖贡献" }
+];
+const modeExplains = [
+  ["天罗", "覆盖更广，历史命中表现优先"],
+  ["诸葛", "命中、成本、收益综合平衡"],
+  ["慧算", "根据历史表现动态调整号码数量"],
+  ["自选", "自己设置预算和号码数"]
+];
+---
 <Layout>
   <div class=card style="text-align:center">
-    <div style="font-size:14px;color:var(--text2)">{status}</div>
-    <div style="font-size:13px;color:var(--text2);margin-top:4px">上期特码: <b style="font-size:18px;color:var(--gold)">{pad(lastSpecial)}</b> ({lastZodiac})</div>
+    <div style="font-size:14px;color:var(--ink-2)">{status}</div>
+    <div style="font-size:13px;color:var(--ink-2);margin-top:4px">上期特码: <b style="font-family:var(--mono);font-size:20px;color:var(--gold)">{pad(lastSpecial)}</b> ({lastZodiac})</div>
   </div>
 
   <div class=card>
-    <h2>纯数字推荐 <span class=ac>Top7</span></h2>
-    <div class=num-row set:html={hasData ? renderNums(tn) : "<p style=color:var(--text2);font-size:14px>暂无预测数据</p>"}></div>
+    <h2>当前期预测 <span class=ac>第{predRaw.nextIssue || "-"}期</span></h2>
+    <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:6px">
+      <span class=badge>{branding.mainStrategy || "诸葛策略"}</span>
+      <span class="badge plain">{branding.flowName || "三才定码"} · 10码方案</span>
+    </div>
+    <p class=mode-note>模型先锁定三个生肖方向，再从候选号码中二次评分，最终选出10个核心号码。</p>
+    <div class=combo-header>生肖方向</div>
+    <div class=num-row>
+      {hasData ? topZodiacs.map((z, idx) => (
+        <div class=num-item>
+          <div class=num-ball style="background:linear-gradient(145deg,#c9a75a,#8d6b20)">{idx + 1}</div>
+          <div class=num-zod style="font-size:17px;font-weight:700">{z.zodiac}</div>
+          <div class=num-meta>方向强度 {pct(z.probability)}</div>
+        </div>
+      )) : <p style="color:var(--ink-2);font-size:14px">暂无预测数据</p>}
+    </div>
+    <div class=combo-header>本期10码 <span class=combo-sep style="color:var(--ink-2)">点击号码查看解释</span></div>
+    <div class=num-row id=top10-grid></div>
+    <div class=action-links>
+      <a href={base + "/backtest#D"}>查看历史表现</a>
+      <a href={base + "/prediction-history"}>查看预测历史</a>
+      <button onclick="scrollWhy()">为什么选这些号码</button>
+    </div>
   </div>
 
   <div class=card>
-    <h2>生肖组合</h2>
-    <div style="margin-bottom:10px">
-      <div style="font-size:13px;font-weight:600;color:var(--gold);margin-bottom:4px">3生肖 + 3数字</div>
-      <div class=num-row><Fragment set:html={hasData&&z3.length>0?renderNums(z3):"<span style=color:var(--text2);font-size:13px>暂无</span>"} /></div>
+    <h2>本期模型结论</h2>
+    <p class=mode-note>{hasData ? conclusion.sentence : "暂无预测数据"}</p>
+    <div class=summary-grid>
+      <div class="summary-box hl"><div class=v>{hasData ? pct(conclusion.hitRate) : "-"}</div><div class=k>历史命中率 · 基于{core.overall ? core.overall.sample : 0}次历史模拟</div></div>
+      <div class=summary-box><div class=v>{hasData ? pct(conclusion.last30) : "-"}</div><div class=k>最近30期</div></div>
+      <div class=summary-box><div class=v>{hasData ? pct(conclusion.last20) : "-"}</div><div class=k>最近20期</div></div>
+      <div class=summary-box><div class=v>{conclusion.currentMissStreak ?? "-"}期</div><div class=k>当前连续不中</div></div>
+      <div class=summary-box><div class=v>{conclusion.maxMissStreak ?? "-"}期</div><div class=k>最大连续不中</div></div>
     </div>
-    <div style="margin-bottom:10px">
-      <div style="font-size:13px;font-weight:600;color:var(--gold);margin-bottom:4px">4生肖 + 4数字</div>
-      <div class=num-row><Fragment set:html={hasData&&z4.length>0?renderNums(z4):"<span style=color:var(--text2);font-size:13px>暂无</span>"} /></div>
+    <div class=footnote>以上均为历史回测结果，仅用于展示模型过去表现，不代表未来结果。</div>
+  </div>
+
+  <div class=card>
+    <h2><span id=plan-title>诸葛策略</span><span class=ac id=plan-sub>三才定码 · 100元</span></h2>
+    <div class=summary-grid>
+      <div class="summary-box hl"><div class=v>{earnings.suggestedStake || 100}元</div><div class=k>建议预算</div></div>
+      <div class=summary-box><div class=v>{earnings.numberCount || 10}个</div><div class=k>号码数</div></div>
+      <div class=summary-box><div class=v>{earnings.perCode || 10}元</div><div class=k>每码</div></div>
+      <div class=summary-box><div class=v>{hasData ? "+" + earnings.hitNet : "-"}元</div><div class=k>命中净收益 · 未中-{earnings.missLoss ? Math.abs(earnings.missLoss) : 100}元</div></div>
+      <div class=summary-box><div class=v>{hasData ? (earnings.ev > 0 ? "+" : "") + earnings.ev : "-"}元</div><div class=k>历史参考EV · 根据历史回测估算</div></div>
+      <div class=summary-box><div class=v>{hasData ? pct(earnings.roi) : "-"}</div><div class=k>历史ROI</div></div>
+      <div class=summary-box><div class=v>{hasData ? pct(earnings.pAny) : "-"}</div><div class=k>整期至少一中（历史回测）</div></div>
     </div>
-    <div>
-      <div style="font-size:13px;font-weight:600;color:var(--gold);margin-bottom:4px">5生肖 + 5数字</div>
-      <div class=num-row><Fragment set:html={hasData&&z5.length>0?renderNums(z5):"<span style=color:var(--text2);font-size:13px>暂无</span>"} /></div>
+    <div class=mode-bar>
+      <button class="btn" data-mode=tianluo onclick="switchMode('tianluo')">天罗</button>
+      <button class="btn active" data-mode=zhuge onclick="switchMode('zhuge')">诸葛</button>
+      <button class="btn" data-mode=huisuan onclick="switchMode('huisuan')">慧算</button>
+      <button class="btn" data-mode=custom onclick="switchMode('custom')">自选</button>
+    </div>
+    <div id=mode-meta></div>
+    <div class=action-links><button onclick="toggleModeNums()">查看完整选号清单</button></div>
+    <div class="expand-wrap" id=mode-nums-wrap><div class=num-row id=mode-nums></div></div>
+    <div class=footnote>
+      {modeExplains.map((m) => <span style="margin-right:10px"><b>{m[0]}</b>：{m[1]}</span>)}
     </div>
   </div>
 
   <div class=card id=budget-section>
-    <h2>投注预算策略</h2>
-    <div class=tab-bar>
-      <div class="tab-item active" data-budget=100 onclick="switchBudget(100)">100元</div>
-      <div class=tab-item data-budget=200 onclick="switchBudget(200)">200元</div>
-      <div class=tab-item data-budget=300 onclick="switchBudget(300)">300元</div>
-      <div class=tab-item data-budget=400 onclick="switchBudget(400)">400元</div>
+    <h2>投入方案 <span class=ac>预算÷10 = 号码数</span></h2>
+    <div class=tab-bar id=budget-tabs>
+      <div class="tab-item active" data-budget=10 onclick="switchBudget(10)">10元</div>
+      <div class="tab-item" data-budget=20 onclick="switchBudget(20)">20元</div>
+      <div class="tab-item" data-budget=50 onclick="switchBudget(50)">50元</div>
+      <div class="tab-item" data-budget=100 onclick="switchBudget(100)">100元</div>
+      <div class="tab-item" data-budget=200 onclick="switchBudget(200)">200元</div>
+      <div class="tab-item" data-budget=300 onclick="switchBudget(300)">300元</div>
+      <div class="tab-item" data-budget=400 onclick="switchBudget(400)">400元</div>
+      <div class="tab-item" data-budget=custom onclick="switchBudget('custom')">自定义</div>
     </div>
-    <div id=budget-content></div>
+    <div style="display:flex;gap:8px;align-items:center;margin-bottom:8px;flex-wrap:wrap">
+      <input id=custom-budget class=field type=number min=10 max=400 step=10 value=100 style="width:110px" placeholder="预算">
+      <button class=btn onclick="applyCustom()">应用自定义</button>
+      <span style="font-size:12px;color:var(--ink-2)">预算÷10 = 号码数，封顶49</span>
+    </div>
+    <details class=tech>
+      <summary>高级资金管理（动态Kelly）</summary>
+      <div class=tech-body>
+        <div class=seg>
+          <button class="btn active" data-fund=fixed onclick="setFundMode('fixed')">固定预算</button>
+          <button class="btn" data-fund=kelly onclick="setFundMode('kelly')">动态Kelly</button>
+        </div>
+        <p style="margin-top:8px">Kelly 根据历史模型表现动态调整投入；当模型概率估计存在误差时，Kelly 可能增加资金波动。默认使用固定预算。</p>
+      </div>
+    </details>
+    <div id=budget-meta></div>
+    <div class=action-links><button onclick="toggleBudgetNums()">查看完整选号清单</button></div>
+    <div class="expand-wrap" id=budget-nums-wrap><div class=num-row id=budget-nums></div></div>
+    <div class=footnote>预算金额、号码数、每码金额全部同源同步；所有收益均为历史回测估算，不代表下一期收益。</div>
+  </div>
+
+  <div class=card id=why>
+    <h2>为什么选这些号码？</h2>
+    {hasData ? explainBars.map((bar) => (
+      <div class=bar>
+        <div class=bl>{bar.label}</div>
+        <div class=track><div class=fill style={`width:${(explanation[bar.key] || 0) * 100}%`}></div></div>
+        <div class=bv>{(explanation[bar.key] || 0).toFixed(3)}</div>
+      </div>
+    )) : <p style="color:var(--ink-2);font-size:14px">暂无预测数据</p>}
+    <div class=footnote>最终Score为各项特征综合评分，不等同于真实概率。</div>
+    <details class=tech>
+      <summary>查看详细算法</summary>
+      <div class=tech-body>
+        <div>真实算法：生肖筛选 → 候选号码池 → 数字综合评分 → Top10</div>
+        <div>生肖权重：{hasData ? JSON.stringify(modelConfig.zodiacWeights) : "-"}</div>
+        <div>数字权重：{hasData ? JSON.stringify(modelConfig.numberWeights) : "-"}</div>
+        <div>生肖窗口：{hasData ? modelConfig.zodiacFrequencyWindows.join(" / ") : "-"}</div>
+        <div>数字窗口：{hasData ? modelConfig.numberFrequencyWindows.join(" / ") : "-"}</div>
+        <div>概率校准：{hasData ? modelConfig.calibrationMethod : "-"} · 校准样本 {hasData ? modelConfig.calibrationSamples : 0} 组</div>
+        <div>当前生效配置：{hasData ? modelConfig.activeConfigLabel : "-"}</div>
+      </div>
+    </details>
   </div>
 
   <div class=card>
-    <h2>近期开奖 <span class=ac>最近10期</span></h2>
+    <h2>最新开奖结果 <span class=ac>最近10期</span></h2>
     <table class=ht>
       <thead><tr><th>期号</th><th>日期</th><th>号码</th><th>特码</th></tr></thead>
       <tbody>
-        {latest10.map(function(h){
-          var ns=h.numbers[6];var zs=h.zodiacs[6];
-          var regBalls = h.numbers.slice(0,6).map(function(n,i){
-            var c=nc[color(n)]||"#888";
-            return "<span class=ball-sm style=background:"+c+">"+pad(n)+"</span>";
-          }).join("");
-          var specBall = "<span class=ball-sm style=background:"+(nc[color(ns)]||"#888")+";border:2px solid var(--gold)>"+pad(ns)+"</span>";
-          return "<tr><td>"+h.issue+"</td><td>"+h.date+"</td><td>"+regBalls+"</td><td>"+specBall+"<span class=zod-sm>"+zs+"</span></td></tr>";
-        }).join("")}
+        {latest10.map((h) => {
+          const ns = h.numbers[6];
+          const zs = h.zodiacs[6];
+          return (
+            <tr>
+              <td>{h.issue}</td>
+              <td>{h.date}</td>
+              <td>
+                {h.numbers.slice(0, 6).map((n) => (
+                  <span class="ball-sm" style={`background:${nc[color(n)]}`}>{pad(n)}</span>
+                ))}
+              </td>
+              <td>
+                <span class="ball-sm spec" style={`background:${nc[color(ns)]}`}>{pad(ns)}</span>
+                <span class="zod-sm">{zs}</span>
+              </td>
+            </tr>
+          );
+        })}
       </tbody>
     </table>
   </div>
 
   <div class=card>
-    <h2>命中率追踪</h2>
-    <div id=accuracy>
-      <div style="text-align:center;padding:12px;color:var(--text2);font-size:14px">开奖后自动记录命中率</div>
+    <h2>命中验证 <span class=ac>{branding.mainStrategy || "诸葛策略"} · {branding.flowName || "三才定码"}</span></h2>
+    <div class=summary-grid>
+      <div class="summary-box hl"><div class=v>{core.currentMissStreak ?? "-"}期</div><div class=k>当前连续不中</div></div>
+      <div class=summary-box><div class=v>{core.maxMissStreak ?? "-"}期</div><div class=k>最大连续不中</div></div>
+      <div class=summary-box><div class=v>{hasData ? pct(core.overall && core.overall.hitRate) : "-"}</div><div class=k>历史命中率 · 基于{core.overall ? core.overall.sample : 0}次历史模拟</div></div>
+      <div class=summary-box><div class=v>{hasData ? pct(core.last10 && core.last10.hitRate) : "-"}</div><div class=k>最近10期</div></div>
+    </div>
+    {accRecords.length > 0 ? (
+      <table class=ht>
+        <thead><tr><th>期号</th><th>本期10码</th><th>实际特码</th><th>结果</th><th>投入</th><th>收益</th></tr></thead>
+        <tbody>
+          {accRecords.map((r) => (
+            <tr>
+              <td>{r.issue}</td>
+              <td>
+                {r.topNumbers.map((n) => (
+                  <span class="ball-sm" style={`background:${nc[color(n)]}`}>{pad(n)}</span>
+                ))}
+              </td>
+              <td>{pad(r.actualSpecial)}</td>
+              <td><span class:list={["zod-sm", { hit: r.hit, miss: !r.hit }]}>{r.hit ? "命中" : "未中"}</span></td>
+              <td>{r.stake}元</td>
+              <td><span class:list={[{ hit: r.profit > 0, miss: r.profit <= 0 }]}>{(r.profit > 0 ? "+" : "") + r.profit}元</span></td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    ) : <p style="text-align:center;padding:12px;color:var(--ink-2);font-size:14px">暂无预测记录</p>}
+    <div class=action-links><a href={base + "/prediction-history"}>查看完整预测历史</a></div>
+  </div>
+
+  <div class=modal-backdrop id=modal-backdrop onclick="if(event.target===this)closeModal()">
+    <div class=modal>
+      <button class=close-btn onclick="closeModal()">×</button>
+      <h3 id=modal-title>号码解释</h3>
+      <div id=modal-body></div>
     </div>
   </div>
 </Layout>
 
-<script is:inline>
-var BD = JSON.parse(document.getElementById("budget-data")?.textContent || "{}");
-function switchBudget(b){
-  document.querySelectorAll("#budget-section .tab-item").forEach(function(t){t.classList.toggle("active",+t.dataset.budget===b);});
-  var plans = BD[b] || [];
-  var el = document.getElementById("budget-content");
-  if (!el) return;
-  if (plans.length === 0) {
-    el.innerHTML = "<div style=text-align:center;padding:16px;color:var(--text2)>暂无该预算方案，请先运行预测</div>";
+<script is:inline define:vars={{ PRED_DATA: { topNumbers, detailMap, budgets, modes, kelly } }}>
+var DATA = PRED_DATA;
+var NC = { red: "#c0392b", blue: "#2e6c96", green: "#3a8a4e" };
+var FM = "fixed";
+var CUR_BUDGET = 100;
+var CUR_MODE = "zhuge";
+
+function pad(n) { return ("0" + n).slice(-2); }
+function c(n) {
+  var r = [1,2,7,8,12,13,18,19,23,24,29,30,34,35,40,45,46];
+  var b = [3,4,9,10,14,15,20,25,26,31,36,37,41,42,47,48];
+  if (r.indexOf(n) >= 0) return "red";
+  if (b.indexOf(n) >= 0) return "blue";
+  return "green";
+}
+function pct(v) { return ((v || 0) * 100).toFixed(2) + "%"; }
+function safeText(value, fallback) {
+  if (value === undefined || value === null || value === "") return fallback === undefined ? "—" : fallback;
+  return String(value);
+}
+function safeNumber(value, fallback) {
+  const n = Number(value);
+  return Number.isFinite(n) ? n : (fallback === undefined ? 0 : fallback);
+}
+function formatPercentSafe(value) {
+  const n = Number(value);
+  return Number.isFinite(n) ? n.toFixed(2) + "%" : "—";
+}
+function formatMoneySafe(value) {
+  const n = Number(value);
+  if (!Number.isFinite(n)) return "—";
+  return (n >= 0 ? "+" : "") + (Number.isInteger(n) ? n.toFixed(0) : n.toFixed(2)) + "元";
+}
+function balls(nums) {
+  return nums.map(function (n) {
+    var bg = NC[c(n)];
+    var hasDetail = DATA.detailMap && DATA.detailMap[n];
+    var onclick = hasDetail ? ' onclick="openDetail(' + n + ')"' : "";
+    return '<div class=num-item><div class=num-ball style=background:' + bg + onclick + '>' + pad(n) + '</div>' +
+      '<div class=num-zod>' + (hasDetail ? DATA.detailMap[n].zodiac : "-") + '</div></div>';
+  }).join("");
+}
+function renderTop10() {
+  document.getElementById("top10-grid").innerHTML = DATA.topNumbers.length
+    ? balls(DATA.topNumbers.map(function (x) { return x.number; }))
+    : '<p style="color:var(--ink-2);font-size:14px">暂无预测数据</p>';
+}
+function planHtml(item, title) {
+  var rows = [
+    { k: "号码数", v: safeText(safeNumber(item.numberCount)) + " 个" },
+    { k: "每码", v: safeText(safeNumber(item.perCode)) + " 元" },
+    { k: "投入", v: safeText(safeNumber(item.stake)) + " 元" },
+    { k: "命中净收益", v: formatMoneySafe(item.hitNet) },
+    { k: "未中损失", v: formatMoneySafe(item.missLoss) },
+    { k: "历史参考EV", v: formatMoneySafe(item.ev) },
+    { k: "整期至少一中", v: formatPercentSafe(item.pAny) }
+  ];
+  var html = '<div style="background:var(--paper-3);border:1px solid var(--line);border-left:3px solid var(--red);border-radius:6px;padding:10px;margin-bottom:8px">';
+  html += '<div style="font-size:14px;font-weight:600;color:var(--green);margin-bottom:6px">' + safeText(title) + "</div>";
+  html += '<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:6px">';
+  rows.forEach(function (row) {
+    html += '<div><span style="color:var(--ink-2);font-size:12px">' + row.k + '</span><br><b style="font-size:15px;font-family:var(--mono)">' + row.v + "</b></div>";
+  });
+  html += "</div></div>";
+  return html;
+}
+function renderMode() {
+  var el = document.getElementById("mode-meta");
+  var numsEl = document.getElementById("mode-nums");
+  var planTitle = document.getElementById("plan-title");
+  var planSub = document.getElementById("plan-sub");
+  var item, title;
+  if (CUR_MODE === "custom") {
+    var b = DATA.budgets[CUR_BUDGET];
+    item = b ? (b[FM] || b.fixed) : null;
+    title = "自选方案 · " + (b ? item.stake : 0) + "元";
+  } else {
+    item = DATA.modes[CUR_MODE];
+    title = item ? item.name + " · " + item.stake + "元" : "";
+  }
+  if (!item) {
+    el.innerHTML = '<div style="text-align:center;padding:12px;color:var(--ink-2);font-size:14px">暂无该模式方案</div>';
+    numsEl.innerHTML = "";
     return;
   }
-  var best = plans[0];
-  var html = "<div style=background:#fffdf5;border:1px solid var(--gold);border-radius:6px;padding:12px;margin-bottom:8px>";
-  html += "<div style=font-size:15px;font-weight:600;color:var(--gold)>推荐方案</div>";
-  html += "<div style=display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px>";
-  html += "<div><span style=color:var(--text2)>投入</span><br><b style=font-size:18px>"+best.cost+"元</b></div>";
-  html += "<div><span style=color:var(--text2)>命中率</span><br><b style=font-size:18px;color:var(--gold)>"+best.prob+"%</b></div>";
-  html += "<div><span style=color:var(--text2)>覆盖号码</span><br><b style=font-size:18px>"+best.nums+"个</b></div>";
-  html += "<div><span style=color:var(--text2)>中赚</span><br><b style=font-size:18px;color:"+(best.profit>0?"#27ae60":"var(--red)")+">"+best.profit+"元</b></div>";
-  html += "</div></div>";
-  html += "<div style=font-size:12px;color:var(--text2);margin-bottom:6px>其他方案:</div>";
-  for (var i = 1; i < plans.length && i < 4; i++) {
-    var p = plans[i];
-    html += "<div style=display:flex;justify-content:space-between;padding:6px 8px;border-bottom:1px solid #f0ede6;font-size:13px>";
-    html += "<span>"+p.nums+"码 ("+(p.zodiacs&&p.zodiacs.length?p.zodiacs.join("+"):"纯数字")+")</span>";
-    html += "<span>"+p.prob+"% · "+(p.profit>0?"+":"")+p.profit+"元</span></div>";
-  }
-  el.innerHTML = html;
+  if (planTitle) planTitle.textContent = CUR_MODE === "custom" ? "自选方案" : (item.name || "");
+  if (planSub) planSub.textContent = (CUR_MODE === "custom" ? "自选预算 · " : "三才定码 · ") + item.stake + "元";
+  numsEl.innerHTML = balls(item.picks || []);
+  el.innerHTML = planHtml(item, title) + '<div class=mode-note>' + (item.note || "") + "</div>";
 }
-switchBudget(100);
+function renderBudget() {
+  var b = DATA.budgets[CUR_BUDGET];
+  var el = document.getElementById("budget-meta");
+  if (!b) {
+    el.innerHTML = '<div style="text-align:center;padding:12px;color:var(--ink-2);font-size:14px">暂无该预算方案</div>';
+    return;
+  }
+  var item = b[FM] || b.fixed;
+  document.getElementById("budget-nums").innerHTML = balls(item.numbers || []);
+  el.innerHTML = planHtml(item, "投入方案 · " + item.stake + "元");
+}
+function switchBudget(b) {
+  if (b === "custom") {
+    CUR_BUDGET = clampBudget(parseInt(document.getElementById("custom-budget").value, 10) || 100);
+    document.getElementById("custom-budget").value = CUR_BUDGET;
+  } else {
+    CUR_BUDGET = b;
+    document.getElementById("custom-budget").value = b;
+  }
+  document.querySelectorAll("#budget-tabs .tab-item").forEach(function (t) {
+    t.classList.toggle("active", String(t.dataset.budget) === String(b));
+  });
+  renderBudget();
+  if (CUR_MODE === "custom") renderMode();
+}
+function clampBudget(v) {
+  if (!v) return 100;
+  v = Math.floor(v / 10) * 10;
+  return Math.min(400, Math.max(10, v));
+}
+function applyCustom() {
+  CUR_BUDGET = clampBudget(parseInt(document.getElementById("custom-budget").value, 10) || 100);
+  document.getElementById("custom-budget").value = CUR_BUDGET;
+  document.querySelectorAll("#budget-tabs .tab-item").forEach(function (t) {
+    t.classList.toggle("active", t.dataset.budget === "custom");
+  });
+  renderBudget();
+  if (CUR_MODE === "custom") renderMode();
+}
+function setFundMode(mode) {
+  FM = mode;
+  document.querySelectorAll("#budget-section [data-fund]").forEach(function (t) {
+    t.classList.toggle("active", t.dataset.fund === mode);
+  });
+  renderBudget();
+  if (CUR_MODE === "custom") renderMode();
+}
+function switchMode(mode) {
+  CUR_MODE = mode;
+  document.querySelectorAll(".mode-bar .btn").forEach(function (t) {
+    t.classList.toggle("active", t.dataset.mode === mode);
+  });
+  renderMode();
+}
+function toggleModeNums() {
+  document.getElementById("mode-nums-wrap").classList.toggle("show");
+}
+function toggleBudgetNums() {
+  document.getElementById("budget-nums-wrap").classList.toggle("show");
+}
+function scrollWhy() {
+  document.getElementById("why").scrollIntoView({ behavior: "smooth" });
+}
+function openDetail(n) {
+  var d = DATA.detailMap && DATA.detailMap[n];
+  if (!d) return;
+  document.getElementById("modal-title").textContent = "号码 " + pad(n) + " 模型解释";
+  var rows = [
+    ["该数字", pad(d.number)],
+    ["所属生肖", d.zodiac],
+    ["生肖Score", d.zodiacScore.toFixed(3)],
+    ["NumberScore", d.numberScore.toFixed(3)],
+    ["频次", (d.components.frequency || 0).toFixed(2)],
+    ["遗漏", (d.components.omission || 0).toFixed(2)],
+    ["条件概率", (d.components.conditional || 0).toFixed(2)],
+    ["近期评分", (d.components.recent || 0).toFixed(2)],
+    ["生肖评分", (d.components.zodiac || 0).toFixed(2)],
+    ["尾数辅助", (d.components.tail || 0).toFixed(2)],
+    ["校准概率", pct(d.probability)]
+  ];
+  document.getElementById("modal-body").innerHTML = rows.map(function (r) {
+    return '<div class=detail-row><span class=k>' + r[0] + '</span><span class=v>' + r[1] + "</span></div>";
+  }).join("");
+  document.getElementById("modal-backdrop").classList.add("show");
+}
+function closeModal() {
+  document.getElementById("modal-backdrop").classList.remove("show");
+}
+renderTop10();
+renderMode();
+renderBudget();
+window.openDetail = openDetail;
+window.closeModal = closeModal;
+window.switchBudget = switchBudget;
+window.applyCustom = applyCustom;
+window.setFundMode = setFundMode;
+window.switchMode = switchMode;
+window.toggleModeNums = toggleModeNums;
+window.toggleBudgetNums = toggleBudgetNums;
+window.scrollWhy = scrollWhy;
 </script>
-<script is:inline id=budget-data type=application/json>{JSON.stringify(bd)}</script>

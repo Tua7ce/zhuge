@@ -1,0 +1,289 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { readFileSync } from "fs";
+let bt = null;
+try { bt = JSON.parse(readFileSync("src/data/backtest.json", "utf-8")); } catch (e) { bt = null; }
+const ranking = bt ? bt.ranking || [] : [];
+const grid = bt ? bt.gridSearch || {} : {};
+const kelly = bt ? bt.kellyPerformance || [] : [];
+const calib = bt ? bt.calibration || {} : {};
+const main = bt ? bt.mainStrategy || {} : {};
+const conclusion = bt ? bt.conclusion || {} : {};
+const evaluation = bt ? bt.evaluation || {} : {};
+const strategyNotes = bt ? bt.strategyNotes || {} : {};
+const kellyLabels = bt ? bt.kellyLabels || {} : {};
+const active = bt ? bt.activeConfig || {} : {};
+const dRow = ranking.find((r) => r.strategyId === "D");
+const dMetrics = dRow ? dRow.metrics : {};
+const fixedBest = kelly.every((k) => dMetrics.cumulativeNet >= k.metrics.cumulativeNet);
+const maxRoi = ranking.length ? Math.max(...ranking.map((r) => r.metrics.roi)) : 0;
+const maxHit = ranking.length ? Math.max(...ranking.map((r) => r.metrics.hitRate)) : 0;
+const minDD = ranking.length ? Math.min(...ranking.map((r) => r.metrics.maxDrawdown)) : 0;
+const badgesMap = Object.fromEntries(ranking.map((r) => {
+  const badges = [];
+  if (r.strategyId === "D") badges.push({ type: "primary", label: "当前主策略" });
+  if (Math.abs(r.metrics.roi - maxRoi) < 1e-9) badges.push({ type: "roi", label: "ROI最高" });
+  if (Math.abs(r.metrics.hitRate - maxHit) < 1e-9) badges.push({ type: "hitRate", label: "命中率最高" });
+  if (Math.abs(r.metrics.maxDrawdown - minDD) < 1e-9) badges.push({ type: "drawdown", label: "回撤最低" });
+  return [r.strategyId, badges];
+}));
+const kellyRows = [
+  { name: "固定100元", metrics: dMetrics },
+  ...kelly.map((k) => ({ name: `${k.fraction} Kelly`, metrics: k.metrics }))
+];
+const kellyBadgesMap = Object.fromEntries(kellyRows.map((row) => {
+  const badges = [];
+  if (kellyLabels.roiBest === row.name) badges.push({ type: "profit", label: "收益最高" });
+  if (kellyLabels.riskLowest === row.name) badges.push({ type: "risk", label: "风险最低" });
+  if (kellyLabels.combinedBest === row.name) badges.push({ type: "combined", label: "综合最优" });
+  return [row.name, badges];
+}));
+function pct(v) { return ((v || 0) * 100).toFixed(2) + "%"; }
+function money(v) { return (v > 0 ? "+" : "") + (v || 0) + "元"; }
+function sv(v, fallback = "—") { return v === undefined || v === null ? fallback : v; }
+function evalClass(v) {
+  if (v === "良好" || v === "较高" || v === "低") return "good";
+  if (v === "一般" || v === "中等" || v === "中") return "mid";
+  return "weak";
+}
+---
+<Layout title="回测 - 诸葛六合">
+  {bt ? (
+    <>
+      <div class=card>
+        <h2>回测结论</h2>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:8px">
+          <span class=badge>当前主策略：{main.name || "诸葛策略"}</span>
+          <span class="badge plain">{main.flowName || "三才定码"} · 10码方案</span>
+        </div>
+        <p class=mode-note>诸葛策略作为默认主策略；如果未来新模型超过它，系统会自动更新。</p>
+        <div class=summary-grid>
+          <div class="summary-box hl"><div class=v>{conclusion.betPeriods ?? dMetrics.betPeriods ?? 0}</div><div class=k>有效预测次数</div></div>
+          <div class=summary-box><div class=v>{pct(conclusion.hitRate)}</div><div class=k>历史命中率 · 基于{conclusion.betPeriods ?? 0}次历史模拟</div></div>
+          <div class=summary-box><div class=v>{money(conclusion.cumulativeNet)}</div><div class=k>累计收益（历史回测）</div></div>
+          <div class=summary-box><div class=v>{pct(conclusion.roi)}</div><div class=k>历史ROI</div></div>
+          <div class=summary-box><div class=v>{conclusion.maxDrawdown || 0}元</div><div class=k>历史最大回撤</div></div>
+          <div class=summary-box><div class=v>{conclusion.maxConsecutiveMiss ?? 0}期</div><div class=k>最长连续未命中</div></div>
+          <div class=summary-box><div class=v>{bt.periods}期</div><div class=k>回测总期数</div></div>
+        </div>
+        <p class=mode-note style="margin-top:10px">{conclusion.sentence}</p>
+        <div class=footnote>以上均为严格历史回测结果，仅用于展示模型过去表现，不代表未来结果。</div>
+      </div>
+
+      <div class=card>
+        <h2>模型评价 <span class=ac>这个结果怎么看</span></h2>
+        <div class=eval-grid>
+          <div class=eval-box><div class=k>盈利能力</div><div class="v {evalClass(evaluation.profitability)}">{evaluation.profitability || "-"}</div></div>
+          <div class=eval-box><div class=k>历史命中率</div><div class="v {evalClass(evaluation.hitRate)}">{evaluation.hitRate || "-"}</div></div>
+          <div class=eval-box><div class=k>风险</div><div class="v {evalClass(evaluation.risk)}">{evaluation.risk || "-"}</div></div>
+          <div class=eval-box><div class=k>稳定性</div><div class="v {evalClass(evaluation.stability)}">{evaluation.stability || "-"}</div></div>
+        </div>
+      </div>
+
+      <div class=card>
+        <h2>策略排行</h2>
+        <table class=ht>
+          <thead><tr><th>排名</th><th>策略</th><th>历史命中率</th><th>累计收益</th><th>ROI</th><th>最大回撤</th><th>最大连续不中</th><th>综合评价</th></tr></thead>
+          <tbody>
+            {ranking.map((r) => (
+              <tr class:list={[{ "rank-hl": r.strategyId === "D" }, { "cursor-pointer": true }]} onclick={`showStrategy('${r.strategyId}')`}>
+                <td>{r.rank}</td>
+                <td><b>{r.name}</b></td>
+                <td>{pct(r.metrics.hitRate)}</td>
+                <td>{money(r.metrics.cumulativeNet)}</td>
+                <td>{pct(r.metrics.roi)}</td>
+                <td>{r.metrics.maxDrawdown}元</td>
+                <td>{r.metrics.maxConsecutiveMiss}期</td>
+                <td>
+                  {badgesMap[r.strategyId] && badgesMap[r.strategyId].length
+                    ? badgesMap[r.strategyId].map((b) => (
+                        <span class="pill green">{b.label}</span>
+                      ))
+                    : "—"}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+        <details class=tech>
+          <summary>策略解释</summary>
+          <div class=tech-body>
+            {Object.entries(strategyNotes).map(([sid, note]) => <div><b>{sid}</b>：{note}</div>)}
+          </div>
+        </details>
+      </div>
+
+      <div class=card>
+        <h2>策略明细 <span class=ac>点击排行中的策略查看</span></h2>
+        <div id=strategy-detail style="color:var(--ink-2);font-size:14px">点击上方排行中的任意策略查看完整指标与曲线。</div>
+        <div class=chart-box id=chart-bankroll style="margin-top:10px;display:none"></div>
+        <div class=chart-box id=chart-equity style="margin-top:10px;display:none"></div>
+        <div class=chart-box id=chart-drawdown style="margin-top:10px;display:none"></div>
+        <div class=chart-box id=chart-hitrate style="margin-top:10px;display:none"></div>
+      </div>
+
+      <div class=card>
+        <h2>资金管理回测</h2>
+        <p class=mode-note>同一个预测模型，使用不同资金管理方式的历史表现比较。Kelly 是一种根据历史模型表现动态调整资金投入的方法；当模型概率估计存在误差时，Kelly 可能增加资金波动。</p>
+        <table class=ht>
+          <thead><tr><th>模式</th><th>历史命中率</th><th>ROI</th><th>累计收益</th><th>最大回撤</th><th>最终资金</th><th>标签</th></tr></thead>
+          <tbody>
+            <tr class:list={[{ "rank-hl": dMetrics.cumulativeNet >= Math.max(...kelly.map((k) => k.metrics.cumulativeNet)) }]}>
+              <td><b>固定100元</b></td>
+              <td>{pct(dMetrics.hitRate)}</td>
+              <td>{pct(dMetrics.roi)}</td>
+              <td>{money(dMetrics.cumulativeNet)}</td>
+              <td>{dMetrics.maxDrawdown || 0}元</td>
+              <td>{dMetrics.finalBankroll || 0}元</td>
+              <td>
+                {kellyBadgesMap["固定100元"] && kellyBadgesMap["固定100元"].length
+                  ? kellyBadgesMap["固定100元"].map((b) => (
+                      <span class="pill gold">{b.label}</span>
+                    ))
+                  : "—"}
+              </td>
+            </tr>
+            {kelly.map((k) => (
+              <tr>
+                <td>{k.fraction} Kelly</td>
+                <td>{pct(k.metrics.hitRate)}</td>
+                <td>{pct(k.metrics.roi)}</td>
+                <td>{money(k.metrics.cumulativeNet)}</td>
+                <td>{k.metrics.maxDrawdown}元</td>
+                <td>{k.metrics.finalBankroll}元</td>
+                <td>
+                  {kellyBadgesMap[`${k.fraction} Kelly`] && kellyBadgesMap[`${k.fraction} Kelly`].length
+                    ? kellyBadgesMap[`${k.fraction} Kelly`].map((b) => (
+                        <span class="pill gold">{b.label}</span>
+                      ))
+                    : "—"}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+        {fixedBest ? (
+          <p class=mode-note style="color:var(--green);font-weight:600">当前历史回测中，固定100元表现优于Kelly动态资金，因此暂时采用固定100元作为主策略。</p>
+        ) : <p class=mode-note>Kelly 方案在本次历史回测中有更优表现，主策略仍以固定100元展示，可参考 Kelly 对比。</p>}
+      </div>
+
+      <div class=card>
+        <h2>参数自动测试</h2>
+        <p class=mode-note>系统自动测试{grid.configCount || 0}组参数组合，从历史数据中寻找更稳定的预测配置。</p>
+        <div class=summary-grid>
+          <div class="summary-box hl"><div class=v style="font-size:13px">{sv(grid.bestConfigLabel)}</div><div class=k>最佳配置</div></div>
+          <div class=summary-box><div class=v>{grid.selectedMetrics ? pct(grid.selectedMetrics.hitRate) : "—"}</div><div class=k>历史命中率（测试段）</div></div>
+          <div class=summary-box><div class=v>{grid.selectedMetrics ? pct(grid.selectedMetrics.roi) : "—"}</div><div class=k>ROI（测试段）</div></div>
+          <div class=summary-box><div class=v>{grid.selectedMetrics ? money(grid.selectedMetrics.cumulativeNet) : "—"}</div><div class=k>累计收益（测试段）</div></div>
+          <div class=summary-box><div class=v>{(grid.selectedMetrics && grid.selectedMetrics.maxDrawdown) || 0}元</div><div class=k>最大回撤（测试段）</div></div>
+        </div>
+      </div>
+
+      <div class=card>
+        <h2>概率校准</h2>
+        <p class=mode-note>用于让模型显示的概率更加接近历史实际表现。</p>
+        <div class=summary-grid>
+          <div class="summary-box hl"><div class=v>已启用</div><div class=k>概率校准</div></div>
+          <div class=summary-box><div class=v>{calib.samples || 0}组</div><div class=k>校准样本</div></div>
+          <div class=summary-box><div class=v>{calib.method || "-"}</div><div class=k>当前方法</div></div>
+        </div>
+      </div>
+
+      <div class=card>
+        <h2>严格历史回测</h2>
+        <p class=mode-note>每一期预测只使用当时已经发生的数据，不使用未来开奖结果，用于避免回测结果被未来信息污染。</p>
+        <span class=badge plain>Walk-forward</span>
+      </div>
+
+      <div class=card>
+        <details class=tech>
+          <summary>高级模型信息</summary>
+          <div class=tech-body>
+            <div><b>模型版本</b>：诸葛六合 v2 · {bt.generated_at ? bt.generated_at.slice(0, 10) : "-"}</div>
+            <div><b>数据样本数</b>：{bt.periods} 期（暖机 {bt.warmup} 期）</div>
+            <div><b>当前生效配置</b>：{active.label || "-"}</div>
+            <div><b>生肖权重</b>：{JSON.stringify(active.zodiacWeights)}</div>
+            <div><b>数字权重</b>：{JSON.stringify(active.numberWeights)}</div>
+            <div><b>生肖窗口</b>：{active.zodiacFrequencyWindows ? active.zodiacFrequencyWindows.join(" / ") : "-"}</div>
+            <div><b>数字窗口</b>：{active.numberFrequencyWindows ? active.numberFrequencyWindows.join(" / ") : "-"}</div>
+            <div><b>Grid Search</b>：{grid.configCount || 0} 组 · 最优 {grid.bestConfigLabel || "-"} · 替换规则{grid.replacementRulePassed ? "通过" : "未通过"}</div>
+            <table class=ht style="margin-top:8px">
+              <thead><tr><th>配置</th><th>命中率</th><th>ROI</th><th>累计收益</th><th>最大回撤</th></tr></thead>
+              <tbody>
+                <tr><td>默认配置（测试段）</td><td>{pct(grid.defaultMetrics && grid.defaultMetrics.hitRate)}</td><td>{pct(grid.defaultMetrics && grid.defaultMetrics.roi)}</td><td>{money(grid.defaultMetrics && grid.defaultMetrics.cumulativeNet)}</td><td>{(grid.defaultMetrics && grid.defaultMetrics.maxDrawdown) || 0}元</td></tr>
+                <tr class="rank-hl"><td>最优配置（测试段）</td><td>{pct(grid.selectedMetrics && grid.selectedMetrics.hitRate)}</td><td>{pct(grid.selectedMetrics && grid.selectedMetrics.roi)}</td><td>{money(grid.selectedMetrics && grid.selectedMetrics.cumulativeNet)}</td><td>{(grid.selectedMetrics && grid.selectedMetrics.maxDrawdown) || 0}元</td></tr>
+              </tbody>
+            </table>
+            <div style="margin-top:8px"><b>Walk-forward 切分</b>：训练+验证至 {grid.splits ? grid.splits.trainValEnd : "-"} 期，测试段自 {grid.splits ? grid.splits.testStart : "-"} 期起。</div>
+            <div style="margin-top:8px"><b>概率校准对比（LogLoss）</b>：{calib.comparison ? calib.comparison.map((c) => c.method + " " + c.logLoss.toFixed(4)).join(" · ") : "-"}</div>
+            <div style="margin-top:8px"><b>Kelly</b>：0.10 / 0.25 / 0.50 · 默认固定100元，最低50、最高150。</div>
+          </div>
+        </details>
+      </div>
+    </>
+  ) : <div class=card><p style="text-align:center;padding:16px;color:var(--ink-2)">暂无回测数据，请先运行 npm run backtest</p></div>}
+</Layout>
+
+<script is:inline define:vars={{ STRATS: bt ? Object.fromEntries(Object.entries(bt.strategies || {}).map(([sid, s]) => [sid, { name: s.name, note: s.note || "", mode: s.mode || null, metrics: s.metrics, series: s.series }])) : {} }}>
+var charts = {};
+function pct(v) { return ((v || 0) * 100).toFixed(2) + "%"; }
+function money(v) { return (v > 0 ? "+" : "") + (v || 0) + "元"; }
+function loadEcharts(cb) {
+  if (window.echarts) return cb();
+  var s = document.createElement("script");
+  s.src = "https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js";
+  s.onload = cb;
+  document.head.appendChild(s);
+}
+function showStrategy(sid) {
+  var s = STRATS[sid];
+  if (!s) return;
+  var m = s.metrics;
+  var rows = [
+    ["初始资金", "1000元"],
+    ["最终资金", m.finalBankroll + "元"],
+    ["累计收益", money(m.cumulativeNet)],
+    ["最高资金", m.peakBankroll + "元"],
+    ["最大回撤", m.maxDrawdown + "元"],
+    ["最大连续不中", m.maxConsecutiveMiss + "期"],
+    ["总期数", m.totalPeriods],
+    ["有效预测次数", m.betPeriods],
+    ["总投入", m.totalStake + "元"],
+    ["命中次数", m.hitCount],
+    ["历史命中率", pct(m.hitRate)],
+    ["最近10期命中率", pct(m.hitRate10)],
+    ["最近20期命中率", pct(m.hitRate20)],
+    ["最近30期命中率", pct(m.hitRate30)],
+    ["ROI", pct(m.roi)],
+    ["平均每期收益", m.avgPerPeriod + "元"],
+    ["当前连续不中", m.currentConsecutiveMiss + "期"],
+    ["当前回撤", m.currentDrawdown + "元"],
+    ["盈利期比例", pct(m.profitPeriodRatio)]
+  ];
+  document.getElementById("strategy-detail").innerHTML =
+    "<div style='display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:8px'><div style='font-size:16px;font-weight:700;color:var(--green);font-family:var(--serif)'>" + s.name + "</div>" +
+    (s.note ? '<span class="badge plain">' + s.note + "</span>" : "") + "</div>" +
+    '<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:6px">' +
+    rows.map(function (r) {
+      return '<div style="background:var(--paper-3);border:1px solid var(--line);border-radius:5px;padding:6px;font-size:12px"><span style="color:var(--ink-2)">' + r[0] + '</span><br><b style="font-family:var(--mono)">' + r[1] + "</b></div>";
+    }).join("") + "</div>";
+  loadEcharts(function () {
+    ["bankroll", "equity", "drawdown", "hitrate"].forEach(function (kind) {
+      var el = document.getElementById("chart-" + kind);
+      el.style.display = "block";
+      if (charts[kind]) { charts[kind].dispose(); }
+      charts[kind] = echarts.init(el);
+      var series = s.series[kind === "hitrate" ? "hitRate" : kind];
+      charts[kind].setOption({
+        tooltip: { trigger: "axis", backgroundColor: "#faf6ec", borderColor: "#d9cfb9", textStyle: { color: "#22211e", fontSize: 12 } },
+        grid: { left: 44, right: 12, top: 20, bottom: 28 },
+        xAxis: { type: "category", data: series.map(function (p) { return String(p.issue).slice(-3); }), axisLabel: { fontSize: 9, color: "#6b665c" } },
+        yAxis: { type: "value", axisLabel: { fontSize: 10, color: "#6b665c" }, splitLine: { lineStyle: { color: "rgba(217,207,185,.55)" } } },
+        series: [{ type: "line", data: series.map(function (p) { return p.value; }), smooth: true, lineStyle: { color: "#1e4f3c", width: 2.5 }, itemStyle: { color: "#b5862f" }, areaStyle: { color: "rgba(30,79,60,0.08)" } }]
+      });
+    });
+  });
+}
+if (location.hash === "#D") showStrategy("D");
+window.showStrategy = showStrategy;
+</script>

@@ -1,0 +1,5342 @@
+{
+  "generated_at": "2026-08-13T11:22:53.200Z",
+  "strategy": "诸葛策略 · 三才定码",
+  "records": [
+    {
+      "issue": 2026031,
+      "topZodiacs": [
+        "牛",
+        "狗",
+        "猴"
+      ],
+      "topNumbers": [
+        11,
+        45,
+        42,
+        18,
+        47,
+        9,
+        6,
+        21,
+        33,
+        23
+      ],
+      "predictedHitRate": 0.2041,
+      "predictedProbability": 0.2041,
+      "actualSpecial": 26,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": 900,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026032,
+      "topZodiacs": [
+        "牛",
+        "狗",
+        "猴"
+      ],
+      "topNumbers": [
+        11,
+        45,
+        18,
+        47,
+        9,
+        6,
+        21,
+        42,
+        23,
+        33
+      ],
+      "predictedHitRate": 0.01,
+      "predictedProbability": 0.01,
+      "actualSpecial": 6,
+      "hit": true,
+      "stake": 100,
+      "profit": 370,
+      "cumulativeBankroll": 1270,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026033,
+      "topZodiacs": [
+        "狗",
+        "猴",
+        "马"
+      ],
+      "topNumbers": [
+        1,
+        45,
+        11,
+        47,
+        9,
+        37,
+        21,
+        13,
+        23,
+        33
+      ],
+      "predictedHitRate": 0.01,
+      "predictedProbability": 0.01,
+      "actualSpecial": 41,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": 1170,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026034,
+      "topZodiacs": [
+        "猴",
+        "马",
+        "牛"
+      ],
+      "topNumbers": [
+        6,
+        11,
+        1,
+        13,
+        37,
+        42,
+        47,
+        18,
+        23,
+        49
+      ],
+      "predictedHitRate": 0.2132,
+      "predictedProbability": 0.2132,
+      "actualSpecial": 19,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": 1070,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026035,
+      "topZodiacs": [
+        "猴",
+        "马",
+        "牛"
+      ],
+      "topNumbers": [
+        6,
+        11,
+        1,
+        13,
+        37,
+        42,
+        47,
+        18,
+        49,
+        23
+      ],
+      "predictedHitRate": 0.2854,
+      "predictedProbability": 0.2854,
+      "actualSpecial": 27,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": 970,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026036,
+      "topZodiacs": [
+        "猴",
+        "马",
+        "牛"
+      ],
+      "topNumbers": [
+        6,
+        11,
+        1,
+        13,
+        42,
+        47,
+        18,
+        37,
+        49,
+        23
+      ],
+      "predictedHitRate": 0.2433,
+      "predictedProbability": 0.2433,
+      "actualSpecial": 1,
+      "hit": true,
+      "stake": 100,
+      "profit": 370,
+      "cumulativeBankroll": 1340,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026037,
+      "topZodiacs": [
+        "猴",
+        "牛",
+        "马"
+      ],
+      "topNumbers": [
+        1,
+        11,
+        6,
+        42,
+        47,
+        18,
+        13,
+        37,
+        23,
+        35
+      ],
+      "predictedHitRate": 0.2956,
+      "predictedProbability": 0.2956,
+      "actualSpecial": 43,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": 1240,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026038,
+      "topZodiacs": [
+        "猴",
+        "牛",
+        "马"
+      ],
+      "topNumbers": [
+        1,
+        11,
+        6,
+        42,
+        47,
+        18,
+        13,
+        37,
+        23,
+        35
+      ],
+      "predictedHitRate": 0.312,
+      "predictedProbability": 0.312,
+      "actualSpecial": 42,
+      "hit": true,
+      "stake": 100,
+      "profit": 370,
+      "cumulativeBankroll": 1610,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026039,
+      "topZodiacs": [
+        "猴",
+        "牛",
+        "马"
+      ],
+      "topNumbers": [
+        1,
+        11,
+        42,
+        6,
+        47,
+        18,
+        13,
+        37,
+        23,
+        35
+      ],
+      "predictedHitRate": 0.3241,
+      "predictedProbability": 0.3241,
+      "actualSpecial": 11,
+      "hit": true,
+      "stake": 100,
+      "profit": 370,
+      "cumulativeBankroll": 1980,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026040,
+      "topZodiacs": [
+        "牛",
+        "马",
+        "龙"
+      ],
+      "topNumbers": [
+        1,
+        42,
+        6,
+        27,
+        18,
+        37,
+        13,
+        3,
+        39,
+        49
+      ],
+      "predictedHitRate": 0.2861,
+      "predictedProbability": 0.2861,
+      "actualSpecial": 28,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": 1880,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026041,
+      "topZodiacs": [
+        "牛",
+        "马",
+        "鼠"
+      ],
+      "topNumbers": [
+        1,
+        19,
+        42,
+        6,
+        43,
+        18,
+        31,
+        37,
+        13,
+        49
+      ],
+      "predictedHitRate": 0.4317,
+      "predictedProbability": 0.4317,
+      "actualSpecial": 36,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": 1780,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026042,
+      "topZodiacs": [
+        "牛",
+        "马",
+        "鼠"
+      ],
+      "topNumbers": [
+        1,
+        19,
+        6,
+        42,
+        43,
+        18,
+        31,
+        37,
+        13,
+        49
+      ],
+      "predictedHitRate": 0.4093,
+      "predictedProbability": 0.4093,
+      "actualSpecial": 16,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": 1680,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026043,
+      "topZodiacs": [
+        "牛",
+        "马",
+        "鼠"
+      ],
+      "topNumbers": [
+        1,
+        19,
+        42,
+        6,
+        43,
+        31,
+        37,
+        13,
+        18,
+        49
+      ],
+      "predictedHitRate": 0.3297,
+      "predictedProbability": 0.3297,
+      "actualSpecial": 13,
+      "hit": true,
+      "stake": 100,
+      "profit": 370,
+      "cumulativeBankroll": 2050,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026044,
+      "topZodiacs": [
+        "牛",
+        "鼠",
+        "龙"
+      ],
+      "topNumbers": [
+        19,
+        42,
+        6,
+        27,
+        43,
+        31,
+        3,
+        39,
+        18,
+        7
+      ],
+      "predictedHitRate": 0.3221,
+      "predictedProbability": 0.3221,
+      "actualSpecial": 19,
+      "hit": true,
+      "stake": 100,
+      "profit": 370,
+      "cumulativeBankroll": 2420,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026045,
+      "topZodiacs": [
+        "牛",
+        "鼠",
+        "龙"
+      ],
+      "topNumbers": [
+        19,
+        42,
+        6,
+        27,
+        31,
+        43,
+        39,
+        3,
+        18,
+        7
+      ],
+      "predictedHitRate": 0.3088,
+      "predictedProbability": 0.3088,
+      "actualSpecial": 1,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": 2320,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026046,
+      "topZodiacs": [
+        "牛",
+        "马",
+        "龙"
+      ],
+      "topNumbers": [
+        1,
+        6,
+        42,
+        39,
+        3,
+        18,
+        27,
+        13,
+        49,
+        30
+      ],
+      "predictedHitRate": 0.259,
+      "predictedProbability": 0.259,
+      "actualSpecial": 3,
+      "hit": true,
+      "stake": 100,
+      "profit": 370,
+      "cumulativeBankroll": 2690,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026047,
+      "topZodiacs": [
+        "牛",
+        "马",
+        "鸡"
+      ],
+      "topNumbers": [
+        1,
+        42,
+        46,
+        6,
+        13,
+        22,
+        18,
+        49,
+        37,
+        10
+      ],
+      "predictedHitRate": 0.2792,
+      "predictedProbability": 0.2792,
+      "actualSpecial": 39,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": 2590,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026048,
+      "topZodiacs": [
+        "牛",
+        "马",
+        "龙"
+      ],
+      "topNumbers": [
+        1,
+        3,
+        42,
+        39,
+        6,
+        13,
+        18,
+        27,
+        49,
+        37
+      ],
+      "predictedHitRate": 0.1816,
+      "predictedProbability": 0.1816,
+      "actualSpecial": 24,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": 2490,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026049,
+      "topZodiacs": [
+        "牛",
+        "马",
+        "鸡"
+      ],
+      "topNumbers": [
+        1,
+        46,
+        6,
+        42,
+        13,
+        22,
+        18,
+        37,
+        49,
+        34
+      ],
+      "predictedHitRate": 0.2995,
+      "predictedProbability": 0.2995,
+      "actualSpecial": 13,
+      "hit": true,
+      "stake": 100,
+      "profit": 370,
+      "cumulativeBankroll": 2860,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026050,
+      "topZodiacs": [
+        "牛",
+        "马",
+        "狗"
+      ],
+      "topNumbers": [
+        1,
+        13,
+        6,
+        42,
+        21,
+        18,
+        9,
+        45,
+        37,
+        33
+      ],
+      "predictedHitRate": 0.3178,
+      "predictedProbability": 0.3178,
+      "actualSpecial": 23,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": 2760,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026051,
+      "topZodiacs": [
+        "牛",
+        "马",
+        "狗"
+      ],
+      "topNumbers": [
+        1,
+        13,
+        6,
+        42,
+        18,
+        21,
+        45,
+        9,
+        37,
+        33
+      ],
+      "predictedHitRate": 0.4,
+      "predictedProbability": 0.4,
+      "actualSpecial": 1,
+      "hit": true,
+      "stake": 100,
+      "profit": 370,
+      "cumulativeBankroll": 3130,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026052,
+      "topZodiacs": [
+        "马",
+        "牛",
+        "狗"
+      ],
+      "topNumbers": [
+        1,
+        13,
+        6,
+        21,
+        18,
+        45,
+        9,
+        42,
+        37,
+        33
+      ],
+      "predictedHitRate": 0.4286,
+      "predictedProbability": 0.4286,
+      "actualSpecial": 38,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": 3030,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026053,
+      "topZodiacs": [
+        "马",
+        "狗",
+        "虎"
+      ],
+      "topNumbers": [
+        1,
+        41,
+        13,
+        21,
+        45,
+        9,
+        29,
+        37,
+        33,
+        49
+      ],
+      "predictedHitRate": 0.4091,
+      "predictedProbability": 0.4091,
+      "actualSpecial": 15,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": 2930,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026054,
+      "topZodiacs": [
+        "马",
+        "狗",
+        "虎"
+      ],
+      "topNumbers": [
+        1,
+        13,
+        41,
+        45,
+        21,
+        37,
+        9,
+        29,
+        33,
+        49
+      ],
+      "predictedHitRate": 0.3913,
+      "predictedProbability": 0.3913,
+      "actualSpecial": 48,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": 2830,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026055,
+      "topZodiacs": [
+        "马",
+        "鼠",
+        "虎"
+      ],
+      "topNumbers": [
+        1,
+        41,
+        13,
+        19,
+        43,
+        31,
+        37,
+        29,
+        49,
+        17
+      ],
+      "predictedHitRate": 0.375,
+      "predictedProbability": 0.375,
+      "actualSpecial": 14,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": 2730,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026056,
+      "topZodiacs": [
+        "马",
+        "鼠",
+        "虎"
+      ],
+      "topNumbers": [
+        1,
+        13,
+        41,
+        19,
+        31,
+        43,
+        29,
+        37,
+        49,
+        17
+      ],
+      "predictedHitRate": 0.36,
+      "predictedProbability": 0.36,
+      "actualSpecial": 48,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": 2630,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026057,
+      "topZodiacs": [
+        "马",
+        "虎",
+        "牛"
+      ],
+      "topNumbers": [
+        1,
+        13,
+        41,
+        42,
+        6,
+        18,
+        29,
+        37,
+        49,
+        17
+      ],
+      "predictedHitRate": 0.3462,
+      "predictedProbability": 0.3462,
+      "actualSpecial": 23,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": 2530,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026058,
+      "topZodiacs": [
+        "马",
+        "虎",
+        "牛"
+      ],
+      "topNumbers": [
+        1,
+        13,
+        41,
+        42,
+        6,
+        18,
+        29,
+        37,
+        49,
+        17
+      ],
+      "predictedHitRate": 0.3333,
+      "predictedProbability": 0.3333,
+      "actualSpecial": 31,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": 2430,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026059,
+      "topZodiacs": [
+        "马",
+        "虎",
+        "牛"
+      ],
+      "topNumbers": [
+        1,
+        13,
+        41,
+        6,
+        18,
+        29,
+        37,
+        42,
+        49,
+        17
+      ],
+      "predictedHitRate": 0.3214,
+      "predictedProbability": 0.3214,
+      "actualSpecial": 10,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": 2330,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026060,
+      "topZodiacs": [
+        "马",
+        "虎",
+        "牛"
+      ],
+      "topNumbers": [
+        1,
+        13,
+        41,
+        6,
+        18,
+        42,
+        29,
+        37,
+        49,
+        17
+      ],
+      "predictedHitRate": 0.3103,
+      "predictedProbability": 0.3103,
+      "actualSpecial": 9,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": 2230,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026061,
+      "topZodiacs": [
+        "马",
+        "牛",
+        "龙"
+      ],
+      "topNumbers": [
+        1,
+        13,
+        6,
+        3,
+        39,
+        42,
+        27,
+        18,
+        37,
+        49
+      ],
+      "predictedHitRate": 0.3,
+      "predictedProbability": 0.3,
+      "actualSpecial": 29,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": 2130,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026062,
+      "topZodiacs": [
+        "马",
+        "牛",
+        "龙"
+      ],
+      "topNumbers": [
+        1,
+        13,
+        6,
+        3,
+        39,
+        42
+      ],
+      "predictedHitRate": 0.2903,
+      "predictedProbability": 0.2903,
+      "actualSpecial": 24,
+      "hit": false,
+      "stake": 60,
+      "profit": -60,
+      "cumulativeBankroll": 2070,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026063,
+      "topZodiacs": [
+        "马",
+        "龙",
+        "牛"
+      ],
+      "topNumbers": [
+        1,
+        13,
+        3,
+        39,
+        6,
+        27
+      ],
+      "predictedHitRate": 0.2813,
+      "predictedProbability": 0.2813,
+      "actualSpecial": 28,
+      "hit": false,
+      "stake": 60,
+      "profit": -60,
+      "cumulativeBankroll": 2010,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026064,
+      "topZodiacs": [
+        "马",
+        "龙",
+        "牛"
+      ],
+      "topNumbers": [
+        1,
+        13,
+        3,
+        39,
+        6,
+        27
+      ],
+      "predictedHitRate": 0.2727,
+      "predictedProbability": 0.2727,
+      "actualSpecial": 18,
+      "hit": false,
+      "stake": 60,
+      "profit": -60,
+      "cumulativeBankroll": 1950,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026065,
+      "topZodiacs": [
+        "马",
+        "龙",
+        "羊"
+      ],
+      "topNumbers": [
+        1,
+        48,
+        24,
+        13,
+        3,
+        39
+      ],
+      "predictedHitRate": 0.2647,
+      "predictedProbability": 0.2647,
+      "actualSpecial": 5,
+      "hit": false,
+      "stake": 60,
+      "profit": -60,
+      "cumulativeBankroll": 1890,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026066,
+      "topZodiacs": [
+        "马",
+        "龙",
+        "羊"
+      ],
+      "topNumbers": [
+        1,
+        48,
+        24,
+        13,
+        3,
+        39
+      ],
+      "predictedHitRate": 0.2571,
+      "predictedProbability": 0.2571,
+      "actualSpecial": 37,
+      "hit": false,
+      "stake": 60,
+      "profit": -60,
+      "cumulativeBankroll": 1830,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026067,
+      "topZodiacs": [
+        "龙",
+        "羊",
+        "马"
+      ],
+      "topNumbers": [
+        24,
+        1,
+        48,
+        13,
+        39,
+        37
+      ],
+      "predictedHitRate": 0.25,
+      "predictedProbability": 0.25,
+      "actualSpecial": 5,
+      "hit": false,
+      "stake": 60,
+      "profit": -60,
+      "cumulativeBankroll": 1770,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026068,
+      "topZodiacs": [
+        "龙",
+        "羊",
+        "马"
+      ],
+      "topNumbers": [
+        1,
+        48,
+        24,
+        13,
+        36,
+        3
+      ],
+      "predictedHitRate": 0.2432,
+      "predictedProbability": 0.2432,
+      "actualSpecial": 23,
+      "hit": false,
+      "stake": 60,
+      "profit": -60,
+      "cumulativeBankroll": 1710,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026069,
+      "topZodiacs": [
+        "龙",
+        "羊",
+        "马"
+      ],
+      "topNumbers": [
+        1,
+        48,
+        13,
+        24,
+        36,
+        3
+      ],
+      "predictedHitRate": 0.2368,
+      "predictedProbability": 0.2368,
+      "actualSpecial": 24,
+      "hit": true,
+      "stake": 60,
+      "profit": 410,
+      "cumulativeBankroll": 2120,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026070,
+      "topZodiacs": [
+        "龙",
+        "马",
+        "羊"
+      ],
+      "topNumbers": [
+        24,
+        1,
+        48,
+        13,
+        3,
+        36,
+        27,
+        39,
+        15,
+        12
+      ],
+      "predictedHitRate": 0.2564,
+      "predictedProbability": 0.2564,
+      "actualSpecial": 25,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": 2020,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026071,
+      "topZodiacs": [
+        "龙",
+        "马",
+        "羊"
+      ],
+      "topNumbers": [
+        24,
+        1,
+        48,
+        13,
+        3,
+        36,
+        15,
+        39,
+        27,
+        37
+      ],
+      "predictedHitRate": 0.25,
+      "predictedProbability": 0.25,
+      "actualSpecial": 48,
+      "hit": true,
+      "stake": 100,
+      "profit": 370,
+      "cumulativeBankroll": 2390,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026072,
+      "topZodiacs": [
+        "龙",
+        "马",
+        "羊"
+      ],
+      "topNumbers": [
+        48,
+        24,
+        1,
+        13,
+        3,
+        39,
+        27,
+        15,
+        36,
+        12
+      ],
+      "predictedHitRate": 0.2683,
+      "predictedProbability": 0.2683,
+      "actualSpecial": 46,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": 2290,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026073,
+      "topZodiacs": [
+        "龙",
+        "马",
+        "羊"
+      ],
+      "topNumbers": [
+        48,
+        24,
+        1,
+        13,
+        3,
+        39,
+        15,
+        27,
+        36,
+        12
+      ],
+      "predictedHitRate": 0.2619,
+      "predictedProbability": 0.2619,
+      "actualSpecial": 34,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": 2190,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026074,
+      "topZodiacs": [
+        "龙",
+        "羊",
+        "马"
+      ],
+      "topNumbers": [
+        48,
+        24,
+        1,
+        3,
+        39,
+        13,
+        27,
+        36,
+        12,
+        37
+      ],
+      "predictedHitRate": 0.2558,
+      "predictedProbability": 0.2558,
+      "actualSpecial": 10,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": 2090,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026075,
+      "topZodiacs": [
+        "龙",
+        "羊",
+        "马"
+      ],
+      "topNumbers": [
+        48,
+        24,
+        1,
+        3,
+        39,
+        13,
+        27,
+        37,
+        36,
+        12
+      ],
+      "predictedHitRate": 0.25,
+      "predictedProbability": 0.25,
+      "actualSpecial": 33,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": 1990,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026076,
+      "topZodiacs": [
+        "龙",
+        "羊",
+        "马"
+      ],
+      "topNumbers": [
+        48,
+        24,
+        1,
+        3,
+        39,
+        13,
+        37,
+        27,
+        36,
+        25
+      ],
+      "predictedHitRate": 0.2444,
+      "predictedProbability": 0.2444,
+      "actualSpecial": 2,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": 1890,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026077,
+      "topZodiacs": [
+        "羊",
+        "龙",
+        "马"
+      ],
+      "topNumbers": [
+        24,
+        48,
+        1,
+        39,
+        13,
+        3,
+        27,
+        25,
+        36,
+        15
+      ],
+      "predictedHitRate": 0.2391,
+      "predictedProbability": 0.2391,
+      "actualSpecial": 29,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": 1790,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026078,
+      "topZodiacs": [
+        "羊",
+        "马",
+        "龙"
+      ],
+      "topNumbers": [
+        24,
+        48,
+        1,
+        13,
+        3,
+        39,
+        25,
+        36,
+        27,
+        15
+      ],
+      "predictedHitRate": 0.234,
+      "predictedProbability": 0.234,
+      "actualSpecial": 46,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": 1690,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026079,
+      "topZodiacs": [
+        "羊",
+        "马",
+        "龙"
+      ],
+      "topNumbers": [
+        24,
+        48,
+        1,
+        13,
+        3,
+        39,
+        36,
+        27,
+        15,
+        25
+      ],
+      "predictedHitRate": 0.2292,
+      "predictedProbability": 0.2292,
+      "actualSpecial": 35,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": 1590,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026080,
+      "topZodiacs": [
+        "羊",
+        "马",
+        "龙"
+      ],
+      "topNumbers": [
+        24,
+        48,
+        1,
+        13,
+        3,
+        39,
+        36,
+        15,
+        27,
+        25
+      ],
+      "predictedHitRate": 0.2245,
+      "predictedProbability": 0.2245,
+      "actualSpecial": 3,
+      "hit": true,
+      "stake": 100,
+      "profit": 370,
+      "cumulativeBankroll": 1960,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026081,
+      "topZodiacs": [
+        "羊",
+        "马",
+        "鸡"
+      ],
+      "topNumbers": [
+        46,
+        24,
+        48,
+        1,
+        13,
+        10,
+        36,
+        37,
+        12,
+        34
+      ],
+      "predictedHitRate": 0.24,
+      "predictedProbability": 0.24,
+      "actualSpecial": 17,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": 1860,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026082,
+      "topZodiacs": [
+        "羊",
+        "鸡",
+        "鼠"
+      ],
+      "topNumbers": [
+        46,
+        24,
+        48,
+        19,
+        10,
+        43,
+        31,
+        36,
+        34,
+        12
+      ],
+      "predictedHitRate": 0.2353,
+      "predictedProbability": 0.2353,
+      "actualSpecial": 27,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": 1760,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026083,
+      "topZodiacs": [
+        "羊",
+        "鸡",
+        "马"
+      ],
+      "topNumbers": [
+        46,
+        48,
+        24,
+        10,
+        1,
+        34,
+        13,
+        37,
+        36,
+        12
+      ],
+      "predictedHitRate": 0.2308,
+      "predictedProbability": 0.2308,
+      "actualSpecial": 5,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": 1660,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026084,
+      "topZodiacs": [
+        "羊",
+        "马",
+        "鼠"
+      ],
+      "topNumbers": [
+        48,
+        24,
+        1,
+        19,
+        13,
+        31,
+        43,
+        36,
+        37,
+        12
+      ],
+      "predictedHitRate": 0.2264,
+      "predictedProbability": 0.2264,
+      "actualSpecial": 16,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": 1560,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026085,
+      "topZodiacs": [
+        "羊",
+        "马",
+        "虎"
+      ],
+      "topNumbers": [
+        5,
+        48,
+        24,
+        29,
+        1,
+        13,
+        41,
+        36,
+        37,
+        17
+      ],
+      "predictedHitRate": 0.2222,
+      "predictedProbability": 0.2222,
+      "actualSpecial": 19,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": 1460,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026086,
+      "topZodiacs": [
+        "羊",
+        "虎",
+        "马"
+      ],
+      "topNumbers": [
+        5,
+        29,
+        48,
+        24,
+        1,
+        13,
+        37,
+        17,
+        41,
+        36
+      ],
+      "predictedHitRate": 0.2182,
+      "predictedProbability": 0.2182,
+      "actualSpecial": 12,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": 1360,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026087,
+      "topZodiacs": [
+        "虎",
+        "鸡",
+        "马"
+      ],
+      "topNumbers": [
+        5,
+        46,
+        29,
+        1,
+        10,
+        13,
+        41,
+        17,
+        25,
+        34
+      ],
+      "predictedHitRate": 0.2143,
+      "predictedProbability": 0.2143,
+      "actualSpecial": 26,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": 1260,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026088,
+      "topZodiacs": [
+        "虎",
+        "鸡",
+        "马"
+      ],
+      "topNumbers": [
+        46,
+        5,
+        1,
+        29,
+        10,
+        13,
+        41,
+        17,
+        25,
+        34
+      ],
+      "predictedHitRate": 0.2105,
+      "predictedProbability": 0.2105,
+      "actualSpecial": 27,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": 1160,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026089,
+      "topZodiacs": [
+        "虎",
+        "鸡",
+        "马"
+      ],
+      "topNumbers": [
+        46,
+        5,
+        29,
+        1,
+        10,
+        13,
+        25,
+        41,
+        34,
+        17
+      ],
+      "predictedHitRate": 0.2069,
+      "predictedProbability": 0.2069,
+      "actualSpecial": 49,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": 1060,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026090,
+      "topZodiacs": [
+        "虎",
+        "鸡",
+        "牛"
+      ],
+      "topNumbers": [
+        46,
+        5,
+        29,
+        10,
+        41,
+        18,
+        34,
+        6,
+        17,
+        42
+      ],
+      "predictedHitRate": 0.2034,
+      "predictedProbability": 0.2034,
+      "actualSpecial": 36,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": 960,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026091,
+      "topZodiacs": [
+        "虎",
+        "鸡",
+        "牛"
+      ],
+      "topNumbers": [
+        46,
+        5,
+        29,
+        10,
+        18,
+        41
+      ],
+      "predictedHitRate": 0.2,
+      "predictedProbability": 0.2,
+      "actualSpecial": 37,
+      "hit": false,
+      "stake": 60,
+      "profit": -60,
+      "cumulativeBankroll": 900,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026092,
+      "topZodiacs": [
+        "虎",
+        "鸡",
+        "羊"
+      ],
+      "topNumbers": [
+        46,
+        5,
+        24,
+        29,
+        10,
+        34
+      ],
+      "predictedHitRate": 0.1967,
+      "predictedProbability": 0.1967,
+      "actualSpecial": 6,
+      "hit": false,
+      "stake": 60,
+      "profit": -60,
+      "cumulativeBankroll": 840,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026093,
+      "topZodiacs": [
+        "虎",
+        "鸡",
+        "羊"
+      ],
+      "topNumbers": [
+        5,
+        46,
+        29,
+        10,
+        34,
+        36
+      ],
+      "predictedHitRate": 0.1935,
+      "predictedProbability": 0.1935,
+      "actualSpecial": 40,
+      "hit": false,
+      "stake": 60,
+      "profit": -60,
+      "cumulativeBankroll": 780,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026094,
+      "topZodiacs": [
+        "虎",
+        "鸡",
+        "羊"
+      ],
+      "topNumbers": [
+        46,
+        5,
+        29,
+        10,
+        36,
+        48
+      ],
+      "predictedHitRate": 0.1905,
+      "predictedProbability": 0.1905,
+      "actualSpecial": 17,
+      "hit": false,
+      "stake": 60,
+      "profit": -60,
+      "cumulativeBankroll": 720,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026095,
+      "topZodiacs": [
+        "鸡",
+        "虎",
+        "羊"
+      ],
+      "topNumbers": [
+        17,
+        46,
+        5,
+        29,
+        36,
+        48
+      ],
+      "predictedHitRate": 0.1875,
+      "predictedProbability": 0.1875,
+      "actualSpecial": 35,
+      "hit": false,
+      "stake": 60,
+      "profit": -60,
+      "cumulativeBankroll": 660,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026096,
+      "topZodiacs": [
+        "鸡",
+        "羊",
+        "虎"
+      ],
+      "topNumbers": [
+        17,
+        46,
+        5,
+        29,
+        48,
+        24
+      ],
+      "predictedHitRate": 0.1846,
+      "predictedProbability": 0.1846,
+      "actualSpecial": 43,
+      "hit": false,
+      "stake": 60,
+      "profit": -60,
+      "cumulativeBankroll": 600,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026097,
+      "topZodiacs": [
+        "鸡",
+        "羊",
+        "虎"
+      ],
+      "topNumbers": [
+        17,
+        46,
+        5,
+        29,
+        48,
+        24
+      ],
+      "predictedHitRate": 0.1818,
+      "predictedProbability": 0.1818,
+      "actualSpecial": 11,
+      "hit": false,
+      "stake": 60,
+      "profit": -60,
+      "cumulativeBankroll": 540,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026098,
+      "topZodiacs": [
+        "鸡",
+        "羊",
+        "虎"
+      ],
+      "topNumbers": [
+        17,
+        46,
+        24,
+        48,
+        36,
+        5
+      ],
+      "predictedHitRate": 0.1791,
+      "predictedProbability": 0.1791,
+      "actualSpecial": 17,
+      "hit": true,
+      "stake": 60,
+      "profit": 410,
+      "cumulativeBankroll": 950,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026099,
+      "topZodiacs": [
+        "鸡",
+        "羊",
+        "虎"
+      ],
+      "topNumbers": [
+        17,
+        46,
+        48,
+        24,
+        5,
+        10,
+        29,
+        41,
+        34,
+        36
+      ],
+      "predictedHitRate": 0.1912,
+      "predictedProbability": 0.1912,
+      "actualSpecial": 12,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": 850,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026100,
+      "topZodiacs": [
+        "鸡",
+        "虎",
+        "龙"
+      ],
+      "topNumbers": [
+        17,
+        27,
+        46,
+        3,
+        5,
+        10,
+        29,
+        34,
+        41,
+        22
+      ],
+      "predictedHitRate": 0.1884,
+      "predictedProbability": 0.1884,
+      "actualSpecial": 33,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": 750,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026101,
+      "topZodiacs": [
+        "鸡",
+        "虎",
+        "龙"
+      ],
+      "topNumbers": [
+        17,
+        27,
+        46,
+        5,
+        10,
+        29,
+        34,
+        41,
+        3,
+        22
+      ],
+      "predictedHitRate": 0.1857,
+      "predictedProbability": 0.1857,
+      "actualSpecial": 39,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": 650,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026102,
+      "topZodiacs": [
+        "鸡",
+        "虎",
+        "蛇"
+      ],
+      "topNumbers": [
+        17,
+        46,
+        5,
+        10,
+        26,
+        29,
+        34,
+        41,
+        22,
+        38
+      ],
+      "predictedHitRate": 0.1831,
+      "predictedProbability": 0.1831,
+      "actualSpecial": 20,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": 550,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026103,
+      "topZodiacs": [
+        "鸡",
+        "虎",
+        "马"
+      ],
+      "topNumbers": [
+        17,
+        5,
+        46,
+        10,
+        29,
+        34,
+        1,
+        41,
+        37,
+        13
+      ],
+      "predictedHitRate": 0.1806,
+      "predictedProbability": 0.1806,
+      "actualSpecial": 6,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": 450,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026104,
+      "topZodiacs": [
+        "鸡",
+        "虎",
+        "马"
+      ],
+      "topNumbers": [
+        17,
+        46,
+        29,
+        10,
+        5,
+        1,
+        41,
+        37,
+        49,
+        13
+      ],
+      "predictedHitRate": 0.1781,
+      "predictedProbability": 0.1781,
+      "actualSpecial": 1,
+      "hit": true,
+      "stake": 100,
+      "profit": 370,
+      "cumulativeBankroll": 820,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026105,
+      "topZodiacs": [
+        "虎",
+        "鸡",
+        "蛇"
+      ],
+      "topNumbers": [
+        17,
+        46,
+        26,
+        29,
+        5,
+        41,
+        10,
+        2,
+        34,
+        14
+      ],
+      "predictedHitRate": 0.1892,
+      "predictedProbability": 0.1892,
+      "actualSpecial": 28,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": 720,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026106,
+      "topZodiacs": [
+        "虎",
+        "鸡",
+        "羊"
+      ],
+      "topNumbers": [
+        17,
+        12,
+        46,
+        29,
+        5,
+        48,
+        36,
+        41,
+        10,
+        24
+      ],
+      "predictedHitRate": 0.1867,
+      "predictedProbability": 0.1867,
+      "actualSpecial": 22,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": 620,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026107,
+      "topZodiacs": [
+        "虎",
+        "猴",
+        "龙"
+      ],
+      "topNumbers": [
+        17,
+        27,
+        11,
+        29,
+        5,
+        35,
+        23,
+        39,
+        3,
+        41
+      ],
+      "predictedHitRate": 0.1842,
+      "predictedProbability": 0.1842,
+      "actualSpecial": 49,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": 520,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026108,
+      "topZodiacs": [
+        "虎",
+        "龙",
+        "羊"
+      ],
+      "topNumbers": [
+        17,
+        27,
+        12,
+        39,
+        5,
+        29,
+        3,
+        36,
+        41,
+        24
+      ],
+      "predictedHitRate": 0.1818,
+      "predictedProbability": 0.1818,
+      "actualSpecial": 45,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": 420,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026109,
+      "topZodiacs": [
+        "虎",
+        "龙",
+        "羊"
+      ],
+      "topNumbers": [
+        17,
+        12,
+        5,
+        39,
+        27,
+        3,
+        29,
+        36,
+        41,
+        24
+      ],
+      "predictedHitRate": 0.1795,
+      "predictedProbability": 0.1795,
+      "actualSpecial": 16,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": 320,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026110,
+      "topZodiacs": [
+        "虎",
+        "龙",
+        "羊"
+      ],
+      "topNumbers": [
+        17,
+        5,
+        39,
+        27,
+        3,
+        36,
+        29,
+        12,
+        41,
+        24
+      ],
+      "predictedHitRate": 0.1772,
+      "predictedProbability": 0.1772,
+      "actualSpecial": 30,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": 220,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026111,
+      "topZodiacs": [
+        "虎",
+        "羊",
+        "马"
+      ],
+      "topNumbers": [
+        17,
+        49,
+        5,
+        1,
+        37,
+        12,
+        29,
+        41,
+        24,
+        48
+      ],
+      "predictedHitRate": 0.175,
+      "predictedProbability": 0.175,
+      "actualSpecial": 1,
+      "hit": true,
+      "stake": 100,
+      "profit": 370,
+      "cumulativeBankroll": 590,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026112,
+      "topZodiacs": [
+        "虎",
+        "羊",
+        "马"
+      ],
+      "topNumbers": [
+        1,
+        17,
+        12,
+        5,
+        49,
+        29,
+        24,
+        48,
+        41,
+        36
+      ],
+      "predictedHitRate": 0.1852,
+      "predictedProbability": 0.1852,
+      "actualSpecial": 9,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": 490,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026113,
+      "topZodiacs": [
+        "虎",
+        "羊",
+        "马"
+      ],
+      "topNumbers": [
+        1,
+        17,
+        12,
+        5,
+        49,
+        29,
+        36,
+        48,
+        41,
+        37
+      ],
+      "predictedHitRate": 0.1829,
+      "predictedProbability": 0.1829,
+      "actualSpecial": 2,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": 390,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026114,
+      "topZodiacs": [
+        "羊",
+        "马",
+        "虎"
+      ],
+      "topNumbers": [
+        1,
+        17,
+        12,
+        49,
+        5,
+        36,
+        37,
+        29,
+        48,
+        41
+      ],
+      "predictedHitRate": 0.1807,
+      "predictedProbability": 0.1807,
+      "actualSpecial": 30,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": 290,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026115,
+      "topZodiacs": [
+        "羊",
+        "马",
+        "虎"
+      ],
+      "topNumbers": [
+        1,
+        17,
+        12,
+        49,
+        5,
+        36,
+        37,
+        29,
+        48,
+        41
+      ],
+      "predictedHitRate": 0.1786,
+      "predictedProbability": 0.1786,
+      "actualSpecial": 4,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": 190,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026116,
+      "topZodiacs": [
+        "羊",
+        "马",
+        "虎"
+      ],
+      "topNumbers": [
+        1,
+        17,
+        12,
+        49,
+        36,
+        37,
+        5,
+        29,
+        48,
+        41
+      ],
+      "predictedHitRate": 0.1765,
+      "predictedProbability": 0.1765,
+      "actualSpecial": 22,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": 90,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026117,
+      "topZodiacs": [
+        "马",
+        "虎",
+        "羊"
+      ],
+      "topNumbers": [
+        1,
+        17,
+        49,
+        12,
+        36,
+        37,
+        5,
+        29,
+        48,
+        41
+      ],
+      "predictedHitRate": 0.1744,
+      "predictedProbability": 0.1744,
+      "actualSpecial": 16,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": -10,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026118,
+      "topZodiacs": [
+        "马",
+        "虎",
+        "羊"
+      ],
+      "topNumbers": [
+        1,
+        17,
+        12,
+        49,
+        36,
+        37,
+        29,
+        48,
+        41,
+        5
+      ],
+      "predictedHitRate": 0.1724,
+      "predictedProbability": 0.1724,
+      "actualSpecial": 8,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": -110,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026119,
+      "topZodiacs": [
+        "马",
+        "虎",
+        "羊"
+      ],
+      "topNumbers": [
+        1,
+        17,
+        12,
+        49,
+        36,
+        37,
+        29,
+        48,
+        41,
+        5
+      ],
+      "predictedHitRate": 0.1705,
+      "predictedProbability": 0.1705,
+      "actualSpecial": 11,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": -210,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026120,
+      "topZodiacs": [
+        "虎",
+        "马",
+        "羊"
+      ],
+      "topNumbers": [
+        1,
+        17,
+        36,
+        37,
+        49,
+        29,
+        12,
+        48,
+        41,
+        5
+      ],
+      "predictedHitRate": 0.1685,
+      "predictedProbability": 0.1685,
+      "actualSpecial": 6,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": -310,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026121,
+      "topZodiacs": [
+        "虎",
+        "马",
+        "兔"
+      ],
+      "topNumbers": [
+        1,
+        16,
+        17,
+        28,
+        37,
+        29,
+        49,
+        41,
+        5,
+        4
+      ],
+      "predictedHitRate": 0.1667,
+      "predictedProbability": 0.1667,
+      "actualSpecial": 44,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": -410,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026122,
+      "topZodiacs": [
+        "虎",
+        "兔",
+        "马"
+      ],
+      "topNumbers": [
+        16,
+        1,
+        17,
+        28,
+        29,
+        49
+      ],
+      "predictedHitRate": 0.1648,
+      "predictedProbability": 0.1648,
+      "actualSpecial": 1,
+      "hit": true,
+      "stake": 60,
+      "profit": 410,
+      "cumulativeBankroll": 0,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026123,
+      "topZodiacs": [
+        "虎",
+        "兔",
+        "鼠"
+      ],
+      "topNumbers": [
+        16,
+        17,
+        28,
+        19,
+        43,
+        29,
+        41,
+        40,
+        5,
+        31
+      ],
+      "predictedHitRate": 0.1739,
+      "predictedProbability": 0.1739,
+      "actualSpecial": 46,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": -100,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026124,
+      "topZodiacs": [
+        "虎",
+        "兔",
+        "牛"
+      ],
+      "topNumbers": [
+        16,
+        30,
+        6,
+        17,
+        28,
+        29,
+        41,
+        5,
+        4,
+        18
+      ],
+      "predictedHitRate": 0.172,
+      "predictedProbability": 0.172,
+      "actualSpecial": 39,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": -200,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026125,
+      "topZodiacs": [
+        "兔",
+        "虎",
+        "牛"
+      ],
+      "topNumbers": [
+        16,
+        6,
+        30,
+        28,
+        17,
+        4,
+        29,
+        41,
+        5,
+        18
+      ],
+      "predictedHitRate": 0.1702,
+      "predictedProbability": 0.1702,
+      "actualSpecial": 31,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": -300,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026126,
+      "topZodiacs": [
+        "兔",
+        "虎",
+        "牛"
+      ],
+      "topNumbers": [
+        16,
+        6,
+        30,
+        17,
+        29,
+        41,
+        28,
+        5,
+        18,
+        40
+      ],
+      "predictedHitRate": 0.1684,
+      "predictedProbability": 0.1684,
+      "actualSpecial": 49,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": -400,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026127,
+      "topZodiacs": [
+        "虎",
+        "兔",
+        "羊"
+      ],
+      "topNumbers": [
+        16,
+        17,
+        12,
+        29,
+        28,
+        36,
+        41,
+        5,
+        48,
+        24
+      ],
+      "predictedHitRate": 0.1667,
+      "predictedProbability": 0.1667,
+      "actualSpecial": 45,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": -500,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026128,
+      "topZodiacs": [
+        "兔",
+        "虎",
+        "马"
+      ],
+      "topNumbers": [
+        1,
+        16,
+        49,
+        17,
+        28,
+        41,
+        5,
+        29,
+        37,
+        13
+      ],
+      "predictedHitRate": 0.1649,
+      "predictedProbability": 0.1649,
+      "actualSpecial": 37,
+      "hit": true,
+      "stake": 100,
+      "profit": 370,
+      "cumulativeBankroll": -130,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026129,
+      "topZodiacs": [
+        "兔",
+        "羊",
+        "马"
+      ],
+      "topNumbers": [
+        1,
+        16,
+        49,
+        12,
+        28,
+        37,
+        36,
+        48,
+        24,
+        13
+      ],
+      "predictedHitRate": 0.1735,
+      "predictedProbability": 0.1735,
+      "actualSpecial": 41,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": -230,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026130,
+      "topZodiacs": [
+        "兔",
+        "马",
+        "牛"
+      ],
+      "topNumbers": [
+        1,
+        6,
+        30,
+        16,
+        49,
+        28,
+        37,
+        4,
+        13,
+        18
+      ],
+      "predictedHitRate": 0.1717,
+      "predictedProbability": 0.1717,
+      "actualSpecial": 29,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": -330,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026131,
+      "topZodiacs": [
+        "兔",
+        "马",
+        "牛"
+      ],
+      "topNumbers": [
+        1,
+        49,
+        16,
+        6,
+        30,
+        28,
+        37,
+        4,
+        13,
+        18
+      ],
+      "predictedHitRate": 0.17,
+      "predictedProbability": 0.17,
+      "actualSpecial": 7,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": -430,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026132,
+      "topZodiacs": [
+        "兔",
+        "马",
+        "牛"
+      ],
+      "topNumbers": [
+        1,
+        16,
+        6,
+        49,
+        30,
+        37,
+        4,
+        28,
+        13,
+        18
+      ],
+      "predictedHitRate": 0.1683,
+      "predictedProbability": 0.1683,
+      "actualSpecial": 30,
+      "hit": true,
+      "stake": 100,
+      "profit": 370,
+      "cumulativeBankroll": -60,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026133,
+      "topZodiacs": [
+        "马",
+        "兔",
+        "羊"
+      ],
+      "topNumbers": [
+        1,
+        16,
+        49,
+        28,
+        37,
+        12,
+        4,
+        36,
+        48,
+        13
+      ],
+      "predictedHitRate": 0.1765,
+      "predictedProbability": 0.1765,
+      "actualSpecial": 7,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": -160,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026134,
+      "topZodiacs": [
+        "马",
+        "兔",
+        "羊"
+      ],
+      "topNumbers": [
+        1,
+        16,
+        49,
+        28,
+        4,
+        12,
+        37,
+        36,
+        13,
+        48
+      ],
+      "predictedHitRate": 0.1748,
+      "predictedProbability": 0.1748,
+      "actualSpecial": 37,
+      "hit": true,
+      "stake": 100,
+      "profit": 370,
+      "cumulativeBankroll": 210,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026135,
+      "topZodiacs": [
+        "兔",
+        "马",
+        "羊"
+      ],
+      "topNumbers": [
+        37,
+        16,
+        1,
+        49,
+        28,
+        4,
+        12,
+        36,
+        48,
+        40
+      ],
+      "predictedHitRate": 0.1827,
+      "predictedProbability": 0.1827,
+      "actualSpecial": 30,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": 110,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026136,
+      "topZodiacs": [
+        "兔",
+        "马",
+        "羊"
+      ],
+      "topNumbers": [
+        37,
+        16,
+        1,
+        49,
+        28,
+        12,
+        36,
+        48,
+        13,
+        40
+      ],
+      "predictedHitRate": 0.181,
+      "predictedProbability": 0.181,
+      "actualSpecial": 48,
+      "hit": true,
+      "stake": 100,
+      "profit": 370,
+      "cumulativeBankroll": 480,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026137,
+      "topZodiacs": [
+        "兔",
+        "马",
+        "牛"
+      ],
+      "topNumbers": [
+        30,
+        37,
+        16,
+        1,
+        6,
+        28,
+        49,
+        13,
+        40,
+        18
+      ],
+      "predictedHitRate": 0.1887,
+      "predictedProbability": 0.1887,
+      "actualSpecial": 26,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": 380,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026138,
+      "topZodiacs": [
+        "兔",
+        "马",
+        "牛"
+      ],
+      "topNumbers": [
+        30,
+        37,
+        1,
+        6,
+        16,
+        28,
+        49,
+        40,
+        13,
+        18
+      ],
+      "predictedHitRate": 0.1869,
+      "predictedProbability": 0.1869,
+      "actualSpecial": 49,
+      "hit": true,
+      "stake": 100,
+      "profit": 370,
+      "cumulativeBankroll": 750,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026139,
+      "topZodiacs": [
+        "兔",
+        "马",
+        "牛"
+      ],
+      "topNumbers": [
+        30,
+        37,
+        49,
+        1,
+        6,
+        16,
+        28,
+        40,
+        13,
+        18
+      ],
+      "predictedHitRate": 0.1944,
+      "predictedProbability": 0.1944,
+      "actualSpecial": 24,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": 650,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026140,
+      "topZodiacs": [
+        "兔",
+        "马",
+        "牛"
+      ],
+      "topNumbers": [
+        30,
+        37,
+        1,
+        49,
+        6,
+        28,
+        16,
+        13,
+        40,
+        18
+      ],
+      "predictedHitRate": 0.1927,
+      "predictedProbability": 0.1927,
+      "actualSpecial": 16,
+      "hit": true,
+      "stake": 100,
+      "profit": 370,
+      "cumulativeBankroll": 1020,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026141,
+      "topZodiacs": [
+        "马",
+        "猴",
+        "牛"
+      ],
+      "topNumbers": [
+        30,
+        37,
+        1,
+        49,
+        11,
+        6,
+        23,
+        35,
+        13,
+        18
+      ],
+      "predictedHitRate": 0.2,
+      "predictedProbability": 0.2,
+      "actualSpecial": 33,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": 920,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026142,
+      "topZodiacs": [
+        "马",
+        "牛",
+        "猴"
+      ],
+      "topNumbers": [
+        30,
+        49,
+        37,
+        1,
+        6,
+        11,
+        23,
+        35,
+        13,
+        18
+      ],
+      "predictedHitRate": 0.1982,
+      "predictedProbability": 0.1982,
+      "actualSpecial": 23,
+      "hit": true,
+      "stake": 100,
+      "profit": 370,
+      "cumulativeBankroll": 1290,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026143,
+      "topZodiacs": [
+        "马",
+        "牛",
+        "鸡"
+      ],
+      "topNumbers": [
+        30,
+        49,
+        37,
+        46,
+        1,
+        6,
+        22,
+        13,
+        18,
+        42
+      ],
+      "predictedHitRate": 0.2054,
+      "predictedProbability": 0.2054,
+      "actualSpecial": 44,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": 1190,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026144,
+      "topZodiacs": [
+        "马",
+        "牛",
+        "鸡"
+      ],
+      "topNumbers": [
+        30,
+        37,
+        49,
+        1,
+        6,
+        22,
+        46,
+        13,
+        18,
+        42
+      ],
+      "predictedHitRate": 0.2035,
+      "predictedProbability": 0.2035,
+      "actualSpecial": 43,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": 1090,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026145,
+      "topZodiacs": [
+        "马",
+        "鸡",
+        "牛"
+      ],
+      "topNumbers": [
+        30,
+        49,
+        37,
+        1,
+        22,
+        6,
+        46,
+        13,
+        18,
+        10
+      ],
+      "predictedHitRate": 0.2018,
+      "predictedProbability": 0.2018,
+      "actualSpecial": 5,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": 990,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026146,
+      "topZodiacs": [
+        "马",
+        "鸡",
+        "牛"
+      ],
+      "topNumbers": [
+        49,
+        30,
+        37,
+        1,
+        22,
+        6,
+        46,
+        13,
+        18,
+        10
+      ],
+      "predictedHitRate": 0.2,
+      "predictedProbability": 0.2,
+      "actualSpecial": 42,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": 890,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026147,
+      "topZodiacs": [
+        "马",
+        "鸡",
+        "龙"
+      ],
+      "topNumbers": [
+        37,
+        49,
+        1,
+        46,
+        39,
+        22,
+        27,
+        13,
+        3,
+        25
+      ],
+      "predictedHitRate": 0.1983,
+      "predictedProbability": 0.1983,
+      "actualSpecial": 13,
+      "hit": true,
+      "stake": 100,
+      "profit": 370,
+      "cumulativeBankroll": 1260,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026148,
+      "topZodiacs": [
+        "马",
+        "鸡",
+        "龙"
+      ],
+      "topNumbers": [
+        37,
+        49,
+        1,
+        46,
+        39,
+        13,
+        22,
+        27,
+        3,
+        10
+      ],
+      "predictedHitRate": 0.2051,
+      "predictedProbability": 0.2051,
+      "actualSpecial": 48,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": 1160,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026149,
+      "topZodiacs": [
+        "马",
+        "鸡",
+        "龙"
+      ],
+      "topNumbers": [
+        37,
+        1,
+        49,
+        46,
+        39,
+        13,
+        22,
+        27,
+        3,
+        10
+      ],
+      "predictedHitRate": 0.2034,
+      "predictedProbability": 0.2034,
+      "actualSpecial": 27,
+      "hit": true,
+      "stake": 100,
+      "profit": 370,
+      "cumulativeBankroll": 1530,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026150,
+      "topZodiacs": [
+        "马",
+        "鸡",
+        "牛"
+      ],
+      "topNumbers": [
+        30,
+        37,
+        1,
+        49,
+        6,
+        46,
+        13,
+        42,
+        22,
+        10
+      ],
+      "predictedHitRate": 0.2101,
+      "predictedProbability": 0.2101,
+      "actualSpecial": 9,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": 1430,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026151,
+      "topZodiacs": [
+        "马",
+        "鸡",
+        "鼠"
+      ],
+      "topNumbers": [
+        7,
+        37,
+        1,
+        49,
+        46,
+        43,
+        13,
+        31,
+        22,
+        19
+      ],
+      "predictedHitRate": 0.2083,
+      "predictedProbability": 0.2083,
+      "actualSpecial": 31,
+      "hit": true,
+      "stake": 100,
+      "profit": 370,
+      "cumulativeBankroll": 1800,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026152,
+      "topZodiacs": [
+        "马",
+        "鸡",
+        "鼠"
+      ],
+      "topNumbers": [
+        37,
+        1,
+        49,
+        7,
+        31,
+        46,
+        43,
+        13,
+        22,
+        19
+      ],
+      "predictedHitRate": 0.2149,
+      "predictedProbability": 0.2149,
+      "actualSpecial": 45,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": 1700,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026153,
+      "topZodiacs": [
+        "马",
+        "鸡",
+        "鼠"
+      ],
+      "topNumbers": [
+        37,
+        49,
+        7,
+        31,
+        46,
+        43,
+        1,
+        13,
+        22,
+        19
+      ],
+      "predictedHitRate": 0.2131,
+      "predictedProbability": 0.2131,
+      "actualSpecial": 41,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": 1600,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026154,
+      "topZodiacs": [
+        "马",
+        "鼠",
+        "鸡"
+      ],
+      "topNumbers": [
+        37,
+        49,
+        31,
+        43,
+        1,
+        13,
+        7,
+        46,
+        22,
+        19
+      ],
+      "predictedHitRate": 0.2114,
+      "predictedProbability": 0.2114,
+      "actualSpecial": 41,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": 1500,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026155,
+      "topZodiacs": [
+        "马",
+        "鼠",
+        "虎"
+      ],
+      "topNumbers": [
+        41,
+        49,
+        1,
+        31,
+        37,
+        7,
+        13,
+        19,
+        5,
+        29
+      ],
+      "predictedHitRate": 0.2097,
+      "predictedProbability": 0.2097,
+      "actualSpecial": 7,
+      "hit": true,
+      "stake": 100,
+      "profit": 370,
+      "cumulativeBankroll": 1870,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026156,
+      "topZodiacs": [
+        "马",
+        "虎",
+        "鼠"
+      ],
+      "topNumbers": [
+        41,
+        49,
+        1,
+        7,
+        37,
+        13,
+        31,
+        29,
+        19,
+        43
+      ],
+      "predictedHitRate": 0.216,
+      "predictedProbability": 0.216,
+      "actualSpecial": 1,
+      "hit": true,
+      "stake": 100,
+      "profit": 370,
+      "cumulativeBankroll": 2240,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026157,
+      "topZodiacs": [
+        "马",
+        "虎",
+        "鼠"
+      ],
+      "topNumbers": [
+        41,
+        7,
+        49,
+        37,
+        29,
+        1,
+        31,
+        13,
+        43,
+        19
+      ],
+      "predictedHitRate": 0.2222,
+      "predictedProbability": 0.2222,
+      "actualSpecial": 40,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": 2140,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026158,
+      "topZodiacs": [
+        "马",
+        "虎",
+        "鼠"
+      ],
+      "topNumbers": [
+        41,
+        7,
+        49,
+        37,
+        29,
+        1,
+        31,
+        43,
+        19,
+        5
+      ],
+      "predictedHitRate": 0.2205,
+      "predictedProbability": 0.2205,
+      "actualSpecial": 16,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": 2040,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026159,
+      "topZodiacs": [
+        "虎",
+        "鼠",
+        "牛"
+      ],
+      "topNumbers": [
+        41,
+        7,
+        30,
+        29,
+        31,
+        6,
+        43,
+        19,
+        5,
+        42
+      ],
+      "predictedHitRate": 0.2188,
+      "predictedProbability": 0.2188,
+      "actualSpecial": 39,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": 1940,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026160,
+      "topZodiacs": [
+        "鼠",
+        "牛",
+        "马"
+      ],
+      "topNumbers": [
+        7,
+        30,
+        1,
+        31,
+        6,
+        43,
+        37,
+        19,
+        42,
+        49
+      ],
+      "predictedHitRate": 0.2171,
+      "predictedProbability": 0.2171,
+      "actualSpecial": 2,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": 1840,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026161,
+      "topZodiacs": [
+        "鼠",
+        "牛",
+        "马"
+      ],
+      "topNumbers": [
+        7,
+        30,
+        1,
+        31,
+        43,
+        6,
+        37,
+        42,
+        19,
+        49
+      ],
+      "predictedHitRate": 0.2154,
+      "predictedProbability": 0.2154,
+      "actualSpecial": 8,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": 1740,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026162,
+      "topZodiacs": [
+        "牛",
+        "马",
+        "鼠"
+      ],
+      "topNumbers": [
+        30,
+        7,
+        43,
+        1,
+        37,
+        31,
+        42,
+        6,
+        49,
+        13
+      ],
+      "predictedHitRate": 0.2137,
+      "predictedProbability": 0.2137,
+      "actualSpecial": 32,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": 1640,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026163,
+      "topZodiacs": [
+        "马",
+        "鼠",
+        "羊"
+      ],
+      "topNumbers": [
+        48,
+        7,
+        1,
+        43,
+        37,
+        31,
+        49,
+        13,
+        24,
+        19
+      ],
+      "predictedHitRate": 0.2121,
+      "predictedProbability": 0.2121,
+      "actualSpecial": 37,
+      "hit": true,
+      "stake": 100,
+      "profit": 370,
+      "cumulativeBankroll": 2010,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026164,
+      "topZodiacs": [
+        "羊",
+        "马",
+        "牛"
+      ],
+      "topNumbers": [
+        48,
+        37,
+        1,
+        30,
+        42,
+        49,
+        13,
+        6,
+        24,
+        36
+      ],
+      "predictedHitRate": 0.218,
+      "predictedProbability": 0.218,
+      "actualSpecial": 21,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": 1910,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026165,
+      "topZodiacs": [
+        "羊",
+        "牛",
+        "虎"
+      ],
+      "topNumbers": [
+        41,
+        48,
+        30,
+        5,
+        42,
+        6,
+        24,
+        29,
+        36,
+        12
+      ],
+      "predictedHitRate": 0.2164,
+      "predictedProbability": 0.2164,
+      "actualSpecial": 3,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": 1810,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026166,
+      "topZodiacs": [
+        "羊",
+        "虎",
+        "马"
+      ],
+      "topNumbers": [
+        41,
+        48,
+        1,
+        37,
+        49,
+        13,
+        24,
+        29,
+        36,
+        5
+      ],
+      "predictedHitRate": 0.2148,
+      "predictedProbability": 0.2148,
+      "actualSpecial": 6,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": 1710,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026167,
+      "topZodiacs": [
+        "马",
+        "虎",
+        "鼠"
+      ],
+      "topNumbers": [
+        41,
+        37,
+        31,
+        49,
+        13,
+        1,
+        7,
+        43,
+        29,
+        19
+      ],
+      "predictedHitRate": 0.2132,
+      "predictedProbability": 0.2132,
+      "actualSpecial": 19,
+      "hit": true,
+      "stake": 100,
+      "profit": 370,
+      "cumulativeBankroll": 2080,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026168,
+      "topZodiacs": [
+        "马",
+        "虎",
+        "羊"
+      ],
+      "topNumbers": [
+        41,
+        48,
+        37,
+        49,
+        1,
+        24,
+        29,
+        5,
+        13,
+        17
+      ],
+      "predictedHitRate": 0.219,
+      "predictedProbability": 0.219,
+      "actualSpecial": 15,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": 1980,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026169,
+      "topZodiacs": [
+        "虎",
+        "羊",
+        "狗"
+      ],
+      "topNumbers": [
+        41,
+        9,
+        45,
+        21,
+        24,
+        33,
+        48,
+        29,
+        5,
+        17
+      ],
+      "predictedHitRate": 0.2174,
+      "predictedProbability": 0.2174,
+      "actualSpecial": 24,
+      "hit": true,
+      "stake": 100,
+      "profit": 370,
+      "cumulativeBankroll": 2350,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026170,
+      "topZodiacs": [
+        "虎",
+        "狗",
+        "马"
+      ],
+      "topNumbers": [
+        41,
+        37,
+        9,
+        45,
+        1,
+        33,
+        21,
+        5,
+        29,
+        49
+      ],
+      "predictedHitRate": 0.223,
+      "predictedProbability": 0.223,
+      "actualSpecial": 3,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": 2250,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026171,
+      "topZodiacs": [
+        "虎",
+        "猴",
+        "马"
+      ],
+      "topNumbers": [
+        41,
+        1,
+        23,
+        37,
+        5,
+        11,
+        29,
+        49,
+        13,
+        17
+      ],
+      "predictedHitRate": 0.2214,
+      "predictedProbability": 0.2214,
+      "actualSpecial": 28,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": 2150,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026172,
+      "topZodiacs": [
+        "虎",
+        "马",
+        "猴"
+      ],
+      "topNumbers": [
+        41,
+        1,
+        23,
+        37,
+        5,
+        11,
+        29,
+        49,
+        13,
+        17
+      ],
+      "predictedHitRate": 0.2199,
+      "predictedProbability": 0.2199,
+      "actualSpecial": 44,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": 2050,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026173,
+      "topZodiacs": [
+        "虎",
+        "马",
+        "龙"
+      ],
+      "topNumbers": [
+        41,
+        3,
+        1,
+        37,
+        39,
+        5,
+        27,
+        13,
+        29,
+        49
+      ],
+      "predictedHitRate": 0.2183,
+      "predictedProbability": 0.2183,
+      "actualSpecial": 26,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": 1950,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026174,
+      "topZodiacs": [
+        "虎",
+        "马",
+        "龙"
+      ],
+      "topNumbers": [
+        3,
+        41,
+        1,
+        39,
+        5,
+        37,
+        27,
+        13,
+        29,
+        49
+      ],
+      "predictedHitRate": 0.2168,
+      "predictedProbability": 0.2168,
+      "actualSpecial": 41,
+      "hit": true,
+      "stake": 100,
+      "profit": 370,
+      "cumulativeBankroll": 2320,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026175,
+      "topZodiacs": [
+        "马",
+        "龙",
+        "狗"
+      ],
+      "topNumbers": [
+        3,
+        1,
+        39,
+        37,
+        13,
+        27,
+        49,
+        9,
+        45,
+        33
+      ],
+      "predictedHitRate": 0.2222,
+      "predictedProbability": 0.2222,
+      "actualSpecial": 26,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": 2220,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026176,
+      "topZodiacs": [
+        "马",
+        "龙",
+        "狗"
+      ],
+      "topNumbers": [
+        3,
+        1,
+        39,
+        37,
+        13,
+        27,
+        49,
+        9,
+        45,
+        33
+      ],
+      "predictedHitRate": 0.2207,
+      "predictedProbability": 0.2207,
+      "actualSpecial": 10,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": 2120,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026177,
+      "topZodiacs": [
+        "马",
+        "龙",
+        "狗"
+      ],
+      "topNumbers": [
+        3,
+        39,
+        37,
+        27,
+        13,
+        9,
+        45,
+        1,
+        49,
+        33
+      ],
+      "predictedHitRate": 0.2192,
+      "predictedProbability": 0.2192,
+      "actualSpecial": 14,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": 2020,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026178,
+      "topZodiacs": [
+        "龙",
+        "马",
+        "鼠"
+      ],
+      "topNumbers": [
+        3,
+        39,
+        27,
+        37,
+        31,
+        1,
+        43,
+        7,
+        49,
+        15
+      ],
+      "predictedHitRate": 0.2177,
+      "predictedProbability": 0.2177,
+      "actualSpecial": 18,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": 1920,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026179,
+      "topZodiacs": [
+        "龙",
+        "马",
+        "鼠"
+      ],
+      "topNumbers": [
+        3,
+        39,
+        27,
+        31,
+        37,
+        1,
+        7,
+        43,
+        19,
+        49
+      ],
+      "predictedHitRate": 0.2162,
+      "predictedProbability": 0.2162,
+      "actualSpecial": 15,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": 1820,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026180,
+      "topZodiacs": [
+        "马",
+        "鼠",
+        "狗"
+      ],
+      "topNumbers": [
+        9,
+        31,
+        37,
+        45,
+        7,
+        1,
+        21,
+        19,
+        43,
+        33
+      ],
+      "predictedHitRate": 0.2148,
+      "predictedProbability": 0.2148,
+      "actualSpecial": 21,
+      "hit": true,
+      "stake": 100,
+      "profit": 370,
+      "cumulativeBankroll": 2190,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026181,
+      "topZodiacs": [
+        "鼠",
+        "马",
+        "龙"
+      ],
+      "topNumbers": [
+        3,
+        15,
+        31,
+        37,
+        7,
+        1,
+        19,
+        43,
+        27,
+        49
+      ],
+      "predictedHitRate": 0.22,
+      "predictedProbability": 0.22,
+      "actualSpecial": 19,
+      "hit": true,
+      "stake": 100,
+      "profit": 370,
+      "cumulativeBankroll": 2560,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026182,
+      "topZodiacs": [
+        "马",
+        "龙",
+        "蛇"
+      ],
+      "topNumbers": [
+        26,
+        3,
+        15,
+        37,
+        1,
+        27,
+        49,
+        39,
+        13,
+        14
+      ],
+      "predictedHitRate": 0.2252,
+      "predictedProbability": 0.2252,
+      "actualSpecial": 41,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": 2460,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026183,
+      "topZodiacs": [
+        "马",
+        "龙",
+        "兔"
+      ],
+      "topNumbers": [
+        3,
+        15,
+        37,
+        1,
+        16,
+        27,
+        49,
+        39,
+        13,
+        28
+      ],
+      "predictedHitRate": 0.2237,
+      "predictedProbability": 0.2237,
+      "actualSpecial": 24,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": 2360,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026184,
+      "topZodiacs": [
+        "马",
+        "龙",
+        "兔"
+      ],
+      "topNumbers": [
+        3,
+        15,
+        1,
+        16,
+        39,
+        28,
+        27,
+        49,
+        13,
+        37
+      ],
+      "predictedHitRate": 0.2222,
+      "predictedProbability": 0.2222,
+      "actualSpecial": 1,
+      "hit": true,
+      "stake": 100,
+      "profit": 370,
+      "cumulativeBankroll": 2730,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026185,
+      "topZodiacs": [
+        "龙",
+        "兔",
+        "蛇"
+      ],
+      "topNumbers": [
+        26,
+        3,
+        15,
+        16,
+        39,
+        28,
+        14,
+        40,
+        27,
+        2
+      ],
+      "predictedHitRate": 0.2273,
+      "predictedProbability": 0.2273,
+      "actualSpecial": 36,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": 2630,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026186,
+      "topZodiacs": [
+        "龙",
+        "兔",
+        "蛇"
+      ],
+      "topNumbers": [
+        26,
+        15,
+        3,
+        16,
+        39,
+        28,
+        14,
+        40,
+        2,
+        27
+      ],
+      "predictedHitRate": 0.2258,
+      "predictedProbability": 0.2258,
+      "actualSpecial": 23,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": 2530,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026187,
+      "topZodiacs": [
+        "龙",
+        "兔",
+        "蛇"
+      ],
+      "topNumbers": [
+        26,
+        15,
+        3,
+        16,
+        39,
+        28,
+        14,
+        40,
+        2,
+        27
+      ],
+      "predictedHitRate": 0.2244,
+      "predictedProbability": 0.2244,
+      "actualSpecial": 1,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": 2430,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026188,
+      "topZodiacs": [
+        "龙",
+        "蛇",
+        "猪"
+      ],
+      "topNumbers": [
+        26,
+        15,
+        3,
+        39,
+        44,
+        2,
+        8,
+        32,
+        27,
+        14
+      ],
+      "predictedHitRate": 0.2229,
+      "predictedProbability": 0.2229,
+      "actualSpecial": 16,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": 2330,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026189,
+      "topZodiacs": [
+        "龙",
+        "蛇",
+        "猪"
+      ],
+      "topNumbers": [
+        26,
+        3,
+        15,
+        39,
+        44,
+        2,
+        8,
+        32,
+        27,
+        14
+      ],
+      "predictedHitRate": 0.2215,
+      "predictedProbability": 0.2215,
+      "actualSpecial": 15,
+      "hit": true,
+      "stake": 100,
+      "profit": 370,
+      "cumulativeBankroll": 2700,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026190,
+      "topZodiacs": [
+        "蛇",
+        "猪",
+        "龙"
+      ],
+      "topNumbers": [
+        26,
+        15,
+        3,
+        44,
+        2,
+        8,
+        32,
+        39,
+        27,
+        14
+      ],
+      "predictedHitRate": 0.2264,
+      "predictedProbability": 0.2264,
+      "actualSpecial": 16,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": 2600,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026191,
+      "topZodiacs": [
+        "龙",
+        "猪",
+        "蛇"
+      ],
+      "topNumbers": [
+        26,
+        15,
+        44,
+        8,
+        3,
+        32,
+        39,
+        27,
+        2,
+        14
+      ],
+      "predictedHitRate": 0.225,
+      "predictedProbability": 0.225,
+      "actualSpecial": 29,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": 2500,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026192,
+      "topZodiacs": [
+        "龙",
+        "蛇",
+        "猪"
+      ],
+      "topNumbers": [
+        26,
+        15,
+        44,
+        3,
+        32,
+        39,
+        27,
+        8,
+        2,
+        14
+      ],
+      "predictedHitRate": 0.2236,
+      "predictedProbability": 0.2236,
+      "actualSpecial": 25,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": 2400,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026193,
+      "topZodiacs": [
+        "龙",
+        "蛇",
+        "牛"
+      ],
+      "topNumbers": [
+        26,
+        15,
+        3,
+        6,
+        39,
+        27,
+        14,
+        2,
+        18,
+        42
+      ],
+      "predictedHitRate": 0.2222,
+      "predictedProbability": 0.2222,
+      "actualSpecial": 9,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": 2300,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026194,
+      "topZodiacs": [
+        "龙",
+        "蛇",
+        "牛"
+      ],
+      "topNumbers": [
+        15,
+        26,
+        3,
+        6,
+        39,
+        27,
+        14,
+        18,
+        2,
+        42
+      ],
+      "predictedHitRate": 0.2209,
+      "predictedProbability": 0.2209,
+      "actualSpecial": 26,
+      "hit": true,
+      "stake": 100,
+      "profit": 370,
+      "cumulativeBankroll": 2670,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026195,
+      "topZodiacs": [
+        "龙",
+        "牛",
+        "羊"
+      ],
+      "topNumbers": [
+        15,
+        3,
+        6,
+        24,
+        39,
+        27,
+        36,
+        18,
+        48,
+        42
+      ],
+      "predictedHitRate": 0.2256,
+      "predictedProbability": 0.2256,
+      "actualSpecial": 25,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": 2570,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026196,
+      "topZodiacs": [
+        "龙",
+        "羊",
+        "牛"
+      ],
+      "topNumbers": [
+        15,
+        6,
+        24,
+        3,
+        39,
+        18,
+        27,
+        48,
+        42,
+        36
+      ],
+      "predictedHitRate": 0.2242,
+      "predictedProbability": 0.2242,
+      "actualSpecial": 39,
+      "hit": true,
+      "stake": 100,
+      "profit": 370,
+      "cumulativeBankroll": 2940,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026197,
+      "topZodiacs": [
+        "龙",
+        "羊",
+        "鼠"
+      ],
+      "topNumbers": [
+        15,
+        19,
+        24,
+        3,
+        31,
+        48,
+        27,
+        36,
+        39,
+        7
+      ],
+      "predictedHitRate": 0.2289,
+      "predictedProbability": 0.2289,
+      "actualSpecial": 8,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": 2840,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026198,
+      "topZodiacs": [
+        "龙",
+        "羊",
+        "马"
+      ],
+      "topNumbers": [
+        15,
+        1,
+        25,
+        24,
+        3,
+        48,
+        39,
+        27,
+        36,
+        37
+      ],
+      "predictedHitRate": 0.2275,
+      "predictedProbability": 0.2275,
+      "actualSpecial": 7,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": 2740,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026199,
+      "topZodiacs": [
+        "羊",
+        "龙",
+        "马"
+      ],
+      "topNumbers": [
+        1,
+        15,
+        25,
+        24,
+        3,
+        39,
+        36,
+        27,
+        37,
+        48
+      ],
+      "predictedHitRate": 0.2262,
+      "predictedProbability": 0.2262,
+      "actualSpecial": 36,
+      "hit": true,
+      "stake": 100,
+      "profit": 370,
+      "cumulativeBankroll": 3110,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026200,
+      "topZodiacs": [
+        "马",
+        "龙",
+        "蛇"
+      ],
+      "topNumbers": [
+        1,
+        25,
+        26,
+        3,
+        15,
+        39,
+        37,
+        2,
+        27,
+        49
+      ],
+      "predictedHitRate": 0.2308,
+      "predictedProbability": 0.2308,
+      "actualSpecial": 39,
+      "hit": true,
+      "stake": 100,
+      "profit": 370,
+      "cumulativeBankroll": 3480,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026201,
+      "topZodiacs": [
+        "马",
+        "蛇",
+        "兔"
+      ],
+      "topNumbers": [
+        1,
+        16,
+        26,
+        25,
+        28,
+        37,
+        2,
+        49,
+        13,
+        14
+      ],
+      "predictedHitRate": 0.2353,
+      "predictedProbability": 0.2353,
+      "actualSpecial": 32,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": 3380,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026202,
+      "topZodiacs": [
+        "马",
+        "蛇",
+        "虎"
+      ],
+      "topNumbers": [
+        1,
+        41,
+        26,
+        25,
+        37,
+        2,
+        29,
+        49,
+        14,
+        13
+      ],
+      "predictedHitRate": 0.2339,
+      "predictedProbability": 0.2339,
+      "actualSpecial": 40,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": 3280,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026203,
+      "topZodiacs": [
+        "马",
+        "蛇",
+        "虎"
+      ],
+      "topNumbers": [
+        1,
+        26,
+        25,
+        41,
+        37,
+        29,
+        2,
+        49,
+        14,
+        13
+      ],
+      "predictedHitRate": 0.2326,
+      "predictedProbability": 0.2326,
+      "actualSpecial": 25,
+      "hit": true,
+      "stake": 100,
+      "profit": 370,
+      "cumulativeBankroll": 3650,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026204,
+      "topZodiacs": [
+        "马",
+        "虎",
+        "龙"
+      ],
+      "topNumbers": [
+        25,
+        1,
+        39,
+        41,
+        15,
+        3,
+        37,
+        27,
+        49,
+        29
+      ],
+      "predictedHitRate": 0.237,
+      "predictedProbability": 0.237,
+      "actualSpecial": 5,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": 3550,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026205,
+      "topZodiacs": [
+        "马",
+        "龙",
+        "牛"
+      ],
+      "topNumbers": [
+        25,
+        39,
+        1,
+        15,
+        6,
+        3,
+        18,
+        37,
+        27,
+        49
+      ],
+      "predictedHitRate": 0.2356,
+      "predictedProbability": 0.2356,
+      "actualSpecial": 3,
+      "hit": true,
+      "stake": 100,
+      "profit": 370,
+      "cumulativeBankroll": 3920,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026206,
+      "topZodiacs": [
+        "马",
+        "龙",
+        "牛"
+      ],
+      "topNumbers": [
+        25,
+        39,
+        1,
+        15,
+        6,
+        18,
+        37,
+        27,
+        3,
+        49
+      ],
+      "predictedHitRate": 0.24,
+      "predictedProbability": 0.24,
+      "actualSpecial": 47,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": 3820,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026207,
+      "topZodiacs": [
+        "马",
+        "龙",
+        "牛"
+      ],
+      "topNumbers": [
+        25,
+        39,
+        1,
+        15,
+        6,
+        3,
+        18,
+        37,
+        27,
+        49
+      ],
+      "predictedHitRate": 0.2386,
+      "predictedProbability": 0.2386,
+      "actualSpecial": 31,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": 3720,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026208,
+      "topZodiacs": [
+        "马",
+        "龙",
+        "牛"
+      ],
+      "topNumbers": [
+        25,
+        39,
+        15,
+        1,
+        3,
+        6,
+        18,
+        37,
+        27,
+        49
+      ],
+      "predictedHitRate": 0.2373,
+      "predictedProbability": 0.2373,
+      "actualSpecial": 19,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": 3620,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026209,
+      "topZodiacs": [
+        "马",
+        "龙",
+        "牛"
+      ],
+      "topNumbers": [
+        25,
+        39,
+        15,
+        1,
+        3,
+        6,
+        37,
+        27,
+        18,
+        49
+      ],
+      "predictedHitRate": 0.236,
+      "predictedProbability": 0.236,
+      "actualSpecial": 8,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": 3520,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026210,
+      "topZodiacs": [
+        "马",
+        "龙",
+        "羊"
+      ],
+      "topNumbers": [
+        25,
+        39,
+        1,
+        3,
+        24,
+        36,
+        37,
+        15,
+        49,
+        48
+      ],
+      "predictedHitRate": 0.2346,
+      "predictedProbability": 0.2346,
+      "actualSpecial": 49,
+      "hit": true,
+      "stake": 100,
+      "profit": 370,
+      "cumulativeBankroll": 3890,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026211,
+      "topZodiacs": [
+        "马",
+        "龙",
+        "牛"
+      ],
+      "topNumbers": [
+        25,
+        39,
+        1,
+        3,
+        6,
+        15,
+        37,
+        18,
+        27,
+        49
+      ],
+      "predictedHitRate": 0.2389,
+      "predictedProbability": 0.2389,
+      "actualSpecial": 1,
+      "hit": true,
+      "stake": 100,
+      "profit": 370,
+      "cumulativeBankroll": 4260,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026212,
+      "topZodiacs": [
+        "马",
+        "牛",
+        "龙"
+      ],
+      "topNumbers": [
+        25,
+        1,
+        39,
+        3,
+        6,
+        15,
+        37,
+        18,
+        49,
+        27
+      ],
+      "predictedHitRate": 0.2431,
+      "predictedProbability": 0.2431,
+      "actualSpecial": 6,
+      "hit": true,
+      "stake": 100,
+      "profit": 370,
+      "cumulativeBankroll": 4630,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026213,
+      "topZodiacs": [
+        "马",
+        "龙",
+        "羊"
+      ],
+      "topNumbers": [
+        25,
+        1,
+        39,
+        3,
+        36,
+        24,
+        49,
+        15,
+        37,
+        48
+      ],
+      "predictedHitRate": 0.2473,
+      "predictedProbability": 0.2473,
+      "actualSpecial": 35,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": 4530,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026214,
+      "topZodiacs": [
+        "马",
+        "龙",
+        "鸡"
+      ],
+      "topNumbers": [
+        1,
+        25,
+        39,
+        3,
+        49,
+        15,
+        46,
+        10,
+        27,
+        37
+      ],
+      "predictedHitRate": 0.2459,
+      "predictedProbability": 0.2459,
+      "actualSpecial": 4,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": 4430,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026215,
+      "topZodiacs": [
+        "马",
+        "龙",
+        "鸡"
+      ],
+      "topNumbers": [
+        39,
+        25,
+        1,
+        3,
+        15,
+        49,
+        46,
+        10,
+        27,
+        37
+      ],
+      "predictedHitRate": 0.2446,
+      "predictedProbability": 0.2446,
+      "actualSpecial": 14,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": 4330,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026216,
+      "topZodiacs": [
+        "马",
+        "龙",
+        "鸡"
+      ],
+      "topNumbers": [
+        39,
+        1,
+        25,
+        15,
+        49,
+        3,
+        46,
+        10,
+        27,
+        37
+      ],
+      "predictedHitRate": 0.2432,
+      "predictedProbability": 0.2432,
+      "actualSpecial": 37,
+      "hit": true,
+      "stake": 100,
+      "profit": 370,
+      "cumulativeBankroll": 4700,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026217,
+      "topZodiacs": [
+        "龙",
+        "马",
+        "鸡"
+      ],
+      "topNumbers": [
+        1,
+        39,
+        25,
+        15,
+        49,
+        3,
+        46,
+        37,
+        10,
+        27
+      ],
+      "predictedHitRate": 0.2473,
+      "predictedProbability": 0.2473,
+      "actualSpecial": 26,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": 4600,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026218,
+      "topZodiacs": [
+        "龙",
+        "马",
+        "狗"
+      ],
+      "topNumbers": [
+        39,
+        25,
+        1,
+        49,
+        3,
+        37,
+        15,
+        9,
+        21,
+        45
+      ],
+      "predictedHitRate": 0.246,
+      "predictedProbability": 0.246,
+      "actualSpecial": 17,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": 4500,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026219,
+      "topZodiacs": [
+        "龙",
+        "马",
+        "狗"
+      ],
+      "topNumbers": [
+        39,
+        25,
+        1,
+        49,
+        3,
+        37,
+        15,
+        9,
+        21,
+        45
+      ],
+      "predictedHitRate": 0.2447,
+      "predictedProbability": 0.2447,
+      "actualSpecial": 43,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": 4400,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026220,
+      "topZodiacs": [
+        "马",
+        "龙",
+        "狗"
+      ],
+      "topNumbers": [
+        39,
+        25,
+        1,
+        49,
+        3,
+        37,
+        9,
+        15,
+        21,
+        45
+      ],
+      "predictedHitRate": 0.2434,
+      "predictedProbability": 0.2434,
+      "actualSpecial": 48,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": 4300,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026221,
+      "topZodiacs": [
+        "马",
+        "龙",
+        "狗"
+      ],
+      "topNumbers": [
+        25,
+        1,
+        37,
+        3,
+        49,
+        39,
+        9,
+        21,
+        15,
+        45
+      ],
+      "predictedHitRate": 0.2421,
+      "predictedProbability": 0.2421,
+      "actualSpecial": 1,
+      "hit": true,
+      "stake": 100,
+      "profit": 370,
+      "cumulativeBankroll": 4670,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026222,
+      "topZodiacs": [
+        "马",
+        "龙",
+        "狗"
+      ],
+      "topNumbers": [
+        1,
+        25,
+        39,
+        9,
+        3,
+        37,
+        21,
+        15,
+        45,
+        27
+      ],
+      "predictedHitRate": 0.2461,
+      "predictedProbability": 0.2461,
+      "actualSpecial": 26,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": 4570,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026223,
+      "topZodiacs": [
+        "龙",
+        "马",
+        "狗"
+      ],
+      "topNumbers": [
+        1,
+        25,
+        39,
+        9,
+        3,
+        21,
+        15,
+        45,
+        27,
+        49
+      ],
+      "predictedHitRate": 0.2448,
+      "predictedProbability": 0.2448,
+      "actualSpecial": 23,
+      "hit": false,
+      "stake": 100,
+      "profit": -100,
+      "cumulativeBankroll": 4470,
+      "strategy": "诸葛策略 · 三才定码"
+    }
+  ]
+}

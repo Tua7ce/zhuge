@@ -4,7 +4,7 @@ import { readFileSync } from "fs";
 var histRaw;
 try { histRaw = JSON.parse(readFileSync("src/data/history.json","utf-8")); } catch(e) { histRaw = []; }
 var count = histRaw.length;
-var col = {red:"#e74c3c",blue:"#3498db",green:"#2ecc71"};
+var col = {red:"#c0392b",blue:"#2e6c96",green:"#3a8a4e"};
 function pad(n){return ("0"+n).slice(-2);}
 function color(n){var r=[1,2,7,8,12,13,18,19,23,24,29,30,34,35,40,45,46];var b=[3,4,9,10,14,15,20,25,26,31,36,37,41,42,47,48];if(r.indexOf(n)>=0)return "red";if(b.indexOf(n)>=0)return "blue";return "green";}
 function ball(n,sz){
@@ -14,14 +14,14 @@ function ball(n,sz){
 var zn = ["鼠","牛","虎","兔","龙","蛇","马","羊","猴","鸡","狗","猪"];
 var ZN = {};for(var i=0;i<zn.length;i++)ZN[zn[i]]=true;
 ---
-<Layout title="开奖记录 - 梦想版本-澳门六合彩">
+<Layout title="开奖记录 - 诸葛六合">
   <div class=card>
     <h2>全部开奖记录 <span class=ac>{count}期</span></h2>
     <div style="display:flex;gap:8px;margin-bottom:8px;flex-wrap:wrap">
-      <input id=search placeholder="搜索期号" style="padding:6px 10px;border-radius:5px;border:1px solid var(--border);font-size:13px;outline:none;flex:1;min-width:100px">
-      <select id=filter style="padding:6px 10px;border-radius:5px;border:1px solid var(--border);font-size:13px;outline:none">
+      <input id=search class=field placeholder="搜索期号" style="flex:1;min-width:100px">
+      <select id=filter class=field>
         <option value="">全部生肖</option>
-        {zn.map(function(z){return "<option value="+z+">"+z+"</option>";}).join("")}
+        {zn.map((z) => <option value={z}>{z}</option>)}
       </select>
     </div>
     <table class=ht>
@@ -31,10 +31,7 @@ var ZN = {};for(var i=0;i<zn.length;i++)ZN[zn[i]]=true;
     <div class=pg id=pagination></div>
   </div>
 </Layout>
-<script is:inline>
-var DATA = {JSON.stringify(histRaw.map(function(h,i){
-  return {issue:h.issue,date:h.date,numbers:h.numbers,zodiacs:h.zodiacs,idx:i};
-}))};
+<script is:inline define:vars={{ DATA: histRaw.map(function (h, i) { return { issue: h.issue, date: h.date, numbers: h.numbers, zodiacs: h.zodiacs, idx: i }; }) }}>
 var PS = 15, HP = 1, filtered = DATA;
 
 function render(){
@@ -58,17 +55,18 @@ function render(){
   ph.push('<button onclick=go('+(HP-1)+') '+(HP<=1?'disabled':'')+'>◀</button>');
   for(var pp=Math.max(1,HP-2);pp<=Math.min(pg,HP+2);pp++) ph.push('<button onclick=go('+pp+') class='+(pp===HP?'active':'')+'>'+pp+'</button>');
   ph.push('<button onclick=go('+(HP+1)+') '+(HP>=pg?'disabled':'')+'>▶</button>');
-  ph.push('<span style=font-size:11px;color:var(--text2);margin-left:4px>'+tt+'期</span>');
+  ph.push('<span style=font-size:11px;color:var(--ink-2);margin-left:4px>'+tt+'期</span>');
   document.getElementById("pagination").innerHTML = ph.join("");
 }
-function SPAN(n,z,s){var c={1:"#e74c3c",2:"#e74c3c",7:"#e74c3c",8:"#e74c3c",12:"#e74c3c",13:"#e74c3c",18:"#e74c3c",19:"#e74c3c",23:"#e74c3c",24:"#e74c3c",29:"#e74c3c",30:"#e74c3c",34:"#e74c3c",35:"#e74c3c",40:"#e74c3c",45:"#e74c3c",46:"#e74c3c",3:"#3498db",4:"#3498db",9:"#3498db",10:"#3498db",14:"#3498db",15:"#3498db",20:"#3498db",25:"#3498db",26:"#3498db",31:"#3498db",36:"#3498db",37:"#3498db",41:"#3498db",42:"#3498db",47:"#3498db",48:"#3498db",5:"#2ecc71",6:"#2ecc71",11:"#2ecc71",16:"#2ecc71",17:"#2ecc71",21:"#2ecc71",22:"#2ecc71",27:"#2ecc71",28:"#2ecc71",32:"#2ecc71",33:"#2ecc71",38:"#2ecc71",39:"#2ecc71",43:"#2ecc71",44:"#2ecc71",49:"#2ecc71"}[n];return "<span style=display:inline-flex;flex-direction:column;align-items:center;margin:0 2px><span class=ball-sm style=background:"+c+">"+n+"</span><span style=font-size:11px;color:var(--text2)>"+z+"</span></span>";}
+function SPAN(n,z,s){var c={1:"#c0392b",2:"#c0392b",7:"#c0392b",8:"#c0392b",12:"#c0392b",13:"#c0392b",18:"#c0392b",19:"#c0392b",23:"#c0392b",24:"#c0392b",29:"#c0392b",30:"#c0392b",34:"#c0392b",35:"#c0392b",40:"#c0392b",45:"#c0392b",46:"#c0392b",3:"#2e6c96",4:"#2e6c96",9:"#2e6c96",10:"#2e6c96",14:"#2e6c96",15:"#2e6c96",20:"#2e6c96",25:"#2e6c96",26:"#2e6c96",31:"#2e6c96",36:"#2e6c96",37:"#2e6c96",41:"#2e6c96",42:"#2e6c96",47:"#2e6c96",48:"#2e6c96",5:"#3a8a4e",6:"#3a8a4e",11:"#3a8a4e",16:"#3a8a4e",17:"#3a8a4e",21:"#3a8a4e",22:"#3a8a4e",27:"#3a8a4e",28:"#3a8a4e",32:"#3a8a4e",33:"#3a8a4e",38:"#3a8a4e",39:"#3a8a4e",43:"#3a8a4e",44:"#3a8a4e",49:"#3a8a4e"}[n];return '<span style="display:inline-flex;flex-direction:column;align-items:center;margin:0 2px"><span class=ball-sm style="background:'+c+'">'+n+'</span><span style="font-size:11px;color:var(--ink-2)">'+z+"</span></span>";}
 function BALL(n,z){
-  var c={1:"#e74c3c",2:"#e74c3c",7:"#e74c3c",8:"#e74c3c",12:"#e74c3c",13:"#e74c3c",18:"#e74c3c",19:"#e74c3c",23:"#e74c3c",24:"#e74c3c",29:"#e74c3c",30:"#e74c3c",34:"#e74c3c",35:"#e74c3c",40:"#e74c3c",45:"#e74c3c",46:"#e74c3c",3:"#3498db",4:"#3498db",9:"#3498db",10:"#3498db",14:"#3498db",15:"#3498db",20:"#3498db",25:"#3498db",26:"#3498db",31:"#3498db",36:"#3498db",37:"#3498db",41:"#3498db",42:"#3498db",47:"#3498db",48:"#3498db",5:"#2ecc71",6:"#2ecc71",11:"#2ecc71",16:"#2ecc71",17:"#2ecc71",21:"#2ecc71",22:"#2ecc71",27:"#2ecc71",28:"#2ecc71",32:"#2ecc71",33:"#2ecc71",38:"#2ecc71",39:"#2ecc71",43:"#2ecc71",44:"#2ecc71",49:"#2ecc71"}[n];
-  return '<span class=ball-sm style=background:'+c+';border:2px solid var(--gold)>'+n+'</span><span style=font-size:13px;color:var(--gold);font-weight:600>'+z+'</span>';
+  var c={1:"#c0392b",2:"#c0392b",7:"#c0392b",8:"#c0392b",12:"#c0392b",13:"#c0392b",18:"#c0392b",19:"#c0392b",23:"#c0392b",24:"#c0392b",29:"#c0392b",30:"#c0392b",34:"#c0392b",35:"#c0392b",40:"#c0392b",45:"#c0392b",46:"#c0392b",3:"#2e6c96",4:"#2e6c96",9:"#2e6c96",10:"#2e6c96",14:"#2e6c96",15:"#2e6c96",20:"#2e6c96",25:"#2e6c96",26:"#2e6c96",31:"#2e6c96",36:"#2e6c96",37:"#2e6c96",41:"#2e6c96",42:"#2e6c96",47:"#2e6c96",48:"#2e6c96",5:"#3a8a4e",6:"#3a8a4e",11:"#3a8a4e",16:"#3a8a4e",17:"#3a8a4e",21:"#3a8a4e",22:"#3a8a4e",27:"#3a8a4e",28:"#3a8a4e",32:"#3a8a4e",33:"#3a8a4e",38:"#3a8a4e",39:"#3a8a4e",43:"#3a8a4e",44:"#3a8a4e",49:"#3a8a4e"}[n];
+  return '<span class="ball-sm spec" style="background:'+c+'">'+n+'</span><span style=font-size:13px;color:var(--gold);font-weight:600>'+z+'</span>';
 }
 var _zn = ["鼠","牛","虎","兔","龙","蛇","马","羊","猴","鸡","狗","猪"];
 function go(p){if(p<1)return;HP=p;render();}
 document.getElementById("search").addEventListener("input",function(){HP=1;render();});
 document.getElementById("filter").addEventListener("change",function(){HP=1;render();});
 render();
+window.go = go;
 </script>

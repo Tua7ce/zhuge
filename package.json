@@ -8,7 +8,9 @@
     "preview": "astro preview",
     "fetch": "node scripts/fetch-data.mjs",
     "predict": "node scripts/predict.mjs",
-    "update": "node scripts/fetch-data.mjs && node scripts/predict.mjs"
+    "backtest": "node scripts/backtest.mjs",
+    "test": "node --test scripts/*.test.mjs",
+    "update": "node scripts/fetch-data.mjs && node scripts/predict.mjs && node scripts/backtest.mjs"
   },
   "dependencies": {
     "astro": "^5.0.0",

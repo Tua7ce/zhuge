@@ -1,4 +1,11 @@
-﻿node_modules/
+node_modules/
 dist/
 .astro/
 package-lock.json
+
+# Local dev helpers and personal files (not part of the site)
+design_fix.py
+fix_css.py
+fix_layout.py
+rewrite_layout.py
+*.pdf
