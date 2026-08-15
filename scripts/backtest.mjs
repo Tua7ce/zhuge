@@ -7,6 +7,7 @@ import {
   runBacktest,
   rankStrategies,
   strategy_optimizer,
+  temporal_factor_study,
   buildPredictionHistory,
   render_prediction,
   probability_calibration,
@@ -24,7 +25,9 @@ const PRED = join(D, "predictions.json");
 export function computeAll(history, config = MODEL_CONFIG) {
   const optimizer = strategy_optimizer(history, config);
   const active = optimizer.activeConfig;
-  const result = runBacktest(history, active, { useCalibration: true });
+  const temporalStudy = temporal_factor_study(history, active);
+  const { productionConfig: temporalProductionConfig, ...temporalStudyOutput } = temporalStudy;
+  const result = runBacktest(history, temporalProductionConfig, { useCalibration: true });
   const dMetrics = result.strategyPeriods.D.metrics;
   const comparison = config.calibration.methods.map((method) => {
     const c = probability_calibration(result.pairs, method, config);
@@ -46,7 +49,7 @@ export function computeAll(history, config = MODEL_CONFIG) {
   }
   const kellyPerformance = [];
   for (const fraction of config.kelly.fractions) {
-    const run = runBacktest(history, active, {
+    const run = runBacktest(history, temporalProductionConfig, {
       strategies: ["D"],
       useCalibration: false,
       stakeMode: "kelly",
@@ -80,8 +83,10 @@ export function computeAll(history, config = MODEL_CONFIG) {
       zodiacWeights: active.zodiacWeights,
       numberWeights: active.numberWeights,
       zodiacFrequencyWindows: active.zodiacFrequencyWindows,
-      numberFrequencyWindows: active.numberFrequencyWindows
+      numberFrequencyWindows: active.numberFrequencyWindows,
+      temporal: temporalProductionConfig.temporal
     },
+    temporalFactorStudy: temporalStudyOutput,
     calibration: {
       ...result.calibration,
       comparison
@@ -135,7 +140,7 @@ export function computeAll(history, config = MODEL_CONFIG) {
     strategy: `${config.branding.mainStrategy} · ${config.branding.flowName}`,
     records: buildPredictionHistory(result, config)
   };
-  const predictions = render_prediction(history, result, active, optimizer);
+  const predictions = render_prediction(history, result, temporalProductionConfig, optimizer);
   return { predictions, backtest, predictionHistory };
 }
 

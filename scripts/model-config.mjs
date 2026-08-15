@@ -48,6 +48,35 @@ export const MODEL_CONFIG = {
     netOdds: 3.7,
     winThresholdP: 10 / 47
   },
+  temporal: {
+    enableZodiacRepeatPenalty: false,
+    enableNumberRepeatPenalty: false,
+    zodiacRepeatPenalty: 0.30,
+    numberRepeatFactor: 0.25,
+    zodiacPenaltyGrid: [0, 0.05, 0.10, 0.15, 0.20, 0.25, 0.30, 0.40, 0.50, 0.60, 0.80],
+    numberFactorGrid: [1, 0.90, 0.80, 0.70, 0.60, 0.50, 0.40, 0.30, 0.25, 0.20, 0.10],
+    split: {
+      development: 0.60,
+      validation: 0.20,
+      holdout: 0.20
+    },
+    plateau: {
+      roiTolerancePct: 0.5,
+      minSize: 3,
+      minCrossTimeSegments: 2,
+      minPlateauCrossTimeShare: 0.5,
+      segmentCount: 3
+    },
+    adoption: {
+      drawdownWorseFactor: 1.20,
+      drawdownRateLiftPct: 5.0,
+      hitRateDropPct: 2.0,
+      maxMissStreakWorse: 2,
+      profitPeriodDropPct: 2.0,
+      segmentCount: 3,
+      segmentRoiFloorDropPct: 5.0
+    }
+  },
   lossProtection: {
     enabled: true,
     streakNoIncrease: 5,

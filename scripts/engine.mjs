@@ -208,6 +208,35 @@ export function number_model(specials, zodiacScores, config = MODEL_CONFIG) {
   return sortDesc(out, "score");
 }
 
+export function apply_zodiac_repeat_penalty(zodiacScores, previousZodiac, config = MODEL_CONFIG) {
+  const enabled = !!config.temporal?.enableZodiacRepeatPenalty;
+  const penalty = enabled ? Number(config.temporal.zodiacRepeatPenalty) || 0 : 0;
+  const factor = 1 - penalty;
+  if (!enabled || factor >= 1) return zodiacScores;
+  return zodiacScores.map((row) => {
+    const applied = row.zodiac === previousZodiac;
+    return {
+      ...row,
+      score: row.score * factor,
+      repeatFactor: applied ? factor : 1
+    };
+  });
+}
+
+export function apply_number_repeat_penalty(numberScores, previousSpecial, config = MODEL_CONFIG) {
+  const enabled = !!config.temporal?.enableNumberRepeatPenalty;
+  const factor = enabled ? Number(config.temporal.numberRepeatFactor) : 1;
+  if (!enabled || !Number.isFinite(factor) || factor >= 1) return numberScores;
+  return numberScores.map((row) => {
+    const applied = row.number === previousSpecial;
+    return {
+      ...row,
+      score: applied ? row.score * factor : row.score,
+      repeatFactor: applied ? factor : 1
+    };
+  });
+}
+
 function sigmoid(x) {
   return 1 / (1 + Math.exp(-x));
 }
@@ -568,6 +597,7 @@ export function metrics(records, config = MODEL_CONFIG) {
     maxConsecutiveMiss: maxStreak,
     currentConsecutiveMiss: curStreak,
     maxDrawdown: round2(maxDrawdown),
+    maxDrawdownRate: round2(totalStake ? maxDrawdown / totalStake : 0),
     currentDrawdown: round2(currentDrawdown),
     finalBankroll: round2(config.startBankroll + net),
     peakBankroll: round2(Math.max(...bankrollSeries.map((p) => p.value), config.startBankroll)),
@@ -599,8 +629,14 @@ export function runBacktest(history, config = MODEL_CONFIG, options = {}) {
     const prior = specials.slice(0, i);
     const special = specials[i];
     const issue = issues[i];
-    const zScores = zodiac_model(prior, config);
-    const scoresAll = number_model(prior, zScores, config);
+    const previousSpecial = prior.length ? prior[prior.length - 1] : null;
+    const previousZodiac = previousSpecial != null ? getZodiac(previousSpecial) : null;
+    const zScores = apply_zodiac_repeat_penalty(zodiac_model(prior, config), previousZodiac, config);
+    const scoresAll = apply_number_repeat_penalty(
+      number_model(prior, zScores, config),
+      previousSpecial,
+      config
+    );
     const orig = original_model(prior);
     if (useCalibration && pairs.length >= config.calibration.minSamples) {
       lastCalib = probability_calibration(pairs, config.calibration.method, config);
@@ -907,6 +943,462 @@ export function strategy_optimizer(history, config = MODEL_CONFIG) {
   };
 }
 
+function summarizeMetrics(m) {
+  return {
+    totalPeriods: m.totalPeriods,
+    betPeriods: m.betPeriods,
+    totalStake: m.totalStake,
+    hitCount: m.hitCount,
+    hitRate: m.hitRate,
+    hitRate10: m.hitRate10,
+    hitRate20: m.hitRate20,
+    hitRate30: m.hitRate30,
+    cumulativeNet: m.cumulativeNet,
+    roi: m.roi,
+    avgPerPeriod: m.avgPerPeriod,
+    maxConsecutiveMiss: m.maxConsecutiveMiss,
+    currentConsecutiveMiss: m.currentConsecutiveMiss,
+    maxDrawdown: m.maxDrawdown,
+    maxDrawdownRate: m.maxDrawdownRate,
+    currentDrawdown: m.currentDrawdown,
+    finalBankroll: m.finalBankroll,
+    peakBankroll: m.peakBankroll,
+    profitPeriodRatio: m.profitPeriodRatio,
+    netToDrawdown: m.netToDrawdown
+  };
+}
+
+function segmentMetricsOf(records, segmentCount, config) {
+  const out = [];
+  const len = records.length;
+  for (let s = 0; s < segmentCount; s++) {
+    const lo = Math.floor((len * s) / segmentCount);
+    const hi = Math.floor((len * (s + 1)) / segmentCount);
+    const m = metrics(records.slice(lo, hi), config);
+    out.push({ roi: m.roi, hitRate: m.hitRate, cumulativeNet: m.cumulativeNet });
+  }
+  return out;
+}
+
+function runTemporalWindow(history, config, [lo, hi], useCalibration) {
+  const sliced = hi < history.length ? history.slice(0, hi) : history;
+  const run = runBacktest(sliced, config, { strategies: ["D"], useCalibration });
+  return run.strategyPeriods.D.records.filter((r) => r.i >= lo && r.i < hi);
+}
+
+function stageCompare(expM, baseM, expSegments, baseSegments, config) {
+  const ad = config.temporal.adoption;
+  const checks = [
+    { key: "roi", ok: expM.roi > baseM.roi },
+    { key: "cumulative_net", ok: expM.cumulativeNet >= baseM.cumulativeNet },
+    { key: "max_drawdown", ok: expM.maxDrawdown <= baseM.maxDrawdown * ad.drawdownWorseFactor },
+    { key: "max_drawdown_rate", ok: expM.maxDrawdownRate <= baseM.maxDrawdownRate + ad.drawdownRateLiftPct / 100 },
+    { key: "hit_rate", ok: expM.hitRate >= baseM.hitRate - ad.hitRateDropPct / 100 },
+    { key: "max_miss_streak", ok: expM.maxConsecutiveMiss <= baseM.maxConsecutiveMiss + ad.maxMissStreakWorse },
+    { key: "profit_period_ratio", ok: expM.profitPeriodRatio >= baseM.profitPeriodRatio - ad.profitPeriodDropPct / 100 }
+  ];
+  const reasons = checks.filter((c) => !c.ok).map((c) => c.key);
+  const wins = expSegments.filter((s, i) => s.roi > (baseSegments[i]?.roi ?? -Infinity)).length;
+  const remainingOk = expSegments.every(
+    (s, i) => s.roi >= (baseSegments[i]?.roi ?? -Infinity) - ad.segmentRoiFloorDropPct / 100
+  );
+  if (wins < 2 || !remainingOk) reasons.push("segment_condition");
+  return { passed: reasons.length === 0, reasons };
+}
+
+function tradeoffLabel(expM, baseM) {
+  if (expM.roi <= baseM.roi) return "no_roi_gain";
+  const hitDelta = expM.hitRate - baseM.hitRate;
+  if (hitDelta > 0) return "dominant_improvement";
+  if (hitDelta < -0.02) return "higher_roi_lower_hit_rate";
+  return "improved_balance";
+}
+
+function compareByPriority(a, b) {
+  if (a.roi !== b.roi) return b.roi - a.roi;
+  if (a.cumulativeNet !== b.cumulativeNet) return b.cumulativeNet - a.cumulativeNet;
+  if (a.maxDrawdown !== b.maxDrawdown) return a.maxDrawdown - b.maxDrawdown;
+  if (a.hitRate !== b.hitRate) return b.hitRate - a.hitRate;
+  return a.maxConsecutiveMiss - b.maxConsecutiveMiss;
+}
+
+function withTemporalConfig(base, patch) {
+  const next = structuredClone(base);
+  next.temporal = { ...(next.temporal || {}), ...patch };
+  return next;
+}
+
+export function select_stable_parameter(rows, baselineSegmentRois, config = MODEL_CONFIG) {
+  const p = config.temporal.plateau;
+  const bestRoi = Math.max(...rows.map((r) => r.metrics.roi));
+  const tolerance = p.roiTolerancePct / 100;
+  const plateau = rows.filter((r) => r.metrics.roi >= bestRoi - tolerance);
+  const plateauValues = plateau.map((r) => r.value).sort((a, b) => a - b);
+  const crossTimeStableCount = plateau.filter((r) => {
+    const wins = r.segmentRois.filter((roi, i) => roi > (baselineSegmentRois[i] ?? -Infinity)).length;
+    return wins >= p.minCrossTimeSegments;
+  }).length;
+  const need = Math.ceil(plateau.length * p.minPlateauCrossTimeShare);
+  if (plateau.length < p.minSize) {
+    return {
+      selectedValue: null,
+      reason: "plateau_too_small",
+      plateauValues,
+      crossTimeStableCount,
+      bestRoi,
+      tolerancePct: p.roiTolerancePct
+    };
+  }
+  if (crossTimeStableCount < need) {
+    return {
+      selectedValue: null,
+      reason: "not_cross_time_stable",
+      plateauValues,
+      crossTimeStableCount,
+      bestRoi,
+      tolerancePct: p.roiTolerancePct
+    };
+  }
+  const stableValues = plateau
+    .filter((r) => {
+      const wins = r.segmentRois.filter((roi, i) => roi > (baselineSegmentRois[i] ?? -Infinity)).length;
+      return wins >= p.minCrossTimeSegments;
+    })
+    .map((r) => r.value)
+    .sort((a, b) => a - b);
+  return {
+    selectedValue: stableValues[Math.floor(stableValues.length / 2)],
+    reason: "stable_platform",
+    plateauValues,
+    crossTimeStableCount,
+    stableValues,
+    bestRoi,
+    tolerancePct: p.roiTolerancePct
+  };
+}
+
+function top10Numbers(scoresAll, pool) {
+  return scoresAll
+    .filter((x) => pool.includes(x.number))
+    .sort((a, b) => b.score - a.score || a.number - b.number)
+    .slice(0, 10)
+    .map((x) => x.number)
+    .join(",");
+}
+
+function countFactorImpact(history, baseConfig, cfg, [lo, hi], factor) {
+  const specials = history.map((h) => h.numbers[6]);
+  let zodiacTop3Changed = 0;
+  let zodiacTop10Changed = 0;
+  let numberTop10Changed = 0;
+  let periods = 0;
+  for (let i = lo; i < hi && i < specials.length; i++) {
+    const prior = specials.slice(0, i);
+    const previousSpecial = prior.length ? prior[prior.length - 1] : null;
+    const previousZodiac = previousSpecial != null ? getZodiac(previousSpecial) : null;
+    const baseZ = zodiac_model(prior, baseConfig);
+    const basePool = build_candidate_pool(baseZ, 3, baseConfig);
+    const baseScores = number_model(prior, baseZ, baseConfig);
+    const baseTop3 = baseZ.slice(0, 3).map((z) => z.zodiac).join(",");
+    const baseTop10 = top10Numbers(baseScores, basePool);
+
+    if (factor === "zodiac") {
+      const zCfg = withTemporalConfig(baseConfig, {
+        enableZodiacRepeatPenalty: true,
+        enableNumberRepeatPenalty: false,
+        zodiacRepeatPenalty: cfg.temporal.zodiacRepeatPenalty
+      });
+      const zScores = apply_zodiac_repeat_penalty(zodiac_model(prior, zCfg), previousZodiac, zCfg);
+      const zPool = build_candidate_pool(zScores, 3, zCfg);
+      const zScoresAll = apply_number_repeat_penalty(number_model(prior, zScores, zCfg), previousSpecial, zCfg);
+      const zTop3 = zScores.slice(0, 3).map((z) => z.zodiac).join(",");
+      const zTop10 = top10Numbers(zScoresAll, zPool);
+      if (zTop3 !== baseTop3) zodiacTop3Changed++;
+      if (zTop10 !== baseTop10) zodiacTop10Changed++;
+    } else if (factor === "number") {
+      const nCfg = withTemporalConfig(baseConfig, {
+        enableZodiacRepeatPenalty: false,
+        enableNumberRepeatPenalty: true,
+        numberRepeatFactor: cfg.temporal.numberRepeatFactor
+      });
+      const nZ = apply_zodiac_repeat_penalty(zodiac_model(prior, nCfg), previousZodiac, nCfg);
+      const nPool = build_candidate_pool(nZ, 3, nCfg);
+      const nScoresAll = apply_number_repeat_penalty(number_model(prior, nZ, nCfg), previousSpecial, nCfg);
+      const nTop10 = top10Numbers(nScoresAll, nPool);
+      if (nTop10 !== baseTop10) numberTop10Changed++;
+    }
+    periods++;
+  }
+  const rate = (n) => (periods ? n / periods : 0);
+  if (factor === "zodiac") {
+    return {
+      periods,
+      zodiacFactorChangedTop3Count: zodiacTop3Changed,
+      zodiacFactorChangedTop3Rate: round2(rate(zodiacTop3Changed)),
+      zodiacFactorChangedTop10Count: zodiacTop10Changed,
+      zodiacFactorChangedTop10Rate: round2(rate(zodiacTop10Changed))
+    };
+  }
+  return {
+    periods,
+    numberFactorChangedTop10Count: numberTop10Changed,
+    numberFactorChangedTop10Rate: round2(rate(numberTop10Changed))
+  };
+}
+
+export function temporal_factor_study(history, baseConfig = MODEL_CONFIG) {
+  const baseCfg = structuredClone(baseConfig);
+  baseCfg.temporal = {
+    ...(baseCfg.temporal || {}),
+    enableZodiacRepeatPenalty: false,
+    enableNumberRepeatPenalty: false
+  };
+  const specials = history.map((h) => h.numbers[6]);
+  const issues = history.map((h) => h.issue);
+  const warmup = baseCfg.warmup;
+  const split = baseCfg.temporal.split;
+  const T = Math.max(0, specials.length - warmup);
+  const devEnd = warmup + Math.floor(T * split.development);
+  const valEnd = warmup + Math.floor(T * (split.development + split.validation));
+  const end = specials.length;
+  const ranges = {
+    development: [warmup, devEnd],
+    validation: [devEnd, valEnd],
+    holdout: [valEnd, end]
+  };
+  const segmentCount = baseCfg.temporal.plateau.segmentCount;
+
+  const baseDevRecs = runTemporalWindow(history, baseCfg, ranges.development, false);
+  const baseValRecs = runTemporalWindow(history, baseCfg, ranges.validation, false);
+  const baseCalValRecs = runTemporalWindow(history, baseCfg, ranges.validation, true);
+  const baseHoldRecs = runTemporalWindow(history, baseCfg, ranges.holdout, true);
+  const baseFullRecs = runTemporalWindow(history, baseCfg, [warmup, end], false);
+  const baseDevM = metrics(baseDevRecs, baseCfg);
+  const baseValM = metrics(baseValRecs, baseCfg);
+  const baseCalValM = metrics(baseCalValRecs, baseCfg);
+  const baseHoldM = metrics(baseHoldRecs, baseCfg);
+  const base = {
+    development: summarizeMetrics(baseDevM),
+    validation: summarizeMetrics(baseValM),
+    calibrationValidation: summarizeMetrics(baseCalValM),
+    holdout: summarizeMetrics(baseHoldM),
+    fullWalkForward: summarizeMetrics(metrics(baseFullRecs, baseCfg))
+  };
+  const baseSegments = {
+    development: segmentMetricsOf(baseDevRecs, segmentCount, baseCfg).map((s) => s.roi),
+    validation: segmentMetricsOf(baseValRecs, segmentCount, baseCfg).map((s) => s.roi),
+    calibrationValidation: segmentMetricsOf(baseCalValRecs, segmentCount, baseCfg).map((s) => s.roi),
+    holdout: segmentMetricsOf(baseHoldRecs, segmentCount, baseCfg).map((s) => s.roi)
+  };
+
+  const zodiacRows = [];
+  for (const penalty of baseCfg.temporal.zodiacPenaltyGrid) {
+    const cfg = withTemporalConfig(baseCfg, {
+      enableZodiacRepeatPenalty: true,
+      enableNumberRepeatPenalty: false,
+      zodiacRepeatPenalty: penalty
+    });
+    const recs = runTemporalWindow(history, cfg, ranges.development, false);
+    zodiacRows.push({
+      value: penalty,
+      metrics: summarizeMetrics(metrics(recs, cfg)),
+      segmentRois: segmentMetricsOf(recs, segmentCount, cfg).map((s) => s.roi)
+    });
+  }
+  const numberRows = [];
+  for (const factor of baseCfg.temporal.numberFactorGrid) {
+    const cfg = withTemporalConfig(baseCfg, {
+      enableZodiacRepeatPenalty: false,
+      enableNumberRepeatPenalty: true,
+      numberRepeatFactor: factor
+    });
+    const recs = runTemporalWindow(history, cfg, ranges.development, false);
+    numberRows.push({
+      value: factor,
+      metrics: summarizeMetrics(metrics(recs, cfg)),
+      segmentRois: segmentMetricsOf(recs, segmentCount, cfg).map((s) => s.roi)
+    });
+  }
+  const zodiacSelection = select_stable_parameter(zodiacRows, baseSegments.development, baseCfg);
+  const numberSelection = select_stable_parameter(numberRows, baseSegments.development, baseCfg);
+  const zodiacValue = zodiacSelection.selectedValue ?? baseCfg.temporal.zodiacRepeatPenalty;
+  const numberValue = numberSelection.selectedValue ?? baseCfg.temporal.numberRepeatFactor;
+
+  const buildExperiment = (cfg) => {
+    const devRecs = runTemporalWindow(history, cfg, ranges.development, false);
+    const valRecs = runTemporalWindow(history, cfg, ranges.validation, false);
+    const calValRecs = runTemporalWindow(history, cfg, ranges.validation, true);
+    const holdRecs = runTemporalWindow(history, cfg, ranges.holdout, true);
+    const fullRecs = runTemporalWindow(history, cfg, [warmup, end], false);
+    return {
+      development: summarizeMetrics(metrics(devRecs, cfg)),
+      validation: summarizeMetrics(metrics(valRecs, cfg)),
+      calibrationValidation: summarizeMetrics(metrics(calValRecs, cfg)),
+      holdout: summarizeMetrics(metrics(holdRecs, cfg)),
+      fullWalkForward: summarizeMetrics(metrics(fullRecs, cfg)),
+      segments: {
+        development: segmentMetricsOf(devRecs, segmentCount, cfg).map((s) => s.roi),
+        validation: segmentMetricsOf(valRecs, segmentCount, cfg).map((s) => s.roi),
+        calibrationValidation: segmentMetricsOf(calValRecs, segmentCount, cfg).map((s) => s.roi),
+        holdout: segmentMetricsOf(holdRecs, segmentCount, cfg).map((s) => s.roi)
+      }
+    };
+  };
+
+  const cfgA = structuredClone(baseCfg);
+  const cfgB = withTemporalConfig(baseCfg, {
+    enableZodiacRepeatPenalty: true,
+    enableNumberRepeatPenalty: false,
+    zodiacRepeatPenalty: zodiacValue
+  });
+  const cfgC = withTemporalConfig(baseCfg, {
+    enableZodiacRepeatPenalty: false,
+    enableNumberRepeatPenalty: true,
+    numberRepeatFactor: numberValue
+  });
+  const cfgD = withTemporalConfig(baseCfg, {
+    enableZodiacRepeatPenalty: true,
+    enableNumberRepeatPenalty: true,
+    zodiacRepeatPenalty: zodiacValue,
+    numberRepeatFactor: numberValue
+  });
+  const experiments = {
+    A: buildExperiment(cfgA),
+    B: buildExperiment(cfgB),
+    C: buildExperiment(cfgC),
+    D: buildExperiment(cfgD)
+  };
+
+  const impact = {
+    zodiac: {
+      development: countFactorImpact(history, baseCfg, cfgB, ranges.development, "zodiac"),
+      validation: countFactorImpact(history, baseCfg, cfgB, ranges.validation, "zodiac"),
+      holdout: countFactorImpact(history, baseCfg, cfgB, ranges.holdout, "zodiac"),
+      full: countFactorImpact(history, baseCfg, cfgB, [warmup, end], "zodiac")
+    },
+    number: {
+      development: countFactorImpact(history, baseCfg, cfgC, ranges.development, "number"),
+      validation: countFactorImpact(history, baseCfg, cfgC, ranges.validation, "number"),
+      holdout: countFactorImpact(history, baseCfg, cfgC, ranges.holdout, "number"),
+      full: countFactorImpact(history, baseCfg, cfgC, [warmup, end], "number")
+    }
+  };
+
+  const tradeoff = {
+    A: null,
+    B: tradeoffLabel(experiments.B.holdout, base.holdout),
+    C: tradeoffLabel(experiments.C.holdout, base.holdout),
+    D: tradeoffLabel(experiments.D.holdout, base.holdout)
+  };
+
+  const factorAdoption = (exp, label) => {
+    const devCheck = stageCompare(exp.development, base.development, exp.segments.development, baseSegments.development, baseCfg);
+    const valCheck = stageCompare(exp.validation, base.validation, exp.segments.validation, baseSegments.validation, baseCfg);
+    const calCheck = stageCompare(exp.calibrationValidation, base.calibrationValidation, exp.segments.calibrationValidation, baseSegments.calibrationValidation, baseCfg);
+    const holdCheck = stageCompare(exp.holdout, base.holdout, exp.segments.holdout, baseSegments.holdout, baseCfg);
+    const candidateReached = devCheck.passed && valCheck.passed;
+    const active = candidateReached && calCheck.passed && holdCheck.passed;
+    const reasons = [...devCheck.reasons, ...valCheck.reasons, ...calCheck.reasons, ...holdCheck.reasons];
+    return {
+      name: label,
+      status: active ? "ACTIVE" : candidateReached ? "CANDIDATE" : "REJECTED",
+      candidateReached,
+      active,
+      reasons,
+      stages: {
+        development: { passed: devCheck.passed, reasons: devCheck.reasons },
+        validation: { passed: valCheck.passed, reasons: valCheck.reasons },
+        calibrationValidation: { passed: calCheck.passed, reasons: calCheck.reasons },
+        holdout: { passed: holdCheck.passed, reasons: holdCheck.reasons }
+      }
+    };
+  };
+
+  const adoption = {
+    zodiac: factorAdoption(experiments.B, "+生肖连出抑制"),
+    number: factorAdoption(experiments.C, "+数字重复抑制"),
+    dual: factorAdoption(experiments.D, "+双因子")
+  };
+
+  let enabledFactors = [];
+  const zActive = adoption.zodiac.active;
+  const nActive = adoption.number.active;
+  const dActive = adoption.dual.active;
+  if (zActive && nActive && dActive) {
+    enabledFactors = ["zodiac", "number"];
+  } else if (zActive && nActive) {
+    enabledFactors = [compareByPriority(experiments.B.holdout, experiments.C.holdout) > 0 ? "zodiac" : "number"];
+  } else if (zActive) {
+    enabledFactors = ["zodiac"];
+  } else if (nActive) {
+    enabledFactors = ["number"];
+  }
+
+  const productionTemporal = {
+    enableZodiacRepeatPenalty: enabledFactors.includes("zodiac"),
+    enableNumberRepeatPenalty: enabledFactors.includes("number"),
+    zodiacRepeatPenalty: zodiacValue,
+    numberRepeatFactor: numberValue
+  };
+  const productionConfig = withTemporalConfig(baseCfg, productionTemporal);
+
+  let sameZodiac = 0;
+  let sameNumber = 0;
+  for (let i = 1; i < specials.length; i++) {
+    if (getZodiac(specials[i]) === getZodiac(specials[i - 1])) sameZodiac++;
+    if (specials[i] === specials[i - 1]) sameNumber++;
+  }
+  const totalTransitions = Math.max(1, specials.length - 1);
+  const naturalRates = {
+    totalTransitions: specials.length - 1,
+    sameZodiacCount: sameZodiac,
+    sameZodiacRate: round2(sameZodiac / totalTransitions),
+    sameNumberCount: sameNumber,
+    sameNumberRate: round2(sameNumber / totalTransitions)
+  };
+
+  return {
+    generated_at: new Date().toISOString(),
+    periods: history.length,
+    warmup,
+    naturalRates,
+    splits: {
+      development: {
+        startIssue: issues[warmup],
+        endIssue: issues[devEnd - 1],
+        samples: devEnd - warmup
+      },
+      validation: {
+        startIssue: issues[devEnd],
+        endIssue: issues[valEnd - 1],
+        samples: valEnd - devEnd
+      },
+      holdout: {
+        startIssue: issues[valEnd],
+        endIssue: issues[end - 1],
+        samples: end - valEnd
+      }
+    },
+    baseline: base,
+    sensitivity: {
+      zodiacRepeatPenalty: zodiacRows.map((r) => ({ penalty: r.value, development: r.metrics, segmentRois: r.segmentRois })),
+      numberRepeatFactor: numberRows.map((r) => ({ factor: r.value, development: r.metrics, segmentRois: r.segmentRois }))
+    },
+    selection: {
+      zodiacRepeatPenalty: { ...zodiacSelection, selectedValue: zodiacValue },
+      numberRepeatFactor: { ...numberSelection, selectedValue: numberValue }
+    },
+    experiments,
+    impact,
+    tradeoff,
+    adoption,
+    enabledFactors,
+    status: enabledFactors.length ? "ACTIVE" : adoption.zodiac.candidateReached || adoption.number.candidateReached || adoption.dual.candidateReached ? "CANDIDATE" : "REJECTED",
+    productionTemporal,
+    productionConfig
+  };
+}
+
 function combinedPicks(poolTop, allTop, n) {
   const seen = new Set();
   const out = [];
@@ -922,8 +1414,14 @@ function combinedPicks(poolTop, allTop, n) {
 export function render_prediction(history, backtestResult, config = MODEL_CONFIG, optimizerResult = null) {
   const specials = history.map((h) => h.numbers[6]);
   const prior = specials;
-  const zScores = zodiac_model(prior, config);
-  const scoresAll = number_model(prior, zScores, config);
+  const previousSpecial = prior.length ? prior[prior.length - 1] : null;
+  const previousZodiac = previousSpecial != null ? getZodiac(previousSpecial) : null;
+  const zScores = apply_zodiac_repeat_penalty(zodiac_model(prior, config), previousZodiac, config);
+  const scoresAll = apply_number_repeat_penalty(
+    number_model(prior, zScores, config),
+    previousSpecial,
+    config
+  );
   const calib = probability_calibration(backtestResult.pairs, config.calibration.method, config);
   const pMap = {};
   for (const s of scoresAll) pMap[s.number] = calib.predict(s.score);

@@ -9,11 +9,16 @@ import {
   bankroll_manager,
   metrics,
   runBacktest,
+  apply_zodiac_repeat_penalty,
+  apply_number_repeat_penalty,
+  select_stable_parameter,
+  temporal_factor_study,
   ev_period,
   netWinForN,
   render_prediction,
   clamp
 } from "./engine.mjs";
+import { MODEL_CONFIG } from "./model-config.mjs";
 import { ZODIAC_TO_NUMBERS } from "./zodiac.mjs";
 
 function seededHistory(count = 200, seed = 42) {
@@ -76,6 +81,85 @@ test("数字评分与分量都在安全区间", () => {
   }
 });
 
+test("时序因子是软惩罚且不删除目标", () => {
+  const specials = seededHistory(120).map((h) => h.numbers[6]);
+  const zodiacRows = zodiac_model(specials);
+  const previousZodiac = zodiacRows[0].zodiac;
+  const zCfg = structuredClone(MODEL_CONFIG);
+  zCfg.temporal.enableZodiacRepeatPenalty = true;
+  zCfg.temporal.zodiacRepeatPenalty = 0.30;
+  const zodiacAdjusted = apply_zodiac_repeat_penalty(zodiacRows, previousZodiac, zCfg);
+  assert.equal(zodiacAdjusted.length, 12);
+  const zBase = zodiacRows.find((r) => r.zodiac === previousZodiac);
+  const zAdj = zodiacAdjusted.find((r) => r.zodiac === previousZodiac);
+  assert.ok(Math.abs(zAdj.score - zBase.score * 0.7) < 1e-9);
+  assert.ok(zodiacAdjusted.every((r) => r.zodiac));
+
+  const numberRows = number_model(specials, zodiacRows);
+  const previousSpecial = specials[specials.length - 1];
+  const nCfg = structuredClone(MODEL_CONFIG);
+  nCfg.temporal.enableNumberRepeatPenalty = true;
+  nCfg.temporal.numberRepeatFactor = 0.25;
+  const numberAdjusted = apply_number_repeat_penalty(numberRows, previousSpecial, nCfg);
+  assert.equal(numberAdjusted.length, 49);
+  const nBase = numberRows.find((r) => r.number === previousSpecial);
+  const nAdj = numberAdjusted.find((r) => r.number === previousSpecial);
+  assert.ok(Math.abs(nAdj.score - nBase.score * 0.25) < 1e-9);
+  assert.ok(numberAdjusted.some((r) => r.number === previousSpecial));
+});
+
+test("启用时序因子后仍无未来数据泄漏", () => {
+  const history = seededHistory(80, 7);
+  const cfg = structuredClone(MODEL_CONFIG);
+  cfg.temporal.enableZodiacRepeatPenalty = true;
+  cfg.temporal.enableNumberRepeatPenalty = true;
+  cfg.temporal.zodiacRepeatPenalty = 0.30;
+  cfg.temporal.numberRepeatFactor = 0.25;
+  const i = 60;
+  const full = runBacktest(history, cfg, { strategies: ["D"], useCalibration: false });
+  const truncated = runBacktest(history.slice(0, i + 1), cfg, { strategies: ["D"], useCalibration: false });
+  const a = full.strategyPeriods.D.records[i - 30];
+  const b = truncated.strategyPeriods.D.records[i - 30];
+  assert.deepEqual(a.picks, b.picks);
+  assert.equal(a.pAny, b.pAny);
+  assert.equal(a.profit, b.profit);
+});
+
+test("稳定平台选择中间值并拒绝单点平台", () => {
+  const baselineSegmentRois = [0.1, 0.1, 0.1];
+  const rows = [
+    { value: 0.05, metrics: { roi: 0.2 }, segmentRois: [0.25, 0.05, 0.05] },
+    { value: 0.20, metrics: { roi: 0.2 }, segmentRois: [0.25, 0.25, 0.25] },
+    { value: 0.25, metrics: { roi: 0.2 }, segmentRois: [0.25, 0.25, 0.25] },
+    { value: 0.30, metrics: { roi: 0.2 }, segmentRois: [0.25, 0.25, 0.25] },
+    { value: 0.40, metrics: { roi: 0.2 }, segmentRois: [0.25, 0.25, 0.25] },
+    { value: 0.50, metrics: { roi: 0.2 }, segmentRois: [0.25, 0.25, 0.25] },
+    { value: 0.80, metrics: { roi: 0.2 }, segmentRois: [0.25, 0.05, 0.05] }
+  ];
+  const selected = select_stable_parameter(rows, baselineSegmentRois);
+  assert.equal(selected.reason, "stable_platform");
+  assert.equal(selected.selectedValue, 0.30);
+
+  const tiny = select_stable_parameter(rows.slice(0, 2), baselineSegmentRois);
+  assert.equal(tiny.reason, "plateau_too_small");
+  assert.equal(tiny.selectedValue, null);
+});
+
+test("时序因子研究确定且输出完整", () => {
+  const history = seededHistory(70, 11);
+  const a = temporal_factor_study(history);
+  const b = temporal_factor_study(history);
+  assert.equal(a.sensitivity.zodiacRepeatPenalty.length, 11);
+  assert.equal(a.sensitivity.numberRepeatFactor.length, 11);
+  assert.deepEqual(a.selection, b.selection);
+  assert.deepEqual(a.experiments.A.development, b.experiments.A.development);
+  assert.ok(["ACTIVE", "CANDIDATE", "REJECTED"].includes(a.status));
+  assert.ok(a.impact.zodiac.full.periods > 0);
+  assert.ok(a.impact.number.full.periods > 0);
+  assert.ok(a.naturalRates.totalTransitions > 0);
+  assert.ok(a.productionTemporal.enableZodiacRepeatPenalty === false || a.productionTemporal.enableZodiacRepeatPenalty === true);
+});
+
 test("无未来数据泄漏：截断未来不影响当期预测", () => {
   const history = seededHistory(80, 7);
   const i = 60;
@@ -106,6 +190,7 @@ test("指标计算正确", () => {
   assert.equal(m.maxConsecutiveMiss, 8);
   assert.equal(m.currentConsecutiveMiss, 8);
   assert.equal(m.maxDrawdown, 800);
+  assert.equal(m.maxDrawdownRate, 0.8);
   assert.equal(m.currentDrawdown, 800);
   assert.equal(m.finalBankroll, 940);
 });
