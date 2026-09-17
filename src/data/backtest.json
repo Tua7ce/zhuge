@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-17T20:55:06.707Z",
+  "generated_at": "2026-09-17T23:55:18.311Z",
   "periods": 260,
   "warmup": 30,
   "activeConfig": {
@@ -85,7 +85,7 @@
     }
   },
   "temporalFactorStudy": {
-    "generated_at": "2026-09-17T20:54:57.957Z",
+    "generated_at": "2026-09-17T23:55:06.597Z",
     "periods": 260,
     "warmup": 30,
     "naturalRates": {
