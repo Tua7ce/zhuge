@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-19T23:55:00.449Z",
+  "generated_at": "2026-09-20T20:13:53.648Z",
   "strategy": "诸葛策略 · 三才定码",
   "records": [
     {
@@ -6420,6 +6420,34 @@
       "stake": 60,
       "profit": 410,
       "cumulativeBankroll": 5350,
+      "strategy": "诸葛策略 · 三才定码"
+    },
+    {
+      "issue": 2026263,
+      "topZodiacs": [
+        "虎",
+        "龙",
+        "狗"
+      ],
+      "topNumbers": [
+        39,
+        17,
+        41,
+        21,
+        29,
+        9,
+        3,
+        45,
+        5,
+        27
+      ],
+      "predictedHitRate": 0.2457,
+      "predictedProbability": 0.2457,
+      "actualSpecial": 9,
+      "hit": true,
+      "stake": 100,
+      "profit": 370,
+      "cumulativeBankroll": 5720,
       "strategy": "诸葛策略 · 三才定码"
     }
   ]
