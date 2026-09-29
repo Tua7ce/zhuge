@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-28T22:56:45.575Z",
-  "periods": 271,
+  "generated_at": "2026-09-29T21:50:23.352Z",
+  "periods": 272,
   "warmup": 30,
   "activeConfig": {
     "label": "default · number+recent · w30/50/80/100",
@@ -85,55 +85,55 @@
     }
   },
   "temporalFactorStudy": {
-    "generated_at": "2026-09-28T22:56:32.690Z",
-    "periods": 271,
+    "generated_at": "2026-09-29T21:50:12.340Z",
+    "periods": 272,
     "warmup": 30,
     "naturalRates": {
-      "totalTransitions": 270,
+      "totalTransitions": 271,
       "sameZodiacCount": 18,
-      "sameZodiacRate": 0.0667,
+      "sameZodiacRate": 0.0664,
       "sameNumberCount": 3,
       "sameNumberRate": 0.0111
     },
     "splits": {
       "development": {
         "startIssue": 2026031,
-        "endIssue": 2026174,
-        "samples": 144
+        "endIssue": 2026175,
+        "samples": 145
       },
       "validation": {
-        "startIssue": 2026175,
-        "endIssue": 2026222,
+        "startIssue": 2026176,
+        "endIssue": 2026223,
         "samples": 48
       },
       "holdout": {
-        "startIssue": 2026223,
-        "endIssue": 2026271,
+        "startIssue": 2026224,
+        "endIssue": 2026272,
         "samples": 49
       }
     },
     "baseline": {
       "development": {
-        "totalPeriods": 144,
-        "betPeriods": 144,
-        "totalStake": 13720,
+        "totalPeriods": 145,
+        "betPeriods": 145,
+        "totalStake": 13820,
         "hitCount": 33,
-        "hitRate": 0.2292,
+        "hitRate": 0.2276,
         "hitRate10": 0.3,
-        "hitRate20": 0.3,
+        "hitRate20": 0.25,
         "hitRate30": 0.3,
-        "cumulativeNet": 1790,
-        "roi": 0.1305,
-        "avgPerPeriod": 12.4306,
+        "cumulativeNet": 1690,
+        "roi": 0.1223,
+        "avgPerPeriod": 11.6552,
         "maxConsecutiveMiss": 17,
-        "currentConsecutiveMiss": 0,
+        "currentConsecutiveMiss": 1,
         "maxDrawdown": 3160,
-        "maxDrawdownRate": 0.2303,
-        "currentDrawdown": 340,
-        "finalBankroll": 2790,
+        "maxDrawdownRate": 0.2287,
+        "currentDrawdown": 440,
+        "finalBankroll": 2690,
         "peakBankroll": 3130,
-        "profitPeriodRatio": 0.2292,
-        "netToDrawdown": 0.5665
+        "profitPeriodRatio": 0.2276,
+        "netToDrawdown": 0.5348
       },
       "validation": {
         "totalPeriods": 48,
@@ -142,20 +142,20 @@
         "hitCount": 16,
         "hitRate": 0.3333,
         "hitRate10": 0.2,
-        "hitRate20": 0.4,
+        "hitRate20": 0.35,
         "hitRate30": 0.4,
         "cumulativeNet": 2720,
         "roi": 0.5667,
         "avgPerPeriod": 56.6667,
-        "maxConsecutiveMiss": 5,
-        "currentConsecutiveMiss": 1,
-        "maxDrawdown": 500,
-        "maxDrawdownRate": 0.1042,
-        "currentDrawdown": 130,
+        "maxConsecutiveMiss": 4,
+        "currentConsecutiveMiss": 2,
+        "maxDrawdown": 430,
+        "maxDrawdownRate": 0.0896,
+        "currentDrawdown": 230,
         "finalBankroll": 3720,
-        "peakBankroll": 3850,
+        "peakBankroll": 3950,
         "profitPeriodRatio": 0.3333,
-        "netToDrawdown": 5.44
+        "netToDrawdown": 6.3256
       },
       "calibrationValidation": {
         "totalPeriods": 48,
@@ -164,20 +164,20 @@
         "hitCount": 16,
         "hitRate": 0.3333,
         "hitRate10": 0.2,
-        "hitRate20": 0.4,
+        "hitRate20": 0.35,
         "hitRate30": 0.4,
         "cumulativeNet": 2720,
         "roi": 0.5667,
         "avgPerPeriod": 56.6667,
-        "maxConsecutiveMiss": 5,
-        "currentConsecutiveMiss": 1,
-        "maxDrawdown": 500,
-        "maxDrawdownRate": 0.1042,
-        "currentDrawdown": 130,
+        "maxConsecutiveMiss": 4,
+        "currentConsecutiveMiss": 2,
+        "maxDrawdown": 430,
+        "maxDrawdownRate": 0.0896,
+        "currentDrawdown": 230,
         "finalBankroll": 3720,
-        "peakBankroll": 3850,
+        "peakBankroll": 3950,
         "profitPeriodRatio": 0.3333,
-        "netToDrawdown": 5.44
+        "netToDrawdown": 6.3256
       },
       "holdout": {
         "totalPeriods": 49,
@@ -185,43 +185,43 @@
         "totalStake": 4820,
         "hitCount": 10,
         "hitRate": 0.2041,
-        "hitRate10": 0.3,
+        "hitRate10": 0.2,
         "hitRate20": 0.15,
         "hitRate30": 0.1667,
         "cumulativeNet": -120,
         "roi": -0.0249,
         "avgPerPeriod": -2.449,
         "maxConsecutiveMiss": 11,
-        "currentConsecutiveMiss": 2,
+        "currentConsecutiveMiss": 3,
         "maxDrawdown": 1210,
         "maxDrawdownRate": 0.251,
-        "currentDrawdown": 760,
+        "currentDrawdown": 860,
         "finalBankroll": 880,
-        "peakBankroll": 1640,
+        "peakBankroll": 1740,
         "profitPeriodRatio": 0.2041,
         "netToDrawdown": -0.0992
       },
       "fullWalkForward": {
-        "totalPeriods": 241,
-        "betPeriods": 241,
-        "totalStake": 23340,
+        "totalPeriods": 242,
+        "betPeriods": 242,
+        "totalStake": 23440,
         "hitCount": 59,
-        "hitRate": 0.2448,
-        "hitRate10": 0.3,
+        "hitRate": 0.2438,
+        "hitRate10": 0.2,
         "hitRate20": 0.15,
         "hitRate30": 0.1667,
-        "cumulativeNet": 4390,
-        "roi": 0.1881,
-        "avgPerPeriod": 18.2158,
+        "cumulativeNet": 4290,
+        "roi": 0.183,
+        "avgPerPeriod": 17.7273,
         "maxConsecutiveMiss": 17,
-        "currentConsecutiveMiss": 2,
+        "currentConsecutiveMiss": 3,
         "maxDrawdown": 3160,
-        "maxDrawdownRate": 0.1354,
-        "currentDrawdown": 760,
-        "finalBankroll": 5390,
+        "maxDrawdownRate": 0.1348,
+        "currentDrawdown": 860,
+        "finalBankroll": 5290,
         "peakBankroll": 6150,
-        "profitPeriodRatio": 0.2448,
-        "netToDrawdown": 1.3892
+        "profitPeriodRatio": 0.2438,
+        "netToDrawdown": 1.3576
       }
     },
     "sensitivity": {
@@ -229,331 +229,331 @@
         {
           "penalty": 0,
           "development": {
-            "totalPeriods": 144,
-            "betPeriods": 144,
-            "totalStake": 13720,
+            "totalPeriods": 145,
+            "betPeriods": 145,
+            "totalStake": 13820,
             "hitCount": 33,
-            "hitRate": 0.2292,
+            "hitRate": 0.2276,
             "hitRate10": 0.3,
-            "hitRate20": 0.3,
+            "hitRate20": 0.25,
             "hitRate30": 0.3,
-            "cumulativeNet": 1790,
-            "roi": 0.1305,
-            "avgPerPeriod": 12.4306,
+            "cumulativeNet": 1690,
+            "roi": 0.1223,
+            "avgPerPeriod": 11.6552,
             "maxConsecutiveMiss": 17,
-            "currentConsecutiveMiss": 0,
+            "currentConsecutiveMiss": 1,
             "maxDrawdown": 3160,
-            "maxDrawdownRate": 0.2303,
-            "currentDrawdown": 340,
-            "finalBankroll": 2790,
+            "maxDrawdownRate": 0.2287,
+            "currentDrawdown": 440,
+            "finalBankroll": 2690,
             "peakBankroll": 3130,
-            "profitPeriodRatio": 0.2292,
-            "netToDrawdown": 0.5665
+            "profitPeriodRatio": 0.2276,
+            "netToDrawdown": 0.5348
           },
           "segmentRois": [
             0.154,
             -0.3649,
-            0.5667
+            0.5347
           ]
         },
         {
           "penalty": 0.05,
           "development": {
-            "totalPeriods": 144,
-            "betPeriods": 144,
-            "totalStake": 13720,
+            "totalPeriods": 145,
+            "betPeriods": 145,
+            "totalStake": 13820,
             "hitCount": 33,
-            "hitRate": 0.2292,
+            "hitRate": 0.2276,
             "hitRate10": 0.3,
-            "hitRate20": 0.3,
+            "hitRate20": 0.25,
             "hitRate30": 0.3,
-            "cumulativeNet": 1790,
-            "roi": 0.1305,
-            "avgPerPeriod": 12.4306,
+            "cumulativeNet": 1690,
+            "roi": 0.1223,
+            "avgPerPeriod": 11.6552,
             "maxConsecutiveMiss": 17,
-            "currentConsecutiveMiss": 0,
+            "currentConsecutiveMiss": 1,
             "maxDrawdown": 3160,
-            "maxDrawdownRate": 0.2303,
-            "currentDrawdown": 340,
-            "finalBankroll": 2790,
+            "maxDrawdownRate": 0.2287,
+            "currentDrawdown": 440,
+            "finalBankroll": 2690,
             "peakBankroll": 3130,
-            "profitPeriodRatio": 0.2292,
-            "netToDrawdown": 0.5665
+            "profitPeriodRatio": 0.2276,
+            "netToDrawdown": 0.5348
           },
           "segmentRois": [
             0.154,
             -0.3649,
-            0.5667
+            0.5347
           ]
         },
         {
           "penalty": 0.1,
           "development": {
-            "totalPeriods": 144,
-            "betPeriods": 144,
-            "totalStake": 13720,
+            "totalPeriods": 145,
+            "betPeriods": 145,
+            "totalStake": 13820,
             "hitCount": 33,
-            "hitRate": 0.2292,
+            "hitRate": 0.2276,
             "hitRate10": 0.3,
-            "hitRate20": 0.3,
+            "hitRate20": 0.25,
             "hitRate30": 0.3,
-            "cumulativeNet": 1790,
-            "roi": 0.1305,
-            "avgPerPeriod": 12.4306,
+            "cumulativeNet": 1690,
+            "roi": 0.1223,
+            "avgPerPeriod": 11.6552,
             "maxConsecutiveMiss": 17,
-            "currentConsecutiveMiss": 0,
+            "currentConsecutiveMiss": 1,
             "maxDrawdown": 3160,
-            "maxDrawdownRate": 0.2303,
-            "currentDrawdown": 340,
-            "finalBankroll": 2790,
+            "maxDrawdownRate": 0.2287,
+            "currentDrawdown": 440,
+            "finalBankroll": 2690,
             "peakBankroll": 3130,
-            "profitPeriodRatio": 0.2292,
-            "netToDrawdown": 0.5665
+            "profitPeriodRatio": 0.2276,
+            "netToDrawdown": 0.5348
           },
           "segmentRois": [
             0.154,
             -0.3649,
-            0.5667
+            0.5347
           ]
         },
         {
           "penalty": 0.15,
           "development": {
-            "totalPeriods": 144,
-            "betPeriods": 144,
-            "totalStake": 13720,
+            "totalPeriods": 145,
+            "betPeriods": 145,
+            "totalStake": 13820,
             "hitCount": 33,
-            "hitRate": 0.2292,
+            "hitRate": 0.2276,
             "hitRate10": 0.3,
-            "hitRate20": 0.3,
+            "hitRate20": 0.25,
             "hitRate30": 0.3,
-            "cumulativeNet": 1790,
-            "roi": 0.1305,
-            "avgPerPeriod": 12.4306,
+            "cumulativeNet": 1690,
+            "roi": 0.1223,
+            "avgPerPeriod": 11.6552,
             "maxConsecutiveMiss": 17,
-            "currentConsecutiveMiss": 0,
+            "currentConsecutiveMiss": 1,
             "maxDrawdown": 3160,
-            "maxDrawdownRate": 0.2303,
-            "currentDrawdown": 340,
-            "finalBankroll": 2790,
+            "maxDrawdownRate": 0.2287,
+            "currentDrawdown": 440,
+            "finalBankroll": 2690,
             "peakBankroll": 3130,
-            "profitPeriodRatio": 0.2292,
-            "netToDrawdown": 0.5665
+            "profitPeriodRatio": 0.2276,
+            "netToDrawdown": 0.5348
           },
           "segmentRois": [
             0.154,
             -0.3649,
-            0.5667
+            0.5347
           ]
         },
         {
           "penalty": 0.2,
           "development": {
-            "totalPeriods": 144,
-            "betPeriods": 144,
-            "totalStake": 13720,
+            "totalPeriods": 145,
+            "betPeriods": 145,
+            "totalStake": 13820,
             "hitCount": 33,
-            "hitRate": 0.2292,
+            "hitRate": 0.2276,
             "hitRate10": 0.3,
-            "hitRate20": 0.3,
+            "hitRate20": 0.25,
             "hitRate30": 0.3,
-            "cumulativeNet": 1790,
-            "roi": 0.1305,
-            "avgPerPeriod": 12.4306,
+            "cumulativeNet": 1690,
+            "roi": 0.1223,
+            "avgPerPeriod": 11.6552,
             "maxConsecutiveMiss": 17,
-            "currentConsecutiveMiss": 0,
+            "currentConsecutiveMiss": 1,
             "maxDrawdown": 3160,
-            "maxDrawdownRate": 0.2303,
-            "currentDrawdown": 340,
-            "finalBankroll": 2790,
+            "maxDrawdownRate": 0.2287,
+            "currentDrawdown": 440,
+            "finalBankroll": 2690,
             "peakBankroll": 3130,
-            "profitPeriodRatio": 0.2292,
-            "netToDrawdown": 0.5665
+            "profitPeriodRatio": 0.2276,
+            "netToDrawdown": 0.5348
           },
           "segmentRois": [
             0.154,
             -0.3649,
-            0.5667
+            0.5347
           ]
         },
         {
           "penalty": 0.25,
           "development": {
-            "totalPeriods": 144,
-            "betPeriods": 144,
-            "totalStake": 13720,
+            "totalPeriods": 145,
+            "betPeriods": 145,
+            "totalStake": 13820,
             "hitCount": 33,
-            "hitRate": 0.2292,
+            "hitRate": 0.2276,
             "hitRate10": 0.3,
-            "hitRate20": 0.3,
+            "hitRate20": 0.25,
             "hitRate30": 0.3,
-            "cumulativeNet": 1790,
-            "roi": 0.1305,
-            "avgPerPeriod": 12.4306,
+            "cumulativeNet": 1690,
+            "roi": 0.1223,
+            "avgPerPeriod": 11.6552,
             "maxConsecutiveMiss": 17,
-            "currentConsecutiveMiss": 0,
+            "currentConsecutiveMiss": 1,
             "maxDrawdown": 3160,
-            "maxDrawdownRate": 0.2303,
-            "currentDrawdown": 340,
-            "finalBankroll": 2790,
+            "maxDrawdownRate": 0.2287,
+            "currentDrawdown": 440,
+            "finalBankroll": 2690,
             "peakBankroll": 3130,
-            "profitPeriodRatio": 0.2292,
-            "netToDrawdown": 0.5665
+            "profitPeriodRatio": 0.2276,
+            "netToDrawdown": 0.5348
           },
           "segmentRois": [
             0.154,
             -0.3649,
-            0.5667
+            0.5347
           ]
         },
         {
           "penalty": 0.3,
           "development": {
-            "totalPeriods": 144,
-            "betPeriods": 144,
-            "totalStake": 13720,
+            "totalPeriods": 145,
+            "betPeriods": 145,
+            "totalStake": 13820,
             "hitCount": 33,
-            "hitRate": 0.2292,
+            "hitRate": 0.2276,
             "hitRate10": 0.3,
-            "hitRate20": 0.3,
+            "hitRate20": 0.25,
             "hitRate30": 0.3,
-            "cumulativeNet": 1790,
-            "roi": 0.1305,
-            "avgPerPeriod": 12.4306,
+            "cumulativeNet": 1690,
+            "roi": 0.1223,
+            "avgPerPeriod": 11.6552,
             "maxConsecutiveMiss": 17,
-            "currentConsecutiveMiss": 0,
+            "currentConsecutiveMiss": 1,
             "maxDrawdown": 3160,
-            "maxDrawdownRate": 0.2303,
-            "currentDrawdown": 340,
-            "finalBankroll": 2790,
+            "maxDrawdownRate": 0.2287,
+            "currentDrawdown": 440,
+            "finalBankroll": 2690,
             "peakBankroll": 3130,
-            "profitPeriodRatio": 0.2292,
-            "netToDrawdown": 0.5665
+            "profitPeriodRatio": 0.2276,
+            "netToDrawdown": 0.5348
           },
           "segmentRois": [
             0.154,
             -0.3649,
-            0.5667
+            0.5347
           ]
         },
         {
           "penalty": 0.4,
           "development": {
-            "totalPeriods": 144,
-            "betPeriods": 144,
-            "totalStake": 13720,
+            "totalPeriods": 145,
+            "betPeriods": 145,
+            "totalStake": 13820,
             "hitCount": 33,
-            "hitRate": 0.2292,
+            "hitRate": 0.2276,
             "hitRate10": 0.3,
-            "hitRate20": 0.3,
+            "hitRate20": 0.25,
             "hitRate30": 0.3,
-            "cumulativeNet": 1790,
-            "roi": 0.1305,
-            "avgPerPeriod": 12.4306,
+            "cumulativeNet": 1690,
+            "roi": 0.1223,
+            "avgPerPeriod": 11.6552,
             "maxConsecutiveMiss": 17,
-            "currentConsecutiveMiss": 0,
+            "currentConsecutiveMiss": 1,
             "maxDrawdown": 3160,
-            "maxDrawdownRate": 0.2303,
-            "currentDrawdown": 340,
-            "finalBankroll": 2790,
+            "maxDrawdownRate": 0.2287,
+            "currentDrawdown": 440,
+            "finalBankroll": 2690,
             "peakBankroll": 3130,
-            "profitPeriodRatio": 0.2292,
-            "netToDrawdown": 0.5665
+            "profitPeriodRatio": 0.2276,
+            "netToDrawdown": 0.5348
           },
           "segmentRois": [
             0.154,
             -0.3649,
-            0.5667
+            0.5347
           ]
         },
         {
           "penalty": 0.5,
           "development": {
-            "totalPeriods": 144,
-            "betPeriods": 144,
-            "totalStake": 13720,
+            "totalPeriods": 145,
+            "betPeriods": 145,
+            "totalStake": 13820,
             "hitCount": 33,
-            "hitRate": 0.2292,
+            "hitRate": 0.2276,
             "hitRate10": 0.3,
-            "hitRate20": 0.3,
+            "hitRate20": 0.25,
             "hitRate30": 0.3,
-            "cumulativeNet": 1790,
-            "roi": 0.1305,
-            "avgPerPeriod": 12.4306,
+            "cumulativeNet": 1690,
+            "roi": 0.1223,
+            "avgPerPeriod": 11.6552,
             "maxConsecutiveMiss": 17,
-            "currentConsecutiveMiss": 0,
+            "currentConsecutiveMiss": 1,
             "maxDrawdown": 3160,
-            "maxDrawdownRate": 0.2303,
-            "currentDrawdown": 340,
-            "finalBankroll": 2790,
+            "maxDrawdownRate": 0.2287,
+            "currentDrawdown": 440,
+            "finalBankroll": 2690,
             "peakBankroll": 3130,
-            "profitPeriodRatio": 0.2292,
-            "netToDrawdown": 0.5665
+            "profitPeriodRatio": 0.2276,
+            "netToDrawdown": 0.5348
           },
           "segmentRois": [
             0.154,
             -0.3649,
-            0.5667
+            0.5347
           ]
         },
         {
           "penalty": 0.6,
           "development": {
-            "totalPeriods": 144,
-            "betPeriods": 144,
-            "totalStake": 13720,
+            "totalPeriods": 145,
+            "betPeriods": 145,
+            "totalStake": 13820,
             "hitCount": 33,
-            "hitRate": 0.2292,
+            "hitRate": 0.2276,
             "hitRate10": 0.3,
-            "hitRate20": 0.3,
+            "hitRate20": 0.25,
             "hitRate30": 0.3,
-            "cumulativeNet": 1790,
-            "roi": 0.1305,
-            "avgPerPeriod": 12.4306,
+            "cumulativeNet": 1690,
+            "roi": 0.1223,
+            "avgPerPeriod": 11.6552,
             "maxConsecutiveMiss": 17,
-            "currentConsecutiveMiss": 0,
+            "currentConsecutiveMiss": 1,
             "maxDrawdown": 3160,
-            "maxDrawdownRate": 0.2303,
-            "currentDrawdown": 340,
-            "finalBankroll": 2790,
+            "maxDrawdownRate": 0.2287,
+            "currentDrawdown": 440,
+            "finalBankroll": 2690,
             "peakBankroll": 3130,
-            "profitPeriodRatio": 0.2292,
-            "netToDrawdown": 0.5665
+            "profitPeriodRatio": 0.2276,
+            "netToDrawdown": 0.5348
           },
           "segmentRois": [
             0.154,
             -0.3649,
-            0.5667
+            0.5347
           ]
         },
         {
           "penalty": 0.8,
           "development": {
-            "totalPeriods": 144,
-            "betPeriods": 144,
-            "totalStake": 13720,
+            "totalPeriods": 145,
+            "betPeriods": 145,
+            "totalStake": 13820,
             "hitCount": 33,
-            "hitRate": 0.2292,
+            "hitRate": 0.2276,
             "hitRate10": 0.3,
-            "hitRate20": 0.3,
+            "hitRate20": 0.25,
             "hitRate30": 0.3,
-            "cumulativeNet": 1790,
-            "roi": 0.1305,
-            "avgPerPeriod": 12.4306,
+            "cumulativeNet": 1690,
+            "roi": 0.1223,
+            "avgPerPeriod": 11.6552,
             "maxConsecutiveMiss": 17,
-            "currentConsecutiveMiss": 0,
+            "currentConsecutiveMiss": 1,
             "maxDrawdown": 3160,
-            "maxDrawdownRate": 0.2303,
-            "currentDrawdown": 340,
-            "finalBankroll": 2790,
+            "maxDrawdownRate": 0.2287,
+            "currentDrawdown": 440,
+            "finalBankroll": 2690,
             "peakBankroll": 3130,
-            "profitPeriodRatio": 0.2292,
-            "netToDrawdown": 0.5665
+            "profitPeriodRatio": 0.2276,
+            "netToDrawdown": 0.5348
           },
           "segmentRois": [
             0.154,
             -0.3649,
-            0.5667
+            0.5347
           ]
         }
       ],
@@ -561,331 +561,331 @@
         {
           "factor": 1,
           "development": {
-            "totalPeriods": 144,
-            "betPeriods": 144,
-            "totalStake": 13720,
+            "totalPeriods": 145,
+            "betPeriods": 145,
+            "totalStake": 13820,
             "hitCount": 33,
-            "hitRate": 0.2292,
+            "hitRate": 0.2276,
             "hitRate10": 0.3,
-            "hitRate20": 0.3,
+            "hitRate20": 0.25,
             "hitRate30": 0.3,
-            "cumulativeNet": 1790,
-            "roi": 0.1305,
-            "avgPerPeriod": 12.4306,
+            "cumulativeNet": 1690,
+            "roi": 0.1223,
+            "avgPerPeriod": 11.6552,
             "maxConsecutiveMiss": 17,
-            "currentConsecutiveMiss": 0,
+            "currentConsecutiveMiss": 1,
             "maxDrawdown": 3160,
-            "maxDrawdownRate": 0.2303,
-            "currentDrawdown": 340,
-            "finalBankroll": 2790,
+            "maxDrawdownRate": 0.2287,
+            "currentDrawdown": 440,
+            "finalBankroll": 2690,
             "peakBankroll": 3130,
-            "profitPeriodRatio": 0.2292,
-            "netToDrawdown": 0.5665
+            "profitPeriodRatio": 0.2276,
+            "netToDrawdown": 0.5348
           },
           "segmentRois": [
             0.154,
             -0.3649,
-            0.5667
+            0.5347
           ]
         },
         {
           "factor": 0.9,
           "development": {
-            "totalPeriods": 144,
-            "betPeriods": 144,
-            "totalStake": 13720,
+            "totalPeriods": 145,
+            "betPeriods": 145,
+            "totalStake": 13820,
             "hitCount": 33,
-            "hitRate": 0.2292,
+            "hitRate": 0.2276,
             "hitRate10": 0.3,
-            "hitRate20": 0.3,
+            "hitRate20": 0.25,
             "hitRate30": 0.3,
-            "cumulativeNet": 1790,
-            "roi": 0.1305,
-            "avgPerPeriod": 12.4306,
+            "cumulativeNet": 1690,
+            "roi": 0.1223,
+            "avgPerPeriod": 11.6552,
             "maxConsecutiveMiss": 17,
-            "currentConsecutiveMiss": 0,
+            "currentConsecutiveMiss": 1,
             "maxDrawdown": 3160,
-            "maxDrawdownRate": 0.2303,
-            "currentDrawdown": 340,
-            "finalBankroll": 2790,
+            "maxDrawdownRate": 0.2287,
+            "currentDrawdown": 440,
+            "finalBankroll": 2690,
             "peakBankroll": 3130,
-            "profitPeriodRatio": 0.2292,
-            "netToDrawdown": 0.5665
+            "profitPeriodRatio": 0.2276,
+            "netToDrawdown": 0.5348
           },
           "segmentRois": [
             0.154,
             -0.3649,
-            0.5667
+            0.5347
           ]
         },
         {
           "factor": 0.8,
           "development": {
-            "totalPeriods": 144,
-            "betPeriods": 144,
-            "totalStake": 13720,
+            "totalPeriods": 145,
+            "betPeriods": 145,
+            "totalStake": 13820,
             "hitCount": 33,
-            "hitRate": 0.2292,
+            "hitRate": 0.2276,
             "hitRate10": 0.3,
-            "hitRate20": 0.3,
+            "hitRate20": 0.25,
             "hitRate30": 0.3,
-            "cumulativeNet": 1790,
-            "roi": 0.1305,
-            "avgPerPeriod": 12.4306,
+            "cumulativeNet": 1690,
+            "roi": 0.1223,
+            "avgPerPeriod": 11.6552,
             "maxConsecutiveMiss": 17,
-            "currentConsecutiveMiss": 0,
+            "currentConsecutiveMiss": 1,
             "maxDrawdown": 3160,
-            "maxDrawdownRate": 0.2303,
-            "currentDrawdown": 340,
-            "finalBankroll": 2790,
+            "maxDrawdownRate": 0.2287,
+            "currentDrawdown": 440,
+            "finalBankroll": 2690,
             "peakBankroll": 3130,
-            "profitPeriodRatio": 0.2292,
-            "netToDrawdown": 0.5665
+            "profitPeriodRatio": 0.2276,
+            "netToDrawdown": 0.5348
           },
           "segmentRois": [
             0.154,
             -0.3649,
-            0.5667
+            0.5347
           ]
         },
         {
           "factor": 0.7,
           "development": {
-            "totalPeriods": 144,
-            "betPeriods": 144,
-            "totalStake": 13720,
+            "totalPeriods": 145,
+            "betPeriods": 145,
+            "totalStake": 13820,
             "hitCount": 33,
-            "hitRate": 0.2292,
+            "hitRate": 0.2276,
             "hitRate10": 0.3,
-            "hitRate20": 0.3,
+            "hitRate20": 0.25,
             "hitRate30": 0.3,
-            "cumulativeNet": 1790,
-            "roi": 0.1305,
-            "avgPerPeriod": 12.4306,
+            "cumulativeNet": 1690,
+            "roi": 0.1223,
+            "avgPerPeriod": 11.6552,
             "maxConsecutiveMiss": 17,
-            "currentConsecutiveMiss": 0,
+            "currentConsecutiveMiss": 1,
             "maxDrawdown": 3160,
-            "maxDrawdownRate": 0.2303,
-            "currentDrawdown": 340,
-            "finalBankroll": 2790,
+            "maxDrawdownRate": 0.2287,
+            "currentDrawdown": 440,
+            "finalBankroll": 2690,
             "peakBankroll": 3130,
-            "profitPeriodRatio": 0.2292,
-            "netToDrawdown": 0.5665
+            "profitPeriodRatio": 0.2276,
+            "netToDrawdown": 0.5348
           },
           "segmentRois": [
             0.154,
             -0.3649,
-            0.5667
+            0.5347
           ]
         },
         {
           "factor": 0.6,
           "development": {
-            "totalPeriods": 144,
-            "betPeriods": 144,
-            "totalStake": 13720,
+            "totalPeriods": 145,
+            "betPeriods": 145,
+            "totalStake": 13820,
             "hitCount": 33,
-            "hitRate": 0.2292,
+            "hitRate": 0.2276,
             "hitRate10": 0.3,
-            "hitRate20": 0.3,
+            "hitRate20": 0.25,
             "hitRate30": 0.3,
-            "cumulativeNet": 1790,
-            "roi": 0.1305,
-            "avgPerPeriod": 12.4306,
+            "cumulativeNet": 1690,
+            "roi": 0.1223,
+            "avgPerPeriod": 11.6552,
             "maxConsecutiveMiss": 17,
-            "currentConsecutiveMiss": 0,
+            "currentConsecutiveMiss": 1,
             "maxDrawdown": 3160,
-            "maxDrawdownRate": 0.2303,
-            "currentDrawdown": 340,
-            "finalBankroll": 2790,
+            "maxDrawdownRate": 0.2287,
+            "currentDrawdown": 440,
+            "finalBankroll": 2690,
             "peakBankroll": 3130,
-            "profitPeriodRatio": 0.2292,
-            "netToDrawdown": 0.5665
+            "profitPeriodRatio": 0.2276,
+            "netToDrawdown": 0.5348
           },
           "segmentRois": [
             0.154,
             -0.3649,
-            0.5667
+            0.5347
           ]
         },
         {
           "factor": 0.5,
           "development": {
-            "totalPeriods": 144,
-            "betPeriods": 144,
-            "totalStake": 13720,
+            "totalPeriods": 145,
+            "betPeriods": 145,
+            "totalStake": 13820,
             "hitCount": 33,
-            "hitRate": 0.2292,
+            "hitRate": 0.2276,
             "hitRate10": 0.3,
-            "hitRate20": 0.3,
+            "hitRate20": 0.25,
             "hitRate30": 0.3,
-            "cumulativeNet": 1790,
-            "roi": 0.1305,
-            "avgPerPeriod": 12.4306,
+            "cumulativeNet": 1690,
+            "roi": 0.1223,
+            "avgPerPeriod": 11.6552,
             "maxConsecutiveMiss": 17,
-            "currentConsecutiveMiss": 0,
+            "currentConsecutiveMiss": 1,
             "maxDrawdown": 3160,
-            "maxDrawdownRate": 0.2303,
-            "currentDrawdown": 340,
-            "finalBankroll": 2790,
+            "maxDrawdownRate": 0.2287,
+            "currentDrawdown": 440,
+            "finalBankroll": 2690,
             "peakBankroll": 3130,
-            "profitPeriodRatio": 0.2292,
-            "netToDrawdown": 0.5665
+            "profitPeriodRatio": 0.2276,
+            "netToDrawdown": 0.5348
           },
           "segmentRois": [
             0.154,
             -0.3649,
-            0.5667
+            0.5347
           ]
         },
         {
           "factor": 0.4,
           "development": {
-            "totalPeriods": 144,
-            "betPeriods": 144,
-            "totalStake": 13720,
+            "totalPeriods": 145,
+            "betPeriods": 145,
+            "totalStake": 13820,
             "hitCount": 33,
-            "hitRate": 0.2292,
+            "hitRate": 0.2276,
             "hitRate10": 0.3,
-            "hitRate20": 0.3,
+            "hitRate20": 0.25,
             "hitRate30": 0.3,
-            "cumulativeNet": 1790,
-            "roi": 0.1305,
-            "avgPerPeriod": 12.4306,
+            "cumulativeNet": 1690,
+            "roi": 0.1223,
+            "avgPerPeriod": 11.6552,
             "maxConsecutiveMiss": 17,
-            "currentConsecutiveMiss": 0,
+            "currentConsecutiveMiss": 1,
             "maxDrawdown": 3160,
-            "maxDrawdownRate": 0.2303,
-            "currentDrawdown": 340,
-            "finalBankroll": 2790,
+            "maxDrawdownRate": 0.2287,
+            "currentDrawdown": 440,
+            "finalBankroll": 2690,
             "peakBankroll": 3130,
-            "profitPeriodRatio": 0.2292,
-            "netToDrawdown": 0.5665
+            "profitPeriodRatio": 0.2276,
+            "netToDrawdown": 0.5348
           },
           "segmentRois": [
             0.154,
             -0.3649,
-            0.5667
+            0.5347
           ]
         },
         {
           "factor": 0.3,
           "development": {
-            "totalPeriods": 144,
-            "betPeriods": 144,
-            "totalStake": 13720,
+            "totalPeriods": 145,
+            "betPeriods": 145,
+            "totalStake": 13820,
             "hitCount": 33,
-            "hitRate": 0.2292,
+            "hitRate": 0.2276,
             "hitRate10": 0.3,
-            "hitRate20": 0.3,
+            "hitRate20": 0.25,
             "hitRate30": 0.3,
-            "cumulativeNet": 1790,
-            "roi": 0.1305,
-            "avgPerPeriod": 12.4306,
+            "cumulativeNet": 1690,
+            "roi": 0.1223,
+            "avgPerPeriod": 11.6552,
             "maxConsecutiveMiss": 17,
-            "currentConsecutiveMiss": 0,
+            "currentConsecutiveMiss": 1,
             "maxDrawdown": 3160,
-            "maxDrawdownRate": 0.2303,
-            "currentDrawdown": 340,
-            "finalBankroll": 2790,
+            "maxDrawdownRate": 0.2287,
+            "currentDrawdown": 440,
+            "finalBankroll": 2690,
             "peakBankroll": 3130,
-            "profitPeriodRatio": 0.2292,
-            "netToDrawdown": 0.5665
+            "profitPeriodRatio": 0.2276,
+            "netToDrawdown": 0.5348
           },
           "segmentRois": [
             0.154,
             -0.3649,
-            0.5667
+            0.5347
           ]
         },
         {
           "factor": 0.25,
           "development": {
-            "totalPeriods": 144,
-            "betPeriods": 144,
-            "totalStake": 13720,
+            "totalPeriods": 145,
+            "betPeriods": 145,
+            "totalStake": 13820,
             "hitCount": 33,
-            "hitRate": 0.2292,
+            "hitRate": 0.2276,
             "hitRate10": 0.3,
-            "hitRate20": 0.3,
+            "hitRate20": 0.25,
             "hitRate30": 0.3,
-            "cumulativeNet": 1790,
-            "roi": 0.1305,
-            "avgPerPeriod": 12.4306,
+            "cumulativeNet": 1690,
+            "roi": 0.1223,
+            "avgPerPeriod": 11.6552,
             "maxConsecutiveMiss": 17,
-            "currentConsecutiveMiss": 0,
+            "currentConsecutiveMiss": 1,
             "maxDrawdown": 3160,
-            "maxDrawdownRate": 0.2303,
-            "currentDrawdown": 340,
-            "finalBankroll": 2790,
+            "maxDrawdownRate": 0.2287,
+            "currentDrawdown": 440,
+            "finalBankroll": 2690,
             "peakBankroll": 3130,
-            "profitPeriodRatio": 0.2292,
-            "netToDrawdown": 0.5665
+            "profitPeriodRatio": 0.2276,
+            "netToDrawdown": 0.5348
           },
           "segmentRois": [
             0.154,
             -0.3649,
-            0.5667
+            0.5347
           ]
         },
         {
           "factor": 0.2,
           "development": {
-            "totalPeriods": 144,
-            "betPeriods": 144,
-            "totalStake": 13720,
+            "totalPeriods": 145,
+            "betPeriods": 145,
+            "totalStake": 13820,
             "hitCount": 33,
-            "hitRate": 0.2292,
+            "hitRate": 0.2276,
             "hitRate10": 0.3,
-            "hitRate20": 0.3,
+            "hitRate20": 0.25,
             "hitRate30": 0.3,
-            "cumulativeNet": 1790,
-            "roi": 0.1305,
-            "avgPerPeriod": 12.4306,
+            "cumulativeNet": 1690,
+            "roi": 0.1223,
+            "avgPerPeriod": 11.6552,
             "maxConsecutiveMiss": 17,
-            "currentConsecutiveMiss": 0,
+            "currentConsecutiveMiss": 1,
             "maxDrawdown": 3160,
-            "maxDrawdownRate": 0.2303,
-            "currentDrawdown": 340,
-            "finalBankroll": 2790,
+            "maxDrawdownRate": 0.2287,
+            "currentDrawdown": 440,
+            "finalBankroll": 2690,
             "peakBankroll": 3130,
-            "profitPeriodRatio": 0.2292,
-            "netToDrawdown": 0.5665
+            "profitPeriodRatio": 0.2276,
+            "netToDrawdown": 0.5348
           },
           "segmentRois": [
             0.154,
             -0.3649,
-            0.5667
+            0.5347
           ]
         },
         {
           "factor": 0.1,
           "development": {
-            "totalPeriods": 144,
-            "betPeriods": 144,
-            "totalStake": 13720,
+            "totalPeriods": 145,
+            "betPeriods": 145,
+            "totalStake": 13820,
             "hitCount": 33,
-            "hitRate": 0.2292,
+            "hitRate": 0.2276,
             "hitRate10": 0.3,
-            "hitRate20": 0.3,
+            "hitRate20": 0.25,
             "hitRate30": 0.3,
-            "cumulativeNet": 1790,
-            "roi": 0.1305,
-            "avgPerPeriod": 12.4306,
+            "cumulativeNet": 1690,
+            "roi": 0.1223,
+            "avgPerPeriod": 11.6552,
             "maxConsecutiveMiss": 17,
-            "currentConsecutiveMiss": 0,
+            "currentConsecutiveMiss": 1,
             "maxDrawdown": 3160,
-            "maxDrawdownRate": 0.2303,
-            "currentDrawdown": 340,
-            "finalBankroll": 2790,
+            "maxDrawdownRate": 0.2287,
+            "currentDrawdown": 440,
+            "finalBankroll": 2690,
             "peakBankroll": 3130,
-            "profitPeriodRatio": 0.2292,
-            "netToDrawdown": 0.5665
+            "profitPeriodRatio": 0.2276,
+            "netToDrawdown": 0.5348
           },
           "segmentRois": [
             0.154,
             -0.3649,
-            0.5667
+            0.5347
           ]
         }
       ]
@@ -908,7 +908,7 @@
           0.8
         ],
         "crossTimeStableCount": 0,
-        "bestRoi": 0.1305,
+        "bestRoi": 0.1223,
         "tolerancePct": 0.5
       },
       "numberRepeatFactor": {
@@ -928,33 +928,33 @@
           1
         ],
         "crossTimeStableCount": 0,
-        "bestRoi": 0.1305,
+        "bestRoi": 0.1223,
         "tolerancePct": 0.5
       }
     },
     "experiments": {
       "A": {
         "development": {
-          "totalPeriods": 144,
-          "betPeriods": 144,
-          "totalStake": 13720,
+          "totalPeriods": 145,
+          "betPeriods": 145,
+          "totalStake": 13820,
           "hitCount": 33,
-          "hitRate": 0.2292,
+          "hitRate": 0.2276,
           "hitRate10": 0.3,
-          "hitRate20": 0.3,
+          "hitRate20": 0.25,
           "hitRate30": 0.3,
-          "cumulativeNet": 1790,
-          "roi": 0.1305,
-          "avgPerPeriod": 12.4306,
+          "cumulativeNet": 1690,
+          "roi": 0.1223,
+          "avgPerPeriod": 11.6552,
           "maxConsecutiveMiss": 17,
-          "currentConsecutiveMiss": 0,
+          "currentConsecutiveMiss": 1,
           "maxDrawdown": 3160,
-          "maxDrawdownRate": 0.2303,
-          "currentDrawdown": 340,
-          "finalBankroll": 2790,
+          "maxDrawdownRate": 0.2287,
+          "currentDrawdown": 440,
+          "finalBankroll": 2690,
           "peakBankroll": 3130,
-          "profitPeriodRatio": 0.2292,
-          "netToDrawdown": 0.5665
+          "profitPeriodRatio": 0.2276,
+          "netToDrawdown": 0.5348
         },
         "validation": {
           "totalPeriods": 48,
@@ -963,20 +963,20 @@
           "hitCount": 16,
           "hitRate": 0.3333,
           "hitRate10": 0.2,
-          "hitRate20": 0.4,
+          "hitRate20": 0.35,
           "hitRate30": 0.4,
           "cumulativeNet": 2720,
           "roi": 0.5667,
           "avgPerPeriod": 56.6667,
-          "maxConsecutiveMiss": 5,
-          "currentConsecutiveMiss": 1,
-          "maxDrawdown": 500,
-          "maxDrawdownRate": 0.1042,
-          "currentDrawdown": 130,
+          "maxConsecutiveMiss": 4,
+          "currentConsecutiveMiss": 2,
+          "maxDrawdown": 430,
+          "maxDrawdownRate": 0.0896,
+          "currentDrawdown": 230,
           "finalBankroll": 3720,
-          "peakBankroll": 3850,
+          "peakBankroll": 3950,
           "profitPeriodRatio": 0.3333,
-          "netToDrawdown": 5.44
+          "netToDrawdown": 6.3256
         },
         "calibrationValidation": {
           "totalPeriods": 48,
@@ -985,20 +985,20 @@
           "hitCount": 16,
           "hitRate": 0.3333,
           "hitRate10": 0.2,
-          "hitRate20": 0.4,
+          "hitRate20": 0.35,
           "hitRate30": 0.4,
           "cumulativeNet": 2720,
           "roi": 0.5667,
           "avgPerPeriod": 56.6667,
-          "maxConsecutiveMiss": 5,
-          "currentConsecutiveMiss": 1,
-          "maxDrawdown": 500,
-          "maxDrawdownRate": 0.1042,
-          "currentDrawdown": 130,
+          "maxConsecutiveMiss": 4,
+          "currentConsecutiveMiss": 2,
+          "maxDrawdown": 430,
+          "maxDrawdownRate": 0.0896,
+          "currentDrawdown": 230,
           "finalBankroll": 3720,
-          "peakBankroll": 3850,
+          "peakBankroll": 3950,
           "profitPeriodRatio": 0.3333,
-          "netToDrawdown": 5.44
+          "netToDrawdown": 6.3256
         },
         "holdout": {
           "totalPeriods": 49,
@@ -1006,49 +1006,49 @@
           "totalStake": 4820,
           "hitCount": 10,
           "hitRate": 0.2041,
-          "hitRate10": 0.3,
+          "hitRate10": 0.2,
           "hitRate20": 0.15,
           "hitRate30": 0.1667,
           "cumulativeNet": -120,
           "roi": -0.0249,
           "avgPerPeriod": -2.449,
           "maxConsecutiveMiss": 11,
-          "currentConsecutiveMiss": 2,
+          "currentConsecutiveMiss": 3,
           "maxDrawdown": 1210,
           "maxDrawdownRate": 0.251,
-          "currentDrawdown": 760,
+          "currentDrawdown": 860,
           "finalBankroll": 880,
-          "peakBankroll": 1640,
+          "peakBankroll": 1740,
           "profitPeriodRatio": 0.2041,
           "netToDrawdown": -0.0992
         },
         "fullWalkForward": {
-          "totalPeriods": 241,
-          "betPeriods": 241,
-          "totalStake": 23340,
+          "totalPeriods": 242,
+          "betPeriods": 242,
+          "totalStake": 23440,
           "hitCount": 59,
-          "hitRate": 0.2448,
-          "hitRate10": 0.3,
+          "hitRate": 0.2438,
+          "hitRate10": 0.2,
           "hitRate20": 0.15,
           "hitRate30": 0.1667,
-          "cumulativeNet": 4390,
-          "roi": 0.1881,
-          "avgPerPeriod": 18.2158,
+          "cumulativeNet": 4290,
+          "roi": 0.183,
+          "avgPerPeriod": 17.7273,
           "maxConsecutiveMiss": 17,
-          "currentConsecutiveMiss": 2,
+          "currentConsecutiveMiss": 3,
           "maxDrawdown": 3160,
-          "maxDrawdownRate": 0.1354,
-          "currentDrawdown": 760,
-          "finalBankroll": 5390,
+          "maxDrawdownRate": 0.1348,
+          "currentDrawdown": 860,
+          "finalBankroll": 5290,
           "peakBankroll": 6150,
-          "profitPeriodRatio": 0.2448,
-          "netToDrawdown": 1.3892
+          "profitPeriodRatio": 0.2438,
+          "netToDrawdown": 1.3576
         },
         "segments": {
           "development": [
             0.154,
             -0.3649,
-            0.5667
+            0.5347
           ],
           "validation": [
             0.175,
@@ -1069,26 +1069,26 @@
       },
       "B": {
         "development": {
-          "totalPeriods": 144,
-          "betPeriods": 144,
-          "totalStake": 13720,
+          "totalPeriods": 145,
+          "betPeriods": 145,
+          "totalStake": 13820,
           "hitCount": 33,
-          "hitRate": 0.2292,
+          "hitRate": 0.2276,
           "hitRate10": 0.3,
-          "hitRate20": 0.3,
+          "hitRate20": 0.25,
           "hitRate30": 0.3,
-          "cumulativeNet": 1790,
-          "roi": 0.1305,
-          "avgPerPeriod": 12.4306,
+          "cumulativeNet": 1690,
+          "roi": 0.1223,
+          "avgPerPeriod": 11.6552,
           "maxConsecutiveMiss": 17,
-          "currentConsecutiveMiss": 0,
+          "currentConsecutiveMiss": 1,
           "maxDrawdown": 3160,
-          "maxDrawdownRate": 0.2303,
-          "currentDrawdown": 340,
-          "finalBankroll": 2790,
+          "maxDrawdownRate": 0.2287,
+          "currentDrawdown": 440,
+          "finalBankroll": 2690,
           "peakBankroll": 3130,
-          "profitPeriodRatio": 0.2292,
-          "netToDrawdown": 0.5665
+          "profitPeriodRatio": 0.2276,
+          "netToDrawdown": 0.5348
         },
         "validation": {
           "totalPeriods": 48,
@@ -1097,20 +1097,20 @@
           "hitCount": 16,
           "hitRate": 0.3333,
           "hitRate10": 0.2,
-          "hitRate20": 0.4,
+          "hitRate20": 0.35,
           "hitRate30": 0.4,
           "cumulativeNet": 2720,
           "roi": 0.5667,
           "avgPerPeriod": 56.6667,
-          "maxConsecutiveMiss": 5,
-          "currentConsecutiveMiss": 1,
-          "maxDrawdown": 500,
-          "maxDrawdownRate": 0.1042,
-          "currentDrawdown": 130,
+          "maxConsecutiveMiss": 4,
+          "currentConsecutiveMiss": 2,
+          "maxDrawdown": 430,
+          "maxDrawdownRate": 0.0896,
+          "currentDrawdown": 230,
           "finalBankroll": 3720,
-          "peakBankroll": 3850,
+          "peakBankroll": 3950,
           "profitPeriodRatio": 0.3333,
-          "netToDrawdown": 5.44
+          "netToDrawdown": 6.3256
         },
         "calibrationValidation": {
           "totalPeriods": 48,
@@ -1119,20 +1119,20 @@
           "hitCount": 16,
           "hitRate": 0.3333,
           "hitRate10": 0.2,
-          "hitRate20": 0.4,
+          "hitRate20": 0.35,
           "hitRate30": 0.4,
           "cumulativeNet": 2720,
           "roi": 0.5667,
           "avgPerPeriod": 56.6667,
-          "maxConsecutiveMiss": 5,
-          "currentConsecutiveMiss": 1,
-          "maxDrawdown": 500,
-          "maxDrawdownRate": 0.1042,
-          "currentDrawdown": 130,
+          "maxConsecutiveMiss": 4,
+          "currentConsecutiveMiss": 2,
+          "maxDrawdown": 430,
+          "maxDrawdownRate": 0.0896,
+          "currentDrawdown": 230,
           "finalBankroll": 3720,
-          "peakBankroll": 3850,
+          "peakBankroll": 3950,
           "profitPeriodRatio": 0.3333,
-          "netToDrawdown": 5.44
+          "netToDrawdown": 6.3256
         },
         "holdout": {
           "totalPeriods": 49,
@@ -1140,49 +1140,49 @@
           "totalStake": 4820,
           "hitCount": 11,
           "hitRate": 0.2245,
-          "hitRate10": 0.3,
+          "hitRate10": 0.2,
           "hitRate20": 0.15,
           "hitRate30": 0.1667,
           "cumulativeNet": 350,
           "roi": 0.0726,
           "avgPerPeriod": 7.1429,
           "maxConsecutiveMiss": 11,
-          "currentConsecutiveMiss": 2,
+          "currentConsecutiveMiss": 3,
           "maxDrawdown": 1060,
           "maxDrawdownRate": 0.2199,
-          "currentDrawdown": 610,
+          "currentDrawdown": 710,
           "finalBankroll": 1350,
-          "peakBankroll": 1960,
+          "peakBankroll": 2060,
           "profitPeriodRatio": 0.2245,
           "netToDrawdown": 0.3302
         },
         "fullWalkForward": {
-          "totalPeriods": 241,
-          "betPeriods": 241,
-          "totalStake": 23340,
+          "totalPeriods": 242,
+          "betPeriods": 242,
+          "totalStake": 23440,
           "hitCount": 60,
-          "hitRate": 0.249,
-          "hitRate10": 0.3,
+          "hitRate": 0.2479,
+          "hitRate10": 0.2,
           "hitRate20": 0.15,
           "hitRate30": 0.1667,
-          "cumulativeNet": 4860,
-          "roi": 0.2082,
-          "avgPerPeriod": 20.166,
+          "cumulativeNet": 4760,
+          "roi": 0.2031,
+          "avgPerPeriod": 19.6694,
           "maxConsecutiveMiss": 17,
-          "currentConsecutiveMiss": 2,
+          "currentConsecutiveMiss": 3,
           "maxDrawdown": 3160,
-          "maxDrawdownRate": 0.1354,
-          "currentDrawdown": 610,
-          "finalBankroll": 5860,
+          "maxDrawdownRate": 0.1348,
+          "currentDrawdown": 710,
+          "finalBankroll": 5760,
           "peakBankroll": 6470,
-          "profitPeriodRatio": 0.249,
-          "netToDrawdown": 1.538
+          "profitPeriodRatio": 0.2479,
+          "netToDrawdown": 1.5063
         },
         "segments": {
           "development": [
             0.154,
             -0.3649,
-            0.5667
+            0.5347
           ],
           "validation": [
             0.175,
@@ -1203,26 +1203,26 @@
       },
       "C": {
         "development": {
-          "totalPeriods": 144,
-          "betPeriods": 144,
-          "totalStake": 13720,
+          "totalPeriods": 145,
+          "betPeriods": 145,
+          "totalStake": 13820,
           "hitCount": 33,
-          "hitRate": 0.2292,
+          "hitRate": 0.2276,
           "hitRate10": 0.3,
-          "hitRate20": 0.3,
+          "hitRate20": 0.25,
           "hitRate30": 0.3,
-          "cumulativeNet": 1790,
-          "roi": 0.1305,
-          "avgPerPeriod": 12.4306,
+          "cumulativeNet": 1690,
+          "roi": 0.1223,
+          "avgPerPeriod": 11.6552,
           "maxConsecutiveMiss": 17,
-          "currentConsecutiveMiss": 0,
+          "currentConsecutiveMiss": 1,
           "maxDrawdown": 3160,
-          "maxDrawdownRate": 0.2303,
-          "currentDrawdown": 340,
-          "finalBankroll": 2790,
+          "maxDrawdownRate": 0.2287,
+          "currentDrawdown": 440,
+          "finalBankroll": 2690,
           "peakBankroll": 3130,
-          "profitPeriodRatio": 0.2292,
-          "netToDrawdown": 0.5665
+          "profitPeriodRatio": 0.2276,
+          "netToDrawdown": 0.5348
         },
         "validation": {
           "totalPeriods": 48,
@@ -1231,20 +1231,20 @@
           "hitCount": 16,
           "hitRate": 0.3333,
           "hitRate10": 0.2,
-          "hitRate20": 0.4,
+          "hitRate20": 0.35,
           "hitRate30": 0.4,
           "cumulativeNet": 2720,
           "roi": 0.5667,
           "avgPerPeriod": 56.6667,
-          "maxConsecutiveMiss": 5,
-          "currentConsecutiveMiss": 1,
-          "maxDrawdown": 500,
-          "maxDrawdownRate": 0.1042,
-          "currentDrawdown": 130,
+          "maxConsecutiveMiss": 4,
+          "currentConsecutiveMiss": 2,
+          "maxDrawdown": 430,
+          "maxDrawdownRate": 0.0896,
+          "currentDrawdown": 230,
           "finalBankroll": 3720,
-          "peakBankroll": 3850,
+          "peakBankroll": 3950,
           "profitPeriodRatio": 0.3333,
-          "netToDrawdown": 5.44
+          "netToDrawdown": 6.3256
         },
         "calibrationValidation": {
           "totalPeriods": 48,
@@ -1253,20 +1253,20 @@
           "hitCount": 16,
           "hitRate": 0.3333,
           "hitRate10": 0.2,
-          "hitRate20": 0.4,
+          "hitRate20": 0.35,
           "hitRate30": 0.4,
           "cumulativeNet": 2720,
           "roi": 0.5667,
           "avgPerPeriod": 56.6667,
-          "maxConsecutiveMiss": 5,
-          "currentConsecutiveMiss": 1,
-          "maxDrawdown": 500,
-          "maxDrawdownRate": 0.1042,
-          "currentDrawdown": 130,
+          "maxConsecutiveMiss": 4,
+          "currentConsecutiveMiss": 2,
+          "maxDrawdown": 430,
+          "maxDrawdownRate": 0.0896,
+          "currentDrawdown": 230,
           "finalBankroll": 3720,
-          "peakBankroll": 3850,
+          "peakBankroll": 3950,
           "profitPeriodRatio": 0.3333,
-          "netToDrawdown": 5.44
+          "netToDrawdown": 6.3256
         },
         "holdout": {
           "totalPeriods": 49,
@@ -1274,49 +1274,49 @@
           "totalStake": 4820,
           "hitCount": 10,
           "hitRate": 0.2041,
-          "hitRate10": 0.3,
+          "hitRate10": 0.2,
           "hitRate20": 0.15,
           "hitRate30": 0.1667,
           "cumulativeNet": -120,
           "roi": -0.0249,
           "avgPerPeriod": -2.449,
           "maxConsecutiveMiss": 11,
-          "currentConsecutiveMiss": 2,
+          "currentConsecutiveMiss": 3,
           "maxDrawdown": 1210,
           "maxDrawdownRate": 0.251,
-          "currentDrawdown": 760,
+          "currentDrawdown": 860,
           "finalBankroll": 880,
-          "peakBankroll": 1640,
+          "peakBankroll": 1740,
           "profitPeriodRatio": 0.2041,
           "netToDrawdown": -0.0992
         },
         "fullWalkForward": {
-          "totalPeriods": 241,
-          "betPeriods": 241,
-          "totalStake": 23340,
+          "totalPeriods": 242,
+          "betPeriods": 242,
+          "totalStake": 23440,
           "hitCount": 59,
-          "hitRate": 0.2448,
-          "hitRate10": 0.3,
+          "hitRate": 0.2438,
+          "hitRate10": 0.2,
           "hitRate20": 0.15,
           "hitRate30": 0.1667,
-          "cumulativeNet": 4390,
-          "roi": 0.1881,
-          "avgPerPeriod": 18.2158,
+          "cumulativeNet": 4290,
+          "roi": 0.183,
+          "avgPerPeriod": 17.7273,
           "maxConsecutiveMiss": 17,
-          "currentConsecutiveMiss": 2,
+          "currentConsecutiveMiss": 3,
           "maxDrawdown": 3160,
-          "maxDrawdownRate": 0.1354,
-          "currentDrawdown": 760,
-          "finalBankroll": 5390,
+          "maxDrawdownRate": 0.1348,
+          "currentDrawdown": 860,
+          "finalBankroll": 5290,
           "peakBankroll": 6150,
-          "profitPeriodRatio": 0.2448,
-          "netToDrawdown": 1.3892
+          "profitPeriodRatio": 0.2438,
+          "netToDrawdown": 1.3576
         },
         "segments": {
           "development": [
             0.154,
             -0.3649,
-            0.5667
+            0.5347
           ],
           "validation": [
             0.175,
@@ -1337,26 +1337,26 @@
       },
       "D": {
         "development": {
-          "totalPeriods": 144,
-          "betPeriods": 144,
-          "totalStake": 13720,
+          "totalPeriods": 145,
+          "betPeriods": 145,
+          "totalStake": 13820,
           "hitCount": 33,
-          "hitRate": 0.2292,
+          "hitRate": 0.2276,
           "hitRate10": 0.3,
-          "hitRate20": 0.3,
+          "hitRate20": 0.25,
           "hitRate30": 0.3,
-          "cumulativeNet": 1790,
-          "roi": 0.1305,
-          "avgPerPeriod": 12.4306,
+          "cumulativeNet": 1690,
+          "roi": 0.1223,
+          "avgPerPeriod": 11.6552,
           "maxConsecutiveMiss": 17,
-          "currentConsecutiveMiss": 0,
+          "currentConsecutiveMiss": 1,
           "maxDrawdown": 3160,
-          "maxDrawdownRate": 0.2303,
-          "currentDrawdown": 340,
-          "finalBankroll": 2790,
+          "maxDrawdownRate": 0.2287,
+          "currentDrawdown": 440,
+          "finalBankroll": 2690,
           "peakBankroll": 3130,
-          "profitPeriodRatio": 0.2292,
-          "netToDrawdown": 0.5665
+          "profitPeriodRatio": 0.2276,
+          "netToDrawdown": 0.5348
         },
         "validation": {
           "totalPeriods": 48,
@@ -1365,20 +1365,20 @@
           "hitCount": 16,
           "hitRate": 0.3333,
           "hitRate10": 0.2,
-          "hitRate20": 0.4,
+          "hitRate20": 0.35,
           "hitRate30": 0.4,
           "cumulativeNet": 2720,
           "roi": 0.5667,
           "avgPerPeriod": 56.6667,
-          "maxConsecutiveMiss": 5,
-          "currentConsecutiveMiss": 1,
-          "maxDrawdown": 500,
-          "maxDrawdownRate": 0.1042,
-          "currentDrawdown": 130,
+          "maxConsecutiveMiss": 4,
+          "currentConsecutiveMiss": 2,
+          "maxDrawdown": 430,
+          "maxDrawdownRate": 0.0896,
+          "currentDrawdown": 230,
           "finalBankroll": 3720,
-          "peakBankroll": 3850,
+          "peakBankroll": 3950,
           "profitPeriodRatio": 0.3333,
-          "netToDrawdown": 5.44
+          "netToDrawdown": 6.3256
         },
         "calibrationValidation": {
           "totalPeriods": 48,
@@ -1387,20 +1387,20 @@
           "hitCount": 16,
           "hitRate": 0.3333,
           "hitRate10": 0.2,
-          "hitRate20": 0.4,
+          "hitRate20": 0.35,
           "hitRate30": 0.4,
           "cumulativeNet": 2720,
           "roi": 0.5667,
           "avgPerPeriod": 56.6667,
-          "maxConsecutiveMiss": 5,
-          "currentConsecutiveMiss": 1,
-          "maxDrawdown": 500,
-          "maxDrawdownRate": 0.1042,
-          "currentDrawdown": 130,
+          "maxConsecutiveMiss": 4,
+          "currentConsecutiveMiss": 2,
+          "maxDrawdown": 430,
+          "maxDrawdownRate": 0.0896,
+          "currentDrawdown": 230,
           "finalBankroll": 3720,
-          "peakBankroll": 3850,
+          "peakBankroll": 3950,
           "profitPeriodRatio": 0.3333,
-          "netToDrawdown": 5.44
+          "netToDrawdown": 6.3256
         },
         "holdout": {
           "totalPeriods": 49,
@@ -1408,49 +1408,49 @@
           "totalStake": 4820,
           "hitCount": 11,
           "hitRate": 0.2245,
-          "hitRate10": 0.3,
+          "hitRate10": 0.2,
           "hitRate20": 0.15,
           "hitRate30": 0.1667,
           "cumulativeNet": 350,
           "roi": 0.0726,
           "avgPerPeriod": 7.1429,
           "maxConsecutiveMiss": 11,
-          "currentConsecutiveMiss": 2,
+          "currentConsecutiveMiss": 3,
           "maxDrawdown": 1060,
           "maxDrawdownRate": 0.2199,
-          "currentDrawdown": 610,
+          "currentDrawdown": 710,
           "finalBankroll": 1350,
-          "peakBankroll": 1960,
+          "peakBankroll": 2060,
           "profitPeriodRatio": 0.2245,
           "netToDrawdown": 0.3302
         },
         "fullWalkForward": {
-          "totalPeriods": 241,
-          "betPeriods": 241,
-          "totalStake": 23340,
+          "totalPeriods": 242,
+          "betPeriods": 242,
+          "totalStake": 23440,
           "hitCount": 60,
-          "hitRate": 0.249,
-          "hitRate10": 0.3,
+          "hitRate": 0.2479,
+          "hitRate10": 0.2,
           "hitRate20": 0.15,
           "hitRate30": 0.1667,
-          "cumulativeNet": 4860,
-          "roi": 0.2082,
-          "avgPerPeriod": 20.166,
+          "cumulativeNet": 4760,
+          "roi": 0.2031,
+          "avgPerPeriod": 19.6694,
           "maxConsecutiveMiss": 17,
-          "currentConsecutiveMiss": 2,
+          "currentConsecutiveMiss": 3,
           "maxDrawdown": 3160,
-          "maxDrawdownRate": 0.1354,
-          "currentDrawdown": 610,
-          "finalBankroll": 5860,
+          "maxDrawdownRate": 0.1348,
+          "currentDrawdown": 710,
+          "finalBankroll": 5760,
           "peakBankroll": 6470,
-          "profitPeriodRatio": 0.249,
-          "netToDrawdown": 1.538
+          "profitPeriodRatio": 0.2479,
+          "netToDrawdown": 1.5063
         },
         "segments": {
           "development": [
             0.154,
             -0.3649,
-            0.5667
+            0.5347
           ],
           "validation": [
             0.175,
@@ -1473,18 +1473,18 @@
     "impact": {
       "zodiac": {
         "development": {
-          "periods": 144,
+          "periods": 145,
           "zodiacFactorChangedTop3Count": 0,
           "zodiacFactorChangedTop3Rate": 0,
-          "zodiacFactorChangedTop10Count": 44,
-          "zodiacFactorChangedTop10Rate": 0.3056
+          "zodiacFactorChangedTop10Count": 45,
+          "zodiacFactorChangedTop10Rate": 0.3103
         },
         "validation": {
           "periods": 48,
           "zodiacFactorChangedTop3Count": 0,
           "zodiacFactorChangedTop3Rate": 0,
-          "zodiacFactorChangedTop10Count": 16,
-          "zodiacFactorChangedTop10Rate": 0.3333
+          "zodiacFactorChangedTop10Count": 15,
+          "zodiacFactorChangedTop10Rate": 0.3125
         },
         "holdout": {
           "periods": 49,
@@ -1494,18 +1494,18 @@
           "zodiacFactorChangedTop10Rate": 0.5102
         },
         "full": {
-          "periods": 241,
+          "periods": 242,
           "zodiacFactorChangedTop3Count": 0,
           "zodiacFactorChangedTop3Rate": 0,
           "zodiacFactorChangedTop10Count": 85,
-          "zodiacFactorChangedTop10Rate": 0.3527
+          "zodiacFactorChangedTop10Rate": 0.3512
         }
       },
       "number": {
         "development": {
-          "periods": 144,
+          "periods": 145,
           "numberFactorChangedTop10Count": 22,
-          "numberFactorChangedTop10Rate": 0.1528
+          "numberFactorChangedTop10Rate": 0.1517
         },
         "validation": {
           "periods": 48,
@@ -1518,9 +1518,9 @@
           "numberFactorChangedTop10Rate": 0.0408
         },
         "full": {
-          "periods": 241,
+          "periods": 242,
           "numberFactorChangedTop10Count": 32,
-          "numberFactorChangedTop10Rate": 0.1328
+          "numberFactorChangedTop10Rate": 0.1322
         }
       }
     },
@@ -1677,22 +1677,22 @@
   },
   "calibration": {
     "method": "platt",
-    "samples": 11809,
+    "samples": 11858,
     "comparison": [
       {
         "method": "platt",
-        "samples": 11809,
-        "logLoss": 0.10036806310398473
+        "samples": 11858,
+        "logLoss": 0.10036805826436875
       },
       {
         "method": "isotonic",
-        "samples": 11809,
-        "logLoss": 0.10177813814373349
+        "samples": 11858,
+        "logLoss": 0.10178320471484491
       },
       {
         "method": "beta",
-        "samples": 11809,
-        "logLoss": 0.10185777789786758
+        "samples": 11858,
+        "logLoss": 0.10186000574188632
       }
     ]
   },
@@ -1704,13 +1704,13 @@
     "note": "命中率、收益与预算之间较平衡，是当前默认主策略。"
   },
   "conclusion": {
-    "sentence": "过去241次模拟中，该策略命中59次，历史命中率24.48%，按每期100元模拟累计收益+4390元；历史最大回撤3160元，最长连续17期未命中。",
-    "totalPeriods": 241,
-    "betPeriods": 241,
+    "sentence": "过去242次模拟中，该策略命中59次，历史命中率24.38%，按每期100元模拟累计收益+4290元；历史最大回撤3160元，最长连续17期未命中。",
+    "totalPeriods": 242,
+    "betPeriods": 242,
     "hitCount": 59,
-    "hitRate": 0.2448,
-    "cumulativeNet": 4390,
-    "roi": 0.1881,
+    "hitRate": 0.2438,
+    "cumulativeNet": 4290,
+    "roi": 0.183,
     "maxDrawdown": 3160,
     "maxConsecutiveMiss": 17
   },
@@ -1748,9 +1748,9 @@
   "gridSearch": {
     "configCount": 75,
     "splits": {
-      "trainValEnd": 222,
-      "valStart": 174,
-      "testStart": 222
+      "trainValEnd": 223,
+      "valStart": 175,
+      "testStart": 223
     },
     "bestConfigLabel": "default · number+recent · w30/50/80/100",
     "defaultMetrics": {
@@ -1759,423 +1759,419 @@
       "totalStake": 4860,
       "hitCount": 8,
       "hitRate": 0.1633,
-      "hitRate10": 0.2,
+      "hitRate10": 0.1,
       "hitRate20": 0.1,
       "hitRate30": 0.1333,
       "cumulativeNet": -1100,
       "roi": -0.2263,
       "avgPerPeriod": -22.449,
       "maxConsecutiveMiss": 10,
-      "currentConsecutiveMiss": 2,
+      "currentConsecutiveMiss": 3,
       "maxDrawdown": 1910,
       "maxDrawdownRate": 0.393,
-      "currentDrawdown": 1740,
+      "currentDrawdown": 1840,
       "finalBankroll": -100,
-      "peakBankroll": 1640,
+      "peakBankroll": 1740,
       "profitPeriodRatio": 0.1633,
       "netToDrawdown": -0.5759,
       "series": {
         "bankroll": [
           {
-            "issue": 2026223,
-            "value": 900
-          },
-          {
             "issue": 2026224,
-            "value": 1270
+            "value": 1370
           },
           {
             "issue": 2026225,
-            "value": 1640
+            "value": 1740
           },
           {
             "issue": 2026226,
-            "value": 1540
+            "value": 1640
           },
           {
             "issue": 2026227,
-            "value": 1440
+            "value": 1540
           },
           {
             "issue": 2026228,
-            "value": 1340
+            "value": 1440
           },
           {
             "issue": 2026229,
-            "value": 1240
+            "value": 1340
           },
           {
             "issue": 2026230,
-            "value": 1140
+            "value": 1240
           },
           {
             "issue": 2026231,
-            "value": 1040
+            "value": 1140
           },
           {
             "issue": 2026232,
-            "value": 940
+            "value": 1040
           },
           {
             "issue": 2026233,
-            "value": 840
+            "value": 940
           },
           {
             "issue": 2026234,
-            "value": 1210
+            "value": 1310
           },
           {
             "issue": 2026235,
-            "value": 1110
+            "value": 1210
           },
           {
             "issue": 2026236,
-            "value": 1010
+            "value": 1110
           },
           {
             "issue": 2026237,
-            "value": 910
+            "value": 1010
           },
           {
             "issue": 2026238,
-            "value": 810
+            "value": 910
           },
           {
             "issue": 2026239,
-            "value": 710
+            "value": 810
           },
           {
             "issue": 2026240,
-            "value": 610
+            "value": 710
           },
           {
             "issue": 2026241,
-            "value": 980
+            "value": 1080
           },
           {
             "issue": 2026242,
-            "value": 880
+            "value": 980
           },
           {
             "issue": 2026243,
-            "value": 780
+            "value": 880
           },
           {
             "issue": 2026244,
-            "value": 680
+            "value": 780
           },
           {
             "issue": 2026245,
-            "value": 580
+            "value": 680
           },
           {
             "issue": 2026246,
-            "value": 480
+            "value": 580
           },
           {
             "issue": 2026247,
-            "value": 850
+            "value": 950
           },
           {
             "issue": 2026248,
-            "value": 750
+            "value": 850
           },
           {
             "issue": 2026249,
-            "value": 650
+            "value": 750
           },
           {
             "issue": 2026250,
-            "value": 550
+            "value": 650
           },
           {
             "issue": 2026251,
-            "value": 920
+            "value": 1020
           },
           {
             "issue": 2026252,
-            "value": 820
+            "value": 920
           },
           {
             "issue": 2026253,
-            "value": 720
+            "value": 820
           },
           {
             "issue": 2026254,
-            "value": 620
+            "value": 720
           },
           {
             "issue": 2026255,
-            "value": 520
+            "value": 620
           },
           {
             "issue": 2026256,
-            "value": 420
+            "value": 520
           },
           {
             "issue": 2026257,
-            "value": 320
+            "value": 420
           },
           {
             "issue": 2026258,
-            "value": 220
+            "value": 320
           },
           {
             "issue": 2026259,
-            "value": 120
+            "value": 220
           },
           {
             "issue": 2026260,
-            "value": 20
+            "value": 120
           },
           {
             "issue": 2026261,
-            "value": -80
+            "value": 20
           },
           {
             "issue": 2026262,
-            "value": 330
+            "value": 430
           },
           {
             "issue": 2026263,
-            "value": 230
+            "value": 330
           },
           {
             "issue": 2026264,
-            "value": 130
+            "value": 230
           },
           {
             "issue": 2026265,
-            "value": 30
+            "value": 130
           },
           {
             "issue": 2026266,
-            "value": -70
+            "value": 30
           },
           {
             "issue": 2026267,
-            "value": -170
+            "value": -70
           },
           {
             "issue": 2026268,
-            "value": -270
+            "value": -170
           },
           {
             "issue": 2026269,
-            "value": 100
+            "value": 200
           },
           {
             "issue": 2026270,
-            "value": 0
+            "value": 100
           },
           {
             "issue": 2026271,
+            "value": 0
+          },
+          {
+            "issue": 2026272,
             "value": -100
           }
         ],
         "equity": [
           {
-            "issue": 2026223,
-            "value": -100
-          },
-          {
             "issue": 2026224,
-            "value": 270
+            "value": 370
           },
           {
             "issue": 2026225,
-            "value": 640
+            "value": 740
           },
           {
             "issue": 2026226,
-            "value": 540
+            "value": 640
           },
           {
             "issue": 2026227,
-            "value": 440
+            "value": 540
           },
           {
             "issue": 2026228,
-            "value": 340
+            "value": 440
           },
           {
             "issue": 2026229,
-            "value": 240
+            "value": 340
           },
           {
             "issue": 2026230,
-            "value": 140
+            "value": 240
           },
           {
             "issue": 2026231,
-            "value": 40
+            "value": 140
           },
           {
             "issue": 2026232,
-            "value": -60
+            "value": 40
           },
           {
             "issue": 2026233,
-            "value": -160
+            "value": -60
           },
           {
             "issue": 2026234,
-            "value": 210
+            "value": 310
           },
           {
             "issue": 2026235,
-            "value": 110
+            "value": 210
           },
           {
             "issue": 2026236,
-            "value": 10
+            "value": 110
           },
           {
             "issue": 2026237,
-            "value": -90
+            "value": 10
           },
           {
             "issue": 2026238,
-            "value": -190
+            "value": -90
           },
           {
             "issue": 2026239,
-            "value": -290
+            "value": -190
           },
           {
             "issue": 2026240,
-            "value": -390
+            "value": -290
           },
           {
             "issue": 2026241,
-            "value": -20
+            "value": 80
           },
           {
             "issue": 2026242,
-            "value": -120
+            "value": -20
           },
           {
             "issue": 2026243,
-            "value": -220
+            "value": -120
           },
           {
             "issue": 2026244,
-            "value": -320
+            "value": -220
           },
           {
             "issue": 2026245,
-            "value": -420
+            "value": -320
           },
           {
             "issue": 2026246,
-            "value": -520
+            "value": -420
           },
           {
             "issue": 2026247,
-            "value": -150
+            "value": -50
           },
           {
             "issue": 2026248,
-            "value": -250
+            "value": -150
           },
           {
             "issue": 2026249,
-            "value": -350
+            "value": -250
           },
           {
             "issue": 2026250,
-            "value": -450
+            "value": -350
           },
           {
             "issue": 2026251,
-            "value": -80
+            "value": 20
           },
           {
             "issue": 2026252,
-            "value": -180
+            "value": -80
           },
           {
             "issue": 2026253,
-            "value": -280
+            "value": -180
           },
           {
             "issue": 2026254,
-            "value": -380
+            "value": -280
           },
           {
             "issue": 2026255,
-            "value": -480
+            "value": -380
           },
           {
             "issue": 2026256,
-            "value": -580
+            "value": -480
           },
           {
             "issue": 2026257,
-            "value": -680
+            "value": -580
           },
           {
             "issue": 2026258,
-            "value": -780
+            "value": -680
           },
           {
             "issue": 2026259,
-            "value": -880
+            "value": -780
           },
           {
             "issue": 2026260,
-            "value": -980
+            "value": -880
           },
           {
             "issue": 2026261,
-            "value": -1080
+            "value": -980
           },
           {
             "issue": 2026262,
-            "value": -670
+            "value": -570
           },
           {
             "issue": 2026263,
-            "value": -770
+            "value": -670
           },
           {
             "issue": 2026264,
-            "value": -870
+            "value": -770
           },
           {
             "issue": 2026265,
-            "value": -970
+            "value": -870
           },
           {
             "issue": 2026266,
-            "value": -1070
+            "value": -970
           },
           {
             "issue": 2026267,
-            "value": -1170
+            "value": -1070
           },
           {
             "issue": 2026268,
-            "value": -1270
+            "value": -1170
           },
           {
             "issue": 2026269,
-            "value": -900
+            "value": -800
           },
           {
             "issue": 2026270,
-            "value": -1000
+            "value": -900
           },
           {
             "issue": 2026271,
+            "value": -1000
+          },
+          {
+            "issue": 2026272,
             "value": -1100
           }
         ],
         "drawdown": [
-          {
-            "issue": 2026223,
-            "value": 100
-          },
           {
             "issue": 2026224,
             "value": 0
@@ -2367,88 +2363,88 @@
           {
             "issue": 2026271,
             "value": 1740
+          },
+          {
+            "issue": 2026272,
+            "value": 1840
           }
         ],
         "hitRate": [
           {
-            "issue": 2026223,
-            "value": 0
-          },
-          {
             "issue": 2026224,
-            "value": 0.5
+            "value": 1
           },
           {
             "issue": 2026225,
-            "value": 0.6667
+            "value": 1
           },
           {
             "issue": 2026226,
-            "value": 0.5
+            "value": 0.6667
           },
           {
             "issue": 2026227,
-            "value": 0.4
+            "value": 0.5
           },
           {
             "issue": 2026228,
-            "value": 0.3333
+            "value": 0.4
           },
           {
             "issue": 2026229,
-            "value": 0.2857
+            "value": 0.3333
           },
           {
             "issue": 2026230,
-            "value": 0.25
+            "value": 0.2857
           },
           {
             "issue": 2026231,
-            "value": 0.2222
-          },
-          {
-            "issue": 2026232,
-            "value": 0.2
-          },
-          {
-            "issue": 2026233,
-            "value": 0.1818
-          },
-          {
-            "issue": 2026234,
             "value": 0.25
           },
           {
+            "issue": 2026232,
+            "value": 0.2222
+          },
+          {
+            "issue": 2026233,
+            "value": 0.2
+          },
+          {
+            "issue": 2026234,
+            "value": 0.2727
+          },
+          {
             "issue": 2026235,
-            "value": 0.2308
+            "value": 0.25
           },
           {
             "issue": 2026236,
-            "value": 0.2143
+            "value": 0.2308
           },
           {
             "issue": 2026237,
-            "value": 0.2
+            "value": 0.2143
           },
           {
             "issue": 2026238,
-            "value": 0.1875
+            "value": 0.2
           },
           {
             "issue": 2026239,
-            "value": 0.1765
+            "value": 0.1875
           },
           {
             "issue": 2026240,
-            "value": 0.1667
+            "value": 0.1765
           },
           {
             "issue": 2026241,
-            "value": 0.2105
+            "value": 0.2222
           },
           {
             "issue": 2026242,
-            "value": 0.2
+            "value": 0.2105
           },
           {
             "issue": 2026243,
@@ -2564,6 +2560,10 @@
           },
           {
             "issue": 2026271,
+            "value": 0.1
+          },
+          {
+            "issue": 2026272,
             "value": 0.1
           }
         ]
@@ -2575,423 +2575,419 @@
       "totalStake": 4820,
       "hitCount": 10,
       "hitRate": 0.2041,
-      "hitRate10": 0.3,
+      "hitRate10": 0.2,
       "hitRate20": 0.15,
       "hitRate30": 0.1667,
       "cumulativeNet": -120,
       "roi": -0.0249,
       "avgPerPeriod": -2.449,
       "maxConsecutiveMiss": 11,
-      "currentConsecutiveMiss": 2,
+      "currentConsecutiveMiss": 3,
       "maxDrawdown": 1210,
       "maxDrawdownRate": 0.251,
-      "currentDrawdown": 760,
+      "currentDrawdown": 860,
       "finalBankroll": 880,
-      "peakBankroll": 1640,
+      "peakBankroll": 1740,
       "profitPeriodRatio": 0.2041,
       "netToDrawdown": -0.0992,
       "series": {
         "bankroll": [
           {
-            "issue": 2026223,
-            "value": 900
-          },
-          {
             "issue": 2026224,
-            "value": 1270
+            "value": 1370
           },
           {
             "issue": 2026225,
-            "value": 1640
+            "value": 1740
           },
           {
             "issue": 2026226,
-            "value": 1540
+            "value": 1640
           },
           {
             "issue": 2026227,
-            "value": 1440
+            "value": 1540
           },
           {
             "issue": 2026228,
-            "value": 1340
+            "value": 1440
           },
           {
             "issue": 2026229,
-            "value": 1240
+            "value": 1340
           },
           {
             "issue": 2026230,
-            "value": 1140
+            "value": 1240
           },
           {
             "issue": 2026231,
-            "value": 1040
+            "value": 1140
           },
           {
             "issue": 2026232,
-            "value": 940
+            "value": 1040
           },
           {
             "issue": 2026233,
-            "value": 840
+            "value": 940
           },
           {
             "issue": 2026234,
-            "value": 1210
+            "value": 1310
           },
           {
             "issue": 2026235,
-            "value": 1110
-          },
-          {
-            "issue": 2026236,
-            "value": 1480
-          },
-          {
-            "issue": 2026237,
-            "value": 1380
-          },
-          {
-            "issue": 2026238,
-            "value": 1280
-          },
-          {
-            "issue": 2026239,
-            "value": 1180
-          },
-          {
-            "issue": 2026240,
-            "value": 1080
-          },
-          {
-            "issue": 2026241,
-            "value": 1450
-          },
-          {
-            "issue": 2026242,
-            "value": 1350
-          },
-          {
-            "issue": 2026243,
-            "value": 1250
-          },
-          {
-            "issue": 2026244,
-            "value": 1150
-          },
-          {
-            "issue": 2026245,
-            "value": 1050
-          },
-          {
-            "issue": 2026246,
-            "value": 950
-          },
-          {
-            "issue": 2026247,
-            "value": 850
-          },
-          {
-            "issue": 2026248,
-            "value": 750
-          },
-          {
-            "issue": 2026249,
-            "value": 1120
-          },
-          {
-            "issue": 2026250,
-            "value": 1490
-          },
-          {
-            "issue": 2026251,
-            "value": 1390
-          },
-          {
-            "issue": 2026252,
-            "value": 1290
-          },
-          {
-            "issue": 2026253,
-            "value": 1190
-          },
-          {
-            "issue": 2026254,
-            "value": 1090
-          },
-          {
-            "issue": 2026255,
-            "value": 990
-          },
-          {
-            "issue": 2026256,
-            "value": 890
-          },
-          {
-            "issue": 2026257,
-            "value": 790
-          },
-          {
-            "issue": 2026258,
-            "value": 690
-          },
-          {
-            "issue": 2026259,
-            "value": 590
-          },
-          {
-            "issue": 2026260,
-            "value": 490
-          },
-          {
-            "issue": 2026261,
-            "value": 430
-          },
-          {
-            "issue": 2026262,
-            "value": 840
-          },
-          {
-            "issue": 2026263,
             "value": 1210
           },
           {
+            "issue": 2026236,
+            "value": 1580
+          },
+          {
+            "issue": 2026237,
+            "value": 1480
+          },
+          {
+            "issue": 2026238,
+            "value": 1380
+          },
+          {
+            "issue": 2026239,
+            "value": 1280
+          },
+          {
+            "issue": 2026240,
+            "value": 1180
+          },
+          {
+            "issue": 2026241,
+            "value": 1550
+          },
+          {
+            "issue": 2026242,
+            "value": 1450
+          },
+          {
+            "issue": 2026243,
+            "value": 1350
+          },
+          {
+            "issue": 2026244,
+            "value": 1250
+          },
+          {
+            "issue": 2026245,
+            "value": 1150
+          },
+          {
+            "issue": 2026246,
+            "value": 1050
+          },
+          {
+            "issue": 2026247,
+            "value": 950
+          },
+          {
+            "issue": 2026248,
+            "value": 850
+          },
+          {
+            "issue": 2026249,
+            "value": 1220
+          },
+          {
+            "issue": 2026250,
+            "value": 1590
+          },
+          {
+            "issue": 2026251,
+            "value": 1490
+          },
+          {
+            "issue": 2026252,
+            "value": 1390
+          },
+          {
+            "issue": 2026253,
+            "value": 1290
+          },
+          {
+            "issue": 2026254,
+            "value": 1190
+          },
+          {
+            "issue": 2026255,
+            "value": 1090
+          },
+          {
+            "issue": 2026256,
+            "value": 990
+          },
+          {
+            "issue": 2026257,
+            "value": 890
+          },
+          {
+            "issue": 2026258,
+            "value": 790
+          },
+          {
+            "issue": 2026259,
+            "value": 690
+          },
+          {
+            "issue": 2026260,
+            "value": 590
+          },
+          {
+            "issue": 2026261,
+            "value": 530
+          },
+          {
+            "issue": 2026262,
+            "value": 940
+          },
+          {
+            "issue": 2026263,
+            "value": 1310
+          },
+          {
             "issue": 2026264,
-            "value": 1110
+            "value": 1210
           },
           {
             "issue": 2026265,
-            "value": 1010
+            "value": 1110
           },
           {
             "issue": 2026266,
-            "value": 910
+            "value": 1010
           },
           {
             "issue": 2026267,
-            "value": 810
+            "value": 910
           },
           {
             "issue": 2026268,
-            "value": 710
+            "value": 810
           },
           {
             "issue": 2026269,
-            "value": 1080
+            "value": 1180
           },
           {
             "issue": 2026270,
-            "value": 980
+            "value": 1080
           },
           {
             "issue": 2026271,
+            "value": 980
+          },
+          {
+            "issue": 2026272,
             "value": 880
           }
         ],
         "equity": [
           {
-            "issue": 2026223,
-            "value": -100
-          },
-          {
             "issue": 2026224,
-            "value": 270
+            "value": 370
           },
           {
             "issue": 2026225,
-            "value": 640
+            "value": 740
           },
           {
             "issue": 2026226,
-            "value": 540
+            "value": 640
           },
           {
             "issue": 2026227,
-            "value": 440
+            "value": 540
           },
           {
             "issue": 2026228,
-            "value": 340
+            "value": 440
           },
           {
             "issue": 2026229,
-            "value": 240
+            "value": 340
           },
           {
             "issue": 2026230,
-            "value": 140
+            "value": 240
           },
           {
             "issue": 2026231,
-            "value": 40
+            "value": 140
           },
           {
             "issue": 2026232,
-            "value": -60
+            "value": 40
           },
           {
             "issue": 2026233,
-            "value": -160
+            "value": -60
           },
           {
             "issue": 2026234,
-            "value": 210
+            "value": 310
           },
           {
             "issue": 2026235,
-            "value": 110
-          },
-          {
-            "issue": 2026236,
-            "value": 480
-          },
-          {
-            "issue": 2026237,
-            "value": 380
-          },
-          {
-            "issue": 2026238,
-            "value": 280
-          },
-          {
-            "issue": 2026239,
-            "value": 180
-          },
-          {
-            "issue": 2026240,
-            "value": 80
-          },
-          {
-            "issue": 2026241,
-            "value": 450
-          },
-          {
-            "issue": 2026242,
-            "value": 350
-          },
-          {
-            "issue": 2026243,
-            "value": 250
-          },
-          {
-            "issue": 2026244,
-            "value": 150
-          },
-          {
-            "issue": 2026245,
-            "value": 50
-          },
-          {
-            "issue": 2026246,
-            "value": -50
-          },
-          {
-            "issue": 2026247,
-            "value": -150
-          },
-          {
-            "issue": 2026248,
-            "value": -250
-          },
-          {
-            "issue": 2026249,
-            "value": 120
-          },
-          {
-            "issue": 2026250,
-            "value": 490
-          },
-          {
-            "issue": 2026251,
-            "value": 390
-          },
-          {
-            "issue": 2026252,
-            "value": 290
-          },
-          {
-            "issue": 2026253,
-            "value": 190
-          },
-          {
-            "issue": 2026254,
-            "value": 90
-          },
-          {
-            "issue": 2026255,
-            "value": -10
-          },
-          {
-            "issue": 2026256,
-            "value": -110
-          },
-          {
-            "issue": 2026257,
-            "value": -210
-          },
-          {
-            "issue": 2026258,
-            "value": -310
-          },
-          {
-            "issue": 2026259,
-            "value": -410
-          },
-          {
-            "issue": 2026260,
-            "value": -510
-          },
-          {
-            "issue": 2026261,
-            "value": -570
-          },
-          {
-            "issue": 2026262,
-            "value": -160
-          },
-          {
-            "issue": 2026263,
             "value": 210
           },
           {
+            "issue": 2026236,
+            "value": 580
+          },
+          {
+            "issue": 2026237,
+            "value": 480
+          },
+          {
+            "issue": 2026238,
+            "value": 380
+          },
+          {
+            "issue": 2026239,
+            "value": 280
+          },
+          {
+            "issue": 2026240,
+            "value": 180
+          },
+          {
+            "issue": 2026241,
+            "value": 550
+          },
+          {
+            "issue": 2026242,
+            "value": 450
+          },
+          {
+            "issue": 2026243,
+            "value": 350
+          },
+          {
+            "issue": 2026244,
+            "value": 250
+          },
+          {
+            "issue": 2026245,
+            "value": 150
+          },
+          {
+            "issue": 2026246,
+            "value": 50
+          },
+          {
+            "issue": 2026247,
+            "value": -50
+          },
+          {
+            "issue": 2026248,
+            "value": -150
+          },
+          {
+            "issue": 2026249,
+            "value": 220
+          },
+          {
+            "issue": 2026250,
+            "value": 590
+          },
+          {
+            "issue": 2026251,
+            "value": 490
+          },
+          {
+            "issue": 2026252,
+            "value": 390
+          },
+          {
+            "issue": 2026253,
+            "value": 290
+          },
+          {
+            "issue": 2026254,
+            "value": 190
+          },
+          {
+            "issue": 2026255,
+            "value": 90
+          },
+          {
+            "issue": 2026256,
+            "value": -10
+          },
+          {
+            "issue": 2026257,
+            "value": -110
+          },
+          {
+            "issue": 2026258,
+            "value": -210
+          },
+          {
+            "issue": 2026259,
+            "value": -310
+          },
+          {
+            "issue": 2026260,
+            "value": -410
+          },
+          {
+            "issue": 2026261,
+            "value": -470
+          },
+          {
+            "issue": 2026262,
+            "value": -60
+          },
+          {
+            "issue": 2026263,
+            "value": 310
+          },
+          {
             "issue": 2026264,
-            "value": 110
+            "value": 210
           },
           {
             "issue": 2026265,
-            "value": 10
+            "value": 110
           },
           {
             "issue": 2026266,
-            "value": -90
+            "value": 10
           },
           {
             "issue": 2026267,
-            "value": -190
+            "value": -90
           },
           {
             "issue": 2026268,
-            "value": -290
+            "value": -190
           },
           {
             "issue": 2026269,
-            "value": 80
+            "value": 180
           },
           {
             "issue": 2026270,
-            "value": -20
+            "value": 80
           },
           {
             "issue": 2026271,
+            "value": -20
+          },
+          {
+            "issue": 2026272,
             "value": -120
           }
         ],
         "drawdown": [
-          {
-            "issue": 2026223,
-            "value": 100
-          },
           {
             "issue": 2026224,
             "value": 0
@@ -3183,88 +3179,88 @@
           {
             "issue": 2026271,
             "value": 760
+          },
+          {
+            "issue": 2026272,
+            "value": 860
           }
         ],
         "hitRate": [
           {
-            "issue": 2026223,
-            "value": 0
-          },
-          {
             "issue": 2026224,
-            "value": 0.5
+            "value": 1
           },
           {
             "issue": 2026225,
-            "value": 0.6667
+            "value": 1
           },
           {
             "issue": 2026226,
-            "value": 0.5
+            "value": 0.6667
           },
           {
             "issue": 2026227,
-            "value": 0.4
+            "value": 0.5
           },
           {
             "issue": 2026228,
-            "value": 0.3333
+            "value": 0.4
           },
           {
             "issue": 2026229,
-            "value": 0.2857
+            "value": 0.3333
           },
           {
             "issue": 2026230,
-            "value": 0.25
-          },
-          {
-            "issue": 2026231,
-            "value": 0.2222
-          },
-          {
-            "issue": 2026232,
-            "value": 0.2
-          },
-          {
-            "issue": 2026233,
-            "value": 0.1818
-          },
-          {
-            "issue": 2026234,
-            "value": 0.25
-          },
-          {
-            "issue": 2026235,
-            "value": 0.2308
-          },
-          {
-            "issue": 2026236,
             "value": 0.2857
           },
           {
-            "issue": 2026237,
-            "value": 0.2667
-          },
-          {
-            "issue": 2026238,
+            "issue": 2026231,
             "value": 0.25
           },
           {
-            "issue": 2026239,
-            "value": 0.2353
-          },
-          {
-            "issue": 2026240,
+            "issue": 2026232,
             "value": 0.2222
           },
           {
+            "issue": 2026233,
+            "value": 0.2
+          },
+          {
+            "issue": 2026234,
+            "value": 0.2727
+          },
+          {
+            "issue": 2026235,
+            "value": 0.25
+          },
+          {
+            "issue": 2026236,
+            "value": 0.3077
+          },
+          {
+            "issue": 2026237,
+            "value": 0.2857
+          },
+          {
+            "issue": 2026238,
+            "value": 0.2667
+          },
+          {
+            "issue": 2026239,
+            "value": 0.25
+          },
+          {
+            "issue": 2026240,
+            "value": 0.2353
+          },
+          {
             "issue": 2026241,
-            "value": 0.2632
+            "value": 0.2778
           },
           {
             "issue": 2026242,
-            "value": 0.25
+            "value": 0.2632
           },
           {
             "issue": 2026243,
@@ -3381,6 +3377,10 @@
           {
             "issue": 2026271,
             "value": 0.15
+          },
+          {
+            "issue": 2026272,
+            "value": 0.15
           }
         ]
       }
@@ -3393,26 +3393,26 @@
       "strategyId": "H9",
       "name": "精简方案 Top9",
       "metrics": {
-        "totalPeriods": 241,
-        "betPeriods": 241,
-        "totalStake": 21120,
+        "totalPeriods": 242,
+        "betPeriods": 242,
+        "totalStake": 21210,
         "hitCount": 56,
-        "hitRate": 0.2324,
-        "hitRate10": 0.3,
+        "hitRate": 0.2314,
+        "hitRate10": 0.2,
         "hitRate20": 0.15,
         "hitRate30": 0.1667,
-        "cumulativeNet": 5200,
-        "roi": 0.2462,
-        "avgPerPeriod": 21.5768,
+        "cumulativeNet": 5110,
+        "roi": 0.2409,
+        "avgPerPeriod": 21.1157,
         "maxConsecutiveMiss": 17,
-        "currentConsecutiveMiss": 2,
+        "currentConsecutiveMiss": 3,
         "maxDrawdown": 3040,
-        "maxDrawdownRate": 0.1439,
-        "currentDrawdown": 420,
-        "finalBankroll": 6200,
+        "maxDrawdownRate": 0.1433,
+        "currentDrawdown": 510,
+        "finalBankroll": 6110,
         "peakBankroll": 6620,
-        "profitPeriodRatio": 0.2324,
-        "netToDrawdown": 1.7105,
+        "profitPeriodRatio": 0.2314,
+        "netToDrawdown": 1.6809,
         "series": {
           "bankroll": [
             {
@@ -4378,6 +4378,10 @@
             {
               "issue": 2026271,
               "value": 6200
+            },
+            {
+              "issue": 2026272,
+              "value": 6110
             }
           ],
           "equity": [
@@ -5344,6 +5348,10 @@
             {
               "issue": 2026271,
               "value": 5200
+            },
+            {
+              "issue": 2026272,
+              "value": 5110
             }
           ],
           "drawdown": [
@@ -6310,6 +6318,10 @@
             {
               "issue": 2026271,
               "value": 420
+            },
+            {
+              "issue": 2026272,
+              "value": 510
             }
           ],
           "hitRate": [
@@ -7276,6 +7288,10 @@
             {
               "issue": 2026271,
               "value": 0.15
+            },
+            {
+              "issue": 2026272,
+              "value": 0.15
             }
           ]
         }
@@ -7288,26 +7304,26 @@
       "strategyId": "E",
       "name": "四生肖候选池→10码",
       "metrics": {
-        "totalPeriods": 241,
-        "betPeriods": 241,
-        "totalStake": 24020,
+        "totalPeriods": 242,
+        "betPeriods": 242,
+        "totalStake": 24120,
         "hitCount": 62,
-        "hitRate": 0.2573,
-        "hitRate10": 0.3,
+        "hitRate": 0.2562,
+        "hitRate10": 0.2,
         "hitRate20": 0.2,
         "hitRate30": 0.2,
-        "cumulativeNet": 5120,
-        "roi": 0.2132,
-        "avgPerPeriod": 21.2448,
+        "cumulativeNet": 5020,
+        "roi": 0.2081,
+        "avgPerPeriod": 20.7438,
         "maxConsecutiveMiss": 11,
-        "currentConsecutiveMiss": 2,
+        "currentConsecutiveMiss": 3,
         "maxDrawdown": 1880,
-        "maxDrawdownRate": 0.0783,
-        "currentDrawdown": 370,
-        "finalBankroll": 6120,
+        "maxDrawdownRate": 0.0779,
+        "currentDrawdown": 470,
+        "finalBankroll": 6020,
         "peakBankroll": 6490,
-        "profitPeriodRatio": 0.2573,
-        "netToDrawdown": 2.7234,
+        "profitPeriodRatio": 0.2562,
+        "netToDrawdown": 2.6702,
         "series": {
           "bankroll": [
             {
@@ -8273,6 +8289,10 @@
             {
               "issue": 2026271,
               "value": 6120
+            },
+            {
+              "issue": 2026272,
+              "value": 6020
             }
           ],
           "equity": [
@@ -9239,6 +9259,10 @@
             {
               "issue": 2026271,
               "value": 5120
+            },
+            {
+              "issue": 2026272,
+              "value": 5020
             }
           ],
           "drawdown": [
@@ -10205,6 +10229,10 @@
             {
               "issue": 2026271,
               "value": 370
+            },
+            {
+              "issue": 2026272,
+              "value": 470
             }
           ],
           "hitRate": [
@@ -11171,6 +11199,10 @@
             {
               "issue": 2026271,
               "value": 0.2
+            },
+            {
+              "issue": 2026272,
+              "value": 0.2
             }
           ]
         }
@@ -11185,26 +11217,26 @@
       "strategyId": "H8",
       "name": "精简方案 Top8",
       "metrics": {
-        "totalPeriods": 241,
-        "betPeriods": 241,
-        "totalStake": 18900,
+        "totalPeriods": 242,
+        "betPeriods": 242,
+        "totalStake": 18980,
         "hitCount": 51,
-        "hitRate": 0.2116,
-        "hitRate10": 0.3,
+        "hitRate": 0.2107,
+        "hitRate10": 0.2,
         "hitRate20": 0.15,
         "hitRate30": 0.1667,
-        "cumulativeNet": 5070,
-        "roi": 0.2683,
-        "avgPerPeriod": 21.0373,
+        "cumulativeNet": 4990,
+        "roi": 0.2629,
+        "avgPerPeriod": 20.6198,
         "maxConsecutiveMiss": 17,
-        "currentConsecutiveMiss": 2,
+        "currentConsecutiveMiss": 3,
         "maxDrawdown": 2770,
-        "maxDrawdownRate": 0.1466,
-        "currentDrawdown": 230,
-        "finalBankroll": 6070,
+        "maxDrawdownRate": 0.1459,
+        "currentDrawdown": 310,
+        "finalBankroll": 5990,
         "peakBankroll": 6300,
-        "profitPeriodRatio": 0.2116,
-        "netToDrawdown": 1.8303,
+        "profitPeriodRatio": 0.2107,
+        "netToDrawdown": 1.8014,
         "series": {
           "bankroll": [
             {
@@ -12170,6 +12202,10 @@
             {
               "issue": 2026271,
               "value": 6070
+            },
+            {
+              "issue": 2026272,
+              "value": 5990
             }
           ],
           "equity": [
@@ -13136,6 +13172,10 @@
             {
               "issue": 2026271,
               "value": 5070
+            },
+            {
+              "issue": 2026272,
+              "value": 4990
             }
           ],
           "drawdown": [
@@ -14102,6 +14142,10 @@
             {
               "issue": 2026271,
               "value": 230
+            },
+            {
+              "issue": 2026272,
+              "value": 310
             }
           ],
           "hitRate": [
@@ -15068,6 +15112,10 @@
             {
               "issue": 2026271,
               "value": 0.15
+            },
+            {
+              "issue": 2026272,
+              "value": 0.15
             }
           ]
         }
@@ -15080,26 +15128,26 @@
       "strategyId": "M",
       "name": "慧算模式 Top8核心+动态补码",
       "metrics": {
-        "totalPeriods": 241,
-        "betPeriods": 241,
-        "totalStake": 20050,
+        "totalPeriods": 242,
+        "betPeriods": 242,
+        "totalStake": 20130,
         "hitCount": 52,
-        "hitRate": 0.2158,
-        "hitRate10": 0.3,
+        "hitRate": 0.2149,
+        "hitRate10": 0.2,
         "hitRate20": 0.15,
         "hitRate30": 0.1667,
-        "cumulativeNet": 4390,
-        "roi": 0.219,
-        "avgPerPeriod": 18.2158,
+        "cumulativeNet": 4310,
+        "roi": 0.2141,
+        "avgPerPeriod": 17.8099,
         "maxConsecutiveMiss": 17,
-        "currentConsecutiveMiss": 2,
+        "currentConsecutiveMiss": 3,
         "maxDrawdown": 2770,
-        "maxDrawdownRate": 0.1382,
-        "currentDrawdown": 370,
-        "finalBankroll": 5390,
+        "maxDrawdownRate": 0.1376,
+        "currentDrawdown": 450,
+        "finalBankroll": 5310,
         "peakBankroll": 5760,
-        "profitPeriodRatio": 0.2158,
-        "netToDrawdown": 1.5848,
+        "profitPeriodRatio": 0.2149,
+        "netToDrawdown": 1.556,
         "series": {
           "bankroll": [
             {
@@ -16065,6 +16113,10 @@
             {
               "issue": 2026271,
               "value": 5390
+            },
+            {
+              "issue": 2026272,
+              "value": 5310
             }
           ],
           "equity": [
@@ -17031,6 +17083,10 @@
             {
               "issue": 2026271,
               "value": 4390
+            },
+            {
+              "issue": 2026272,
+              "value": 4310
             }
           ],
           "drawdown": [
@@ -17997,6 +18053,10 @@
             {
               "issue": 2026271,
               "value": 370
+            },
+            {
+              "issue": 2026272,
+              "value": 450
             }
           ],
           "hitRate": [
@@ -18963,6 +19023,10 @@
             {
               "issue": 2026271,
               "value": 0.15
+            },
+            {
+              "issue": 2026272,
+              "value": 0.15
             }
           ]
         }
@@ -18975,26 +19039,26 @@
       "strategyId": "D",
       "name": "诸葛策略 · 三才定码 Top10",
       "metrics": {
-        "totalPeriods": 241,
-        "betPeriods": 241,
-        "totalStake": 23340,
+        "totalPeriods": 242,
+        "betPeriods": 242,
+        "totalStake": 23440,
         "hitCount": 59,
-        "hitRate": 0.2448,
-        "hitRate10": 0.3,
+        "hitRate": 0.2438,
+        "hitRate10": 0.2,
         "hitRate20": 0.15,
         "hitRate30": 0.1667,
-        "cumulativeNet": 4390,
-        "roi": 0.1881,
-        "avgPerPeriod": 18.2158,
+        "cumulativeNet": 4290,
+        "roi": 0.183,
+        "avgPerPeriod": 17.7273,
         "maxConsecutiveMiss": 17,
-        "currentConsecutiveMiss": 2,
+        "currentConsecutiveMiss": 3,
         "maxDrawdown": 3160,
-        "maxDrawdownRate": 0.1354,
-        "currentDrawdown": 760,
-        "finalBankroll": 5390,
+        "maxDrawdownRate": 0.1348,
+        "currentDrawdown": 860,
+        "finalBankroll": 5290,
         "peakBankroll": 6150,
-        "profitPeriodRatio": 0.2448,
-        "netToDrawdown": 1.3892,
+        "profitPeriodRatio": 0.2438,
+        "netToDrawdown": 1.3576,
         "series": {
           "bankroll": [
             {
@@ -19960,6 +20024,10 @@
             {
               "issue": 2026271,
               "value": 5390
+            },
+            {
+              "issue": 2026272,
+              "value": 5290
             }
           ],
           "equity": [
@@ -20926,6 +20994,10 @@
             {
               "issue": 2026271,
               "value": 4390
+            },
+            {
+              "issue": 2026272,
+              "value": 4290
             }
           ],
           "drawdown": [
@@ -21892,6 +21964,10 @@
             {
               "issue": 2026271,
               "value": 760
+            },
+            {
+              "issue": 2026272,
+              "value": 860
             }
           ],
           "hitRate": [
@@ -22857,6 +22933,10 @@
             },
             {
               "issue": 2026271,
+              "value": 0.15
+            },
+            {
+              "issue": 2026272,
               "value": 0.15
             }
           ]
@@ -22872,26 +22952,26 @@
       "strategyId": "H10",
       "name": "诸葛策略 · 三才定码 Top10",
       "metrics": {
-        "totalPeriods": 241,
-        "betPeriods": 241,
-        "totalStake": 23340,
+        "totalPeriods": 242,
+        "betPeriods": 242,
+        "totalStake": 23440,
         "hitCount": 59,
-        "hitRate": 0.2448,
-        "hitRate10": 0.3,
+        "hitRate": 0.2438,
+        "hitRate10": 0.2,
         "hitRate20": 0.15,
         "hitRate30": 0.1667,
-        "cumulativeNet": 4390,
-        "roi": 0.1881,
-        "avgPerPeriod": 18.2158,
+        "cumulativeNet": 4290,
+        "roi": 0.183,
+        "avgPerPeriod": 17.7273,
         "maxConsecutiveMiss": 17,
-        "currentConsecutiveMiss": 2,
+        "currentConsecutiveMiss": 3,
         "maxDrawdown": 3160,
-        "maxDrawdownRate": 0.1354,
-        "currentDrawdown": 760,
-        "finalBankroll": 5390,
+        "maxDrawdownRate": 0.1348,
+        "currentDrawdown": 860,
+        "finalBankroll": 5290,
         "peakBankroll": 6150,
-        "profitPeriodRatio": 0.2448,
-        "netToDrawdown": 1.3892,
+        "profitPeriodRatio": 0.2438,
+        "netToDrawdown": 1.3576,
         "series": {
           "bankroll": [
             {
@@ -23857,6 +23937,10 @@
             {
               "issue": 2026271,
               "value": 5390
+            },
+            {
+              "issue": 2026272,
+              "value": 5290
             }
           ],
           "equity": [
@@ -24823,6 +24907,10 @@
             {
               "issue": 2026271,
               "value": 4390
+            },
+            {
+              "issue": 2026272,
+              "value": 4290
             }
           ],
           "drawdown": [
@@ -25789,6 +25877,10 @@
             {
               "issue": 2026271,
               "value": 760
+            },
+            {
+              "issue": 2026272,
+              "value": 860
             }
           ],
           "hitRate": [
@@ -26755,6 +26847,10 @@
             {
               "issue": 2026271,
               "value": 0.15
+            },
+            {
+              "issue": 2026272,
+              "value": 0.15
             }
           ]
         }
@@ -26767,26 +26863,26 @@
       "strategyId": "H6",
       "name": "精简方案 Top6",
       "metrics": {
-        "totalPeriods": 241,
-        "betPeriods": 241,
-        "totalStake": 14460,
+        "totalPeriods": 242,
+        "betPeriods": 242,
+        "totalStake": 14520,
         "hitCount": 40,
-        "hitRate": 0.166,
-        "hitRate10": 0.3,
+        "hitRate": 0.1653,
+        "hitRate10": 0.2,
         "hitRate20": 0.15,
         "hitRate30": 0.1333,
-        "cumulativeNet": 4340,
-        "roi": 0.3001,
-        "avgPerPeriod": 18.0083,
+        "cumulativeNet": 4280,
+        "roi": 0.2948,
+        "avgPerPeriod": 17.686,
         "maxConsecutiveMiss": 21,
-        "currentConsecutiveMiss": 2,
+        "currentConsecutiveMiss": 3,
         "maxDrawdown": 2010,
-        "maxDrawdownRate": 0.139,
-        "currentDrawdown": 120,
-        "finalBankroll": 5340,
+        "maxDrawdownRate": 0.1384,
+        "currentDrawdown": 180,
+        "finalBankroll": 5280,
         "peakBankroll": 5460,
-        "profitPeriodRatio": 0.166,
-        "netToDrawdown": 2.1592,
+        "profitPeriodRatio": 0.1653,
+        "netToDrawdown": 2.1294,
         "series": {
           "bankroll": [
             {
@@ -27752,6 +27848,10 @@
             {
               "issue": 2026271,
               "value": 5340
+            },
+            {
+              "issue": 2026272,
+              "value": 5280
             }
           ],
           "equity": [
@@ -28718,6 +28818,10 @@
             {
               "issue": 2026271,
               "value": 4340
+            },
+            {
+              "issue": 2026272,
+              "value": 4280
             }
           ],
           "drawdown": [
@@ -29684,6 +29788,10 @@
             {
               "issue": 2026271,
               "value": 120
+            },
+            {
+              "issue": 2026272,
+              "value": 180
             }
           ],
           "hitRate": [
@@ -30650,6 +30758,10 @@
             {
               "issue": 2026271,
               "value": 0.15
+            },
+            {
+              "issue": 2026272,
+              "value": 0.15
             }
           ]
         }
@@ -30664,26 +30776,26 @@
       "strategyId": "H7",
       "name": "精简方案 Top7",
       "metrics": {
-        "totalPeriods": 241,
-        "betPeriods": 241,
-        "totalStake": 16630,
+        "totalPeriods": 242,
+        "betPeriods": 242,
+        "totalStake": 16700,
         "hitCount": 44,
-        "hitRate": 0.1826,
-        "hitRate10": 0.3,
+        "hitRate": 0.1818,
+        "hitRate10": 0.2,
         "hitRate20": 0.15,
         "hitRate30": 0.1333,
-        "cumulativeNet": 4050,
-        "roi": 0.2435,
-        "avgPerPeriod": 16.805,
+        "cumulativeNet": 3980,
+        "roi": 0.2383,
+        "avgPerPeriod": 16.4463,
         "maxConsecutiveMiss": 17,
-        "currentConsecutiveMiss": 2,
+        "currentConsecutiveMiss": 3,
         "maxDrawdown": 2140,
-        "maxDrawdownRate": 0.1287,
-        "currentDrawdown": 190,
-        "finalBankroll": 5050,
+        "maxDrawdownRate": 0.1281,
+        "currentDrawdown": 260,
+        "finalBankroll": 4980,
         "peakBankroll": 5240,
-        "profitPeriodRatio": 0.1826,
-        "netToDrawdown": 1.8925,
+        "profitPeriodRatio": 0.1818,
+        "netToDrawdown": 1.8598,
         "series": {
           "bankroll": [
             {
@@ -31649,6 +31761,10 @@
             {
               "issue": 2026271,
               "value": 5050
+            },
+            {
+              "issue": 2026272,
+              "value": 4980
             }
           ],
           "equity": [
@@ -32615,6 +32731,10 @@
             {
               "issue": 2026271,
               "value": 4050
+            },
+            {
+              "issue": 2026272,
+              "value": 3980
             }
           ],
           "drawdown": [
@@ -33581,6 +33701,10 @@
             {
               "issue": 2026271,
               "value": 190
+            },
+            {
+              "issue": 2026272,
+              "value": 260
             }
           ],
           "hitRate": [
@@ -34547,6 +34671,10 @@
             {
               "issue": 2026271,
               "value": 0.15
+            },
+            {
+              "issue": 2026272,
+              "value": 0.15
             }
           ]
         }
@@ -34559,26 +34687,26 @@
       "strategyId": "H5",
       "name": "精简方案 Top5",
       "metrics": {
-        "totalPeriods": 241,
-        "betPeriods": 241,
-        "totalStake": 12050,
+        "totalPeriods": 242,
+        "betPeriods": 242,
+        "totalStake": 12100,
         "hitCount": 33,
-        "hitRate": 0.1369,
-        "hitRate10": 0.2,
+        "hitRate": 0.1364,
+        "hitRate10": 0.1,
         "hitRate20": 0.1,
         "hitRate30": 0.1,
-        "cumulativeNet": 3460,
-        "roi": 0.2871,
-        "avgPerPeriod": 14.3568,
+        "cumulativeNet": 3410,
+        "roi": 0.2818,
+        "avgPerPeriod": 14.0909,
         "maxConsecutiveMiss": 33,
-        "currentConsecutiveMiss": 2,
+        "currentConsecutiveMiss": 3,
         "maxDrawdown": 1910,
-        "maxDrawdownRate": 0.1585,
-        "currentDrawdown": 440,
-        "finalBankroll": 4460,
+        "maxDrawdownRate": 0.1579,
+        "currentDrawdown": 490,
+        "finalBankroll": 4410,
         "peakBankroll": 4900,
-        "profitPeriodRatio": 0.1369,
-        "netToDrawdown": 1.8115,
+        "profitPeriodRatio": 0.1364,
+        "netToDrawdown": 1.7853,
         "series": {
           "bankroll": [
             {
@@ -35544,6 +35672,10 @@
             {
               "issue": 2026271,
               "value": 4460
+            },
+            {
+              "issue": 2026272,
+              "value": 4410
             }
           ],
           "equity": [
@@ -36510,6 +36642,10 @@
             {
               "issue": 2026271,
               "value": 3460
+            },
+            {
+              "issue": 2026272,
+              "value": 3410
             }
           ],
           "drawdown": [
@@ -37476,6 +37612,10 @@
             {
               "issue": 2026271,
               "value": 440
+            },
+            {
+              "issue": 2026272,
+              "value": 490
             }
           ],
           "hitRate": [
@@ -38442,6 +38582,10 @@
             {
               "issue": 2026271,
               "value": 0.1
+            },
+            {
+              "issue": 2026272,
+              "value": 0.1
             }
           ]
         }
@@ -38454,26 +38598,26 @@
       "strategyId": "H11",
       "name": "天罗候选 Top11",
       "metrics": {
-        "totalPeriods": 241,
-        "betPeriods": 241,
-        "totalStake": 25470,
+        "totalPeriods": 242,
+        "betPeriods": 242,
+        "totalStake": 25580,
         "hitCount": 61,
-        "hitRate": 0.2531,
-        "hitRate10": 0.3,
+        "hitRate": 0.2521,
+        "hitRate10": 0.2,
         "hitRate20": 0.15,
         "hitRate30": 0.1667,
-        "cumulativeNet": 3200,
-        "roi": 0.1256,
-        "avgPerPeriod": 13.278,
+        "cumulativeNet": 3090,
+        "roi": 0.1208,
+        "avgPerPeriod": 12.7686,
         "maxConsecutiveMiss": 17,
-        "currentConsecutiveMiss": 2,
+        "currentConsecutiveMiss": 3,
         "maxDrawdown": 3680,
-        "maxDrawdownRate": 0.1445,
-        "currentDrawdown": 910,
-        "finalBankroll": 4200,
+        "maxDrawdownRate": 0.1439,
+        "currentDrawdown": 1020,
+        "finalBankroll": 4090,
         "peakBankroll": 5110,
-        "profitPeriodRatio": 0.2531,
-        "netToDrawdown": 0.8696,
+        "profitPeriodRatio": 0.2521,
+        "netToDrawdown": 0.8397,
         "series": {
           "bankroll": [
             {
@@ -39439,6 +39583,10 @@
             {
               "issue": 2026271,
               "value": 4200
+            },
+            {
+              "issue": 2026272,
+              "value": 4090
             }
           ],
           "equity": [
@@ -40405,6 +40553,10 @@
             {
               "issue": 2026271,
               "value": 3200
+            },
+            {
+              "issue": 2026272,
+              "value": 3090
             }
           ],
           "drawdown": [
@@ -41371,6 +41523,10 @@
             {
               "issue": 2026271,
               "value": 910
+            },
+            {
+              "issue": 2026272,
+              "value": 1020
             }
           ],
           "hitRate": [
@@ -42337,6 +42493,10 @@
             {
               "issue": 2026271,
               "value": 0.15
+            },
+            {
+              "issue": 2026272,
+              "value": 0.15
             }
           ]
         }
@@ -42349,26 +42509,26 @@
       "strategyId": "H12",
       "name": "天罗模式 Top12",
       "metrics": {
-        "totalPeriods": 241,
-        "betPeriods": 241,
-        "totalStake": 27610,
+        "totalPeriods": 242,
+        "betPeriods": 242,
+        "totalStake": 27730,
         "hitCount": 65,
-        "hitRate": 0.2697,
-        "hitRate10": 0.3,
+        "hitRate": 0.2686,
+        "hitRate10": 0.2,
         "hitRate20": 0.15,
         "hitRate30": 0.1667,
-        "cumulativeNet": 2940,
-        "roi": 0.1065,
-        "avgPerPeriod": 12.1992,
+        "cumulativeNet": 2820,
+        "roi": 0.1017,
+        "avgPerPeriod": 11.6529,
         "maxConsecutiveMiss": 17,
-        "currentConsecutiveMiss": 2,
+        "currentConsecutiveMiss": 3,
         "maxDrawdown": 2710,
-        "maxDrawdownRate": 0.0982,
-        "currentDrawdown": 1170,
-        "finalBankroll": 3940,
+        "maxDrawdownRate": 0.0977,
+        "currentDrawdown": 1290,
+        "finalBankroll": 3820,
         "peakBankroll": 5110,
-        "profitPeriodRatio": 0.2697,
-        "netToDrawdown": 1.0849,
+        "profitPeriodRatio": 0.2686,
+        "netToDrawdown": 1.0406,
         "series": {
           "bankroll": [
             {
@@ -43334,6 +43494,10 @@
             {
               "issue": 2026271,
               "value": 3940
+            },
+            {
+              "issue": 2026272,
+              "value": 3820
             }
           ],
           "equity": [
@@ -44300,6 +44464,10 @@
             {
               "issue": 2026271,
               "value": 2940
+            },
+            {
+              "issue": 2026272,
+              "value": 2820
             }
           ],
           "drawdown": [
@@ -45266,6 +45434,10 @@
             {
               "issue": 2026271,
               "value": 1170
+            },
+            {
+              "issue": 2026272,
+              "value": 1290
             }
           ],
           "hitRate": [
@@ -46232,6 +46404,10 @@
             {
               "issue": 2026271,
               "value": 0.15
+            },
+            {
+              "issue": 2026272,
+              "value": 0.15
             }
           ]
         }
@@ -46246,26 +46422,26 @@
       "strategyId": "A",
       "name": "原版生肖全码+补码（对照）",
       "metrics": {
-        "totalPeriods": 241,
-        "betPeriods": 241,
-        "totalStake": 22860,
+        "totalPeriods": 242,
+        "betPeriods": 242,
+        "totalStake": 22960,
         "hitCount": 54,
-        "hitRate": 0.2241,
+        "hitRate": 0.2231,
         "hitRate10": 0.2,
         "hitRate20": 0.3,
         "hitRate30": 0.2333,
-        "cumulativeNet": 2520,
-        "roi": 0.1102,
-        "avgPerPeriod": 10.4564,
+        "cumulativeNet": 2420,
+        "roi": 0.1054,
+        "avgPerPeriod": 10,
         "maxConsecutiveMiss": 38,
-        "currentConsecutiveMiss": 2,
+        "currentConsecutiveMiss": 3,
         "maxDrawdown": 3030,
-        "maxDrawdownRate": 0.1325,
-        "currentDrawdown": 290,
-        "finalBankroll": 3520,
+        "maxDrawdownRate": 0.132,
+        "currentDrawdown": 390,
+        "finalBankroll": 3420,
         "peakBankroll": 3810,
-        "profitPeriodRatio": 0.2241,
-        "netToDrawdown": 0.8317,
+        "profitPeriodRatio": 0.2231,
+        "netToDrawdown": 0.7987,
         "series": {
           "bankroll": [
             {
@@ -47231,6 +47407,10 @@
             {
               "issue": 2026271,
               "value": 3520
+            },
+            {
+              "issue": 2026272,
+              "value": 3420
             }
           ],
           "equity": [
@@ -48197,6 +48377,10 @@
             {
               "issue": 2026271,
               "value": 2520
+            },
+            {
+              "issue": 2026272,
+              "value": 2420
             }
           ],
           "drawdown": [
@@ -49163,6 +49347,10 @@
             {
               "issue": 2026271,
               "value": 290
+            },
+            {
+              "issue": 2026272,
+              "value": 390
             }
           ],
           "hitRate": [
@@ -50129,6 +50317,10 @@
             {
               "issue": 2026271,
               "value": 0.3
+            },
+            {
+              "issue": 2026272,
+              "value": 0.3
             }
           ]
         }
@@ -50141,26 +50333,26 @@
       "strategyId": "J",
       "name": "动态TopN（对照）",
       "metrics": {
-        "totalPeriods": 241,
-        "betPeriods": 241,
-        "totalStake": 17780,
+        "totalPeriods": 242,
+        "betPeriods": 242,
+        "totalStake": 17860,
         "hitCount": 42,
-        "hitRate": 0.1743,
-        "hitRate10": 0.3,
+        "hitRate": 0.1736,
+        "hitRate10": 0.2,
         "hitRate20": 0.15,
         "hitRate30": 0.1667,
-        "cumulativeNet": 1960,
-        "roi": 0.1102,
-        "avgPerPeriod": 8.1328,
+        "cumulativeNet": 1880,
+        "roi": 0.1053,
+        "avgPerPeriod": 7.7686,
         "maxConsecutiveMiss": 33,
-        "currentConsecutiveMiss": 2,
+        "currentConsecutiveMiss": 3,
         "maxDrawdown": 2890,
-        "maxDrawdownRate": 0.1625,
-        "currentDrawdown": 370,
-        "finalBankroll": 2960,
+        "maxDrawdownRate": 0.1618,
+        "currentDrawdown": 450,
+        "finalBankroll": 2880,
         "peakBankroll": 3330,
-        "profitPeriodRatio": 0.1743,
-        "netToDrawdown": 0.6782,
+        "profitPeriodRatio": 0.1736,
+        "netToDrawdown": 0.6505,
         "series": {
           "bankroll": [
             {
@@ -51126,6 +51318,10 @@
             {
               "issue": 2026271,
               "value": 2960
+            },
+            {
+              "issue": 2026272,
+              "value": 2880
             }
           ],
           "equity": [
@@ -52092,6 +52288,10 @@
             {
               "issue": 2026271,
               "value": 1960
+            },
+            {
+              "issue": 2026272,
+              "value": 1880
             }
           ],
           "drawdown": [
@@ -53058,6 +53258,10 @@
             {
               "issue": 2026271,
               "value": 370
+            },
+            {
+              "issue": 2026272,
+              "value": 450
             }
           ],
           "hitRate": [
@@ -54024,6 +54228,10 @@
             {
               "issue": 2026271,
               "value": 0.15
+            },
+            {
+              "issue": 2026272,
+              "value": 0.15
             }
           ]
         }
@@ -54036,26 +54244,26 @@
       "strategyId": "C",
       "name": "双生肖候选池→10码",
       "metrics": {
-        "totalPeriods": 241,
-        "betPeriods": 241,
-        "totalStake": 19210,
+        "totalPeriods": 242,
+        "betPeriods": 242,
+        "totalStake": 19290,
         "hitCount": 44,
-        "hitRate": 0.1826,
-        "hitRate10": 0.2,
+        "hitRate": 0.1818,
+        "hitRate10": 0.1,
         "hitRate20": 0.1,
         "hitRate30": 0.1333,
-        "cumulativeNet": 1470,
-        "roi": 0.0765,
-        "avgPerPeriod": 6.0996,
+        "cumulativeNet": 1390,
+        "roi": 0.0721,
+        "avgPerPeriod": 5.7438,
         "maxConsecutiveMiss": 63,
-        "currentConsecutiveMiss": 2,
+        "currentConsecutiveMiss": 3,
         "maxDrawdown": 4130,
-        "maxDrawdownRate": 0.215,
-        "currentDrawdown": 730,
-        "finalBankroll": 2470,
+        "maxDrawdownRate": 0.2141,
+        "currentDrawdown": 810,
+        "finalBankroll": 2390,
         "peakBankroll": 3200,
-        "profitPeriodRatio": 0.1826,
-        "netToDrawdown": 0.3559,
+        "profitPeriodRatio": 0.1818,
+        "netToDrawdown": 0.3366,
         "series": {
           "bankroll": [
             {
@@ -55021,6 +55229,10 @@
             {
               "issue": 2026271,
               "value": 2470
+            },
+            {
+              "issue": 2026272,
+              "value": 2390
             }
           ],
           "equity": [
@@ -55987,6 +56199,10 @@
             {
               "issue": 2026271,
               "value": 1470
+            },
+            {
+              "issue": 2026272,
+              "value": 1390
             }
           ],
           "drawdown": [
@@ -56953,6 +57169,10 @@
             {
               "issue": 2026271,
               "value": 730
+            },
+            {
+              "issue": 2026272,
+              "value": 810
             }
           ],
           "hitRate": [
@@ -57919,6 +58139,10 @@
             {
               "issue": 2026271,
               "value": 0.1
+            },
+            {
+              "issue": 2026272,
+              "value": 0.1
             }
           ]
         }
@@ -57931,26 +58155,26 @@
       "strategyId": "F",
       "name": "五生肖候选池→10码",
       "metrics": {
-        "totalPeriods": 241,
-        "betPeriods": 241,
-        "totalStake": 23700,
+        "totalPeriods": 242,
+        "betPeriods": 242,
+        "totalStake": 23800,
         "hitCount": 52,
-        "hitRate": 0.2158,
-        "hitRate10": 0.2,
+        "hitRate": 0.2149,
+        "hitRate10": 0.1,
         "hitRate20": 0.1,
         "hitRate30": 0.1,
-        "cumulativeNet": 740,
-        "roi": 0.0312,
-        "avgPerPeriod": 3.0705,
+        "cumulativeNet": 640,
+        "roi": 0.0269,
+        "avgPerPeriod": 2.6446,
         "maxConsecutiveMiss": 13,
-        "currentConsecutiveMiss": 2,
+        "currentConsecutiveMiss": 3,
         "maxDrawdown": 2060,
-        "maxDrawdownRate": 0.0869,
-        "currentDrawdown": 1810,
-        "finalBankroll": 1740,
+        "maxDrawdownRate": 0.0866,
+        "currentDrawdown": 1910,
+        "finalBankroll": 1640,
         "peakBankroll": 3550,
-        "profitPeriodRatio": 0.2158,
-        "netToDrawdown": 0.3592,
+        "profitPeriodRatio": 0.2149,
+        "netToDrawdown": 0.3107,
         "series": {
           "bankroll": [
             {
@@ -58916,6 +59140,10 @@
             {
               "issue": 2026271,
               "value": 1740
+            },
+            {
+              "issue": 2026272,
+              "value": 1640
             }
           ],
           "equity": [
@@ -59882,6 +60110,10 @@
             {
               "issue": 2026271,
               "value": 740
+            },
+            {
+              "issue": 2026272,
+              "value": 640
             }
           ],
           "drawdown": [
@@ -60848,6 +61080,10 @@
             {
               "issue": 2026271,
               "value": 1810
+            },
+            {
+              "issue": 2026272,
+              "value": 1910
             }
           ],
           "hitRate": [
@@ -61814,6 +62050,10 @@
             {
               "issue": 2026271,
               "value": 0.1
+            },
+            {
+              "issue": 2026272,
+              "value": 0.1
             }
           ]
         }
@@ -61826,26 +62066,26 @@
       "strategyId": "B",
       "name": "单生肖数字补齐（对照）",
       "metrics": {
-        "totalPeriods": 241,
-        "betPeriods": 241,
-        "totalStake": 22740,
+        "totalPeriods": 242,
+        "betPeriods": 242,
+        "totalStake": 22840,
         "hitCount": 48,
-        "hitRate": 0.1992,
-        "hitRate10": 0.2,
+        "hitRate": 0.1983,
+        "hitRate10": 0.1,
         "hitRate20": 0.2,
         "hitRate30": 0.1667,
-        "cumulativeNet": -180,
-        "roi": -0.0079,
-        "avgPerPeriod": -0.7469,
+        "cumulativeNet": -280,
+        "roi": -0.0123,
+        "avgPerPeriod": -1.157,
         "maxConsecutiveMiss": 31,
-        "currentConsecutiveMiss": 2,
+        "currentConsecutiveMiss": 3,
         "maxDrawdown": 4780,
-        "maxDrawdownRate": 0.2102,
-        "currentDrawdown": 1500,
-        "finalBankroll": 820,
+        "maxDrawdownRate": 0.2093,
+        "currentDrawdown": 1600,
+        "finalBankroll": 720,
         "peakBankroll": 2320,
-        "profitPeriodRatio": 0.1992,
-        "netToDrawdown": -0.0377,
+        "profitPeriodRatio": 0.1983,
+        "netToDrawdown": -0.0586,
         "series": {
           "bankroll": [
             {
@@ -62811,6 +63051,10 @@
             {
               "issue": 2026271,
               "value": 820
+            },
+            {
+              "issue": 2026272,
+              "value": 720
             }
           ],
           "equity": [
@@ -63777,6 +64021,10 @@
             {
               "issue": 2026271,
               "value": -180
+            },
+            {
+              "issue": 2026272,
+              "value": -280
             }
           ],
           "drawdown": [
@@ -64743,6 +64991,10 @@
             {
               "issue": 2026271,
               "value": 1500
+            },
+            {
+              "issue": 2026272,
+              "value": 1600
             }
           ],
           "hitRate": [
@@ -65709,6 +65961,10 @@
             {
               "issue": 2026271,
               "value": 0.2
+            },
+            {
+              "issue": 2026272,
+              "value": 0.2
             }
           ]
         }
@@ -65721,26 +65977,26 @@
       "strategyId": "G",
       "name": "49全数字→10码（对照）",
       "metrics": {
-        "totalPeriods": 241,
-        "betPeriods": 241,
-        "totalStake": 22340,
+        "totalPeriods": 242,
+        "betPeriods": 242,
+        "totalStake": 22440,
         "hitCount": 47,
-        "hitRate": 0.195,
-        "hitRate10": 0.3,
+        "hitRate": 0.1942,
+        "hitRate10": 0.2,
         "hitRate20": 0.25,
         "hitRate30": 0.1667,
-        "cumulativeNet": -250,
-        "roi": -0.0112,
-        "avgPerPeriod": -1.0373,
+        "cumulativeNet": -350,
+        "roi": -0.0156,
+        "avgPerPeriod": -1.4463,
         "maxConsecutiveMiss": 31,
-        "currentConsecutiveMiss": 2,
+        "currentConsecutiveMiss": 3,
         "maxDrawdown": 5390,
-        "maxDrawdownRate": 0.2413,
-        "currentDrawdown": 1910,
-        "finalBankroll": 750,
+        "maxDrawdownRate": 0.2402,
+        "currentDrawdown": 2010,
+        "finalBankroll": 650,
         "peakBankroll": 2660,
-        "profitPeriodRatio": 0.195,
-        "netToDrawdown": -0.0464,
+        "profitPeriodRatio": 0.1942,
+        "netToDrawdown": -0.0649,
         "series": {
           "bankroll": [
             {
@@ -66706,6 +66962,10 @@
             {
               "issue": 2026271,
               "value": 750
+            },
+            {
+              "issue": 2026272,
+              "value": 650
             }
           ],
           "equity": [
@@ -67672,6 +67932,10 @@
             {
               "issue": 2026271,
               "value": -250
+            },
+            {
+              "issue": 2026272,
+              "value": -350
             }
           ],
           "drawdown": [
@@ -68638,6 +68902,10 @@
             {
               "issue": 2026271,
               "value": 1910
+            },
+            {
+              "issue": 2026272,
+              "value": 2010
             }
           ],
           "hitRate": [
@@ -69604,6 +69872,10 @@
             {
               "issue": 2026271,
               "value": 0.25
+            },
+            {
+              "issue": 2026272,
+              "value": 0.25
             }
           ]
         }
@@ -69616,26 +69888,26 @@
       "strategyId": "I",
       "name": "慧算候选（对照）",
       "metrics": {
-        "totalPeriods": 241,
-        "betPeriods": 241,
-        "totalStake": 22450,
+        "totalPeriods": 242,
+        "betPeriods": 242,
+        "totalStake": 22550,
         "hitCount": 47,
-        "hitRate": 0.195,
+        "hitRate": 0.1942,
         "hitRate10": 0.1,
         "hitRate20": 0.05,
         "hitRate30": 0.1,
-        "cumulativeNet": -340,
-        "roi": -0.0151,
-        "avgPerPeriod": -1.4108,
+        "cumulativeNet": -440,
+        "roi": -0.0195,
+        "avgPerPeriod": -1.8182,
         "maxConsecutiveMiss": 20,
-        "currentConsecutiveMiss": 8,
+        "currentConsecutiveMiss": 9,
         "maxDrawdown": 3670,
-        "maxDrawdownRate": 0.1635,
-        "currentDrawdown": 2090,
-        "finalBankroll": 660,
+        "maxDrawdownRate": 0.1627,
+        "currentDrawdown": 2190,
+        "finalBankroll": 560,
         "peakBankroll": 2750,
-        "profitPeriodRatio": 0.195,
-        "netToDrawdown": -0.0926,
+        "profitPeriodRatio": 0.1942,
+        "netToDrawdown": -0.1199,
         "series": {
           "bankroll": [
             {
@@ -70601,6 +70873,10 @@
             {
               "issue": 2026271,
               "value": 660
+            },
+            {
+              "issue": 2026272,
+              "value": 560
             }
           ],
           "equity": [
@@ -71567,6 +71843,10 @@
             {
               "issue": 2026271,
               "value": -340
+            },
+            {
+              "issue": 2026272,
+              "value": -440
             }
           ],
           "drawdown": [
@@ -72533,6 +72813,10 @@
             {
               "issue": 2026271,
               "value": 2090
+            },
+            {
+              "issue": 2026272,
+              "value": 2190
             }
           ],
           "hitRate": [
@@ -73499,6 +73783,10 @@
             {
               "issue": 2026271,
               "value": 0.05
+            },
+            {
+              "issue": 2026272,
+              "value": 0.05
             }
           ]
         }
@@ -73511,26 +73799,26 @@
     {
       "fraction": 0.1,
       "metrics": {
-        "totalPeriods": 241,
-        "betPeriods": 241,
-        "totalStake": 12720,
+        "totalPeriods": 242,
+        "betPeriods": 242,
+        "totalStake": 12770,
         "hitCount": 33,
-        "hitRate": 0.1369,
-        "hitRate10": 0.2,
+        "hitRate": 0.1364,
+        "hitRate10": 0.1,
         "hitRate20": 0.1,
         "hitRate30": 0.1,
-        "cumulativeNet": 2790,
-        "roi": 0.2193,
-        "avgPerPeriod": 11.5768,
+        "cumulativeNet": 2740,
+        "roi": 0.2146,
+        "avgPerPeriod": 11.3223,
         "maxConsecutiveMiss": 33,
-        "currentConsecutiveMiss": 2,
+        "currentConsecutiveMiss": 3,
         "maxDrawdown": 2530,
-        "maxDrawdownRate": 0.1989,
-        "currentDrawdown": 440,
-        "finalBankroll": 3790,
+        "maxDrawdownRate": 0.1981,
+        "currentDrawdown": 490,
+        "finalBankroll": 3740,
         "peakBankroll": 4230,
-        "profitPeriodRatio": 0.1369,
-        "netToDrawdown": 1.1028,
+        "profitPeriodRatio": 0.1364,
+        "netToDrawdown": 1.083,
         "series": {
           "bankroll": [
             {
@@ -74496,6 +74784,10 @@
             {
               "issue": 2026271,
               "value": 3790
+            },
+            {
+              "issue": 2026272,
+              "value": 3740
             }
           ],
           "equity": [
@@ -75462,6 +75754,10 @@
             {
               "issue": 2026271,
               "value": 2790
+            },
+            {
+              "issue": 2026272,
+              "value": 2740
             }
           ],
           "drawdown": [
@@ -76428,6 +76724,10 @@
             {
               "issue": 2026271,
               "value": 440
+            },
+            {
+              "issue": 2026272,
+              "value": 490
             }
           ],
           "hitRate": [
@@ -77394,6 +77694,10 @@
             {
               "issue": 2026271,
               "value": 0.1
+            },
+            {
+              "issue": 2026272,
+              "value": 0.1
             }
           ]
         }
@@ -77402,26 +77706,26 @@
     {
       "fraction": 0.25,
       "metrics": {
-        "totalPeriods": 241,
-        "betPeriods": 241,
-        "totalStake": 12770,
+        "totalPeriods": 242,
+        "betPeriods": 242,
+        "totalStake": 12820,
         "hitCount": 33,
-        "hitRate": 0.1369,
-        "hitRate10": 0.2,
+        "hitRate": 0.1364,
+        "hitRate10": 0.1,
         "hitRate20": 0.1,
         "hitRate30": 0.1,
-        "cumulativeNet": 2740,
-        "roi": 0.2146,
-        "avgPerPeriod": 11.3693,
+        "cumulativeNet": 2690,
+        "roi": 0.2098,
+        "avgPerPeriod": 11.1157,
         "maxConsecutiveMiss": 33,
-        "currentConsecutiveMiss": 2,
+        "currentConsecutiveMiss": 3,
         "maxDrawdown": 2570,
-        "maxDrawdownRate": 0.2013,
-        "currentDrawdown": 440,
-        "finalBankroll": 3740,
+        "maxDrawdownRate": 0.2005,
+        "currentDrawdown": 490,
+        "finalBankroll": 3690,
         "peakBankroll": 4180,
-        "profitPeriodRatio": 0.1369,
-        "netToDrawdown": 1.0661,
+        "profitPeriodRatio": 0.1364,
+        "netToDrawdown": 1.0467,
         "series": {
           "bankroll": [
             {
@@ -78387,6 +78691,10 @@
             {
               "issue": 2026271,
               "value": 3740
+            },
+            {
+              "issue": 2026272,
+              "value": 3690
             }
           ],
           "equity": [
@@ -79353,6 +79661,10 @@
             {
               "issue": 2026271,
               "value": 2740
+            },
+            {
+              "issue": 2026272,
+              "value": 2690
             }
           ],
           "drawdown": [
@@ -80319,6 +80631,10 @@
             {
               "issue": 2026271,
               "value": 440
+            },
+            {
+              "issue": 2026272,
+              "value": 490
             }
           ],
           "hitRate": [
@@ -81285,6 +81601,10 @@
             {
               "issue": 2026271,
               "value": 0.1
+            },
+            {
+              "issue": 2026272,
+              "value": 0.1
             }
           ]
         }
@@ -81293,26 +81613,26 @@
     {
       "fraction": 0.5,
       "metrics": {
-        "totalPeriods": 241,
-        "betPeriods": 241,
-        "totalStake": 12800,
+        "totalPeriods": 242,
+        "betPeriods": 242,
+        "totalStake": 12850,
         "hitCount": 33,
-        "hitRate": 0.1369,
-        "hitRate10": 0.2,
+        "hitRate": 0.1364,
+        "hitRate10": 0.1,
         "hitRate20": 0.1,
         "hitRate30": 0.1,
-        "cumulativeNet": 2710,
-        "roi": 0.2117,
-        "avgPerPeriod": 11.2448,
+        "cumulativeNet": 2660,
+        "roi": 0.207,
+        "avgPerPeriod": 10.9917,
         "maxConsecutiveMiss": 33,
-        "currentConsecutiveMiss": 2,
+        "currentConsecutiveMiss": 3,
         "maxDrawdown": 2600,
-        "maxDrawdownRate": 0.2031,
-        "currentDrawdown": 440,
-        "finalBankroll": 3710,
+        "maxDrawdownRate": 0.2023,
+        "currentDrawdown": 490,
+        "finalBankroll": 3660,
         "peakBankroll": 4150,
-        "profitPeriodRatio": 0.1369,
-        "netToDrawdown": 1.0423,
+        "profitPeriodRatio": 0.1364,
+        "netToDrawdown": 1.0231,
         "series": {
           "bankroll": [
             {
@@ -82278,6 +82598,10 @@
             {
               "issue": 2026271,
               "value": 3710
+            },
+            {
+              "issue": 2026272,
+              "value": 3660
             }
           ],
           "equity": [
@@ -83244,6 +83568,10 @@
             {
               "issue": 2026271,
               "value": 2710
+            },
+            {
+              "issue": 2026272,
+              "value": 2660
             }
           ],
           "drawdown": [
@@ -84210,6 +84538,10 @@
             {
               "issue": 2026271,
               "value": 440
+            },
+            {
+              "issue": 2026272,
+              "value": 490
             }
           ],
           "hitRate": [
@@ -85176,6 +85508,10 @@
             {
               "issue": 2026271,
               "value": 0.1
+            },
+            {
+              "issue": 2026272,
+              "value": 0.1
             }
           ]
         }
@@ -85188,26 +85524,26 @@
       "note": "早期算法版本，用于对照参考。",
       "mode": null,
       "metrics": {
-        "totalPeriods": 241,
-        "betPeriods": 241,
-        "totalStake": 22860,
+        "totalPeriods": 242,
+        "betPeriods": 242,
+        "totalStake": 22960,
         "hitCount": 54,
-        "hitRate": 0.2241,
+        "hitRate": 0.2231,
         "hitRate10": 0.2,
         "hitRate20": 0.3,
         "hitRate30": 0.2333,
-        "cumulativeNet": 2520,
-        "roi": 0.1102,
-        "avgPerPeriod": 10.4564,
+        "cumulativeNet": 2420,
+        "roi": 0.1054,
+        "avgPerPeriod": 10,
         "maxConsecutiveMiss": 38,
-        "currentConsecutiveMiss": 2,
+        "currentConsecutiveMiss": 3,
         "maxDrawdown": 3030,
-        "maxDrawdownRate": 0.1325,
-        "currentDrawdown": 290,
-        "finalBankroll": 3520,
+        "maxDrawdownRate": 0.132,
+        "currentDrawdown": 390,
+        "finalBankroll": 3420,
         "peakBankroll": 3810,
-        "profitPeriodRatio": 0.2241,
-        "netToDrawdown": 0.8317,
+        "profitPeriodRatio": 0.2231,
+        "netToDrawdown": 0.7987,
         "series": {
           "bankroll": [
             {
@@ -86173,6 +86509,10 @@
             {
               "issue": 2026271,
               "value": 3520
+            },
+            {
+              "issue": 2026272,
+              "value": 3420
             }
           ],
           "equity": [
@@ -87139,6 +87479,10 @@
             {
               "issue": 2026271,
               "value": 2520
+            },
+            {
+              "issue": 2026272,
+              "value": 2420
             }
           ],
           "drawdown": [
@@ -88105,6 +88449,10 @@
             {
               "issue": 2026271,
               "value": 290
+            },
+            {
+              "issue": 2026272,
+              "value": 390
             }
           ],
           "hitRate": [
@@ -89070,6 +89418,10 @@
             },
             {
               "issue": 2026271,
+              "value": 0.3
+            },
+            {
+              "issue": 2026272,
               "value": 0.3
             }
           ]
@@ -90040,6 +90392,10 @@
           {
             "issue": 2026271,
             "value": 3520
+          },
+          {
+            "issue": 2026272,
+            "value": 3420
           }
         ],
         "equity": [
@@ -91006,6 +91362,10 @@
           {
             "issue": 2026271,
             "value": 2520
+          },
+          {
+            "issue": 2026272,
+            "value": 2420
           }
         ],
         "drawdown": [
@@ -91972,6 +92332,10 @@
           {
             "issue": 2026271,
             "value": 290
+          },
+          {
+            "issue": 2026272,
+            "value": 390
           }
         ],
         "hitRate": [
@@ -92938,6 +93302,10 @@
           {
             "issue": 2026271,
             "value": 0.3
+          },
+          {
+            "issue": 2026272,
+            "value": 0.3
           }
         ]
       }
@@ -92947,26 +93315,26 @@
       "note": "只看第一生肖方向，用于对照参考。",
       "mode": null,
       "metrics": {
-        "totalPeriods": 241,
-        "betPeriods": 241,
-        "totalStake": 22740,
+        "totalPeriods": 242,
+        "betPeriods": 242,
+        "totalStake": 22840,
         "hitCount": 48,
-        "hitRate": 0.1992,
-        "hitRate10": 0.2,
+        "hitRate": 0.1983,
+        "hitRate10": 0.1,
         "hitRate20": 0.2,
         "hitRate30": 0.1667,
-        "cumulativeNet": -180,
-        "roi": -0.0079,
-        "avgPerPeriod": -0.7469,
+        "cumulativeNet": -280,
+        "roi": -0.0123,
+        "avgPerPeriod": -1.157,
         "maxConsecutiveMiss": 31,
-        "currentConsecutiveMiss": 2,
+        "currentConsecutiveMiss": 3,
         "maxDrawdown": 4780,
-        "maxDrawdownRate": 0.2102,
-        "currentDrawdown": 1500,
-        "finalBankroll": 820,
+        "maxDrawdownRate": 0.2093,
+        "currentDrawdown": 1600,
+        "finalBankroll": 720,
         "peakBankroll": 2320,
-        "profitPeriodRatio": 0.1992,
-        "netToDrawdown": -0.0377,
+        "profitPeriodRatio": 0.1983,
+        "netToDrawdown": -0.0586,
         "series": {
           "bankroll": [
             {
@@ -93932,6 +94300,10 @@
             {
               "issue": 2026271,
               "value": 820
+            },
+            {
+              "issue": 2026272,
+              "value": 720
             }
           ],
           "equity": [
@@ -94898,6 +95270,10 @@
             {
               "issue": 2026271,
               "value": -180
+            },
+            {
+              "issue": 2026272,
+              "value": -280
             }
           ],
           "drawdown": [
@@ -95864,6 +96240,10 @@
             {
               "issue": 2026271,
               "value": 1500
+            },
+            {
+              "issue": 2026272,
+              "value": 1600
             }
           ],
           "hitRate": [
@@ -96829,6 +97209,10 @@
             },
             {
               "issue": 2026271,
+              "value": 0.2
+            },
+            {
+              "issue": 2026272,
               "value": 0.2
             }
           ]
@@ -97799,6 +98183,10 @@
           {
             "issue": 2026271,
             "value": 820
+          },
+          {
+            "issue": 2026272,
+            "value": 720
           }
         ],
         "equity": [
@@ -98765,6 +99153,10 @@
           {
             "issue": 2026271,
             "value": -180
+          },
+          {
+            "issue": 2026272,
+            "value": -280
           }
         ],
         "drawdown": [
@@ -99731,6 +100123,10 @@
           {
             "issue": 2026271,
             "value": 1500
+          },
+          {
+            "issue": 2026272,
+            "value": 1600
           }
         ],
         "hitRate": [
@@ -100697,6 +101093,10 @@
           {
             "issue": 2026271,
             "value": 0.2
+          },
+          {
+            "issue": 2026272,
+            "value": 0.2
           }
         ]
       }
@@ -100706,26 +101106,26 @@
       "note": "候选范围较窄，稳定性一般。",
       "mode": null,
       "metrics": {
-        "totalPeriods": 241,
-        "betPeriods": 241,
-        "totalStake": 19210,
+        "totalPeriods": 242,
+        "betPeriods": 242,
+        "totalStake": 19290,
         "hitCount": 44,
-        "hitRate": 0.1826,
-        "hitRate10": 0.2,
+        "hitRate": 0.1818,
+        "hitRate10": 0.1,
         "hitRate20": 0.1,
         "hitRate30": 0.1333,
-        "cumulativeNet": 1470,
-        "roi": 0.0765,
-        "avgPerPeriod": 6.0996,
+        "cumulativeNet": 1390,
+        "roi": 0.0721,
+        "avgPerPeriod": 5.7438,
         "maxConsecutiveMiss": 63,
-        "currentConsecutiveMiss": 2,
+        "currentConsecutiveMiss": 3,
         "maxDrawdown": 4130,
-        "maxDrawdownRate": 0.215,
-        "currentDrawdown": 730,
-        "finalBankroll": 2470,
+        "maxDrawdownRate": 0.2141,
+        "currentDrawdown": 810,
+        "finalBankroll": 2390,
         "peakBankroll": 3200,
-        "profitPeriodRatio": 0.1826,
-        "netToDrawdown": 0.3559,
+        "profitPeriodRatio": 0.1818,
+        "netToDrawdown": 0.3366,
         "series": {
           "bankroll": [
             {
@@ -101691,6 +102091,10 @@
             {
               "issue": 2026271,
               "value": 2470
+            },
+            {
+              "issue": 2026272,
+              "value": 2390
             }
           ],
           "equity": [
@@ -102657,6 +103061,10 @@
             {
               "issue": 2026271,
               "value": 1470
+            },
+            {
+              "issue": 2026272,
+              "value": 1390
             }
           ],
           "drawdown": [
@@ -103623,6 +104031,10 @@
             {
               "issue": 2026271,
               "value": 730
+            },
+            {
+              "issue": 2026272,
+              "value": 810
             }
           ],
           "hitRate": [
@@ -104588,6 +105000,10 @@
             },
             {
               "issue": 2026271,
+              "value": 0.1
+            },
+            {
+              "issue": 2026272,
               "value": 0.1
             }
           ]
@@ -105558,6 +105974,10 @@
           {
             "issue": 2026271,
             "value": 2470
+          },
+          {
+            "issue": 2026272,
+            "value": 2390
           }
         ],
         "equity": [
@@ -106524,6 +106944,10 @@
           {
             "issue": 2026271,
             "value": 1470
+          },
+          {
+            "issue": 2026272,
+            "value": 1390
           }
         ],
         "drawdown": [
@@ -107490,6 +107914,10 @@
           {
             "issue": 2026271,
             "value": 730
+          },
+          {
+            "issue": 2026272,
+            "value": 810
           }
         ],
         "hitRate": [
@@ -108456,6 +108884,10 @@
           {
             "issue": 2026271,
             "value": 0.1
+          },
+          {
+            "issue": 2026272,
+            "value": 0.1
           }
         ]
       }
@@ -108465,26 +108897,26 @@
       "note": "命中率、收益与预算之间较平衡，是当前默认主策略。",
       "mode": "zhuge",
       "metrics": {
-        "totalPeriods": 241,
-        "betPeriods": 241,
-        "totalStake": 23340,
+        "totalPeriods": 242,
+        "betPeriods": 242,
+        "totalStake": 23440,
         "hitCount": 59,
-        "hitRate": 0.2448,
-        "hitRate10": 0.3,
+        "hitRate": 0.2438,
+        "hitRate10": 0.2,
         "hitRate20": 0.15,
         "hitRate30": 0.1667,
-        "cumulativeNet": 4390,
-        "roi": 0.1881,
-        "avgPerPeriod": 18.2158,
+        "cumulativeNet": 4290,
+        "roi": 0.183,
+        "avgPerPeriod": 17.7273,
         "maxConsecutiveMiss": 17,
-        "currentConsecutiveMiss": 2,
+        "currentConsecutiveMiss": 3,
         "maxDrawdown": 3160,
-        "maxDrawdownRate": 0.1354,
-        "currentDrawdown": 760,
-        "finalBankroll": 5390,
+        "maxDrawdownRate": 0.1348,
+        "currentDrawdown": 860,
+        "finalBankroll": 5290,
         "peakBankroll": 6150,
-        "profitPeriodRatio": 0.2448,
-        "netToDrawdown": 1.3892,
+        "profitPeriodRatio": 0.2438,
+        "netToDrawdown": 1.3576,
         "series": {
           "bankroll": [
             {
@@ -109450,6 +109882,10 @@
             {
               "issue": 2026271,
               "value": 5390
+            },
+            {
+              "issue": 2026272,
+              "value": 5290
             }
           ],
           "equity": [
@@ -110416,6 +110852,10 @@
             {
               "issue": 2026271,
               "value": 4390
+            },
+            {
+              "issue": 2026272,
+              "value": 4290
             }
           ],
           "drawdown": [
@@ -111382,6 +111822,10 @@
             {
               "issue": 2026271,
               "value": 760
+            },
+            {
+              "issue": 2026272,
+              "value": 860
             }
           ],
           "hitRate": [
@@ -112347,6 +112791,10 @@
             },
             {
               "issue": 2026271,
+              "value": 0.15
+            },
+            {
+              "issue": 2026272,
               "value": 0.15
             }
           ]
@@ -113317,6 +113765,10 @@
           {
             "issue": 2026271,
             "value": 5390
+          },
+          {
+            "issue": 2026272,
+            "value": 5290
           }
         ],
         "equity": [
@@ -114283,6 +114735,10 @@
           {
             "issue": 2026271,
             "value": 4390
+          },
+          {
+            "issue": 2026272,
+            "value": 4290
           }
         ],
         "drawdown": [
@@ -115249,6 +115705,10 @@
           {
             "issue": 2026271,
             "value": 760
+          },
+          {
+            "issue": 2026272,
+            "value": 860
           }
         ],
         "hitRate": [
@@ -116215,6 +116675,10 @@
           {
             "issue": 2026271,
             "value": 0.15
+          },
+          {
+            "issue": 2026272,
+            "value": 0.15
           }
         ]
       }
@@ -116224,26 +116688,26 @@
       "note": "多一个生肖方向，覆盖略有提升。",
       "mode": null,
       "metrics": {
-        "totalPeriods": 241,
-        "betPeriods": 241,
-        "totalStake": 24020,
+        "totalPeriods": 242,
+        "betPeriods": 242,
+        "totalStake": 24120,
         "hitCount": 62,
-        "hitRate": 0.2573,
-        "hitRate10": 0.3,
+        "hitRate": 0.2562,
+        "hitRate10": 0.2,
         "hitRate20": 0.2,
         "hitRate30": 0.2,
-        "cumulativeNet": 5120,
-        "roi": 0.2132,
-        "avgPerPeriod": 21.2448,
+        "cumulativeNet": 5020,
+        "roi": 0.2081,
+        "avgPerPeriod": 20.7438,
         "maxConsecutiveMiss": 11,
-        "currentConsecutiveMiss": 2,
+        "currentConsecutiveMiss": 3,
         "maxDrawdown": 1880,
-        "maxDrawdownRate": 0.0783,
-        "currentDrawdown": 370,
-        "finalBankroll": 6120,
+        "maxDrawdownRate": 0.0779,
+        "currentDrawdown": 470,
+        "finalBankroll": 6020,
         "peakBankroll": 6490,
-        "profitPeriodRatio": 0.2573,
-        "netToDrawdown": 2.7234,
+        "profitPeriodRatio": 0.2562,
+        "netToDrawdown": 2.6702,
         "series": {
           "bankroll": [
             {
@@ -117209,6 +117673,10 @@
             {
               "issue": 2026271,
               "value": 6120
+            },
+            {
+              "issue": 2026272,
+              "value": 6020
             }
           ],
           "equity": [
@@ -118175,6 +118643,10 @@
             {
               "issue": 2026271,
               "value": 5120
+            },
+            {
+              "issue": 2026272,
+              "value": 5020
             }
           ],
           "drawdown": [
@@ -119141,6 +119613,10 @@
             {
               "issue": 2026271,
               "value": 370
+            },
+            {
+              "issue": 2026272,
+              "value": 470
             }
           ],
           "hitRate": [
@@ -120106,6 +120582,10 @@
             },
             {
               "issue": 2026271,
+              "value": 0.2
+            },
+            {
+              "issue": 2026272,
               "value": 0.2
             }
           ]
@@ -121076,6 +121556,10 @@
           {
             "issue": 2026271,
             "value": 6120
+          },
+          {
+            "issue": 2026272,
+            "value": 6020
           }
         ],
         "equity": [
@@ -122042,6 +122526,10 @@
           {
             "issue": 2026271,
             "value": 5120
+          },
+          {
+            "issue": 2026272,
+            "value": 5020
           }
         ],
         "drawdown": [
@@ -123008,6 +123496,10 @@
           {
             "issue": 2026271,
             "value": 370
+          },
+          {
+            "issue": 2026272,
+            "value": 470
           }
         ],
         "hitRate": [
@@ -123974,6 +124466,10 @@
           {
             "issue": 2026271,
             "value": 0.2
+          },
+          {
+            "issue": 2026272,
+            "value": 0.2
           }
         ]
       }
@@ -123983,26 +124479,26 @@
       "note": "五个生肖候选池，覆盖更广。",
       "mode": null,
       "metrics": {
-        "totalPeriods": 241,
-        "betPeriods": 241,
-        "totalStake": 23700,
+        "totalPeriods": 242,
+        "betPeriods": 242,
+        "totalStake": 23800,
         "hitCount": 52,
-        "hitRate": 0.2158,
-        "hitRate10": 0.2,
+        "hitRate": 0.2149,
+        "hitRate10": 0.1,
         "hitRate20": 0.1,
         "hitRate30": 0.1,
-        "cumulativeNet": 740,
-        "roi": 0.0312,
-        "avgPerPeriod": 3.0705,
+        "cumulativeNet": 640,
+        "roi": 0.0269,
+        "avgPerPeriod": 2.6446,
         "maxConsecutiveMiss": 13,
-        "currentConsecutiveMiss": 2,
+        "currentConsecutiveMiss": 3,
         "maxDrawdown": 2060,
-        "maxDrawdownRate": 0.0869,
-        "currentDrawdown": 1810,
-        "finalBankroll": 1740,
+        "maxDrawdownRate": 0.0866,
+        "currentDrawdown": 1910,
+        "finalBankroll": 1640,
         "peakBankroll": 3550,
-        "profitPeriodRatio": 0.2158,
-        "netToDrawdown": 0.3592,
+        "profitPeriodRatio": 0.2149,
+        "netToDrawdown": 0.3107,
         "series": {
           "bankroll": [
             {
@@ -124968,6 +125464,10 @@
             {
               "issue": 2026271,
               "value": 1740
+            },
+            {
+              "issue": 2026272,
+              "value": 1640
             }
           ],
           "equity": [
@@ -125934,6 +126434,10 @@
             {
               "issue": 2026271,
               "value": 740
+            },
+            {
+              "issue": 2026272,
+              "value": 640
             }
           ],
           "drawdown": [
@@ -126900,6 +127404,10 @@
             {
               "issue": 2026271,
               "value": 1810
+            },
+            {
+              "issue": 2026272,
+              "value": 1910
             }
           ],
           "hitRate": [
@@ -127865,6 +128373,10 @@
             },
             {
               "issue": 2026271,
+              "value": 0.1
+            },
+            {
+              "issue": 2026272,
               "value": 0.1
             }
           ]
@@ -128835,6 +129347,10 @@
           {
             "issue": 2026271,
             "value": 1740
+          },
+          {
+            "issue": 2026272,
+            "value": 1640
           }
         ],
         "equity": [
@@ -129801,6 +130317,10 @@
           {
             "issue": 2026271,
             "value": 740
+          },
+          {
+            "issue": 2026272,
+            "value": 640
           }
         ],
         "drawdown": [
@@ -130767,6 +131287,10 @@
           {
             "issue": 2026271,
             "value": 1810
+          },
+          {
+            "issue": 2026272,
+            "value": 1910
           }
         ],
         "hitRate": [
@@ -131733,6 +132257,10 @@
           {
             "issue": 2026271,
             "value": 0.1
+          },
+          {
+            "issue": 2026272,
+            "value": 0.1
           }
         ]
       }
@@ -131742,26 +132270,26 @@
       "note": "不看生肖方向，直接在全数字中选码。",
       "mode": null,
       "metrics": {
-        "totalPeriods": 241,
-        "betPeriods": 241,
-        "totalStake": 22340,
+        "totalPeriods": 242,
+        "betPeriods": 242,
+        "totalStake": 22440,
         "hitCount": 47,
-        "hitRate": 0.195,
-        "hitRate10": 0.3,
+        "hitRate": 0.1942,
+        "hitRate10": 0.2,
         "hitRate20": 0.25,
         "hitRate30": 0.1667,
-        "cumulativeNet": -250,
-        "roi": -0.0112,
-        "avgPerPeriod": -1.0373,
+        "cumulativeNet": -350,
+        "roi": -0.0156,
+        "avgPerPeriod": -1.4463,
         "maxConsecutiveMiss": 31,
-        "currentConsecutiveMiss": 2,
+        "currentConsecutiveMiss": 3,
         "maxDrawdown": 5390,
-        "maxDrawdownRate": 0.2413,
-        "currentDrawdown": 1910,
-        "finalBankroll": 750,
+        "maxDrawdownRate": 0.2402,
+        "currentDrawdown": 2010,
+        "finalBankroll": 650,
         "peakBankroll": 2660,
-        "profitPeriodRatio": 0.195,
-        "netToDrawdown": -0.0464,
+        "profitPeriodRatio": 0.1942,
+        "netToDrawdown": -0.0649,
         "series": {
           "bankroll": [
             {
@@ -132727,6 +133255,10 @@
             {
               "issue": 2026271,
               "value": 750
+            },
+            {
+              "issue": 2026272,
+              "value": 650
             }
           ],
           "equity": [
@@ -133693,6 +134225,10 @@
             {
               "issue": 2026271,
               "value": -250
+            },
+            {
+              "issue": 2026272,
+              "value": -350
             }
           ],
           "drawdown": [
@@ -134659,6 +135195,10 @@
             {
               "issue": 2026271,
               "value": 1910
+            },
+            {
+              "issue": 2026272,
+              "value": 2010
             }
           ],
           "hitRate": [
@@ -135624,6 +136164,10 @@
             },
             {
               "issue": 2026271,
+              "value": 0.25
+            },
+            {
+              "issue": 2026272,
               "value": 0.25
             }
           ]
@@ -136594,6 +137138,10 @@
           {
             "issue": 2026271,
             "value": 750
+          },
+          {
+            "issue": 2026272,
+            "value": 650
           }
         ],
         "equity": [
@@ -137560,6 +138108,10 @@
           {
             "issue": 2026271,
             "value": -250
+          },
+          {
+            "issue": 2026272,
+            "value": -350
           }
         ],
         "drawdown": [
@@ -138526,6 +139078,10 @@
           {
             "issue": 2026271,
             "value": 1910
+          },
+          {
+            "issue": 2026272,
+            "value": 2010
           }
         ],
         "hitRate": [
@@ -139492,6 +140048,10 @@
           {
             "issue": 2026271,
             "value": 0.25
+          },
+          {
+            "issue": 2026272,
+            "value": 0.25
           }
         ]
       }
@@ -139501,26 +140061,26 @@
       "note": "投入更低，但覆盖明显减少。",
       "mode": null,
       "metrics": {
-        "totalPeriods": 241,
-        "betPeriods": 241,
-        "totalStake": 12050,
+        "totalPeriods": 242,
+        "betPeriods": 242,
+        "totalStake": 12100,
         "hitCount": 33,
-        "hitRate": 0.1369,
-        "hitRate10": 0.2,
+        "hitRate": 0.1364,
+        "hitRate10": 0.1,
         "hitRate20": 0.1,
         "hitRate30": 0.1,
-        "cumulativeNet": 3460,
-        "roi": 0.2871,
-        "avgPerPeriod": 14.3568,
+        "cumulativeNet": 3410,
+        "roi": 0.2818,
+        "avgPerPeriod": 14.0909,
         "maxConsecutiveMiss": 33,
-        "currentConsecutiveMiss": 2,
+        "currentConsecutiveMiss": 3,
         "maxDrawdown": 1910,
-        "maxDrawdownRate": 0.1585,
-        "currentDrawdown": 440,
-        "finalBankroll": 4460,
+        "maxDrawdownRate": 0.1579,
+        "currentDrawdown": 490,
+        "finalBankroll": 4410,
         "peakBankroll": 4900,
-        "profitPeriodRatio": 0.1369,
-        "netToDrawdown": 1.8115,
+        "profitPeriodRatio": 0.1364,
+        "netToDrawdown": 1.7853,
         "series": {
           "bankroll": [
             {
@@ -140486,6 +141046,10 @@
             {
               "issue": 2026271,
               "value": 4460
+            },
+            {
+              "issue": 2026272,
+              "value": 4410
             }
           ],
           "equity": [
@@ -141452,6 +142016,10 @@
             {
               "issue": 2026271,
               "value": 3460
+            },
+            {
+              "issue": 2026272,
+              "value": 3410
             }
           ],
           "drawdown": [
@@ -142418,6 +142986,10 @@
             {
               "issue": 2026271,
               "value": 440
+            },
+            {
+              "issue": 2026272,
+              "value": 490
             }
           ],
           "hitRate": [
@@ -143383,6 +143955,10 @@
             },
             {
               "issue": 2026271,
+              "value": 0.1
+            },
+            {
+              "issue": 2026272,
               "value": 0.1
             }
           ]
@@ -144353,6 +144929,10 @@
           {
             "issue": 2026271,
             "value": 4460
+          },
+          {
+            "issue": 2026272,
+            "value": 4410
           }
         ],
         "equity": [
@@ -145319,6 +145899,10 @@
           {
             "issue": 2026271,
             "value": 3460
+          },
+          {
+            "issue": 2026272,
+            "value": 3410
           }
         ],
         "drawdown": [
@@ -146285,6 +146869,10 @@
           {
             "issue": 2026271,
             "value": 440
+          },
+          {
+            "issue": 2026272,
+            "value": 490
           }
         ],
         "hitRate": [
@@ -147251,6 +147839,10 @@
           {
             "issue": 2026271,
             "value": 0.1
+          },
+          {
+            "issue": 2026272,
+            "value": 0.1
           }
         ]
       }
@@ -147260,26 +147852,26 @@
       "note": "投入较低，覆盖有限。",
       "mode": null,
       "metrics": {
-        "totalPeriods": 241,
-        "betPeriods": 241,
-        "totalStake": 14460,
+        "totalPeriods": 242,
+        "betPeriods": 242,
+        "totalStake": 14520,
         "hitCount": 40,
-        "hitRate": 0.166,
-        "hitRate10": 0.3,
+        "hitRate": 0.1653,
+        "hitRate10": 0.2,
         "hitRate20": 0.15,
         "hitRate30": 0.1333,
-        "cumulativeNet": 4340,
-        "roi": 0.3001,
-        "avgPerPeriod": 18.0083,
+        "cumulativeNet": 4280,
+        "roi": 0.2948,
+        "avgPerPeriod": 17.686,
         "maxConsecutiveMiss": 21,
-        "currentConsecutiveMiss": 2,
+        "currentConsecutiveMiss": 3,
         "maxDrawdown": 2010,
-        "maxDrawdownRate": 0.139,
-        "currentDrawdown": 120,
-        "finalBankroll": 5340,
+        "maxDrawdownRate": 0.1384,
+        "currentDrawdown": 180,
+        "finalBankroll": 5280,
         "peakBankroll": 5460,
-        "profitPeriodRatio": 0.166,
-        "netToDrawdown": 2.1592,
+        "profitPeriodRatio": 0.1653,
+        "netToDrawdown": 2.1294,
         "series": {
           "bankroll": [
             {
@@ -148245,6 +148837,10 @@
             {
               "issue": 2026271,
               "value": 5340
+            },
+            {
+              "issue": 2026272,
+              "value": 5280
             }
           ],
           "equity": [
@@ -149211,6 +149807,10 @@
             {
               "issue": 2026271,
               "value": 4340
+            },
+            {
+              "issue": 2026272,
+              "value": 4280
             }
           ],
           "drawdown": [
@@ -150177,6 +150777,10 @@
             {
               "issue": 2026271,
               "value": 120
+            },
+            {
+              "issue": 2026272,
+              "value": 180
             }
           ],
           "hitRate": [
@@ -151142,6 +151746,10 @@
             },
             {
               "issue": 2026271,
+              "value": 0.15
+            },
+            {
+              "issue": 2026272,
               "value": 0.15
             }
           ]
@@ -152112,6 +152720,10 @@
           {
             "issue": 2026271,
             "value": 5340
+          },
+          {
+            "issue": 2026272,
+            "value": 5280
           }
         ],
         "equity": [
@@ -153078,6 +153690,10 @@
           {
             "issue": 2026271,
             "value": 4340
+          },
+          {
+            "issue": 2026272,
+            "value": 4280
           }
         ],
         "drawdown": [
@@ -154044,6 +154660,10 @@
           {
             "issue": 2026271,
             "value": 120
+          },
+          {
+            "issue": 2026272,
+            "value": 180
           }
         ],
         "hitRate": [
@@ -155010,6 +155630,10 @@
           {
             "issue": 2026271,
             "value": 0.15
+          },
+          {
+            "issue": 2026272,
+            "value": 0.15
           }
         ]
       }
@@ -155019,26 +155643,26 @@
       "note": "投入较低，覆盖减少。",
       "mode": null,
       "metrics": {
-        "totalPeriods": 241,
-        "betPeriods": 241,
-        "totalStake": 16630,
+        "totalPeriods": 242,
+        "betPeriods": 242,
+        "totalStake": 16700,
         "hitCount": 44,
-        "hitRate": 0.1826,
-        "hitRate10": 0.3,
+        "hitRate": 0.1818,
+        "hitRate10": 0.2,
         "hitRate20": 0.15,
         "hitRate30": 0.1333,
-        "cumulativeNet": 4050,
-        "roi": 0.2435,
-        "avgPerPeriod": 16.805,
+        "cumulativeNet": 3980,
+        "roi": 0.2383,
+        "avgPerPeriod": 16.4463,
         "maxConsecutiveMiss": 17,
-        "currentConsecutiveMiss": 2,
+        "currentConsecutiveMiss": 3,
         "maxDrawdown": 2140,
-        "maxDrawdownRate": 0.1287,
-        "currentDrawdown": 190,
-        "finalBankroll": 5050,
+        "maxDrawdownRate": 0.1281,
+        "currentDrawdown": 260,
+        "finalBankroll": 4980,
         "peakBankroll": 5240,
-        "profitPeriodRatio": 0.1826,
-        "netToDrawdown": 1.8925,
+        "profitPeriodRatio": 0.1818,
+        "netToDrawdown": 1.8598,
         "series": {
           "bankroll": [
             {
@@ -156004,6 +156628,10 @@
             {
               "issue": 2026271,
               "value": 5050
+            },
+            {
+              "issue": 2026272,
+              "value": 4980
             }
           ],
           "equity": [
@@ -156970,6 +157598,10 @@
             {
               "issue": 2026271,
               "value": 4050
+            },
+            {
+              "issue": 2026272,
+              "value": 3980
             }
           ],
           "drawdown": [
@@ -157936,6 +158568,10 @@
             {
               "issue": 2026271,
               "value": 190
+            },
+            {
+              "issue": 2026272,
+              "value": 260
             }
           ],
           "hitRate": [
@@ -158901,6 +159537,10 @@
             },
             {
               "issue": 2026271,
+              "value": 0.15
+            },
+            {
+              "issue": 2026272,
               "value": 0.15
             }
           ]
@@ -159871,6 +160511,10 @@
           {
             "issue": 2026271,
             "value": 5050
+          },
+          {
+            "issue": 2026272,
+            "value": 4980
           }
         ],
         "equity": [
@@ -160837,6 +161481,10 @@
           {
             "issue": 2026271,
             "value": 4050
+          },
+          {
+            "issue": 2026272,
+            "value": 3980
           }
         ],
         "drawdown": [
@@ -161803,6 +162451,10 @@
           {
             "issue": 2026271,
             "value": 190
+          },
+          {
+            "issue": 2026272,
+            "value": 260
           }
         ],
         "hitRate": [
@@ -162769,6 +163421,10 @@
           {
             "issue": 2026271,
             "value": 0.15
+          },
+          {
+            "issue": 2026272,
+            "value": 0.15
           }
         ]
       }
@@ -162778,26 +163434,26 @@
       "note": "精简方案，投入更低但覆盖减少。",
       "mode": null,
       "metrics": {
-        "totalPeriods": 241,
-        "betPeriods": 241,
-        "totalStake": 18900,
+        "totalPeriods": 242,
+        "betPeriods": 242,
+        "totalStake": 18980,
         "hitCount": 51,
-        "hitRate": 0.2116,
-        "hitRate10": 0.3,
+        "hitRate": 0.2107,
+        "hitRate10": 0.2,
         "hitRate20": 0.15,
         "hitRate30": 0.1667,
-        "cumulativeNet": 5070,
-        "roi": 0.2683,
-        "avgPerPeriod": 21.0373,
+        "cumulativeNet": 4990,
+        "roi": 0.2629,
+        "avgPerPeriod": 20.6198,
         "maxConsecutiveMiss": 17,
-        "currentConsecutiveMiss": 2,
+        "currentConsecutiveMiss": 3,
         "maxDrawdown": 2770,
-        "maxDrawdownRate": 0.1466,
-        "currentDrawdown": 230,
-        "finalBankroll": 6070,
+        "maxDrawdownRate": 0.1459,
+        "currentDrawdown": 310,
+        "finalBankroll": 5990,
         "peakBankroll": 6300,
-        "profitPeriodRatio": 0.2116,
-        "netToDrawdown": 1.8303,
+        "profitPeriodRatio": 0.2107,
+        "netToDrawdown": 1.8014,
         "series": {
           "bankroll": [
             {
@@ -163763,6 +164419,10 @@
             {
               "issue": 2026271,
               "value": 6070
+            },
+            {
+              "issue": 2026272,
+              "value": 5990
             }
           ],
           "equity": [
@@ -164729,6 +165389,10 @@
             {
               "issue": 2026271,
               "value": 5070
+            },
+            {
+              "issue": 2026272,
+              "value": 4990
             }
           ],
           "drawdown": [
@@ -165695,6 +166359,10 @@
             {
               "issue": 2026271,
               "value": 230
+            },
+            {
+              "issue": 2026272,
+              "value": 310
             }
           ],
           "hitRate": [
@@ -166660,6 +167328,10 @@
             },
             {
               "issue": 2026271,
+              "value": 0.15
+            },
+            {
+              "issue": 2026272,
               "value": 0.15
             }
           ]
@@ -167630,6 +168302,10 @@
           {
             "issue": 2026271,
             "value": 6070
+          },
+          {
+            "issue": 2026272,
+            "value": 5990
           }
         ],
         "equity": [
@@ -168596,6 +169272,10 @@
           {
             "issue": 2026271,
             "value": 5070
+          },
+          {
+            "issue": 2026272,
+            "value": 4990
           }
         ],
         "drawdown": [
@@ -169562,6 +170242,10 @@
           {
             "issue": 2026271,
             "value": 230
+          },
+          {
+            "issue": 2026272,
+            "value": 310
           }
         ],
         "hitRate": [
@@ -170528,6 +171212,10 @@
           {
             "issue": 2026271,
             "value": 0.15
+          },
+          {
+            "issue": 2026272,
+            "value": 0.15
           }
         ]
       }
@@ -170537,26 +171225,26 @@
       "note": "接近默认方案的更低投入版本。",
       "mode": null,
       "metrics": {
-        "totalPeriods": 241,
-        "betPeriods": 241,
-        "totalStake": 21120,
+        "totalPeriods": 242,
+        "betPeriods": 242,
+        "totalStake": 21210,
         "hitCount": 56,
-        "hitRate": 0.2324,
-        "hitRate10": 0.3,
+        "hitRate": 0.2314,
+        "hitRate10": 0.2,
         "hitRate20": 0.15,
         "hitRate30": 0.1667,
-        "cumulativeNet": 5200,
-        "roi": 0.2462,
-        "avgPerPeriod": 21.5768,
+        "cumulativeNet": 5110,
+        "roi": 0.2409,
+        "avgPerPeriod": 21.1157,
         "maxConsecutiveMiss": 17,
-        "currentConsecutiveMiss": 2,
+        "currentConsecutiveMiss": 3,
         "maxDrawdown": 3040,
-        "maxDrawdownRate": 0.1439,
-        "currentDrawdown": 420,
-        "finalBankroll": 6200,
+        "maxDrawdownRate": 0.1433,
+        "currentDrawdown": 510,
+        "finalBankroll": 6110,
         "peakBankroll": 6620,
-        "profitPeriodRatio": 0.2324,
-        "netToDrawdown": 1.7105,
+        "profitPeriodRatio": 0.2314,
+        "netToDrawdown": 1.6809,
         "series": {
           "bankroll": [
             {
@@ -171522,6 +172210,10 @@
             {
               "issue": 2026271,
               "value": 6200
+            },
+            {
+              "issue": 2026272,
+              "value": 6110
             }
           ],
           "equity": [
@@ -172488,6 +173180,10 @@
             {
               "issue": 2026271,
               "value": 5200
+            },
+            {
+              "issue": 2026272,
+              "value": 5110
             }
           ],
           "drawdown": [
@@ -173454,6 +174150,10 @@
             {
               "issue": 2026271,
               "value": 420
+            },
+            {
+              "issue": 2026272,
+              "value": 510
             }
           ],
           "hitRate": [
@@ -174419,6 +175119,10 @@
             },
             {
               "issue": 2026271,
+              "value": 0.15
+            },
+            {
+              "issue": 2026272,
               "value": 0.15
             }
           ]
@@ -175389,6 +176093,10 @@
           {
             "issue": 2026271,
             "value": 6200
+          },
+          {
+            "issue": 2026272,
+            "value": 6110
           }
         ],
         "equity": [
@@ -176355,6 +177063,10 @@
           {
             "issue": 2026271,
             "value": 5200
+          },
+          {
+            "issue": 2026272,
+            "value": 5110
           }
         ],
         "drawdown": [
@@ -177321,6 +178033,10 @@
           {
             "issue": 2026271,
             "value": 420
+          },
+          {
+            "issue": 2026272,
+            "value": 510
           }
         ],
         "hitRate": [
@@ -178287,6 +179003,10 @@
           {
             "issue": 2026271,
             "value": 0.15
+          },
+          {
+            "issue": 2026272,
+            "value": 0.15
           }
         ]
       }
@@ -178296,26 +179016,26 @@
       "note": "与诸葛策略相同的选号结果。",
       "mode": null,
       "metrics": {
-        "totalPeriods": 241,
-        "betPeriods": 241,
-        "totalStake": 23340,
+        "totalPeriods": 242,
+        "betPeriods": 242,
+        "totalStake": 23440,
         "hitCount": 59,
-        "hitRate": 0.2448,
-        "hitRate10": 0.3,
+        "hitRate": 0.2438,
+        "hitRate10": 0.2,
         "hitRate20": 0.15,
         "hitRate30": 0.1667,
-        "cumulativeNet": 4390,
-        "roi": 0.1881,
-        "avgPerPeriod": 18.2158,
+        "cumulativeNet": 4290,
+        "roi": 0.183,
+        "avgPerPeriod": 17.7273,
         "maxConsecutiveMiss": 17,
-        "currentConsecutiveMiss": 2,
+        "currentConsecutiveMiss": 3,
         "maxDrawdown": 3160,
-        "maxDrawdownRate": 0.1354,
-        "currentDrawdown": 760,
-        "finalBankroll": 5390,
+        "maxDrawdownRate": 0.1348,
+        "currentDrawdown": 860,
+        "finalBankroll": 5290,
         "peakBankroll": 6150,
-        "profitPeriodRatio": 0.2448,
-        "netToDrawdown": 1.3892,
+        "profitPeriodRatio": 0.2438,
+        "netToDrawdown": 1.3576,
         "series": {
           "bankroll": [
             {
@@ -179281,6 +180001,10 @@
             {
               "issue": 2026271,
               "value": 5390
+            },
+            {
+              "issue": 2026272,
+              "value": 5290
             }
           ],
           "equity": [
@@ -180247,6 +180971,10 @@
             {
               "issue": 2026271,
               "value": 4390
+            },
+            {
+              "issue": 2026272,
+              "value": 4290
             }
           ],
           "drawdown": [
@@ -181213,6 +181941,10 @@
             {
               "issue": 2026271,
               "value": 760
+            },
+            {
+              "issue": 2026272,
+              "value": 860
             }
           ],
           "hitRate": [
@@ -182178,6 +182910,10 @@
             },
             {
               "issue": 2026271,
+              "value": 0.15
+            },
+            {
+              "issue": 2026272,
               "value": 0.15
             }
           ]
@@ -183148,6 +183884,10 @@
           {
             "issue": 2026271,
             "value": 5390
+          },
+          {
+            "issue": 2026272,
+            "value": 5290
           }
         ],
         "equity": [
@@ -184114,6 +184854,10 @@
           {
             "issue": 2026271,
             "value": 4390
+          },
+          {
+            "issue": 2026272,
+            "value": 4290
           }
         ],
         "drawdown": [
@@ -185080,6 +185824,10 @@
           {
             "issue": 2026271,
             "value": 760
+          },
+          {
+            "issue": 2026272,
+            "value": 860
           }
         ],
         "hitRate": [
@@ -186046,6 +186794,10 @@
           {
             "issue": 2026271,
             "value": 0.15
+          },
+          {
+            "issue": 2026272,
+            "value": 0.15
           }
         ]
       }
@@ -186055,26 +186807,26 @@
       "note": "天罗候选的中间档位。",
       "mode": null,
       "metrics": {
-        "totalPeriods": 241,
-        "betPeriods": 241,
-        "totalStake": 25470,
+        "totalPeriods": 242,
+        "betPeriods": 242,
+        "totalStake": 25580,
         "hitCount": 61,
-        "hitRate": 0.2531,
-        "hitRate10": 0.3,
+        "hitRate": 0.2521,
+        "hitRate10": 0.2,
         "hitRate20": 0.15,
         "hitRate30": 0.1667,
-        "cumulativeNet": 3200,
-        "roi": 0.1256,
-        "avgPerPeriod": 13.278,
+        "cumulativeNet": 3090,
+        "roi": 0.1208,
+        "avgPerPeriod": 12.7686,
         "maxConsecutiveMiss": 17,
-        "currentConsecutiveMiss": 2,
+        "currentConsecutiveMiss": 3,
         "maxDrawdown": 3680,
-        "maxDrawdownRate": 0.1445,
-        "currentDrawdown": 910,
-        "finalBankroll": 4200,
+        "maxDrawdownRate": 0.1439,
+        "currentDrawdown": 1020,
+        "finalBankroll": 4090,
         "peakBankroll": 5110,
-        "profitPeriodRatio": 0.2531,
-        "netToDrawdown": 0.8696,
+        "profitPeriodRatio": 0.2521,
+        "netToDrawdown": 0.8397,
         "series": {
           "bankroll": [
             {
@@ -187040,6 +187792,10 @@
             {
               "issue": 2026271,
               "value": 4200
+            },
+            {
+              "issue": 2026272,
+              "value": 4090
             }
           ],
           "equity": [
@@ -188006,6 +188762,10 @@
             {
               "issue": 2026271,
               "value": 3200
+            },
+            {
+              "issue": 2026272,
+              "value": 3090
             }
           ],
           "drawdown": [
@@ -188972,6 +189732,10 @@
             {
               "issue": 2026271,
               "value": 910
+            },
+            {
+              "issue": 2026272,
+              "value": 1020
             }
           ],
           "hitRate": [
@@ -189937,6 +190701,10 @@
             },
             {
               "issue": 2026271,
+              "value": 0.15
+            },
+            {
+              "issue": 2026272,
               "value": 0.15
             }
           ]
@@ -190907,6 +191675,10 @@
           {
             "issue": 2026271,
             "value": 4200
+          },
+          {
+            "issue": 2026272,
+            "value": 4090
           }
         ],
         "equity": [
@@ -191873,6 +192645,10 @@
           {
             "issue": 2026271,
             "value": 3200
+          },
+          {
+            "issue": 2026272,
+            "value": 3090
           }
         ],
         "drawdown": [
@@ -192839,6 +193615,10 @@
           {
             "issue": 2026271,
             "value": 910
+          },
+          {
+            "issue": 2026272,
+            "value": 1020
           }
         ],
         "hitRate": [
@@ -193805,6 +194585,10 @@
           {
             "issue": 2026271,
             "value": 0.15
+          },
+          {
+            "issue": 2026272,
+            "value": 0.15
           }
         ]
       }
@@ -193814,26 +194598,26 @@
       "note": "天罗模式，历史命中率更高，但每期需要120元预算。",
       "mode": "tianluo",
       "metrics": {
-        "totalPeriods": 241,
-        "betPeriods": 241,
-        "totalStake": 27610,
+        "totalPeriods": 242,
+        "betPeriods": 242,
+        "totalStake": 27730,
         "hitCount": 65,
-        "hitRate": 0.2697,
-        "hitRate10": 0.3,
+        "hitRate": 0.2686,
+        "hitRate10": 0.2,
         "hitRate20": 0.15,
         "hitRate30": 0.1667,
-        "cumulativeNet": 2940,
-        "roi": 0.1065,
-        "avgPerPeriod": 12.1992,
+        "cumulativeNet": 2820,
+        "roi": 0.1017,
+        "avgPerPeriod": 11.6529,
         "maxConsecutiveMiss": 17,
-        "currentConsecutiveMiss": 2,
+        "currentConsecutiveMiss": 3,
         "maxDrawdown": 2710,
-        "maxDrawdownRate": 0.0982,
-        "currentDrawdown": 1170,
-        "finalBankroll": 3940,
+        "maxDrawdownRate": 0.0977,
+        "currentDrawdown": 1290,
+        "finalBankroll": 3820,
         "peakBankroll": 5110,
-        "profitPeriodRatio": 0.2697,
-        "netToDrawdown": 1.0849,
+        "profitPeriodRatio": 0.2686,
+        "netToDrawdown": 1.0406,
         "series": {
           "bankroll": [
             {
@@ -194799,6 +195583,10 @@
             {
               "issue": 2026271,
               "value": 3940
+            },
+            {
+              "issue": 2026272,
+              "value": 3820
             }
           ],
           "equity": [
@@ -195765,6 +196553,10 @@
             {
               "issue": 2026271,
               "value": 2940
+            },
+            {
+              "issue": 2026272,
+              "value": 2820
             }
           ],
           "drawdown": [
@@ -196731,6 +197523,10 @@
             {
               "issue": 2026271,
               "value": 1170
+            },
+            {
+              "issue": 2026272,
+              "value": 1290
             }
           ],
           "hitRate": [
@@ -197696,6 +198492,10 @@
             },
             {
               "issue": 2026271,
+              "value": 0.15
+            },
+            {
+              "issue": 2026272,
               "value": 0.15
             }
           ]
@@ -198666,6 +199466,10 @@
           {
             "issue": 2026271,
             "value": 3940
+          },
+          {
+            "issue": 2026272,
+            "value": 3820
           }
         ],
         "equity": [
@@ -199632,6 +200436,10 @@
           {
             "issue": 2026271,
             "value": 2940
+          },
+          {
+            "issue": 2026272,
+            "value": 2820
           }
         ],
         "drawdown": [
@@ -200598,6 +201406,10 @@
           {
             "issue": 2026271,
             "value": 1170
+          },
+          {
+            "issue": 2026272,
+            "value": 1290
           }
         ],
         "hitRate": [
@@ -201564,6 +202376,10 @@
           {
             "issue": 2026271,
             "value": 0.15
+          },
+          {
+            "issue": 2026272,
+            "value": 0.15
           }
         ]
       }
@@ -201573,26 +202389,26 @@
       "note": "用单一号码预期收益筛选，仅供对照。",
       "mode": null,
       "metrics": {
-        "totalPeriods": 241,
-        "betPeriods": 241,
-        "totalStake": 22450,
+        "totalPeriods": 242,
+        "betPeriods": 242,
+        "totalStake": 22550,
         "hitCount": 47,
-        "hitRate": 0.195,
+        "hitRate": 0.1942,
         "hitRate10": 0.1,
         "hitRate20": 0.05,
         "hitRate30": 0.1,
-        "cumulativeNet": -340,
-        "roi": -0.0151,
-        "avgPerPeriod": -1.4108,
+        "cumulativeNet": -440,
+        "roi": -0.0195,
+        "avgPerPeriod": -1.8182,
         "maxConsecutiveMiss": 20,
-        "currentConsecutiveMiss": 8,
+        "currentConsecutiveMiss": 9,
         "maxDrawdown": 3670,
-        "maxDrawdownRate": 0.1635,
-        "currentDrawdown": 2090,
-        "finalBankroll": 660,
+        "maxDrawdownRate": 0.1627,
+        "currentDrawdown": 2190,
+        "finalBankroll": 560,
         "peakBankroll": 2750,
-        "profitPeriodRatio": 0.195,
-        "netToDrawdown": -0.0926,
+        "profitPeriodRatio": 0.1942,
+        "netToDrawdown": -0.1199,
         "series": {
           "bankroll": [
             {
@@ -202558,6 +203374,10 @@
             {
               "issue": 2026271,
               "value": 660
+            },
+            {
+              "issue": 2026272,
+              "value": 560
             }
           ],
           "equity": [
@@ -203524,6 +204344,10 @@
             {
               "issue": 2026271,
               "value": -340
+            },
+            {
+              "issue": 2026272,
+              "value": -440
             }
           ],
           "drawdown": [
@@ -204490,6 +205314,10 @@
             {
               "issue": 2026271,
               "value": 2090
+            },
+            {
+              "issue": 2026272,
+              "value": 2190
             }
           ],
           "hitRate": [
@@ -205455,6 +206283,10 @@
             },
             {
               "issue": 2026271,
+              "value": 0.05
+            },
+            {
+              "issue": 2026272,
               "value": 0.05
             }
           ]
@@ -206425,6 +207257,10 @@
           {
             "issue": 2026271,
             "value": 660
+          },
+          {
+            "issue": 2026272,
+            "value": 560
           }
         ],
         "equity": [
@@ -207391,6 +208227,10 @@
           {
             "issue": 2026271,
             "value": -340
+          },
+          {
+            "issue": 2026272,
+            "value": -440
           }
         ],
         "drawdown": [
@@ -208357,6 +209197,10 @@
           {
             "issue": 2026271,
             "value": 2090
+          },
+          {
+            "issue": 2026272,
+            "value": 2190
           }
         ],
         "hitRate": [
@@ -209323,6 +210167,10 @@
           {
             "issue": 2026271,
             "value": 0.05
+          },
+          {
+            "issue": 2026272,
+            "value": 0.05
           }
         ]
       }
@@ -209332,26 +210180,26 @@
       "note": "动态选择号码数量，仅供对照。",
       "mode": null,
       "metrics": {
-        "totalPeriods": 241,
-        "betPeriods": 241,
-        "totalStake": 17780,
+        "totalPeriods": 242,
+        "betPeriods": 242,
+        "totalStake": 17860,
         "hitCount": 42,
-        "hitRate": 0.1743,
-        "hitRate10": 0.3,
+        "hitRate": 0.1736,
+        "hitRate10": 0.2,
         "hitRate20": 0.15,
         "hitRate30": 0.1667,
-        "cumulativeNet": 1960,
-        "roi": 0.1102,
-        "avgPerPeriod": 8.1328,
+        "cumulativeNet": 1880,
+        "roi": 0.1053,
+        "avgPerPeriod": 7.7686,
         "maxConsecutiveMiss": 33,
-        "currentConsecutiveMiss": 2,
+        "currentConsecutiveMiss": 3,
         "maxDrawdown": 2890,
-        "maxDrawdownRate": 0.1625,
-        "currentDrawdown": 370,
-        "finalBankroll": 2960,
+        "maxDrawdownRate": 0.1618,
+        "currentDrawdown": 450,
+        "finalBankroll": 2880,
         "peakBankroll": 3330,
-        "profitPeriodRatio": 0.1743,
-        "netToDrawdown": 0.6782,
+        "profitPeriodRatio": 0.1736,
+        "netToDrawdown": 0.6505,
         "series": {
           "bankroll": [
             {
@@ -210317,6 +211165,10 @@
             {
               "issue": 2026271,
               "value": 2960
+            },
+            {
+              "issue": 2026272,
+              "value": 2880
             }
           ],
           "equity": [
@@ -211283,6 +212135,10 @@
             {
               "issue": 2026271,
               "value": 1960
+            },
+            {
+              "issue": 2026272,
+              "value": 1880
             }
           ],
           "drawdown": [
@@ -212249,6 +213105,10 @@
             {
               "issue": 2026271,
               "value": 370
+            },
+            {
+              "issue": 2026272,
+              "value": 450
             }
           ],
           "hitRate": [
@@ -213214,6 +214074,10 @@
             },
             {
               "issue": 2026271,
+              "value": 0.15
+            },
+            {
+              "issue": 2026272,
               "value": 0.15
             }
           ]
@@ -214184,6 +215048,10 @@
           {
             "issue": 2026271,
             "value": 2960
+          },
+          {
+            "issue": 2026272,
+            "value": 2880
           }
         ],
         "equity": [
@@ -215150,6 +216018,10 @@
           {
             "issue": 2026271,
             "value": 1960
+          },
+          {
+            "issue": 2026272,
+            "value": 1880
           }
         ],
         "drawdown": [
@@ -216116,6 +216988,10 @@
           {
             "issue": 2026271,
             "value": 370
+          },
+          {
+            "issue": 2026272,
+            "value": 450
           }
         ],
         "hitRate": [
@@ -217082,6 +217958,10 @@
           {
             "issue": 2026271,
             "value": 0.15
+          },
+          {
+            "issue": 2026272,
+            "value": 0.15
           }
         ]
       }
@@ -217091,26 +217971,26 @@
       "note": "慧算模式，先选8个核心号码，再根据历史表现动态决定是否补到12码。",
       "mode": "huisuan",
       "metrics": {
-        "totalPeriods": 241,
-        "betPeriods": 241,
-        "totalStake": 20050,
+        "totalPeriods": 242,
+        "betPeriods": 242,
+        "totalStake": 20130,
         "hitCount": 52,
-        "hitRate": 0.2158,
-        "hitRate10": 0.3,
+        "hitRate": 0.2149,
+        "hitRate10": 0.2,
         "hitRate20": 0.15,
         "hitRate30": 0.1667,
-        "cumulativeNet": 4390,
-        "roi": 0.219,
-        "avgPerPeriod": 18.2158,
+        "cumulativeNet": 4310,
+        "roi": 0.2141,
+        "avgPerPeriod": 17.8099,
         "maxConsecutiveMiss": 17,
-        "currentConsecutiveMiss": 2,
+        "currentConsecutiveMiss": 3,
         "maxDrawdown": 2770,
-        "maxDrawdownRate": 0.1382,
-        "currentDrawdown": 370,
-        "finalBankroll": 5390,
+        "maxDrawdownRate": 0.1376,
+        "currentDrawdown": 450,
+        "finalBankroll": 5310,
         "peakBankroll": 5760,
-        "profitPeriodRatio": 0.2158,
-        "netToDrawdown": 1.5848,
+        "profitPeriodRatio": 0.2149,
+        "netToDrawdown": 1.556,
         "series": {
           "bankroll": [
             {
@@ -218076,6 +218956,10 @@
             {
               "issue": 2026271,
               "value": 5390
+            },
+            {
+              "issue": 2026272,
+              "value": 5310
             }
           ],
           "equity": [
@@ -219042,6 +219926,10 @@
             {
               "issue": 2026271,
               "value": 4390
+            },
+            {
+              "issue": 2026272,
+              "value": 4310
             }
           ],
           "drawdown": [
@@ -220008,6 +220896,10 @@
             {
               "issue": 2026271,
               "value": 370
+            },
+            {
+              "issue": 2026272,
+              "value": 450
             }
           ],
           "hitRate": [
@@ -220973,6 +221865,10 @@
             },
             {
               "issue": 2026271,
+              "value": 0.15
+            },
+            {
+              "issue": 2026272,
               "value": 0.15
             }
           ]
@@ -221943,6 +222839,10 @@
           {
             "issue": 2026271,
             "value": 5390
+          },
+          {
+            "issue": 2026272,
+            "value": 5310
           }
         ],
         "equity": [
@@ -222909,6 +223809,10 @@
           {
             "issue": 2026271,
             "value": 4390
+          },
+          {
+            "issue": 2026272,
+            "value": 4310
           }
         ],
         "drawdown": [
@@ -223875,6 +224779,10 @@
           {
             "issue": 2026271,
             "value": 370
+          },
+          {
+            "issue": 2026272,
+            "value": 450
           }
         ],
         "hitRate": [
@@ -224840,6 +225748,10 @@
           },
           {
             "issue": 2026271,
+            "value": 0.15
+          },
+          {
+            "issue": 2026272,
             "value": 0.15
           }
         ]
