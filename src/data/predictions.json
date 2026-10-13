@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-10-12T00:59:56.006Z",
-  "nextIssue": 2026285,
-  "latestIssue": 2026284,
-  "totalPeriods": 284,
-  "latestSpecial": 32,
-  "latestZodiac": "猪",
+  "generated_at": "2026-10-13T00:05:58.309Z",
+  "nextIssue": 2026286,
+  "latestIssue": 2026285,
+  "totalPeriods": 285,
+  "latestSpecial": 19,
+  "latestZodiac": "鼠",
   "branding": {
     "siteName": "诸葛六合",
     "mainStrategy": "诸葛策略",
@@ -40,40 +40,40 @@
       100
     ],
     "calibrationMethod": "platt",
-    "calibrationSamples": 12446,
+    "calibrationSamples": 12495,
     "activeConfigLabel": "default · number+conditional · w30/50/80/100",
     "flowName": "三才定码"
   },
   "topZodiacs": [
     {
       "zodiac": "鸡",
-      "score": 0.5937096774193547,
+      "score": 0.608279569892473,
       "frequencyScore": 0.9999999999999999,
-      "omissionScore": 0.1,
+      "omissionScore": 0.13333333333333333,
       "recentTrendScore": 1,
-      "gapScore": 0.0913978494623656,
-      "omission": 3,
-      "probability": 0.1136
+      "gapScore": 0.12186379928315413,
+      "omission": 4,
+      "probability": 0.1177
     },
     {
       "zodiac": "马",
-      "score": 0.5636363636363636,
+      "score": 0.5736363636363636,
       "frequencyScore": 0.41038961038961036,
-      "omissionScore": 0.6333333333333333,
+      "omissionScore": 0.6666666666666666,
       "recentTrendScore": 0.4,
       "gapScore": 1,
-      "omission": 19,
-      "probability": 0.1078
+      "omission": 20,
+      "probability": 0.111
     },
     {
       "zodiac": "兔",
-      "score": 0.513015093015093,
+      "score": 0.5299648999648999,
       "frequencyScore": 0.46233766233766227,
-      "omissionScore": 0.5333333333333333,
+      "omissionScore": 0.5666666666666667,
       "recentTrendScore": 0.4,
-      "gapScore": 0.7413127413127414,
-      "omission": 16,
-      "probability": 0.0981
+      "gapScore": 0.7876447876447877,
+      "omission": 17,
+      "probability": 0.1026
     }
   ],
   "topNumbers": [
@@ -81,14 +81,14 @@
       "number": 40,
       "zodiac": "兔",
       "color": "red",
-      "numberScore": 0.5314,
-      "calibratedProbability": 0.027,
+      "numberScore": 0.5405,
+      "calibratedProbability": 0.0271,
       "components": {
         "frequency": 0.9,
-        "omission": 0.5333,
+        "omission": 0.5667,
         "conditional": 0.2414,
         "recent": 0.3,
-        "zodiac": 0.513,
+        "zodiac": 0.53,
         "tail": 0.55
       }
     },
@@ -96,14 +96,14 @@
       "number": 10,
       "zodiac": "鸡",
       "color": "blue",
-      "numberScore": 0.5261,
-      "calibratedProbability": 0.027,
+      "numberScore": 0.535,
+      "calibratedProbability": 0.0271,
       "components": {
         "frequency": 0.95,
-        "omission": 0.1,
+        "omission": 0.1333,
         "conditional": 0.2727,
         "recent": 1,
-        "zodiac": 0.5937,
+        "zodiac": 0.6083,
         "tail": 0.55
       }
     },
@@ -111,14 +111,14 @@
       "number": 22,
       "zodiac": "鸡",
       "color": "green",
-      "numberScore": 0.4873,
-      "calibratedProbability": 0.0268,
+      "numberScore": 0.4962,
+      "calibratedProbability": 0.0269,
       "components": {
         "frequency": 0.7,
-        "omission": 0.5,
+        "omission": 0.5333,
         "conditional": 0.3182,
         "recent": 0.15,
-        "zodiac": 0.5937,
+        "zodiac": 0.6083,
         "tail": 0.625
       }
     },
@@ -126,14 +126,14 @@
       "number": 1,
       "zodiac": "马",
       "color": "red",
-      "numberScore": 0.4741,
-      "calibratedProbability": 0.0268,
+      "numberScore": 0.4826,
+      "calibratedProbability": 0.0269,
       "components": {
         "frequency": 0.225,
-        "omission": 0.9333,
+        "omission": 0.9667,
         "conditional": 0.381,
         "recent": 0,
-        "zodiac": 0.5636,
+        "zodiac": 0.5736,
         "tail": 1
       }
     },
@@ -141,14 +141,14 @@
       "number": 46,
       "zodiac": "鸡",
       "color": "red",
-      "numberScore": 0.4548,
-      "calibratedProbability": 0.0267,
+      "numberScore": 0.4637,
+      "calibratedProbability": 0.0268,
       "components": {
         "frequency": 0.275,
-        "omission": 0.8667,
+        "omission": 0.9,
         "conditional": 0.3182,
         "recent": 0,
-        "zodiac": 0.5937,
+        "zodiac": 0.6083,
         "tail": 0.925
       }
     },
@@ -156,14 +156,14 @@
       "number": 16,
       "zodiac": "兔",
       "color": "green",
-      "numberScore": 0.4424,
-      "calibratedProbability": 0.0266,
+      "numberScore": 0.444,
+      "calibratedProbability": 0.0267,
       "components": {
         "frequency": 0.05,
         "omission": 1,
         "conditional": 0.4138,
         "recent": 0,
-        "zodiac": 0.513,
+        "zodiac": 0.53,
         "tail": 0.925
       }
     },
@@ -171,29 +171,29 @@
       "number": 49,
       "zodiac": "马",
       "color": "green",
-      "numberScore": 0.4312,
-      "calibratedProbability": 0.0266,
+      "numberScore": 0.3727,
+      "calibratedProbability": 0.0263,
       "components": {
-        "frequency": 0.475,
-        "omission": 0.6333,
+        "frequency": 0.275,
+        "omission": 0.6667,
         "conditional": 0.1905,
-        "recent": 0.15,
-        "zodiac": 0.5636,
-        "tail": 0.9
+        "recent": 0,
+        "zodiac": 0.5736,
+        "tail": 0.925
       }
     },
     {
       "number": 28,
       "zodiac": "兔",
       "color": "green",
-      "numberScore": 0.367,
+      "numberScore": 0.3686,
       "calibratedProbability": 0.0263,
       "components": {
         "frequency": 0,
         "omission": 1,
         "conditional": 0.2414,
         "recent": 0,
-        "zodiac": 0.513,
+        "zodiac": 0.53,
         "tail": 0.6
       }
     },
@@ -201,14 +201,14 @@
       "number": 37,
       "zodiac": "马",
       "color": "blue",
-      "numberScore": 0.3623,
+      "numberScore": 0.3632,
       "calibratedProbability": 0.0263,
       "components": {
         "frequency": 0,
         "omission": 1,
         "conditional": 0.1905,
         "recent": 0,
-        "zodiac": 0.5636,
+        "zodiac": 0.5736,
         "tail": 0.7
       }
     },
@@ -216,22 +216,22 @@
       "number": 13,
       "zodiac": "马",
       "color": "red",
-      "numberScore": 0.3428,
+      "numberScore": 0.3437,
       "calibratedProbability": 0.0262,
       "components": {
         "frequency": 0,
         "omission": 1,
         "conditional": 0.119,
         "recent": 0,
-        "zodiac": 0.5636,
+        "zodiac": 0.5736,
         "tail": 0.7
       }
     }
   ],
   "coreMetrics": {
     "overall": {
-      "hitRate": 0.2283,
-      "sample": 254
+      "hitRate": 0.2275,
+      "sample": 255
     },
     "last10": {
       "hitRate": 0.2,
@@ -245,9 +245,9 @@
       "hitRate": 0.1667,
       "sample": 30
     },
-    "currentMissStreak": 0,
+    "currentMissStreak": 1,
     "maxMissStreak": 19,
-    "currentDrawdown": 970,
+    "currentDrawdown": 1070,
     "maxDrawdown": 3320
   },
   "earnings": {
@@ -256,27 +256,27 @@
     "perCode": 10,
     "hitNet": 370,
     "missLoss": -100,
-    "ev": 7.301,
-    "roi": 0.0992,
-    "pAny": 0.2283,
+    "ev": 6.925,
+    "roi": 0.0948,
+    "pAny": 0.2275,
     "pAnySource": "walk_forward"
   },
   "conclusion": {
     "sentence": "当前生肖方向集中在鸡、马、兔，结合候选池中的号码频次、遗漏与条件概率，模型最终筛选出10个核心号码。",
-    "hitRate": 0.2283,
+    "hitRate": 0.2275,
     "last30": 0.1667,
     "last20": 0.15,
     "last10": 0.2,
-    "currentMissStreak": 0,
+    "currentMissStreak": 1,
     "maxMissStreak": 19
   },
   "modelExplanation": {
-    "frequency": 0.0975,
-    "omission": 0.172,
+    "frequency": 0.092,
+    "omission": 0.1765,
     "conditional": 0.0733,
-    "recent": 0.0145,
-    "zodiac": 0.0507,
-    "tail": 0.034
+    "recent": 0.0132,
+    "zodiac": 0.0519,
+    "tail": 0.0341
   },
   "modes": {
     "tianluo": {
@@ -300,8 +300,8 @@
       "stake": 120,
       "hitNet": 350,
       "missLoss": -120,
-      "ev": 29.8324,
-      "pAny": 0.3188,
+      "ev": 29.9225,
+      "pAny": 0.319,
       "note": "覆盖更多号码，历史命中率更高，但预算更高。"
     },
     "zhuge": {
@@ -323,8 +323,8 @@
       "stake": 100,
       "hitNet": 370,
       "missLoss": -100,
-      "ev": 7.301,
-      "pAny": 0.2283,
+      "ev": 6.925,
+      "pAny": 0.2275,
       "note": "命中率、收益与预算之间较平衡，是当前默认主策略。"
     },
     "huisuan": {
@@ -345,8 +345,8 @@
       "stake": 90,
       "hitNet": 380,
       "missLoss": -90,
-      "ev": 22.9104,
-      "pAny": 0.2402,
+      "ev": 23.0135,
+      "pAny": 0.2405,
       "note": "先选8个核心号码，再根据历史表现动态决定是否补码。"
     }
   },
@@ -359,10 +359,10 @@
         "numbers": [
           40
         ],
-        "pAny": 0.027,
+        "pAny": 0.0271,
         "hitNet": 460,
         "missLoss": -10,
-        "ev": 2.7079,
+        "ev": 2.7565,
         "pAnySource": "calibrated_sum"
       },
       "kelly": {
@@ -376,10 +376,10 @@
           1,
           46
         ],
-        "pAny": 0.1344,
+        "pAny": 0.1348,
         "hitNet": 420,
         "missLoss": -50,
-        "ev": 13.1583,
+        "ev": 13.3645,
         "pAnySource": "calibrated_sum"
       }
     },
@@ -392,10 +392,10 @@
           40,
           10
         ],
-        "pAny": 0.0541,
+        "pAny": 0.0543,
         "hitNet": 450,
         "missLoss": -20,
-        "ev": 5.4047,
+        "ev": 5.5003,
         "pAnySource": "calibrated_sum"
       },
       "kelly": {
@@ -409,10 +409,10 @@
           1,
           46
         ],
-        "pAny": 0.1344,
+        "pAny": 0.1348,
         "hitNet": 420,
         "missLoss": -50,
-        "ev": 13.1583,
+        "ev": 13.3645,
         "pAnySource": "calibrated_sum"
       }
     },
@@ -426,10 +426,10 @@
           10,
           22
         ],
-        "pAny": 0.0809,
+        "pAny": 0.0812,
         "hitNet": 440,
         "missLoss": -30,
-        "ev": 8.0208,
+        "ev": 8.1564,
         "pAnySource": "calibrated_sum"
       },
       "kelly": {
@@ -443,10 +443,10 @@
           1,
           46
         ],
-        "pAny": 0.1344,
+        "pAny": 0.1348,
         "hitNet": 420,
         "missLoss": -50,
-        "ev": 13.1583,
+        "ev": 13.3645,
         "pAnySource": "calibrated_sum"
       }
     },
@@ -461,10 +461,10 @@
           22,
           1
         ],
-        "pAny": 0.1077,
+        "pAny": 0.108,
         "hitNet": 430,
         "missLoss": -40,
-        "ev": 10.6095,
+        "ev": 10.7817,
         "pAnySource": "calibrated_sum"
       },
       "kelly": {
@@ -478,10 +478,10 @@
           1,
           46
         ],
-        "pAny": 0.1344,
+        "pAny": 0.1348,
         "hitNet": 420,
         "missLoss": -50,
-        "ev": 13.1583,
+        "ev": 13.3645,
         "pAnySource": "calibrated_sum"
       }
     },
@@ -497,10 +497,10 @@
           1,
           46
         ],
-        "pAny": 0.1344,
+        "pAny": 0.1348,
         "hitNet": 420,
         "missLoss": -50,
-        "ev": 13.1583,
+        "ev": 13.3645,
         "pAnySource": "calibrated_sum"
       },
       "kelly": {
@@ -514,10 +514,10 @@
           1,
           46
         ],
-        "pAny": 0.1344,
+        "pAny": 0.1348,
         "hitNet": 420,
         "missLoss": -50,
-        "ev": 13.1583,
+        "ev": 13.3645,
         "pAnySource": "calibrated_sum"
       }
     },
@@ -534,10 +534,10 @@
           46,
           16
         ],
-        "pAny": 0.161,
+        "pAny": 0.1615,
         "hitNet": 410,
         "missLoss": -60,
-        "ev": 15.6817,
+        "ev": 15.9031,
         "pAnySource": "calibrated_sum"
       },
       "kelly": {
@@ -551,10 +551,10 @@
           1,
           46
         ],
-        "pAny": 0.1344,
+        "pAny": 0.1348,
         "hitNet": 420,
         "missLoss": -50,
-        "ev": 13.1583,
+        "ev": 13.3645,
         "pAnySource": "calibrated_sum"
       }
     },
@@ -572,10 +572,10 @@
           16,
           49
         ],
-        "pAny": 0.1876,
+        "pAny": 0.1878,
         "hitNet": 400,
         "missLoss": -70,
-        "ev": 18.182,
+        "ev": 18.2832,
         "pAnySource": "calibrated_sum"
       },
       "kelly": {
@@ -589,10 +589,10 @@
           1,
           46
         ],
-        "pAny": 0.1344,
+        "pAny": 0.1348,
         "hitNet": 420,
         "missLoss": -50,
-        "ev": 13.1583,
+        "ev": 13.3645,
         "pAnySource": "calibrated_sum"
       }
     },
@@ -611,10 +611,10 @@
           49,
           28
         ],
-        "pAny": 0.2139,
+        "pAny": 0.2142,
         "hitNet": 390,
         "missLoss": -80,
-        "ev": 20.551,
+        "ev": 20.6543,
         "pAnySource": "calibrated_sum"
       },
       "kelly": {
@@ -633,10 +633,10 @@
           37,
           13
         ],
-        "pAny": 0.2283,
+        "pAny": 0.2275,
         "hitNet": 370,
         "missLoss": -100,
-        "ev": 7.301,
+        "ev": 6.925,
         "pAnySource": "calibrated_sum"
       }
     },
@@ -656,10 +656,10 @@
           28,
           37
         ],
-        "pAny": 0.2402,
+        "pAny": 0.2405,
         "hitNet": 380,
         "missLoss": -90,
-        "ev": 22.9104,
+        "ev": 23.0135,
         "pAnySource": "calibrated_sum"
       },
       "kelly": {
@@ -678,10 +678,10 @@
           37,
           13
         ],
-        "pAny": 0.2283,
+        "pAny": 0.2275,
         "hitNet": 370,
         "missLoss": -100,
-        "ev": 7.301,
+        "ev": 6.925,
         "pAnySource": "calibrated_sum"
       }
     },
@@ -702,10 +702,10 @@
           37,
           13
         ],
-        "pAny": 0.2283,
+        "pAny": 0.2275,
         "hitNet": 370,
         "missLoss": -100,
-        "ev": 7.301,
+        "ev": 6.925,
         "pAnySource": "walk_forward"
       },
       "kelly": {
@@ -724,10 +724,10 @@
           37,
           13
         ],
-        "pAny": 0.2283,
+        "pAny": 0.2275,
         "hitNet": 370,
         "missLoss": -100,
-        "ev": 7.301,
+        "ev": 6.925,
         "pAnySource": "calibrated_sum"
       }
     },
@@ -749,10 +749,10 @@
           13,
           25
         ],
-        "pAny": 0.2926,
+        "pAny": 0.2928,
         "hitNet": 360,
         "missLoss": -110,
-        "ev": 27.5432,
+        "ev": 27.6386,
         "pAnySource": "calibrated_sum"
       },
       "kelly": {
@@ -772,10 +772,10 @@
           13,
           25
         ],
-        "pAny": 0.2926,
+        "pAny": 0.2928,
         "hitNet": 360,
         "missLoss": -110,
-        "ev": 27.5432,
+        "ev": 27.6386,
         "pAnySource": "calibrated_sum"
       }
     },
@@ -798,10 +798,10 @@
           25,
           34
         ],
-        "pAny": 0.3188,
+        "pAny": 0.319,
         "hitNet": 350,
         "missLoss": -120,
-        "ev": 29.8324,
+        "ev": 29.9225,
         "pAnySource": "calibrated_sum"
       },
       "kelly": {
@@ -821,10 +821,10 @@
           13,
           25
         ],
-        "pAny": 0.2926,
+        "pAny": 0.2928,
         "hitNet": 360,
         "missLoss": -110,
-        "ev": 27.5432,
+        "ev": 27.6386,
         "pAnySource": "calibrated_sum"
       }
     },
@@ -848,10 +848,10 @@
           34,
           4
         ],
-        "pAny": 0.3449,
+        "pAny": 0.3451,
         "hitNet": 340,
         "missLoss": -130,
-        "ev": 32.1136,
+        "ev": 32.1983,
         "pAnySource": "calibrated_sum"
       },
       "kelly": {
@@ -871,10 +871,10 @@
           13,
           25
         ],
-        "pAny": 0.2926,
+        "pAny": 0.2928,
         "hitNet": 360,
         "missLoss": -110,
-        "ev": 27.5432,
+        "ev": 27.6386,
         "pAnySource": "calibrated_sum"
       }
     },
@@ -899,10 +899,10 @@
           4,
           2
         ],
-        "pAny": 0.3718,
+        "pAny": 0.3721,
         "hitNet": 330,
         "missLoss": -140,
-        "ev": 34.7486,
+        "ev": 34.8752,
         "pAnySource": "calibrated_sum"
       },
       "kelly": {
@@ -922,10 +922,10 @@
           13,
           25
         ],
-        "pAny": 0.2926,
+        "pAny": 0.2928,
         "hitNet": 360,
         "missLoss": -110,
-        "ev": 27.5432,
+        "ev": 27.6386,
         "pAnySource": "calibrated_sum"
       }
     },
@@ -949,12 +949,12 @@
           34,
           4,
           2,
-          9
+          19
         ],
-        "pAny": 0.3983,
+        "pAny": 0.3989,
         "hitNet": 320,
         "missLoss": -150,
-        "ev": 37.2158,
+        "ev": 37.4896,
         "pAnySource": "calibrated_sum"
       },
       "kelly": {
@@ -974,10 +974,10 @@
           13,
           25
         ],
-        "pAny": 0.2926,
+        "pAny": 0.2928,
         "hitNet": 360,
         "missLoss": -110,
-        "ev": 27.5432,
+        "ev": 27.6386,
         "pAnySource": "calibrated_sum"
       }
     },
@@ -1001,13 +1001,13 @@
           34,
           4,
           2,
-          9,
-          26
+          19,
+          9
         ],
-        "pAny": 0.4249,
+        "pAny": 0.4255,
         "hitNet": 310,
         "missLoss": -160,
-        "ev": 39.6813,
+        "ev": 39.9864,
         "pAnySource": "calibrated_sum"
       },
       "kelly": {
@@ -1027,10 +1027,10 @@
           13,
           25
         ],
-        "pAny": 0.2926,
+        "pAny": 0.2928,
         "hitNet": 360,
         "missLoss": -110,
-        "ev": 27.5432,
+        "ev": 27.6386,
         "pAnySource": "calibrated_sum"
       }
     },
@@ -1054,14 +1054,14 @@
           34,
           4,
           2,
+          19,
           9,
-          26,
-          8
+          26
         ],
-        "pAny": 0.4513,
+        "pAny": 0.452,
         "hitNet": 300,
         "missLoss": -170,
-        "ev": 42.1344,
+        "ev": 42.462,
         "pAnySource": "calibrated_sum"
       },
       "kelly": {
@@ -1082,10 +1082,10 @@
           25,
           34
         ],
-        "pAny": 0.3188,
+        "pAny": 0.319,
         "hitNet": 350,
         "missLoss": -120,
-        "ev": 29.8324,
+        "ev": 29.9225,
         "pAnySource": "calibrated_sum"
       }
     },
@@ -1109,15 +1109,15 @@
           34,
           4,
           2,
+          19,
           9,
           26,
-          8,
-          7
+          8
         ],
-        "pAny": 0.4778,
+        "pAny": 0.4786,
         "hitNet": 290,
         "missLoss": -180,
-        "ev": 44.5822,
+        "ev": 44.92,
         "pAnySource": "calibrated_sum"
       },
       "kelly": {
@@ -1138,10 +1138,10 @@
           25,
           34
         ],
-        "pAny": 0.3188,
+        "pAny": 0.319,
         "hitNet": 350,
         "missLoss": -120,
-        "ev": 29.8324,
+        "ev": 29.9225,
         "pAnySource": "calibrated_sum"
       }
     },
@@ -1165,16 +1165,16 @@
           34,
           4,
           2,
+          19,
           9,
           26,
           8,
-          7,
-          44
+          11
         ],
-        "pAny": 0.5043,
+        "pAny": 0.505,
         "hitNet": 280,
         "missLoss": -190,
-        "ev": 47.0293,
+        "ev": 47.3721,
         "pAnySource": "calibrated_sum"
       },
       "kelly": {
@@ -1195,10 +1195,10 @@
           25,
           34
         ],
-        "pAny": 0.3188,
+        "pAny": 0.319,
         "hitNet": 350,
         "missLoss": -120,
-        "ev": 29.8324,
+        "ev": 29.9225,
         "pAnySource": "calibrated_sum"
       }
     },
@@ -1222,17 +1222,17 @@
           34,
           4,
           2,
+          19,
           9,
           26,
           8,
-          7,
-          44,
-          19
+          11,
+          7
         ],
-        "pAny": 0.5308,
+        "pAny": 0.5315,
         "hitNet": 270,
         "missLoss": -200,
-        "ev": 49.4735,
+        "ev": 49.8109,
         "pAnySource": "calibrated_sum"
       },
       "kelly": {
@@ -1253,10 +1253,10 @@
           25,
           34
         ],
-        "pAny": 0.3188,
+        "pAny": 0.319,
         "hitNet": 350,
         "missLoss": -120,
-        "ev": 29.8324,
+        "ev": 29.9225,
         "pAnySource": "calibrated_sum"
       }
     },
@@ -1280,18 +1280,18 @@
           34,
           4,
           2,
+          19,
           9,
           26,
           8,
+          11,
           7,
-          44,
-          19,
-          11
+          24
         ],
-        "pAny": 0.5572,
+        "pAny": 0.558,
         "hitNet": 260,
         "missLoss": -210,
-        "ev": 51.9019,
+        "ev": 52.2481,
         "pAnySource": "calibrated_sum"
       },
       "kelly": {
@@ -1312,10 +1312,10 @@
           25,
           34
         ],
-        "pAny": 0.3188,
+        "pAny": 0.319,
         "hitNet": 350,
         "missLoss": -120,
-        "ev": 29.8324,
+        "ev": 29.9225,
         "pAnySource": "calibrated_sum"
       }
     },
@@ -1339,19 +1339,19 @@
           34,
           4,
           2,
+          19,
           9,
           26,
           8,
-          7,
-          44,
-          19,
           11,
-          24
+          7,
+          24,
+          30
         ],
-        "pAny": 0.5837,
+        "pAny": 0.5844,
         "hitNet": 250,
         "missLoss": -220,
-        "ev": 54.3165,
+        "ev": 54.6782,
         "pAnySource": "calibrated_sum"
       },
       "kelly": {
@@ -1372,10 +1372,10 @@
           25,
           34
         ],
-        "pAny": 0.3188,
+        "pAny": 0.319,
         "hitNet": 350,
         "missLoss": -120,
-        "ev": 29.8324,
+        "ev": 29.9225,
         "pAnySource": "calibrated_sum"
       }
     },
@@ -1399,20 +1399,20 @@
           34,
           4,
           2,
+          19,
           9,
           26,
           8,
-          7,
-          44,
-          19,
           11,
+          7,
           24,
-          41
+          30,
+          23
         ],
-        "pAny": 0.6101,
+        "pAny": 0.6109,
         "hitNet": 240,
         "missLoss": -230,
-        "ev": 56.7281,
+        "ev": 57.1029,
         "pAnySource": "calibrated_sum"
       },
       "kelly": {
@@ -1434,10 +1434,10 @@
           34,
           4
         ],
-        "pAny": 0.3449,
+        "pAny": 0.3451,
         "hitNet": 340,
         "missLoss": -130,
-        "ev": 32.1136,
+        "ev": 32.1983,
         "pAnySource": "calibrated_sum"
       }
     },
@@ -1461,21 +1461,21 @@
           34,
           4,
           2,
+          19,
           9,
           26,
           8,
-          7,
-          44,
-          19,
           11,
+          7,
           24,
-          41,
-          30
+          30,
+          23,
+          21
         ],
-        "pAny": 0.6365,
+        "pAny": 0.6373,
         "hitNet": 230,
         "missLoss": -240,
-        "ev": 59.1362,
+        "ev": 59.5205,
         "pAnySource": "calibrated_sum"
       },
       "kelly": {
@@ -1497,10 +1497,10 @@
           34,
           4
         ],
-        "pAny": 0.3449,
+        "pAny": 0.3451,
         "hitNet": 340,
         "missLoss": -130,
-        "ev": 32.1136,
+        "ev": 32.1983,
         "pAnySource": "calibrated_sum"
       }
     },
@@ -1524,22 +1524,22 @@
           34,
           4,
           2,
+          19,
           9,
           26,
           8,
-          7,
-          44,
-          19,
           11,
+          7,
           24,
-          41,
           30,
-          17
+          23,
+          21,
+          41
         ],
-        "pAny": 0.6629,
+        "pAny": 0.6637,
         "hitNet": 220,
         "missLoss": -250,
-        "ev": 61.5438,
+        "ev": 61.9378,
         "pAnySource": "calibrated_sum"
       },
       "kelly": {
@@ -1561,10 +1561,10 @@
           34,
           4
         ],
-        "pAny": 0.3449,
+        "pAny": 0.3451,
         "hitNet": 340,
         "missLoss": -130,
-        "ev": 32.1136,
+        "ev": 32.1983,
         "pAnySource": "calibrated_sum"
       }
     },
@@ -1588,23 +1588,23 @@
           34,
           4,
           2,
+          19,
           9,
           26,
           8,
-          7,
-          44,
-          19,
           11,
+          7,
           24,
-          41,
           30,
-          17,
+          23,
+          21,
+          41,
           20
         ],
-        "pAny": 0.6893,
+        "pAny": 0.6901,
         "hitNet": 210,
         "missLoss": -260,
-        "ev": 63.9483,
+        "ev": 64.3431,
         "pAnySource": "calibrated_sum"
       },
       "kelly": {
@@ -1626,10 +1626,10 @@
           34,
           4
         ],
-        "pAny": 0.3449,
+        "pAny": 0.3451,
         "hitNet": 340,
         "missLoss": -130,
-        "ev": 32.1136,
+        "ev": 32.1983,
         "pAnySource": "calibrated_sum"
       }
     },
@@ -1653,24 +1653,24 @@
           34,
           4,
           2,
+          19,
           9,
           26,
           8,
-          7,
-          44,
-          19,
           11,
+          7,
           24,
-          41,
           30,
-          17,
+          23,
+          21,
+          41,
           20,
-          23
+          48
         ],
-        "pAny": 0.7156,
+        "pAny": 0.7165,
         "hitNet": 200,
         "missLoss": -270,
-        "ev": 66.3515,
+        "ev": 66.7334,
         "pAnySource": "calibrated_sum"
       },
       "kelly": {
@@ -1692,10 +1692,10 @@
           34,
           4
         ],
-        "pAny": 0.3449,
+        "pAny": 0.3451,
         "hitNet": 340,
         "missLoss": -130,
-        "ev": 32.1136,
+        "ev": 32.1983,
         "pAnySource": "calibrated_sum"
       }
     },
@@ -1719,25 +1719,25 @@
           34,
           4,
           2,
+          19,
           9,
           26,
           8,
-          7,
-          44,
-          19,
           11,
+          7,
           24,
-          41,
           30,
-          17,
-          20,
           23,
-          21
+          21,
+          41,
+          20,
+          48,
+          6
         ],
-        "pAny": 0.742,
+        "pAny": 0.7428,
         "hitNet": 190,
         "missLoss": -280,
-        "ev": 68.7482,
+        "ev": 69.1225,
         "pAnySource": "calibrated_sum"
       },
       "kelly": {
@@ -1759,10 +1759,10 @@
           34,
           4
         ],
-        "pAny": 0.3449,
+        "pAny": 0.3451,
         "hitNet": 340,
         "missLoss": -130,
-        "ev": 32.1136,
+        "ev": 32.1983,
         "pAnySource": "calibrated_sum"
       }
     },
@@ -1786,26 +1786,26 @@
           34,
           4,
           2,
+          19,
           9,
           26,
           8,
-          7,
-          44,
-          19,
           11,
+          7,
           24,
-          41,
           30,
-          17,
-          20,
           23,
           21,
-          48
+          41,
+          20,
+          48,
+          6,
+          14
         ],
-        "pAny": 0.7684,
+        "pAny": 0.7692,
         "hitNet": 180,
         "missLoss": -290,
-        "ev": 71.1352,
+        "ev": 71.505,
         "pAnySource": "calibrated_sum"
       },
       "kelly": {
@@ -1827,10 +1827,10 @@
           34,
           4
         ],
-        "pAny": 0.3449,
+        "pAny": 0.3451,
         "hitNet": 340,
         "missLoss": -130,
-        "ev": 32.1136,
+        "ev": 32.1983,
         "pAnySource": "calibrated_sum"
       }
     },
@@ -1854,27 +1854,27 @@
           34,
           4,
           2,
+          19,
           9,
           26,
           8,
-          7,
-          44,
-          19,
           11,
+          7,
           24,
-          41,
           30,
-          17,
-          20,
           23,
           21,
+          41,
+          20,
           48,
-          6
+          6,
+          14,
+          39
         ],
-        "pAny": 0.7947,
+        "pAny": 0.7955,
         "hitNet": 170,
         "missLoss": -300,
-        "ev": 73.5209,
+        "ev": 73.8848,
         "pAnySource": "calibrated_sum"
       },
       "kelly": {
@@ -1896,10 +1896,10 @@
           34,
           4
         ],
-        "pAny": 0.3449,
+        "pAny": 0.3451,
         "hitNet": 340,
         "missLoss": -130,
-        "ev": 32.1136,
+        "ev": 32.1983,
         "pAnySource": "calibrated_sum"
       }
     },
@@ -1923,28 +1923,28 @@
           34,
           4,
           2,
+          19,
           9,
           26,
           8,
-          7,
-          44,
-          19,
           11,
+          7,
           24,
-          41,
           30,
-          17,
-          20,
           23,
           21,
+          41,
+          20,
           48,
           6,
-          31
+          14,
+          39,
+          5
         ],
-        "pAny": 0.8211,
+        "pAny": 0.8218,
         "hitNet": 160,
         "missLoss": -310,
-        "ev": 75.8978,
+        "ev": 76.26,
         "pAnySource": "calibrated_sum"
       },
       "kelly": {
@@ -1966,10 +1966,10 @@
           34,
           4
         ],
-        "pAny": 0.3449,
+        "pAny": 0.3451,
         "hitNet": 340,
         "missLoss": -130,
-        "ev": 32.1136,
+        "ev": 32.1983,
         "pAnySource": "calibrated_sum"
       }
     },
@@ -1993,29 +1993,29 @@
           34,
           4,
           2,
+          19,
           9,
           26,
           8,
-          7,
-          44,
-          19,
           11,
+          7,
           24,
-          41,
           30,
-          17,
-          20,
           23,
           21,
+          41,
+          20,
           48,
           6,
-          31,
-          39
+          14,
+          39,
+          5,
+          12
         ],
-        "pAny": 0.8474,
+        "pAny": 0.8482,
         "hitNet": 150,
         "missLoss": -320,
-        "ev": 78.2726,
+        "ev": 78.6347,
         "pAnySource": "calibrated_sum"
       },
       "kelly": {
@@ -2037,10 +2037,10 @@
           34,
           4
         ],
-        "pAny": 0.3449,
+        "pAny": 0.3451,
         "hitNet": 340,
         "missLoss": -130,
-        "ev": 32.1136,
+        "ev": 32.1983,
         "pAnySource": "calibrated_sum"
       }
     },
@@ -2064,30 +2064,30 @@
           34,
           4,
           2,
+          19,
           9,
           26,
           8,
-          7,
-          44,
-          19,
           11,
+          7,
           24,
-          41,
           30,
-          17,
-          20,
           23,
           21,
+          41,
+          20,
           48,
           6,
-          31,
+          14,
           39,
-          12
+          5,
+          12,
+          36
         ],
-        "pAny": 0.8737,
+        "pAny": 0.8745,
         "hitNet": 140,
         "missLoss": -330,
-        "ev": 80.6452,
+        "ev": 81.0095,
         "pAnySource": "calibrated_sum"
       },
       "kelly": {
@@ -2109,10 +2109,10 @@
           34,
           4
         ],
-        "pAny": 0.3449,
+        "pAny": 0.3451,
         "hitNet": 340,
         "missLoss": -130,
-        "ev": 32.1136,
+        "ev": 32.1983,
         "pAnySource": "calibrated_sum"
       }
     },
@@ -2136,31 +2136,31 @@
           34,
           4,
           2,
+          19,
           9,
           26,
           8,
-          7,
-          44,
-          19,
           11,
+          7,
           24,
-          41,
           30,
-          17,
-          20,
           23,
           21,
+          41,
+          20,
           48,
           6,
-          31,
+          14,
           39,
+          5,
           12,
-          36
+          36,
+          45
         ],
-        "pAny": 0.9,
+        "pAny": 0.9008,
         "hitNet": 130,
         "missLoss": -340,
-        "ev": 83.0178,
+        "ev": 83.3744,
         "pAnySource": "calibrated_sum"
       },
       "kelly": {
@@ -2182,10 +2182,10 @@
           34,
           4
         ],
-        "pAny": 0.3449,
+        "pAny": 0.3451,
         "hitNet": 340,
         "missLoss": -130,
-        "ev": 32.1136,
+        "ev": 32.1983,
         "pAnySource": "calibrated_sum"
       }
     },
@@ -2209,32 +2209,32 @@
           34,
           4,
           2,
+          19,
           9,
           26,
           8,
-          7,
-          44,
-          19,
           11,
+          7,
           24,
-          41,
           30,
-          17,
-          20,
           23,
           21,
+          41,
+          20,
           48,
           6,
-          31,
+          14,
           39,
+          5,
           12,
           36,
-          14
+          45,
+          29
         ],
-        "pAny": 0.9263,
+        "pAny": 0.9271,
         "hitNet": 120,
         "missLoss": -350,
-        "ev": 85.3821,
+        "ev": 85.7258,
         "pAnySource": "calibrated_sum"
       },
       "kelly": {
@@ -2256,10 +2256,10 @@
           34,
           4
         ],
-        "pAny": 0.3449,
+        "pAny": 0.3451,
         "hitNet": 340,
         "missLoss": -130,
-        "ev": 32.1136,
+        "ev": 32.1983,
         "pAnySource": "calibrated_sum"
       }
     },
@@ -2283,33 +2283,33 @@
           34,
           4,
           2,
+          19,
           9,
           26,
           8,
-          7,
-          44,
-          19,
           11,
+          7,
           24,
-          41,
           30,
-          17,
-          20,
           23,
           21,
+          41,
+          20,
           48,
           6,
-          31,
+          14,
           39,
+          5,
           12,
           36,
-          14,
-          45
+          45,
+          29,
+          17
         ],
-        "pAny": 0.9527,
+        "pAny": 0.9534,
         "hitNet": 110,
         "missLoss": -360,
-        "ev": 87.7457,
+        "ev": 88.0751,
         "pAnySource": "calibrated_sum"
       },
       "kelly": {
@@ -2331,10 +2331,10 @@
           34,
           4
         ],
-        "pAny": 0.3449,
+        "pAny": 0.3451,
         "hitNet": 340,
         "missLoss": -130,
-        "ev": 32.1136,
+        "ev": 32.1983,
         "pAnySource": "calibrated_sum"
       }
     },
@@ -2358,34 +2358,34 @@
           34,
           4,
           2,
+          19,
           9,
           26,
           8,
-          7,
-          44,
-          19,
           11,
+          7,
           24,
-          41,
           30,
-          17,
-          20,
           23,
           21,
+          41,
+          20,
           48,
           6,
-          31,
+          14,
           39,
+          5,
           12,
           36,
-          14,
           45,
-          5
+          29,
+          17,
+          31
         ],
-        "pAny": 0.9789,
+        "pAny": 0.9796,
         "hitNet": 100,
         "missLoss": -370,
-        "ev": 90.103,
+        "ev": 90.421,
         "pAnySource": "calibrated_sum"
       },
       "kelly": {
@@ -2407,10 +2407,10 @@
           34,
           4
         ],
-        "pAny": 0.3449,
+        "pAny": 0.3451,
         "hitNet": 340,
         "missLoss": -130,
-        "ev": 32.1136,
+        "ev": 32.1983,
         "pAnySource": "calibrated_sum"
       }
     },
@@ -2434,30 +2434,30 @@
           34,
           4,
           2,
+          19,
           9,
           26,
           8,
-          7,
-          44,
-          19,
           11,
+          7,
           24,
-          41,
           30,
-          17,
-          20,
           23,
           21,
+          41,
+          20,
           48,
           6,
-          31,
+          14,
           39,
+          5,
           12,
           36,
-          14,
           45,
-          5,
-          43
+          29,
+          17,
+          31,
+          44
         ],
         "pAny": 1,
         "hitNet": 90,
@@ -2484,10 +2484,10 @@
           34,
           4
         ],
-        "pAny": 0.3449,
+        "pAny": 0.3451,
         "hitNet": 340,
         "missLoss": -130,
-        "ev": 32.1136,
+        "ev": 32.1983,
         "pAnySource": "calibrated_sum"
       }
     },
@@ -2511,31 +2511,31 @@
           34,
           4,
           2,
+          19,
           9,
           26,
           8,
-          7,
-          44,
-          19,
           11,
+          7,
           24,
-          41,
           30,
-          17,
-          20,
           23,
           21,
+          41,
+          20,
           48,
           6,
-          31,
+          14,
           39,
+          5,
           12,
           36,
-          14,
           45,
-          5,
-          43,
-          29
+          29,
+          17,
+          31,
+          44,
+          27
         ],
         "pAny": 1,
         "hitNet": 80,
@@ -2562,10 +2562,10 @@
           34,
           4
         ],
-        "pAny": 0.3449,
+        "pAny": 0.3451,
         "hitNet": 340,
         "missLoss": -130,
-        "ev": 32.1136,
+        "ev": 32.1983,
         "pAnySource": "calibrated_sum"
       }
     },
@@ -2589,32 +2589,32 @@
           34,
           4,
           2,
+          19,
           9,
           26,
           8,
-          7,
-          44,
-          19,
           11,
+          7,
           24,
-          41,
           30,
-          17,
-          20,
           23,
           21,
+          41,
+          20,
           48,
           6,
-          31,
+          14,
           39,
+          5,
           12,
           36,
-          14,
           45,
-          5,
-          43,
           29,
-          27
+          17,
+          31,
+          44,
+          27,
+          35
         ],
         "pAny": 1,
         "hitNet": 70,
@@ -2641,10 +2641,10 @@
           34,
           4
         ],
-        "pAny": 0.3449,
+        "pAny": 0.3451,
         "hitNet": 340,
         "missLoss": -130,
-        "ev": 32.1136,
+        "ev": 32.1983,
         "pAnySource": "calibrated_sum"
       }
     }
@@ -2656,7 +2656,7 @@
       "numberCount": 10,
       "hitNet": 370,
       "missLoss": -100,
-      "ev": 7.301
+      "ev": 6.925
     },
     "0.25": {
       "fraction": 0.25,
@@ -2664,7 +2664,7 @@
       "numberCount": 10,
       "hitNet": 370,
       "missLoss": -100,
-      "ev": 7.301
+      "ev": 6.925
     },
     "0.5": {
       "fraction": 0.5,
@@ -2672,7 +2672,7 @@
       "numberCount": 10,
       "hitNet": 370,
       "missLoss": -100,
-      "ev": 7.301
+      "ev": 6.925
     }
   }
 }
