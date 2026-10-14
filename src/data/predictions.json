@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-10-13T22:17:23.477Z",
-  "nextIssue": 2026287,
-  "latestIssue": 2026286,
-  "totalPeriods": 286,
-  "latestSpecial": 24,
-  "latestZodiac": "羊",
+  "generated_at": "2026-10-14T21:18:23.320Z",
+  "nextIssue": 2026288,
+  "latestIssue": 2026287,
+  "totalPeriods": 287,
+  "latestSpecial": 8,
+  "latestZodiac": "猪",
   "branding": {
     "siteName": "诸葛六合",
     "mainStrategy": "诸葛策略",
@@ -40,70 +40,55 @@
       100
     ],
     "calibrationMethod": "platt",
-    "calibrationSamples": 12544,
+    "calibrationSamples": 12593,
     "activeConfigLabel": "default · number+conditional · w30/50/80/100",
     "flowName": "三才定码"
   },
   "topZodiacs": [
     {
       "zodiac": "鸡",
-      "score": 0.6228494623655912,
+      "score": 0.6374193548387096,
       "frequencyScore": 0.9999999999999999,
-      "omissionScore": 0.16666666666666666,
+      "omissionScore": 0.2,
       "recentTrendScore": 1,
-      "gapScore": 0.15232974910394267,
-      "omission": 5,
-      "probability": 0.1259
+      "gapScore": 0.1827956989247312,
+      "omission": 6,
+      "probability": 0.1253
     },
     {
       "zodiac": "兔",
-      "score": 0.5469147069147069,
+      "score": 0.5638645138645138,
       "frequencyScore": 0.46233766233766227,
-      "omissionScore": 0.6,
+      "omissionScore": 0.6333333333333333,
       "recentTrendScore": 0.4,
-      "gapScore": 0.833976833976834,
-      "omission": 18,
-      "probability": 0.1106
+      "gapScore": 0.8803088803088803,
+      "omission": 19,
+      "probability": 0.1108
     },
     {
       "zodiac": "狗",
-      "score": 0.5342871519624286,
+      "score": 0.5500989600805098,
       "frequencyScore": 0.6415584415584414,
-      "omissionScore": 0.4,
+      "omissionScore": 0.43333333333333335,
       "recentTrendScore": 0.6,
-      "gapScore": 0.46494464944649444,
-      "omission": 12,
-      "probability": 0.108
+      "gapScore": 0.503690036900369,
+      "omission": 13,
+      "probability": 0.1081
     }
   ],
   "topNumbers": [
     {
-      "number": 40,
-      "zodiac": "兔",
-      "color": "red",
-      "numberScore": 0.5496,
-      "calibratedProbability": 0.0272,
-      "components": {
-        "frequency": 0.9,
-        "omission": 0.6,
-        "conditional": 0.2414,
-        "recent": 0.3,
-        "zodiac": 0.5469,
-        "tail": 0.55
-      }
-    },
-    {
       "number": 10,
       "zodiac": "鸡",
       "color": "blue",
-      "numberScore": 0.5257,
-      "calibratedProbability": 0.0271,
+      "numberScore": 0.5346,
+      "calibratedProbability": 0.027,
       "components": {
         "frequency": 0.95,
-        "omission": 0.1667,
+        "omission": 0.2,
         "conditional": 0.2727,
         "recent": 0.8,
-        "zodiac": 0.6228,
+        "zodiac": 0.6374,
         "tail": 0.55
       }
     },
@@ -111,29 +96,44 @@
       "number": 22,
       "zodiac": "鸡",
       "color": "green",
-      "numberScore": 0.5051,
-      "calibratedProbability": 0.027,
+      "numberScore": 0.514,
+      "calibratedProbability": 0.0269,
       "components": {
         "frequency": 0.7,
-        "omission": 0.5667,
+        "omission": 0.6,
         "conditional": 0.3182,
         "recent": 0.15,
-        "zodiac": 0.6228,
+        "zodiac": 0.6374,
         "tail": 0.625
+      }
+    },
+    {
+      "number": 40,
+      "zodiac": "兔",
+      "color": "red",
+      "numberScore": 0.4906,
+      "calibratedProbability": 0.0268,
+      "components": {
+        "frequency": 0.7,
+        "omission": 0.6333,
+        "conditional": 0.2414,
+        "recent": 0.15,
+        "zodiac": 0.5639,
+        "tail": 0.55
       }
     },
     {
       "number": 46,
       "zodiac": "鸡",
       "color": "red",
-      "numberScore": 0.4726,
+      "numberScore": 0.4815,
       "calibratedProbability": 0.0268,
       "components": {
         "frequency": 0.275,
-        "omission": 0.9333,
+        "omission": 0.9667,
         "conditional": 0.3182,
         "recent": 0,
-        "zodiac": 0.6228,
+        "zodiac": 0.6374,
         "tail": 0.925
       }
     },
@@ -141,14 +141,14 @@
       "number": 16,
       "zodiac": "兔",
       "color": "green",
-      "numberScore": 0.4455,
+      "numberScore": 0.4471,
       "calibratedProbability": 0.0267,
       "components": {
         "frequency": 0.05,
         "omission": 1,
         "conditional": 0.4138,
         "recent": 0,
-        "zodiac": 0.5469,
+        "zodiac": 0.5639,
         "tail": 0.925
       }
     },
@@ -156,14 +156,14 @@
       "number": 9,
       "zodiac": "狗",
       "color": "blue",
-      "numberScore": 0.4343,
+      "numberScore": 0.4433,
       "calibratedProbability": 0.0266,
       "components": {
         "frequency": 0.275,
-        "omission": 0.7667,
+        "omission": 0.8,
         "conditional": 0.3462,
         "recent": 0,
-        "zodiac": 0.5343,
+        "zodiac": 0.5501,
         "tail": 0.925
       }
     },
@@ -171,14 +171,14 @@
       "number": 21,
       "zodiac": "狗",
       "color": "green",
-      "numberScore": 0.3986,
+      "numberScore": 0.4076,
       "calibratedProbability": 0.0265,
       "components": {
         "frequency": 0.275,
-        "omission": 0.7333,
+        "omission": 0.7667,
         "conditional": 0.2308,
         "recent": 0,
-        "zodiac": 0.5343,
+        "zodiac": 0.5501,
         "tail": 1
       }
     },
@@ -186,29 +186,29 @@
       "number": 28,
       "zodiac": "兔",
       "color": "green",
-      "numberScore": 0.3701,
+      "numberScore": 0.3728,
       "calibratedProbability": 0.0263,
       "components": {
         "frequency": 0,
         "omission": 1,
         "conditional": 0.2414,
         "recent": 0,
-        "zodiac": 0.5469,
-        "tail": 0.6
+        "zodiac": 0.5639,
+        "tail": 0.625
       }
     },
     {
       "number": 45,
       "zodiac": "狗",
       "color": "red",
-      "numberScore": 0.3672,
+      "numberScore": 0.3686,
       "calibratedProbability": 0.0263,
       "components": {
         "frequency": 0,
         "omission": 1,
         "conditional": 0.2308,
         "recent": 0,
-        "zodiac": 0.5343,
+        "zodiac": 0.5501,
         "tail": 0.625
       }
     },
@@ -216,22 +216,22 @@
       "number": 33,
       "zodiac": "狗",
       "color": "green",
-      "numberScore": 0.3533,
-      "calibratedProbability": 0.0262,
+      "numberScore": 0.3623,
+      "calibratedProbability": 0.0263,
       "components": {
         "frequency": 0.425,
-        "omission": 0.4,
+        "omission": 0.4333,
         "conditional": 0.1923,
         "recent": 0.15,
-        "zodiac": 0.5343,
+        "zodiac": 0.5501,
         "tail": 0.7
       }
     }
   ],
   "coreMetrics": {
     "overall": {
-      "hitRate": 0.2266,
-      "sample": 256
+      "hitRate": 0.2257,
+      "sample": 257
     },
     "last10": {
       "hitRate": 0.2,
@@ -245,9 +245,9 @@
       "hitRate": 0.1667,
       "sample": 30
     },
-    "currentMissStreak": 2,
+    "currentMissStreak": 3,
     "maxMissStreak": 19,
-    "currentDrawdown": 1170,
+    "currentDrawdown": 1270,
     "maxDrawdown": 3320
   },
   "earnings": {
@@ -256,35 +256,35 @@
     "perCode": 10,
     "hitNet": 370,
     "missLoss": -100,
-    "ev": 6.502,
-    "roi": 0.0904,
-    "pAny": 0.2266,
+    "ev": 6.079,
+    "roi": 0.0861,
+    "pAny": 0.2257,
     "pAnySource": "walk_forward"
   },
   "conclusion": {
     "sentence": "当前生肖方向集中在鸡、兔、狗，结合候选池中的号码频次、遗漏与条件概率，模型最终筛选出10个核心号码。",
-    "hitRate": 0.2266,
+    "hitRate": 0.2257,
     "last30": 0.1667,
     "last20": 0.15,
     "last10": 0.2,
-    "currentMissStreak": 2,
+    "currentMissStreak": 3,
     "maxMissStreak": 19
   },
   "modelExplanation": {
-    "frequency": 0.105,
-    "omission": 0.1629,
+    "frequency": 0.0995,
+    "omission": 0.1682,
     "conditional": 0.0765,
-    "recent": 0.0127,
-    "zodiac": 0.0513,
-    "tail": 0.0337
+    "recent": 0.0114,
+    "zodiac": 0.0528,
+    "tail": 0.0339
   },
   "modes": {
     "tianluo": {
       "name": "天罗模式",
       "picks": [
-        40,
         10,
         22,
+        40,
         46,
         16,
         9,
@@ -300,16 +300,16 @@
       "stake": 120,
       "hitNet": 350,
       "missLoss": -120,
-      "ev": 29.991,
-      "pAny": 0.3191,
+      "ev": 29.7964,
+      "pAny": 0.3187,
       "note": "覆盖更多号码，历史命中率更高，但预算更高。"
     },
     "zhuge": {
       "name": "诸葛策略",
       "picks": [
-        40,
         10,
         22,
+        40,
         46,
         16,
         9,
@@ -323,16 +323,16 @@
       "stake": 100,
       "hitNet": 370,
       "missLoss": -100,
-      "ev": 6.502,
-      "pAny": 0.2266,
+      "ev": 6.079,
+      "pAny": 0.2257,
       "note": "命中率、收益与预算之间较平衡，是当前默认主策略。"
     },
     "huisuan": {
       "name": "慧算模式",
       "picks": [
-        40,
         10,
         22,
+        40,
         46,
         16,
         9,
@@ -345,8 +345,8 @@
       "stake": 90,
       "hitNet": 380,
       "missLoss": -90,
-      "ev": 23.0949,
-      "pAny": 0.2406,
+      "ev": 22.8406,
+      "pAny": 0.2401,
       "note": "先选8个核心号码，再根据历史表现动态决定是否补码。"
     }
   },
@@ -357,12 +357,12 @@
         "numberCount": 1,
         "perCode": 10,
         "numbers": [
-          40
+          10
         ],
-        "pAny": 0.0272,
+        "pAny": 0.027,
         "hitNet": 460,
         "missLoss": -10,
-        "ev": 2.7967,
+        "ev": 2.7065,
         "pAnySource": "calibrated_sum"
       },
       "kelly": {
@@ -370,16 +370,16 @@
         "numberCount": 5,
         "perCode": 10,
         "numbers": [
-          40,
           10,
           22,
+          40,
           46,
           16
         ],
-        "pAny": 0.1349,
+        "pAny": 0.1343,
         "hitNet": 420,
         "missLoss": -50,
-        "ev": 13.3903,
+        "ev": 13.116,
         "pAnySource": "calibrated_sum"
       }
     },
@@ -389,13 +389,13 @@
         "numberCount": 2,
         "perCode": 10,
         "numbers": [
-          40,
-          10
+          10,
+          22
         ],
-        "pAny": 0.0543,
+        "pAny": 0.054,
         "hitNet": 450,
         "missLoss": -20,
-        "ev": 5.5363,
+        "ev": 5.3712,
         "pAnySource": "calibrated_sum"
       },
       "kelly": {
@@ -403,16 +403,16 @@
         "numberCount": 5,
         "perCode": 10,
         "numbers": [
-          40,
           10,
           22,
+          40,
           46,
           16
         ],
-        "pAny": 0.1349,
+        "pAny": 0.1343,
         "hitNet": 420,
         "missLoss": -50,
-        "ev": 13.3903,
+        "ev": 13.116,
         "pAnySource": "calibrated_sum"
       }
     },
@@ -422,14 +422,14 @@
         "numberCount": 3,
         "perCode": 10,
         "numbers": [
-          40,
           10,
-          22
+          22,
+          40
         ],
-        "pAny": 0.0813,
+        "pAny": 0.0808,
         "hitNet": 440,
         "missLoss": -30,
-        "ev": 8.227,
+        "ev": 7.9882,
         "pAnySource": "calibrated_sum"
       },
       "kelly": {
@@ -437,16 +437,16 @@
         "numberCount": 5,
         "perCode": 10,
         "numbers": [
-          40,
           10,
           22,
+          40,
           46,
           16
         ],
-        "pAny": 0.1349,
+        "pAny": 0.1343,
         "hitNet": 420,
         "missLoss": -50,
-        "ev": 13.3903,
+        "ev": 13.116,
         "pAnySource": "calibrated_sum"
       }
     },
@@ -456,15 +456,15 @@
         "numberCount": 4,
         "perCode": 10,
         "numbers": [
-          40,
           10,
           22,
+          40,
           46
         ],
-        "pAny": 0.1082,
+        "pAny": 0.1076,
         "hitNet": 430,
         "missLoss": -40,
-        "ev": 10.8405,
+        "ev": 10.5868,
         "pAnySource": "calibrated_sum"
       },
       "kelly": {
@@ -472,16 +472,16 @@
         "numberCount": 5,
         "perCode": 10,
         "numbers": [
-          40,
           10,
           22,
+          40,
           46,
           16
         ],
-        "pAny": 0.1349,
+        "pAny": 0.1343,
         "hitNet": 420,
         "missLoss": -50,
-        "ev": 13.3903,
+        "ev": 13.116,
         "pAnySource": "calibrated_sum"
       }
     },
@@ -491,16 +491,16 @@
         "numberCount": 5,
         "perCode": 10,
         "numbers": [
-          40,
           10,
           22,
+          40,
           46,
           16
         ],
-        "pAny": 0.1349,
+        "pAny": 0.1343,
         "hitNet": 420,
         "missLoss": -50,
-        "ev": 13.3903,
+        "ev": 13.116,
         "pAnySource": "calibrated_sum"
       },
       "kelly": {
@@ -508,16 +508,16 @@
         "numberCount": 5,
         "perCode": 10,
         "numbers": [
-          40,
           10,
           22,
+          40,
           46,
           16
         ],
-        "pAny": 0.1349,
+        "pAny": 0.1343,
         "hitNet": 420,
         "missLoss": -50,
-        "ev": 13.3903,
+        "ev": 13.116,
         "pAnySource": "calibrated_sum"
       }
     },
@@ -527,17 +527,17 @@
         "numberCount": 6,
         "perCode": 10,
         "numbers": [
-          40,
           10,
           22,
+          40,
           46,
           16,
           9
         ],
-        "pAny": 0.1615,
+        "pAny": 0.1609,
         "hitNet": 410,
         "missLoss": -60,
-        "ev": 15.9137,
+        "ev": 15.6376,
         "pAnySource": "calibrated_sum"
       },
       "kelly": {
@@ -545,16 +545,16 @@
         "numberCount": 5,
         "perCode": 10,
         "numbers": [
-          40,
           10,
           22,
+          40,
           46,
           16
         ],
-        "pAny": 0.1349,
+        "pAny": 0.1343,
         "hitNet": 420,
         "missLoss": -50,
-        "ev": 13.3903,
+        "ev": 13.116,
         "pAnySource": "calibrated_sum"
       }
     },
@@ -564,18 +564,18 @@
         "numberCount": 7,
         "perCode": 10,
         "numbers": [
-          40,
           10,
           22,
+          40,
           46,
           16,
           9,
           21
         ],
-        "pAny": 0.188,
+        "pAny": 0.1874,
         "hitNet": 400,
         "missLoss": -70,
-        "ev": 18.3539,
+        "ev": 18.0877,
         "pAnySource": "calibrated_sum"
       },
       "kelly": {
@@ -583,16 +583,16 @@
         "numberCount": 5,
         "perCode": 10,
         "numbers": [
-          40,
           10,
           22,
+          40,
           46,
           16
         ],
-        "pAny": 0.1349,
+        "pAny": 0.1343,
         "hitNet": 420,
         "missLoss": -50,
-        "ev": 13.3903,
+        "ev": 13.116,
         "pAnySource": "calibrated_sum"
       }
     },
@@ -602,19 +602,19 @@
         "numberCount": 8,
         "perCode": 10,
         "numbers": [
-          40,
           10,
           22,
+          40,
           46,
           16,
           9,
           21,
           28
         ],
-        "pAny": 0.2143,
+        "pAny": 0.2138,
         "hitNet": 390,
         "missLoss": -80,
-        "ev": 20.7277,
+        "ev": 20.4683,
         "pAnySource": "calibrated_sum"
       },
       "kelly": {
@@ -622,9 +622,9 @@
         "numberCount": 10,
         "perCode": 10,
         "numbers": [
-          40,
           10,
           22,
+          40,
           46,
           16,
           9,
@@ -633,10 +633,10 @@
           45,
           33
         ],
-        "pAny": 0.2266,
+        "pAny": 0.2257,
         "hitNet": 370,
         "missLoss": -100,
-        "ev": 6.502,
+        "ev": 6.079,
         "pAnySource": "calibrated_sum"
       }
     },
@@ -646,9 +646,9 @@
         "numberCount": 9,
         "perCode": 10,
         "numbers": [
-          40,
           10,
           22,
+          40,
           46,
           16,
           9,
@@ -656,10 +656,10 @@
           28,
           45
         ],
-        "pAny": 0.2406,
+        "pAny": 0.2401,
         "hitNet": 380,
         "missLoss": -90,
-        "ev": 23.0949,
+        "ev": 22.8406,
         "pAnySource": "calibrated_sum"
       },
       "kelly": {
@@ -667,9 +667,9 @@
         "numberCount": 10,
         "perCode": 10,
         "numbers": [
-          40,
           10,
           22,
+          40,
           46,
           16,
           9,
@@ -678,10 +678,10 @@
           45,
           33
         ],
-        "pAny": 0.2266,
+        "pAny": 0.2257,
         "hitNet": 370,
         "missLoss": -100,
-        "ev": 6.502,
+        "ev": 6.079,
         "pAnySource": "calibrated_sum"
       }
     },
@@ -691,9 +691,9 @@
         "numberCount": 10,
         "perCode": 10,
         "numbers": [
-          40,
           10,
           22,
+          40,
           46,
           16,
           9,
@@ -702,10 +702,10 @@
           45,
           33
         ],
-        "pAny": 0.2266,
+        "pAny": 0.2257,
         "hitNet": 370,
         "missLoss": -100,
-        "ev": 6.502,
+        "ev": 6.079,
         "pAnySource": "walk_forward"
       },
       "kelly": {
@@ -713,9 +713,9 @@
         "numberCount": 10,
         "perCode": 10,
         "numbers": [
-          40,
           10,
           22,
+          40,
           46,
           16,
           9,
@@ -724,10 +724,10 @@
           45,
           33
         ],
-        "pAny": 0.2266,
+        "pAny": 0.2257,
         "hitNet": 370,
         "missLoss": -100,
-        "ev": 6.502,
+        "ev": 6.079,
         "pAnySource": "calibrated_sum"
       }
     },
@@ -737,9 +737,9 @@
         "numberCount": 11,
         "perCode": 10,
         "numbers": [
-          40,
           10,
           22,
+          40,
           46,
           16,
           9,
@@ -749,10 +749,10 @@
           33,
           34
         ],
-        "pAny": 0.293,
+        "pAny": 0.2926,
         "hitNet": 360,
         "missLoss": -110,
-        "ev": 27.7144,
+        "ev": 27.5016,
         "pAnySource": "calibrated_sum"
       },
       "kelly": {
@@ -760,9 +760,9 @@
         "numberCount": 11,
         "perCode": 10,
         "numbers": [
-          40,
           10,
           22,
+          40,
           46,
           16,
           9,
@@ -772,10 +772,10 @@
           33,
           34
         ],
-        "pAny": 0.293,
+        "pAny": 0.2926,
         "hitNet": 360,
         "missLoss": -110,
-        "ev": 27.7144,
+        "ev": 27.5016,
         "pAnySource": "calibrated_sum"
       }
     },
@@ -785,9 +785,9 @@
         "numberCount": 12,
         "perCode": 10,
         "numbers": [
-          40,
           10,
           22,
+          40,
           46,
           16,
           9,
@@ -798,10 +798,10 @@
           34,
           4
         ],
-        "pAny": 0.3191,
+        "pAny": 0.3187,
         "hitNet": 350,
         "missLoss": -120,
-        "ev": 29.991,
+        "ev": 29.7964,
         "pAnySource": "calibrated_sum"
       },
       "kelly": {
@@ -809,9 +809,9 @@
         "numberCount": 11,
         "perCode": 10,
         "numbers": [
-          40,
           10,
           22,
+          40,
           46,
           16,
           9,
@@ -821,10 +821,10 @@
           33,
           34
         ],
-        "pAny": 0.293,
+        "pAny": 0.2926,
         "hitNet": 360,
         "missLoss": -110,
-        "ev": 27.7144,
+        "ev": 27.5016,
         "pAnySource": "calibrated_sum"
       }
     },
@@ -834,9 +834,9 @@
         "numberCount": 13,
         "perCode": 10,
         "numbers": [
-          40,
           10,
           22,
+          40,
           46,
           16,
           9,
@@ -848,10 +848,10 @@
           4,
           2
         ],
-        "pAny": 0.3462,
+        "pAny": 0.3457,
         "hitNet": 340,
         "missLoss": -130,
-        "ev": 32.7038,
+        "ev": 32.4803,
         "pAnySource": "calibrated_sum"
       },
       "kelly": {
@@ -859,9 +859,9 @@
         "numberCount": 11,
         "perCode": 10,
         "numbers": [
-          40,
           10,
           22,
+          40,
           46,
           16,
           9,
@@ -871,10 +871,10 @@
           33,
           34
         ],
-        "pAny": 0.293,
+        "pAny": 0.2926,
         "hitNet": 360,
         "missLoss": -110,
-        "ev": 27.7144,
+        "ev": 27.5016,
         "pAnySource": "calibrated_sum"
       }
     },
@@ -884,9 +884,9 @@
         "numberCount": 14,
         "perCode": 10,
         "numbers": [
-          40,
           10,
           22,
+          40,
           46,
           16,
           9,
@@ -899,10 +899,10 @@
           2,
           19
         ],
-        "pAny": 0.3731,
+        "pAny": 0.3725,
         "hitNet": 330,
         "missLoss": -140,
-        "ev": 35.351,
+        "ev": 35.0925,
         "pAnySource": "calibrated_sum"
       },
       "kelly": {
@@ -910,9 +910,9 @@
         "numberCount": 11,
         "perCode": 10,
         "numbers": [
-          40,
           10,
           22,
+          40,
           46,
           16,
           9,
@@ -922,10 +922,10 @@
           33,
           34
         ],
-        "pAny": 0.293,
+        "pAny": 0.2926,
         "hitNet": 360,
         "missLoss": -110,
-        "ev": 27.7144,
+        "ev": 27.5016,
         "pAnySource": "calibrated_sum"
       }
     },
@@ -935,9 +935,9 @@
         "numberCount": 15,
         "perCode": 10,
         "numbers": [
-          40,
           10,
           22,
+          40,
           46,
           16,
           9,
@@ -951,10 +951,10 @@
           19,
           1
         ],
-        "pAny": 0.3997,
+        "pAny": 0.3992,
         "hitNet": 320,
         "missLoss": -150,
-        "ev": 37.8776,
+        "ev": 37.6005,
         "pAnySource": "calibrated_sum"
       },
       "kelly": {
@@ -962,9 +962,9 @@
         "numberCount": 11,
         "perCode": 10,
         "numbers": [
-          40,
           10,
           22,
+          40,
           46,
           16,
           9,
@@ -974,10 +974,10 @@
           33,
           34
         ],
-        "pAny": 0.293,
+        "pAny": 0.2926,
         "hitNet": 360,
         "missLoss": -110,
-        "ev": 27.7144,
+        "ev": 27.5016,
         "pAnySource": "calibrated_sum"
       }
     },
@@ -987,9 +987,9 @@
         "numberCount": 16,
         "perCode": 10,
         "numbers": [
-          40,
           10,
           22,
+          40,
           46,
           16,
           9,
@@ -1004,10 +1004,10 @@
           1,
           26
         ],
-        "pAny": 0.4263,
+        "pAny": 0.4257,
         "hitNet": 310,
         "missLoss": -160,
-        "ev": 40.3609,
+        "ev": 40.0726,
         "pAnySource": "calibrated_sum"
       },
       "kelly": {
@@ -1015,9 +1015,9 @@
         "numberCount": 11,
         "perCode": 10,
         "numbers": [
-          40,
           10,
           22,
+          40,
           46,
           16,
           9,
@@ -1027,10 +1027,10 @@
           33,
           34
         ],
-        "pAny": 0.293,
+        "pAny": 0.2926,
         "hitNet": 360,
         "missLoss": -110,
-        "ev": 27.7144,
+        "ev": 27.5016,
         "pAnySource": "calibrated_sum"
       }
     },
@@ -1040,9 +1040,9 @@
         "numberCount": 17,
         "perCode": 10,
         "numbers": [
-          40,
           10,
           22,
+          40,
           46,
           16,
           9,
@@ -1056,12 +1056,12 @@
           19,
           1,
           26,
-          7
+          30
         ],
-        "pAny": 0.4528,
+        "pAny": 0.4522,
         "hitNet": 300,
         "missLoss": -170,
-        "ev": 42.8234,
+        "ev": 42.5341,
         "pAnySource": "calibrated_sum"
       },
       "kelly": {
@@ -1069,9 +1069,9 @@
         "numberCount": 12,
         "perCode": 10,
         "numbers": [
-          40,
           10,
           22,
+          40,
           46,
           16,
           9,
@@ -1082,10 +1082,10 @@
           34,
           4
         ],
-        "pAny": 0.3191,
+        "pAny": 0.3187,
         "hitNet": 350,
         "missLoss": -120,
-        "ev": 29.991,
+        "ev": 29.7964,
         "pAnySource": "calibrated_sum"
       }
     },
@@ -1095,9 +1095,9 @@
         "numberCount": 18,
         "perCode": 10,
         "numbers": [
-          40,
           10,
           22,
+          40,
           46,
           16,
           9,
@@ -1111,13 +1111,13 @@
           19,
           1,
           26,
-          7,
-          30
+          30,
+          20
         ],
-        "pAny": 0.4793,
+        "pAny": 0.4787,
         "hitNet": 290,
         "missLoss": -180,
-        "ev": 45.2768,
+        "ev": 44.9779,
         "pAnySource": "calibrated_sum"
       },
       "kelly": {
@@ -1125,9 +1125,9 @@
         "numberCount": 12,
         "perCode": 10,
         "numbers": [
-          40,
           10,
           22,
+          40,
           46,
           16,
           9,
@@ -1138,10 +1138,10 @@
           34,
           4
         ],
-        "pAny": 0.3191,
+        "pAny": 0.3187,
         "hitNet": 350,
         "missLoss": -120,
-        "ev": 29.991,
+        "ev": 29.7964,
         "pAnySource": "calibrated_sum"
       }
     },
@@ -1151,9 +1151,9 @@
         "numberCount": 19,
         "perCode": 10,
         "numbers": [
-          40,
           10,
           22,
+          40,
           46,
           16,
           9,
@@ -1167,14 +1167,14 @@
           19,
           1,
           26,
-          7,
           30,
-          23
+          20,
+          8
         ],
-        "pAny": 0.5058,
+        "pAny": 0.5051,
         "hitNet": 280,
         "missLoss": -190,
-        "ev": 47.7205,
+        "ev": 47.4078,
         "pAnySource": "calibrated_sum"
       },
       "kelly": {
@@ -1182,9 +1182,9 @@
         "numberCount": 12,
         "perCode": 10,
         "numbers": [
-          40,
           10,
           22,
+          40,
           46,
           16,
           9,
@@ -1195,10 +1195,10 @@
           34,
           4
         ],
-        "pAny": 0.3191,
+        "pAny": 0.3187,
         "hitNet": 350,
         "missLoss": -120,
-        "ev": 29.991,
+        "ev": 29.7964,
         "pAnySource": "calibrated_sum"
       }
     },
@@ -1208,9 +1208,9 @@
         "numberCount": 20,
         "perCode": 10,
         "numbers": [
-          40,
           10,
           22,
+          40,
           46,
           16,
           9,
@@ -1224,15 +1224,15 @@
           19,
           1,
           26,
-          7,
           30,
-          23,
-          11
+          20,
+          8,
+          41
         ],
-        "pAny": 0.5323,
+        "pAny": 0.5315,
         "hitNet": 270,
         "missLoss": -200,
-        "ev": 50.1613,
+        "ev": 49.8278,
         "pAnySource": "calibrated_sum"
       },
       "kelly": {
@@ -1240,9 +1240,9 @@
         "numberCount": 12,
         "perCode": 10,
         "numbers": [
-          40,
           10,
           22,
+          40,
           46,
           16,
           9,
@@ -1253,10 +1253,10 @@
           34,
           4
         ],
-        "pAny": 0.3191,
+        "pAny": 0.3187,
         "hitNet": 350,
         "missLoss": -120,
-        "ev": 29.991,
+        "ev": 29.7964,
         "pAnySource": "calibrated_sum"
       }
     },
@@ -1266,9 +1266,9 @@
         "numberCount": 21,
         "perCode": 10,
         "numbers": [
-          40,
           10,
           22,
+          40,
           46,
           16,
           9,
@@ -1282,16 +1282,16 @@
           19,
           1,
           26,
-          7,
           30,
-          23,
-          11,
-          20
+          20,
+          8,
+          41,
+          23
         ],
-        "pAny": 0.5587,
+        "pAny": 0.558,
         "hitNet": 260,
         "missLoss": -210,
-        "ev": 52.5882,
+        "ev": 52.2447,
         "pAnySource": "calibrated_sum"
       },
       "kelly": {
@@ -1299,9 +1299,9 @@
         "numberCount": 12,
         "perCode": 10,
         "numbers": [
-          40,
           10,
           22,
+          40,
           46,
           16,
           9,
@@ -1312,10 +1312,10 @@
           34,
           4
         ],
-        "pAny": 0.3191,
+        "pAny": 0.3187,
         "hitNet": 350,
         "missLoss": -120,
-        "ev": 29.991,
+        "ev": 29.7964,
         "pAnySource": "calibrated_sum"
       }
     },
@@ -1325,9 +1325,9 @@
         "numberCount": 22,
         "perCode": 10,
         "numbers": [
-          40,
           10,
           22,
+          40,
           46,
           16,
           9,
@@ -1341,17 +1341,17 @@
           19,
           1,
           26,
-          7,
           30,
-          23,
-          11,
           20,
-          41
+          8,
+          41,
+          23,
+          24
         ],
-        "pAny": 0.5851,
+        "pAny": 0.5844,
         "hitNet": 250,
         "missLoss": -220,
-        "ev": 55.0106,
+        "ev": 54.6602,
         "pAnySource": "calibrated_sum"
       },
       "kelly": {
@@ -1359,9 +1359,9 @@
         "numberCount": 12,
         "perCode": 10,
         "numbers": [
-          40,
           10,
           22,
+          40,
           46,
           16,
           9,
@@ -1372,10 +1372,10 @@
           34,
           4
         ],
-        "pAny": 0.3191,
+        "pAny": 0.3187,
         "hitNet": 350,
         "missLoss": -120,
-        "ev": 29.991,
+        "ev": 29.7964,
         "pAnySource": "calibrated_sum"
       }
     },
@@ -1385,9 +1385,9 @@
         "numberCount": 23,
         "perCode": 10,
         "numbers": [
-          40,
           10,
           22,
+          40,
           46,
           16,
           9,
@@ -1401,18 +1401,18 @@
           19,
           1,
           26,
-          7,
           30,
-          23,
-          11,
           20,
+          8,
           41,
-          24
+          23,
+          24,
+          5
         ],
-        "pAny": 0.6115,
+        "pAny": 0.6108,
         "hitNet": 240,
         "missLoss": -230,
-        "ev": 57.4142,
+        "ev": 57.0724,
         "pAnySource": "calibrated_sum"
       },
       "kelly": {
@@ -1420,9 +1420,9 @@
         "numberCount": 13,
         "perCode": 10,
         "numbers": [
-          40,
           10,
           22,
+          40,
           46,
           16,
           9,
@@ -1434,10 +1434,10 @@
           4,
           2
         ],
-        "pAny": 0.3462,
+        "pAny": 0.3457,
         "hitNet": 340,
         "missLoss": -130,
-        "ev": 32.7038,
+        "ev": 32.4803,
         "pAnySource": "calibrated_sum"
       }
     },
@@ -1447,9 +1447,9 @@
         "numberCount": 24,
         "perCode": 10,
         "numbers": [
-          40,
           10,
           22,
+          40,
           46,
           16,
           9,
@@ -1463,19 +1463,19 @@
           19,
           1,
           26,
-          7,
           30,
-          23,
-          11,
           20,
+          8,
           41,
+          23,
           24,
-          5
+          5,
+          49
         ],
-        "pAny": 0.6379,
+        "pAny": 0.6372,
         "hitNet": 230,
         "missLoss": -240,
-        "ev": 59.81,
+        "ev": 59.4713,
         "pAnySource": "calibrated_sum"
       },
       "kelly": {
@@ -1483,9 +1483,9 @@
         "numberCount": 13,
         "perCode": 10,
         "numbers": [
-          40,
           10,
           22,
+          40,
           46,
           16,
           9,
@@ -1497,10 +1497,10 @@
           4,
           2
         ],
-        "pAny": 0.3462,
+        "pAny": 0.3457,
         "hitNet": 340,
         "missLoss": -130,
-        "ev": 32.7038,
+        "ev": 32.4803,
         "pAnySource": "calibrated_sum"
       }
     },
@@ -1510,9 +1510,9 @@
         "numberCount": 25,
         "perCode": 10,
         "numbers": [
-          40,
           10,
           22,
+          40,
           46,
           16,
           9,
@@ -1526,20 +1526,20 @@
           19,
           1,
           26,
-          7,
           30,
-          23,
-          11,
           20,
+          8,
           41,
+          23,
           24,
           5,
+          49,
           6
         ],
-        "pAny": 0.6643,
+        "pAny": 0.6635,
         "hitNet": 220,
         "missLoss": -250,
-        "ev": 62.2026,
+        "ev": 61.8655,
         "pAnySource": "calibrated_sum"
       },
       "kelly": {
@@ -1547,9 +1547,9 @@
         "numberCount": 13,
         "perCode": 10,
         "numbers": [
-          40,
           10,
           22,
+          40,
           46,
           16,
           9,
@@ -1561,10 +1561,10 @@
           4,
           2
         ],
-        "pAny": 0.3462,
+        "pAny": 0.3457,
         "hitNet": 340,
         "missLoss": -130,
-        "ev": 32.7038,
+        "ev": 32.4803,
         "pAnySource": "calibrated_sum"
       }
     },
@@ -1574,9 +1574,9 @@
         "numberCount": 26,
         "perCode": 10,
         "numbers": [
-          40,
           10,
           22,
+          40,
           46,
           16,
           9,
@@ -1590,21 +1590,21 @@
           19,
           1,
           26,
-          7,
           30,
-          23,
-          11,
           20,
+          8,
           41,
+          23,
           24,
           5,
+          49,
           6,
-          39
+          17
         ],
-        "pAny": 0.6906,
+        "pAny": 0.6899,
         "hitNet": 210,
         "missLoss": -260,
-        "ev": 64.5856,
+        "ev": 64.2544,
         "pAnySource": "calibrated_sum"
       },
       "kelly": {
@@ -1612,9 +1612,9 @@
         "numberCount": 13,
         "perCode": 10,
         "numbers": [
-          40,
           10,
           22,
+          40,
           46,
           16,
           9,
@@ -1626,10 +1626,10 @@
           4,
           2
         ],
-        "pAny": 0.3462,
+        "pAny": 0.3457,
         "hitNet": 340,
         "missLoss": -130,
-        "ev": 32.7038,
+        "ev": 32.4803,
         "pAnySource": "calibrated_sum"
       }
     },
@@ -1639,9 +1639,9 @@
         "numberCount": 27,
         "perCode": 10,
         "numbers": [
-          40,
           10,
           22,
+          40,
           46,
           16,
           9,
@@ -1655,22 +1655,22 @@
           19,
           1,
           26,
-          7,
           30,
-          23,
-          11,
           20,
+          8,
           41,
+          23,
           24,
           5,
+          49,
           6,
-          39,
-          49
+          17,
+          39
         ],
-        "pAny": 0.717,
+        "pAny": 0.7163,
         "hitNet": 200,
         "missLoss": -270,
-        "ev": 66.9673,
+        "ev": 66.6405,
         "pAnySource": "calibrated_sum"
       },
       "kelly": {
@@ -1678,9 +1678,9 @@
         "numberCount": 13,
         "perCode": 10,
         "numbers": [
-          40,
           10,
           22,
+          40,
           46,
           16,
           9,
@@ -1692,10 +1692,10 @@
           4,
           2
         ],
-        "pAny": 0.3462,
+        "pAny": 0.3457,
         "hitNet": 340,
         "missLoss": -130,
-        "ev": 32.7038,
+        "ev": 32.4803,
         "pAnySource": "calibrated_sum"
       }
     },
@@ -1705,9 +1705,9 @@
         "numberCount": 28,
         "perCode": 10,
         "numbers": [
-          40,
           10,
           22,
+          40,
           46,
           16,
           9,
@@ -1721,23 +1721,23 @@
           19,
           1,
           26,
-          7,
           30,
-          23,
-          11,
           20,
+          8,
           41,
+          23,
           24,
           5,
-          6,
-          39,
           49,
-          17
+          6,
+          17,
+          39,
+          11
         ],
-        "pAny": 0.7433,
+        "pAny": 0.7426,
         "hitNet": 190,
         "missLoss": -280,
-        "ev": 69.3359,
+        "ev": 69.0186,
         "pAnySource": "calibrated_sum"
       },
       "kelly": {
@@ -1745,9 +1745,9 @@
         "numberCount": 13,
         "perCode": 10,
         "numbers": [
-          40,
           10,
           22,
+          40,
           46,
           16,
           9,
@@ -1759,10 +1759,10 @@
           4,
           2
         ],
-        "pAny": 0.3462,
+        "pAny": 0.3457,
         "hitNet": 340,
         "missLoss": -130,
-        "ev": 32.7038,
+        "ev": 32.4803,
         "pAnySource": "calibrated_sum"
       }
     },
@@ -1772,9 +1772,9 @@
         "numberCount": 29,
         "perCode": 10,
         "numbers": [
-          40,
           10,
           22,
+          40,
           46,
           16,
           9,
@@ -1788,24 +1788,24 @@
           19,
           1,
           26,
-          7,
           30,
-          23,
-          11,
           20,
+          8,
           41,
+          23,
           24,
           5,
-          6,
-          39,
           49,
+          6,
           17,
-          29
+          39,
+          11,
+          35
         ],
-        "pAny": 0.7696,
+        "pAny": 0.7689,
         "hitNet": 180,
         "missLoss": -290,
-        "ev": 71.6891,
+        "ev": 71.3907,
         "pAnySource": "calibrated_sum"
       },
       "kelly": {
@@ -1813,9 +1813,9 @@
         "numberCount": 13,
         "perCode": 10,
         "numbers": [
-          40,
           10,
           22,
+          40,
           46,
           16,
           9,
@@ -1827,10 +1827,10 @@
           4,
           2
         ],
-        "pAny": 0.3462,
+        "pAny": 0.3457,
         "hitNet": 340,
         "missLoss": -130,
-        "ev": 32.7038,
+        "ev": 32.4803,
         "pAnySource": "calibrated_sum"
       }
     },
@@ -1840,9 +1840,9 @@
         "numberCount": 30,
         "perCode": 10,
         "numbers": [
-          40,
           10,
           22,
+          40,
           46,
           16,
           9,
@@ -1856,25 +1856,25 @@
           19,
           1,
           26,
-          7,
           30,
-          23,
-          11,
           20,
+          8,
           41,
+          23,
           24,
           5,
-          6,
-          39,
           49,
+          6,
           17,
-          29,
+          39,
+          11,
+          35,
           44
         ],
-        "pAny": 0.7958,
+        "pAny": 0.7952,
         "hitNet": 170,
         "missLoss": -300,
-        "ev": 74.0388,
+        "ev": 73.753,
         "pAnySource": "calibrated_sum"
       },
       "kelly": {
@@ -1882,9 +1882,9 @@
         "numberCount": 13,
         "perCode": 10,
         "numbers": [
-          40,
           10,
           22,
+          40,
           46,
           16,
           9,
@@ -1896,10 +1896,10 @@
           4,
           2
         ],
-        "pAny": 0.3462,
+        "pAny": 0.3457,
         "hitNet": 340,
         "missLoss": -130,
-        "ev": 32.7038,
+        "ev": 32.4803,
         "pAnySource": "calibrated_sum"
       }
     },
@@ -1909,9 +1909,9 @@
         "numberCount": 31,
         "perCode": 10,
         "numbers": [
-          40,
           10,
           22,
+          40,
           46,
           16,
           9,
@@ -1925,26 +1925,26 @@
           19,
           1,
           26,
-          7,
           30,
-          23,
-          11,
           20,
+          8,
           41,
+          23,
           24,
           5,
-          6,
-          39,
           49,
+          6,
           17,
-          29,
+          39,
+          11,
+          35,
           44,
-          35
+          29
         ],
-        "pAny": 0.8221,
+        "pAny": 0.8215,
         "hitNet": 160,
         "missLoss": -310,
-        "ev": 76.388,
+        "ev": 76.1137,
         "pAnySource": "calibrated_sum"
       },
       "kelly": {
@@ -1952,9 +1952,9 @@
         "numberCount": 13,
         "perCode": 10,
         "numbers": [
-          40,
           10,
           22,
+          40,
           46,
           16,
           9,
@@ -1966,10 +1966,10 @@
           4,
           2
         ],
-        "pAny": 0.3462,
+        "pAny": 0.3457,
         "hitNet": 340,
         "missLoss": -130,
-        "ev": 32.7038,
+        "ev": 32.4803,
         "pAnySource": "calibrated_sum"
       }
     },
@@ -1979,9 +1979,9 @@
         "numberCount": 32,
         "perCode": 10,
         "numbers": [
-          40,
           10,
           22,
+          40,
           46,
           16,
           9,
@@ -1995,27 +1995,27 @@
           19,
           1,
           26,
-          7,
           30,
-          23,
-          11,
           20,
+          8,
           41,
+          23,
           24,
           5,
-          6,
-          39,
           49,
+          6,
           17,
-          29,
-          44,
+          39,
+          11,
           35,
-          31
+          44,
+          29,
+          7
         ],
-        "pAny": 0.8484,
+        "pAny": 0.8478,
         "hitNet": 150,
         "missLoss": -320,
-        "ev": 78.7354,
+        "ev": 78.4726,
         "pAnySource": "calibrated_sum"
       },
       "kelly": {
@@ -2023,9 +2023,9 @@
         "numberCount": 13,
         "perCode": 10,
         "numbers": [
-          40,
           10,
           22,
+          40,
           46,
           16,
           9,
@@ -2037,10 +2037,10 @@
           4,
           2
         ],
-        "pAny": 0.3462,
+        "pAny": 0.3457,
         "hitNet": 340,
         "missLoss": -130,
-        "ev": 32.7038,
+        "ev": 32.4803,
         "pAnySource": "calibrated_sum"
       }
     },
@@ -2050,9 +2050,9 @@
         "numberCount": 33,
         "perCode": 10,
         "numbers": [
-          40,
           10,
           22,
+          40,
           46,
           16,
           9,
@@ -2066,28 +2066,28 @@
           19,
           1,
           26,
-          7,
           30,
-          23,
-          11,
           20,
+          8,
           41,
+          23,
           24,
           5,
-          6,
-          39,
           49,
+          6,
           17,
-          29,
-          44,
+          39,
+          11,
           35,
-          31,
+          44,
+          29,
+          7,
           27
         ],
-        "pAny": 0.8746,
+        "pAny": 0.8741,
         "hitNet": 140,
         "missLoss": -330,
-        "ev": 81.0828,
+        "ev": 80.8281,
         "pAnySource": "calibrated_sum"
       },
       "kelly": {
@@ -2095,9 +2095,9 @@
         "numberCount": 13,
         "perCode": 10,
         "numbers": [
-          40,
           10,
           22,
+          40,
           46,
           16,
           9,
@@ -2109,10 +2109,10 @@
           4,
           2
         ],
-        "pAny": 0.3462,
+        "pAny": 0.3457,
         "hitNet": 340,
         "missLoss": -130,
-        "ev": 32.7038,
+        "ev": 32.4803,
         "pAnySource": "calibrated_sum"
       }
     },
@@ -2122,9 +2122,9 @@
         "numberCount": 34,
         "perCode": 10,
         "numbers": [
-          40,
           10,
           22,
+          40,
           46,
           16,
           9,
@@ -2138,29 +2138,29 @@
           19,
           1,
           26,
-          7,
           30,
-          23,
-          11,
           20,
+          8,
           41,
+          23,
           24,
           5,
-          6,
-          39,
           49,
+          6,
           17,
-          29,
-          44,
+          39,
+          11,
           35,
-          31,
+          44,
+          29,
+          7,
           27,
           37
         ],
-        "pAny": 0.9009,
+        "pAny": 0.9004,
         "hitNet": 130,
         "missLoss": -340,
-        "ev": 83.4249,
+        "ev": 83.178,
         "pAnySource": "calibrated_sum"
       },
       "kelly": {
@@ -2168,9 +2168,9 @@
         "numberCount": 13,
         "perCode": 10,
         "numbers": [
-          40,
           10,
           22,
+          40,
           46,
           16,
           9,
@@ -2182,10 +2182,10 @@
           4,
           2
         ],
-        "pAny": 0.3462,
+        "pAny": 0.3457,
         "hitNet": 340,
         "missLoss": -130,
-        "ev": 32.7038,
+        "ev": 32.4803,
         "pAnySource": "calibrated_sum"
       }
     },
@@ -2195,9 +2195,9 @@
         "numberCount": 35,
         "perCode": 10,
         "numbers": [
-          40,
           10,
           22,
+          40,
           46,
           16,
           9,
@@ -2211,30 +2211,30 @@
           19,
           1,
           26,
-          7,
           30,
-          23,
-          11,
           20,
+          8,
           41,
+          23,
           24,
           5,
-          6,
-          39,
           49,
+          6,
           17,
-          29,
-          44,
+          39,
+          11,
           35,
-          31,
+          44,
+          29,
+          7,
           27,
           37,
-          8
+          14
         ],
-        "pAny": 0.9271,
+        "pAny": 0.9267,
         "hitNet": 120,
         "missLoss": -350,
-        "ev": 85.749,
+        "ev": 85.5264,
         "pAnySource": "calibrated_sum"
       },
       "kelly": {
@@ -2242,9 +2242,9 @@
         "numberCount": 13,
         "perCode": 10,
         "numbers": [
-          40,
           10,
           22,
+          40,
           46,
           16,
           9,
@@ -2256,10 +2256,10 @@
           4,
           2
         ],
-        "pAny": 0.3462,
+        "pAny": 0.3457,
         "hitNet": 340,
         "missLoss": -130,
-        "ev": 32.7038,
+        "ev": 32.4803,
         "pAnySource": "calibrated_sum"
       }
     },
@@ -2269,9 +2269,9 @@
         "numberCount": 36,
         "perCode": 10,
         "numbers": [
-          40,
           10,
           22,
+          40,
           46,
           16,
           9,
@@ -2285,31 +2285,31 @@
           19,
           1,
           26,
-          7,
           30,
-          23,
-          11,
           20,
+          8,
           41,
+          23,
           24,
           5,
-          6,
-          39,
           49,
+          6,
           17,
-          29,
-          44,
+          39,
+          11,
           35,
-          31,
+          44,
+          29,
+          7,
           27,
           37,
-          8,
-          48
+          14,
+          31
         ],
-        "pAny": 0.9533,
+        "pAny": 0.9529,
         "hitNet": 110,
         "missLoss": -360,
-        "ev": 88.0724,
+        "ev": 87.8666,
         "pAnySource": "calibrated_sum"
       },
       "kelly": {
@@ -2317,9 +2317,9 @@
         "numberCount": 13,
         "perCode": 10,
         "numbers": [
-          40,
           10,
           22,
+          40,
           46,
           16,
           9,
@@ -2331,10 +2331,10 @@
           4,
           2
         ],
-        "pAny": 0.3462,
+        "pAny": 0.3457,
         "hitNet": 340,
         "missLoss": -130,
-        "ev": 32.7038,
+        "ev": 32.4803,
         "pAnySource": "calibrated_sum"
       }
     },
@@ -2344,9 +2344,9 @@
         "numberCount": 37,
         "perCode": 10,
         "numbers": [
-          40,
           10,
           22,
+          40,
           46,
           16,
           9,
@@ -2360,32 +2360,32 @@
           19,
           1,
           26,
-          7,
           30,
-          23,
-          11,
           20,
+          8,
           41,
+          23,
           24,
           5,
-          6,
-          39,
           49,
+          6,
           17,
-          29,
-          44,
+          39,
+          11,
           35,
-          31,
+          44,
+          29,
+          7,
           27,
           37,
-          8,
-          48,
-          14
+          14,
+          31,
+          48
         ],
-        "pAny": 0.9796,
+        "pAny": 0.9791,
         "hitNet": 100,
         "missLoss": -370,
-        "ev": 90.3941,
+        "ev": 90.2005,
         "pAnySource": "calibrated_sum"
       },
       "kelly": {
@@ -2393,9 +2393,9 @@
         "numberCount": 13,
         "perCode": 10,
         "numbers": [
-          40,
           10,
           22,
+          40,
           46,
           16,
           9,
@@ -2407,10 +2407,10 @@
           4,
           2
         ],
-        "pAny": 0.3462,
+        "pAny": 0.3457,
         "hitNet": 340,
         "missLoss": -130,
-        "ev": 32.7038,
+        "ev": 32.4803,
         "pAnySource": "calibrated_sum"
       }
     },
@@ -2420,9 +2420,9 @@
         "numberCount": 38,
         "perCode": 10,
         "numbers": [
-          40,
           10,
           22,
+          40,
           46,
           16,
           9,
@@ -2436,28 +2436,28 @@
           19,
           1,
           26,
-          7,
           30,
-          23,
-          11,
           20,
+          8,
           41,
+          23,
           24,
           5,
-          6,
-          39,
           49,
+          6,
           17,
-          29,
-          44,
+          39,
+          11,
           35,
-          31,
+          44,
+          29,
+          7,
           27,
           37,
-          8,
-          48,
           14,
-          43
+          31,
+          48,
+          32
         ],
         "pAny": 1,
         "hitNet": 90,
@@ -2470,9 +2470,9 @@
         "numberCount": 13,
         "perCode": 10,
         "numbers": [
-          40,
           10,
           22,
+          40,
           46,
           16,
           9,
@@ -2484,10 +2484,10 @@
           4,
           2
         ],
-        "pAny": 0.3462,
+        "pAny": 0.3457,
         "hitNet": 340,
         "missLoss": -130,
-        "ev": 32.7038,
+        "ev": 32.4803,
         "pAnySource": "calibrated_sum"
       }
     },
@@ -2497,9 +2497,9 @@
         "numberCount": 39,
         "perCode": 10,
         "numbers": [
-          40,
           10,
           22,
+          40,
           46,
           16,
           9,
@@ -2513,29 +2513,29 @@
           19,
           1,
           26,
-          7,
           30,
-          23,
-          11,
           20,
+          8,
           41,
+          23,
           24,
           5,
-          6,
-          39,
           49,
+          6,
           17,
-          29,
-          44,
+          39,
+          11,
           35,
-          31,
+          44,
+          29,
+          7,
           27,
           37,
-          8,
-          48,
           14,
-          43,
-          3
+          31,
+          48,
+          32,
+          18
         ],
         "pAny": 1,
         "hitNet": 80,
@@ -2548,9 +2548,9 @@
         "numberCount": 13,
         "perCode": 10,
         "numbers": [
-          40,
           10,
           22,
+          40,
           46,
           16,
           9,
@@ -2562,10 +2562,10 @@
           4,
           2
         ],
-        "pAny": 0.3462,
+        "pAny": 0.3457,
         "hitNet": 340,
         "missLoss": -130,
-        "ev": 32.7038,
+        "ev": 32.4803,
         "pAnySource": "calibrated_sum"
       }
     },
@@ -2575,9 +2575,9 @@
         "numberCount": 40,
         "perCode": 10,
         "numbers": [
-          40,
           10,
           22,
+          40,
           46,
           16,
           9,
@@ -2591,30 +2591,30 @@
           19,
           1,
           26,
-          7,
           30,
-          23,
-          11,
           20,
+          8,
           41,
+          23,
           24,
           5,
-          6,
-          39,
           49,
+          6,
           17,
-          29,
-          44,
+          39,
+          11,
           35,
-          31,
+          44,
+          29,
+          7,
           27,
           37,
-          8,
-          48,
           14,
-          43,
-          3,
-          36
+          31,
+          48,
+          32,
+          18,
+          3
         ],
         "pAny": 1,
         "hitNet": 70,
@@ -2627,9 +2627,9 @@
         "numberCount": 13,
         "perCode": 10,
         "numbers": [
-          40,
           10,
           22,
+          40,
           46,
           16,
           9,
@@ -2641,10 +2641,10 @@
           4,
           2
         ],
-        "pAny": 0.3462,
+        "pAny": 0.3457,
         "hitNet": 340,
         "missLoss": -130,
-        "ev": 32.7038,
+        "ev": 32.4803,
         "pAnySource": "calibrated_sum"
       }
     }
@@ -2656,7 +2656,7 @@
       "numberCount": 10,
       "hitNet": 370,
       "missLoss": -100,
-      "ev": 6.502
+      "ev": 6.079
     },
     "0.25": {
       "fraction": 0.25,
@@ -2664,7 +2664,7 @@
       "numberCount": 10,
       "hitNet": 370,
       "missLoss": -100,
-      "ev": 6.502
+      "ev": 6.079
     },
     "0.5": {
       "fraction": 0.5,
@@ -2672,7 +2672,7 @@
       "numberCount": 10,
       "hitNet": 370,
       "missLoss": -100,
-      "ev": 6.502
+      "ev": 6.079
     }
   }
 }
